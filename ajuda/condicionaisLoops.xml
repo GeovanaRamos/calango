@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<funcionalidade>
+    <nome>Condicionais e Loops</nome>
+    <index>3</index>
+    <parent></parent>
+    <descricao>&lt;html&gt;
+  &lt;head&gt;
+    
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h2 style="white-space: normal; padding-bottom: 4pt; text-transform: none; font-variant: normal; text-indent: 0px; word-spacing: 0px; line-height: 1.15; padding-top: 18pt; letter-spacing: normal" class="c26" align="left"&gt;
+      &lt;span&gt;Condicionais e Loops&lt;/span&gt;
+    &lt;/h2&gt;
+    &lt;p style="white-space: normal; margin-top: 0px; text-transform: none; font-variant: normal; margin-right: 0px; text-indent: 36pt; margin-left: 0px; word-spacing: 0px; line-height: normal; margin-bottom: 0px; letter-spacing: normal" class="c8" align="justify"&gt;
+      &lt;font face="Trebuchet MS"&gt;&lt;span class="c3"&gt;Os condicionais e loops s&amp;#227;o a 
+      maneira de dar vida ao algoritmo. Na linguagem Calango, existem loops da 
+      mesma forma que na linguagem C em termos de funcionamento e de sintaxe.&lt;/span&gt;&lt;/font&gt;
+    &lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</descricao>
+</funcionalidade>

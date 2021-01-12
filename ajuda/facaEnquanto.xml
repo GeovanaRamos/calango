@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<funcionalidade>
+    <nome>Faca .. Enquanto</nome>
+    <index>4</index>
+    <parent>Condicionais e Loops</parent>
+    <descricao>&lt;html&gt;
+  &lt;head&gt;
+    
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h3 style="white-space: normal; padding-bottom: 4pt; text-transform: none; font-variant: normal; text-indent: 0px; word-spacing: 0px; line-height: 1.15; padding-top: 14pt; letter-spacing: normal" class="c26" align="left"&gt;
+      &lt;span&gt;Faca .. Enquanto&lt;/span&gt;
+    &lt;/h3&gt;
+    &lt;p style="white-space: normal; margin-top: 0px; text-transform: none; font-variant: normal; margin-right: 0px; text-indent: 36pt; margin-left: 0px; word-spacing: 0px; line-height: normal; margin-bottom: 0px; letter-spacing: normal" class="c8" align="justify"&gt;
+      &lt;font face="Trebuchet MS"&gt;&lt;span class="c3"&gt;O segundo loop &amp;#233; semelhante 
+      ao loop anterior (enquanto), com uma diferen&amp;#231;a: a condi&amp;#231;&amp;#227;o &amp;#233; avaliada 
+      sempre AP&amp;#211;S a execu&amp;#231;&amp;#227;o do c&amp;#243;digo. Isso significa que independente do 
+      resultado da express&amp;#227;o, o c&amp;#243;digo do loop ir&amp;#225; executar pelo menos uma 
+      vez. Esta express&amp;#227;o &amp;#233; equivalente ao&lt;/span&gt;&lt;span class="Apple-converted-space"&gt;&amp;#160;&lt;/span&gt;&lt;/font&gt;&lt;font face="Courier New"&gt;&lt;span class="c0"&gt;do..while&lt;/span&gt;&lt;/font&gt;&lt;font face="Trebuchet MS"&gt;&lt;span class="c3"&gt;&amp;#160;na 
+      linguagem C. O c&amp;#243;digo abaixo &amp;#233; semelhante ao anterior, mas utilizando a 
+      estrutura&lt;/span&gt;&lt;span class="Apple-converted-space"&gt;&amp;#160;&lt;/span&gt;&lt;/font&gt;&lt;font face="Courier New"&gt;&lt;span class="c0"&gt;faca 
+      .. enquanto&lt;/span&gt;&lt;/font&gt;&lt;font face="Trebuchet MS"&gt;&lt;span class="c3"&gt;.&lt;/span&gt;&lt;/font&gt;
+    &lt;/p&gt;
+    &lt;p style="white-space: normal; margin-top: 0px; text-transform: none; font-variant: normal; margin-right: 0px; text-indent: 0px; margin-left: 0px; word-spacing: 0px; line-height: normal; margin-bottom: 0px; height: 11pt; letter-spacing: normal" class="c7" align="start"&gt;
+      
+    &lt;/p&gt;
+    &lt;p style="white-space: normal; margin-top: 0px; text-transform: none; font-variant: normal; margin-right: 0px; text-indent: 140.2pt; margin-left: 0px; word-spacing: 0px; line-height: normal; margin-bottom: 0px; letter-spacing: normal" class="c26 c38" align="start"&gt;
+      &lt;font face="Courier New" color="rgb(0, 86, 214)"&gt;&lt;span class="c0 c16"&gt;algoritmo&lt;/span&gt;&lt;/font&gt;&lt;font face="Courier New"&gt;&lt;span class="c0"&gt;&amp;#160;FacaEnquanto;&lt;/span&gt;&lt;/font&gt;
+    &lt;/p&gt;
+    &lt;p style="white-space: normal; margin-top: 0px; text-transform: none; font-variant: normal; margin-right: 0px; text-indent: 140.2pt; margin-left: 0px; word-spacing: 0px; line-height: normal; margin-bottom: 0px; height: 11pt; letter-spacing: normal" class="c7 c38" align="start"&gt;
+      
+    &lt;/p&gt;
+    &lt;p style="white-space: normal; margin-top: 0px; text-transform: none; font-variant: normal; margin-right: 0px; text-indent: 140.2pt; margin-left: 0px; word-spacing: 0px; line-height: normal; margin-bottom: 0px; letter-spacing: normal" class="c26 c38" align="start"&gt;
+      &lt;font face="Courier New"&gt;&lt;span class="c0"&gt;principal&lt;/span&gt;&lt;/font&gt;
+    &lt;/p&gt;
+    &lt;p style="white-space: normal; margin-top: 0px; text-transform: none; font-variant: normal; margin-right: 0px; text-indent: 140.2pt; margin-left: 0px; word-spacing: 0px; line-height: normal; margin-bottom: 0px; letter-spacing: normal" class="c26 c38" align="start"&gt;
+      &lt;font face="Courier New"&gt;&lt;span class="c0"&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;inteiro i;&lt;/span&gt;&lt;/font&gt;
+    &lt;/p&gt;
+    &lt;p style="white-space: normal; margin-top: 0px; text-transform: none; font-variant: normal; margin-right: 0px; text-indent: 140.2pt; margin-left: 0px; word-spacing: 0px; line-height: normal; margin-bottom: 0px; letter-spacing: normal" class="c26 c38" align="start"&gt;
+      &lt;font face="Courier New"&gt;&lt;span class="c0"&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;i =&lt;/span&gt;&lt;span class="Apple-converted-space"&gt;&amp;#160;&lt;/span&gt;&lt;/font&gt;&lt;font face="Courier New" color="rgb(227, 36, 0)"&gt;&lt;span class="c0 c1"&gt;0&lt;/span&gt;&lt;/font&gt;&lt;font face="Courier New"&gt;&lt;span class="c0"&gt;;&lt;/span&gt;&lt;/font&gt;
+    &lt;/p&gt;
+    &lt;p style="white-space: normal; margin-top: 0px; text-transform: none; font-variant: normal; margin-right: 0px; text-indent: 140.2pt; margin-left: 0px; word-spacing: 0px; line-height: normal; margin-bottom: 0px; height: 11pt; letter-spacing: normal" class="c7 c38" align="start"&gt;
+      
+    &lt;/p&gt;
+    &lt;p style="white-space: normal; margin-top: 0px; text-transform: none; font-variant: normal; margin-right: 0px; text-indent: 140.2pt; margin-left: 0px; word-spacing: 0px; line-height: normal; margin-bottom: 0px; letter-spacing: normal" class="c26 c38" align="start"&gt;
+      &lt;font face="Courier New"&gt;&lt;span class="c0"&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;faca&lt;/span&gt;&lt;/font&gt;
+    &lt;/p&gt;
+    &lt;p style="white-space: normal; margin-top: 0px; text-transform: none; font-variant: normal; margin-right: 0px; text-indent: 140.2pt; margin-left: 0px; word-spacing: 0px; line-height: normal; margin-bottom: 0px; letter-spacing: normal" class="c26 c38" align="start"&gt;
+      &lt;font face="Courier New"&gt;&lt;span class="c0"&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;escreval(i);&lt;/span&gt;&lt;/font&gt;
+    &lt;/p&gt;
+    &lt;p style="white-space: normal; margin-top: 0px; text-transform: none; font-variant: normal; margin-right: 0px; text-indent: 140.2pt; margin-left: 0px; word-spacing: 0px; line-height: normal; margin-bottom: 0px; letter-spacing: normal" class="c26 c38" align="start"&gt;
+      &lt;font face="Courier New"&gt;&lt;span class="c0"&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;i = i +&lt;/span&gt;&lt;span class="Apple-converted-space"&gt;&amp;#160;&lt;/span&gt;&lt;/font&gt;&lt;font face="Courier New" color="rgb(227, 36, 0)"&gt;&lt;span class="c0 c1"&gt;1&lt;/span&gt;&lt;/font&gt;&lt;font face="Courier New"&gt;&lt;span class="c0"&gt;;&lt;/span&gt;&lt;/font&gt;
+    &lt;/p&gt;
+    &lt;p style="white-space: normal; margin-top: 0px; text-transform: none; font-variant: normal; margin-right: 0px; text-indent: 140.2pt; margin-left: 0px; word-spacing: 0px; line-height: normal; margin-bottom: 0px; letter-spacing: normal" class="c26 c38" align="start"&gt;
+      &lt;font face="Courier New"&gt;&lt;span class="c0"&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;enquanto (i &amp;lt;=&lt;/span&gt;&lt;span class="Apple-converted-space"&gt;&amp;#160;&lt;/span&gt;&lt;/font&gt;&lt;font face="Courier New" color="rgb(227, 36, 0)"&gt;&lt;span class="c0 c1"&gt;9&lt;/span&gt;&lt;/font&gt;&lt;font face="Courier New"&gt;&lt;span class="c0"&gt;);&lt;/span&gt;&lt;/font&gt;
+    &lt;/p&gt;
+    &lt;p style="white-space: normal; margin-top: 0px; text-transform: none; font-variant: normal; margin-right: 0px; text-indent: 140.2pt; margin-left: 0px; word-spacing: 0px; line-height: normal; margin-bottom: 0px; height: 11pt; letter-spacing: normal" class="c7 c38" align="start"&gt;
+      
+    &lt;/p&gt;
+    &lt;p style="white-space: normal; margin-top: 0px; text-transform: none; font-variant: normal; margin-right: 0px; text-indent: 140.2pt; margin-left: 0px; word-spacing: 0px; line-height: normal; margin-bottom: 0px; letter-spacing: normal" class="c26 c38" align="start"&gt;
+      &lt;font face="Courier New"&gt;&lt;span class="c0"&gt;fimPrincipal&lt;/span&gt;&lt;/font&gt;
+    &lt;/p&gt;
+    &lt;p style="white-space: normal; margin-top: 0px; text-transform: none; font-variant: normal; margin-right: 0px; text-indent: 140.2pt; margin-left: 0px; word-spacing: 0px; line-height: normal; margin-bottom: 0px; height: 11pt; letter-spacing: normal" class="c7 c38" align="start"&gt;
+      
+    &lt;/p&gt;
+    &lt;p style="white-space: normal; margin-top: 0px; text-transform: none; font-variant: normal; margin-right: 0px; text-indent: 36pt; margin-left: 0px; word-spacing: 0px; line-height: normal; margin-bottom: 0px; letter-spacing: normal" class="c8" align="justify"&gt;
+      &lt;font face="Trebuchet MS"&gt;&lt;span class="c3"&gt;Assim como no loop anterior, 
+      o c&amp;#243;digo dentro da estrutura de loop ir&amp;#225; executar 10 vezes, de 0 at&amp;#233; 10, 
+      sendo que logo ap&amp;#243;s incrementar o contador&lt;/span&gt;&lt;span class="Apple-converted-space"&gt;&amp;#160;&lt;/span&gt;&lt;span class="c3 c34"&gt;&lt;i&gt;i&lt;/i&gt;&lt;/span&gt;&lt;span class="c3"&gt;&amp;#160;para 
+      10, a condi&amp;#231;&amp;#227;o ser&amp;#225; avaliada, e como&lt;/span&gt;&lt;span class="c3 c34"&gt;&lt;i&gt;&amp;#160;&lt;/i&gt;&lt;/span&gt;&lt;i&gt;&lt;span class="c3 c34"&gt;10 
+      &amp;lt;= 9&lt;/span&gt;&lt;span class="c3 c34"&gt;&amp;#160;&lt;/span&gt;&lt;/i&gt;&lt;span class="c3"&gt;&amp;#233; 
+      falso, o loop ir&amp;#225; acabar.&lt;/span&gt;&lt;/font&gt;
+    &lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</descricao>
+</funcionalidade>

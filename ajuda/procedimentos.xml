@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<funcionalidade>
+    <nome>Procedimentos</nome>
+    <index>1</index>
+    <parent>Subprogramas</parent>
+    <descricao>&lt;html&gt;
+  &lt;head&gt;
+    
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h3 style="white-space: normal; padding-bottom: 4pt; text-transform: none; font-variant: normal; text-indent: 0px; word-spacing: 0px; line-height: 1.15; padding-top: 14pt; letter-spacing: normal" class="c26" align="left"&gt;
+      &lt;span&gt;Procedimentos&lt;/span&gt;
+    &lt;/h3&gt;
+    &lt;p style="white-space: normal; margin-top: 0px; text-transform: none; font-variant: normal; margin-right: 0px; text-indent: 36pt; margin-left: 0px; word-spacing: 0px; line-height: normal; margin-bottom: 0px; letter-spacing: normal" class="c8" align="justify"&gt;
+      &lt;font face="Trebuchet MS"&gt;&lt;span class="c3"&gt;O primeiro tipo de 
+      subprograma a ser apresentado s&amp;#227;o os procedimentos. Os procedimentos 
+      executam seu c&amp;#243;digo mas n&amp;#227;o retornam nenhum valor &amp;#224; fun&amp;#231;&amp;#227;o que o chamou. 
+      Algumas fun&amp;#231;&amp;#245;es embutidas seguem esse padr&amp;#227;o, como a fun&amp;#231;&amp;#227;o leia ou a 
+      fun&amp;#231;&amp;#227;o escreva. Voc&amp;#234; n&amp;#227;o pode coloca-las do lado direito de uma 
+      atribui&amp;#231;&amp;#227;o, justamente por n&amp;#227;o retornarem valores.&lt;/span&gt;&lt;/font&gt;
+    &lt;/p&gt;
+    &lt;p style="white-space: normal; margin-top: 0px; text-transform: none; font-variant: normal; margin-right: 0px; text-indent: 36pt; margin-left: 0px; word-spacing: 0px; line-height: normal; margin-bottom: 0px; letter-spacing: normal" class="c8" align="justify"&gt;
+      &lt;font face="Trebuchet MS"&gt;&lt;span class="c3"&gt;A declara&amp;#231;&amp;#227;o de um 
+      subprograma &amp;#233; dada pela palavra procedimento seguida do nome do 
+      procedimento, par&amp;#234;ntesis, lista de par&amp;#226;metros (se houver algum). Como 
+      qualquer bloco na linguagem, ela &amp;#233; finalizada com a palavra fim seguida 
+      do nome do bloco, ou seja, fimProcedimento.&lt;/span&gt;&lt;/font&gt;
+    &lt;/p&gt;
+    &lt;p style="white-space: normal; margin-top: 0px; text-transform: none; font-variant: normal; margin-right: 0px; text-indent: 36pt; margin-left: 0px; word-spacing: 0px; line-height: normal; margin-bottom: 0px; letter-spacing: normal" class="c8" align="justify"&gt;
+      &lt;font face="Trebuchet MS"&gt;&lt;span class="c3"&gt;Dentro do bloco do 
+      procedimento, o c&amp;#243;digo &amp;#233; exatamente igual ao do bloco principal: come&amp;#231;a 
+      com as declara&amp;#231;&amp;#245;es, e ent&amp;#227;o os comandos.&lt;/span&gt;&lt;/font&gt;
+    &lt;/p&gt;
+    &lt;p style="white-space: normal; margin-top: 0px; text-transform: none; font-variant: normal; margin-right: 0px; text-indent: 36pt; margin-left: 0px; word-spacing: 0px; line-height: normal; margin-bottom: 0px; height: 11pt; letter-spacing: normal" class="c8 c39" align="justify"&gt;
+      
+    &lt;/p&gt;
+    &lt;p style="white-space: normal; margin-top: 0px; text-transform: none; font-variant: normal; margin-right: 0px; text-indent: 98.2pt; margin-left: 0px; word-spacing: 0px; line-height: normal; margin-bottom: 0px; letter-spacing: normal" class="c42 c26" align="start"&gt;
+      &lt;font face="Courier New" color="rgb(146, 146, 146)"&gt;&lt;span class="c0 c54"&gt;// 
+      Declara&amp;#231;&amp;#227;o de um procedimento&lt;/span&gt;&lt;/font&gt;
+    &lt;/p&gt;
+    &lt;p style="white-space: normal; margin-top: 0px; text-transform: none; font-variant: normal; margin-right: 0px; text-indent: 98.2pt; margin-left: 0px; word-spacing: 0px; line-height: normal; margin-bottom: 0px; letter-spacing: normal" class="c42 c26" align="start"&gt;
+      &lt;font face="Courier New"&gt;&lt;span class="c0"&gt;procedimento escreveMensagem(&lt;/span&gt;&lt;/font&gt;&lt;font face="Courier New" color="rgb(102, 156, 53)"&gt;&lt;span class="c28 c0"&gt;texto&lt;/span&gt;&lt;/font&gt;&lt;font face="Courier New"&gt;&lt;span class="c0"&gt;&amp;#160;mensagem)&lt;/span&gt;&lt;/font&gt;
+    &lt;/p&gt;
+    &lt;p style="white-space: normal; margin-top: 0px; text-transform: none; font-variant: normal; margin-right: 0px; text-indent: 98.2pt; margin-left: 0px; word-spacing: 0px; line-height: normal; margin-bottom: 0px; letter-spacing: normal" class="c42 c26" align="start"&gt;
+      &lt;font face="Courier New" color="rgb(146, 146, 146)"&gt;&lt;span class="c0 c54"&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;// 
+      Declara&amp;#231;&amp;#245;es&lt;/span&gt;&lt;/font&gt;
+    &lt;/p&gt;
+    &lt;p style="white-space: normal; margin-top: 0px; text-transform: none; font-variant: normal; margin-right: 0px; text-indent: 98.2pt; margin-left: 0px; word-spacing: 0px; line-height: normal; margin-bottom: 0px; letter-spacing: normal" class="c42 c26" align="start"&gt;
+      &lt;font face="Courier New"&gt;&lt;span class="c0"&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&lt;/span&gt;&lt;/font&gt;&lt;font face="Courier New" color="rgb(102, 156, 53)"&gt;&lt;span class="c28 c0"&gt;inteiro&lt;/span&gt;&lt;/font&gt;&lt;font face="Courier New"&gt;&lt;span class="c0"&gt;&amp;#160;numero;&lt;/span&gt;&lt;/font&gt;
+    &lt;/p&gt;
+    &lt;p style="white-space: normal; margin-top: 0px; text-transform: none; font-variant: normal; margin-right: 0px; text-indent: 98.2pt; margin-left: 0px; word-spacing: 0px; line-height: normal; margin-bottom: 0px; letter-spacing: normal" class="c42 c26" align="start"&gt;
+      &lt;font face="Courier New" color="rgb(146, 146, 146)"&gt;&lt;span class="c0 c54"&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;// 
+      Comandos&lt;/span&gt;&lt;/font&gt;
+    &lt;/p&gt;
+    &lt;p style="white-space: normal; margin-top: 0px; text-transform: none; font-variant: normal; margin-right: 0px; text-indent: 98.2pt; margin-left: 0px; word-spacing: 0px; line-height: normal; margin-bottom: 0px; letter-spacing: normal" class="c26 c42" align="start"&gt;
+      &lt;font face="Courier New"&gt;&lt;span class="c0"&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;escreval(mensagem);&lt;/span&gt;&lt;/font&gt;
+    &lt;/p&gt;
+    &lt;p style="white-space: normal; margin-top: 0px; text-transform: none; font-variant: normal; margin-right: 0px; text-indent: 98.2pt; margin-left: 0px; word-spacing: 0px; line-height: normal; margin-bottom: 0px; letter-spacing: normal" class="c42 c26" align="start"&gt;
+      &lt;font face="Courier New"&gt;&lt;span class="c0"&gt;fimProcedimento&lt;/span&gt;&lt;/font&gt;
+    &lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</descricao>
+</funcionalidade>

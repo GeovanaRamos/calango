@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<funcionalidade>
+    <nome>Comentários</nome>
+    <index>2</index>
+    <parent>Estutura Básica</parent>
+    <descricao>&lt;html&gt;
+  &lt;head&gt;
+    
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h3 style="white-space: normal; padding-bottom: 4pt; text-transform: none; font-variant: normal; text-indent: 0px; word-spacing: 0px; line-height: 1.15; padding-top: 14pt; letter-spacing: normal" class="c26" align="left"&gt;
+      &lt;span&gt;Coment&amp;#225;rios&lt;/span&gt;
+    &lt;/h3&gt;
+    &lt;p style="white-space: normal; margin-top: 0px; text-transform: none; font-variant: normal; margin-right: 0px; text-indent: 36pt; margin-left: 0px; word-spacing: 0px; line-height: normal; margin-bottom: 0px; letter-spacing: normal" class="c8" align="justify"&gt;
+      &lt;font face="Trebuchet MS"&gt;&lt;span class="c3"&gt;Na linguagem Calango, existem 
+      dois tipos de coment&amp;#225;rios: coment&amp;#225;rio de linhas e coment&amp;#225;rio de v&amp;#225;rias 
+      linhas. Tudo que estiver contido dentro de um coment&amp;#225;rio ser&amp;#225; 
+      prontamente descartado pelo interpretador Calango. Eles seguem a mesma 
+      sintaxe da linguagem C, Java e afins, como &amp;#233; visto no c&amp;#243;digo abaixo.&lt;/span&gt;&lt;/font&gt;
+    &lt;/p&gt;
+    &lt;p style="white-space: normal; margin-top: 0px; text-transform: none; font-variant: normal; margin-right: 0px; text-indent: 36pt; margin-left: 0px; word-spacing: 0px; line-height: normal; margin-bottom: 0px; height: 11pt; letter-spacing: normal" class="c7 c40" align="start"&gt;
+      
+    &lt;/p&gt;
+    &lt;p style="white-space: normal; margin-top: 0px; text-transform: none; font-variant: normal; margin-right: 0px; text-indent: -21.8pt; margin-left: 98.2pt; word-spacing: 0px; line-height: normal; margin-bottom: 0px; letter-spacing: normal" class="c45 c41 c26" align="start"&gt;
+      &lt;font face="Courier New" color="rgb(0, 61, 204)"&gt;&lt;span class="c17 c0"&gt;algoritmo&lt;/span&gt;&lt;/font&gt;&lt;font face="Courier New"&gt;&lt;span class="c0"&gt;&amp;#160;Coment&amp;#225;rios;&lt;/span&gt;&lt;/font&gt;
+    &lt;/p&gt;
+    &lt;p style="white-space: normal; margin-top: 0px; text-transform: none; font-variant: normal; margin-right: 0px; text-indent: -21.8pt; margin-left: 98.2pt; word-spacing: 0px; line-height: normal; margin-bottom: 0px; letter-spacing: normal" class="c45 c41 c26" align="start"&gt;
+      &lt;font face="Courier New"&gt;&lt;span class="c0"&gt;&amp;#160;&lt;/span&gt;&lt;/font&gt;
+    &lt;/p&gt;
+    &lt;p style="white-space: normal; margin-top: 0px; text-transform: none; font-variant: normal; margin-right: 0px; text-indent: -21.8pt; margin-left: 98.2pt; word-spacing: 0px; line-height: normal; margin-bottom: 0px; letter-spacing: normal" class="c45 c41 c26" align="start"&gt;
+      &lt;font face="Courier New" color="rgb(103, 103, 103)"&gt;&lt;span class="c0 c21"&gt;/*&lt;/span&gt;&lt;/font&gt;
+    &lt;/p&gt;
+    &lt;p style="white-space: normal; margin-top: 0px; text-transform: none; font-variant: normal; margin-right: 0px; text-indent: 0px; margin-left: 98.2pt; word-spacing: 0px; line-height: normal; margin-bottom: 0px; letter-spacing: normal" class="c26 c41" align="start"&gt;
+      &lt;font face="Courier New" color="rgb(103, 103, 103)"&gt;&lt;span class="c0 c21"&gt;Este 
+      coment&amp;#225;rio se estende por v&amp;#225;rias linhas, n&amp;#227;o necessitando que nenhuma 
+      marca&amp;#231;&amp;#227;o extra entre o delimitador inicial e final&lt;/span&gt;&lt;/font&gt;
+    &lt;/p&gt;
+    &lt;p style="white-space: normal; margin-top: 0px; text-transform: none; font-variant: normal; margin-right: 0px; text-indent: -21.8pt; margin-left: 98.2pt; word-spacing: 0px; line-height: normal; margin-bottom: 0px; letter-spacing: normal" class="c41 c26 c45" align="start"&gt;
+      &lt;font face="Courier New" color="rgb(103, 103, 103)"&gt;&lt;span class="c0 c21"&gt;*/&lt;/span&gt;&lt;/font&gt;
+    &lt;/p&gt;
+    &lt;p style="white-space: normal; margin-top: 0px; text-transform: none; font-variant: normal; margin-right: 0px; text-indent: -21.8pt; margin-left: 98.2pt; word-spacing: 0px; line-height: normal; margin-bottom: 0px; letter-spacing: normal" class="c45 c41 c26" align="start"&gt;
+      &lt;font face="Courier New"&gt;&lt;span class="c0"&gt;principal&lt;/span&gt;&lt;/font&gt;
+    &lt;/p&gt;
+    &lt;p style="white-space: normal; margin-top: 0px; text-transform: none; font-variant: normal; margin-right: 0px; text-indent: -21.8pt; margin-left: 98.2pt; word-spacing: 0px; line-height: normal; margin-bottom: 0px; letter-spacing: normal" class="c45 c41 c26" align="start"&gt;
+      &lt;font face="Courier New"&gt;&lt;span class="c0"&gt;&amp;#160; &amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&lt;/span&gt;&lt;/font&gt;&lt;font face="Courier New" color="rgb(103, 103, 103)"&gt;&lt;span class="c0 c21"&gt;//Esta 
+      linha ser&amp;#225; descartada pelo interpretador&lt;/span&gt;&lt;/font&gt;
+    &lt;/p&gt;
+    &lt;p style="white-space: normal; margin-top: 0px; text-transform: none; font-variant: normal; margin-right: 0px; text-indent: -21.8pt; margin-left: 98.2pt; word-spacing: 0px; line-height: normal; margin-bottom: 0px; letter-spacing: normal" class="c45 c41 c26" align="start"&gt;
+      &lt;font face="Courier New"&gt;&lt;span class="c0"&gt;fimPrincipal&lt;/span&gt;&lt;/font&gt;
+    &lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</descricao>
+</funcionalidade>

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<funcionalidade>
+    <nome>Atribuição de variáveis</nome>
+    <index>4</index>
+    <parent>Estutura Básica</parent>
+    <descricao>&lt;html&gt;
+  &lt;head&gt;
+    
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h3 style="white-space: normal; padding-bottom: 4pt; text-transform: none; font-variant: normal; text-indent: 0px; word-spacing: 0px; line-height: 1.15; padding-top: 14pt; letter-spacing: normal" class="c26" align="left"&gt;
+      &lt;span&gt;Atribui&amp;#231;&amp;#227;o de vari&amp;#225;veis&lt;/span&gt;
+    &lt;/h3&gt;
+    &lt;p style="white-space: normal; margin-top: 0px; text-transform: none; font-variant: normal; margin-right: 0px; text-indent: 36pt; margin-left: 0px; word-spacing: 0px; line-height: normal; margin-bottom: 0px; letter-spacing: normal" class="c8" align="justify"&gt;
+      &lt;font face="Trebuchet MS"&gt;&lt;span class="c3"&gt;A atribui&amp;#231;&amp;#227;o de um valor &amp;#224; 
+      uma vari&amp;#225;vel &amp;#233; feita atrav&amp;#233;s do operador de atribui&amp;#231;&amp;#227;o&lt;/span&gt;&lt;span class="c3"&gt;=&lt;/span&gt;&lt;span class="c3"&gt;&amp;#160;(igual), 
+      sendo o identificador da vari&amp;#225;vel &amp;#224; esquerda do operador, e o valor a 
+      ser atribu&amp;#237;do &amp;#224; direita do operador. Um exemplo est&amp;#225; no c&amp;#243;digo abaixo.&lt;/span&gt;&lt;/font&gt;
+    &lt;/p&gt;
+    &lt;p style="white-space: normal; margin-top: 0px; text-transform: none; font-variant: normal; margin-right: 0px; text-indent: 36pt; margin-left: 0px; word-spacing: 0px; line-height: normal; margin-bottom: 0px; height: 11pt; letter-spacing: normal" class="c7 c40" align="start"&gt;
+      
+    &lt;/p&gt;
+    &lt;p style="white-space: normal; margin-top: 0px; text-transform: none; font-variant: normal; margin-right: 0px; text-indent: 154.5pt; margin-left: 0px; word-spacing: 0px; line-height: normal; margin-bottom: 0px; letter-spacing: normal" class="c52 c26" align="start"&gt;
+      &lt;font face="Courier New" color="rgb(0, 61, 204)"&gt;&lt;span class="c0 c17"&gt;algoritmo&lt;/span&gt;&lt;/font&gt;&lt;font face="Courier New"&gt;&lt;span class="c0"&gt;&amp;#160;CadastraPessoa;&lt;/span&gt;&lt;/font&gt;
+    &lt;/p&gt;
+    &lt;p style="white-space: normal; margin-top: 0px; text-transform: none; font-variant: normal; margin-right: 0px; text-indent: 154.5pt; margin-left: 0px; word-spacing: 0px; line-height: normal; margin-bottom: 0px; letter-spacing: normal" class="c52 c26" align="start"&gt;
+      &lt;font face="Courier New"&gt;&lt;span class="c0"&gt;&amp;#160;&lt;/span&gt;&lt;/font&gt;
+    &lt;/p&gt;
+    &lt;p style="white-space: normal; margin-top: 0px; text-transform: none; font-variant: normal; margin-right: 0px; text-indent: 154.5pt; margin-left: 0px; word-spacing: 0px; line-height: normal; margin-bottom: 0px; letter-spacing: normal" class="c26 c52" align="start"&gt;
+      &lt;font face="Courier New"&gt;&lt;span class="c0"&gt;principal&lt;/span&gt;&lt;/font&gt;
+    &lt;/p&gt;
+    &lt;p style="white-space: normal; margin-top: 0px; text-transform: none; font-variant: normal; margin-right: 0px; text-indent: 154.5pt; margin-left: 0px; word-spacing: 0px; line-height: normal; margin-bottom: 0px; letter-spacing: normal" class="c52 c26" align="start"&gt;
+      &lt;font face="Courier New"&gt;&lt;span class="c0"&gt;&amp;#160; &amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&lt;/span&gt;&lt;/font&gt;&lt;font face="Courier New" color="rgb(85, 142, 40)"&gt;&lt;span class="c31 c0"&gt;texto&lt;/span&gt;&lt;/font&gt;&lt;font face="Courier New"&gt;&lt;span class="c0"&gt;&amp;#160;nome;&lt;/span&gt;&lt;/font&gt;
+    &lt;/p&gt;
+    &lt;p style="white-space: normal; margin-top: 0px; text-transform: none; font-variant: normal; margin-right: 0px; text-indent: 154.5pt; margin-left: 0px; word-spacing: 0px; line-height: normal; margin-bottom: 0px; letter-spacing: normal" class="c52 c26" align="start"&gt;
+      &lt;font face="Courier New"&gt;&lt;span class="c0"&gt;&amp;#160; &amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&lt;/span&gt;&lt;/font&gt;&lt;font face="Courier New" color="rgb(85, 142, 40)"&gt;&lt;span class="c31 c0"&gt;inteiro&lt;/span&gt;&lt;/font&gt;&lt;font face="Courier New"&gt;&lt;span class="c0"&gt;&amp;#160;idade;&lt;/span&gt;&lt;/font&gt;
+    &lt;/p&gt;
+    &lt;p style="white-space: normal; margin-top: 0px; text-transform: none; font-variant: normal; margin-right: 0px; text-indent: 154.5pt; margin-left: 0px; word-spacing: 0px; line-height: normal; margin-bottom: 0px; letter-spacing: normal" class="c52 c26" align="start"&gt;
+      &lt;font face="Courier New"&gt;&lt;span class="c0"&gt;&amp;#160; &amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;nome =&lt;/span&gt;&lt;span class="Apple-converted-space"&gt;&amp;#160;&lt;/span&gt;&lt;/font&gt;&lt;font face="Courier New" color="rgb(217, 11, 0)"&gt;&lt;span class="c0 c36"&gt;&amp;#8220;Estev&amp;#227;o&amp;#8221;&lt;/span&gt;&lt;/font&gt;&lt;font face="Courier New"&gt;&lt;span class="c0"&gt;;&lt;/span&gt;&lt;/font&gt;
+    &lt;/p&gt;
+    &lt;p style="white-space: normal; margin-top: 0px; text-transform: none; font-variant: normal; margin-right: 0px; text-indent: 154.5pt; margin-left: 0px; word-spacing: 0px; line-height: normal; margin-bottom: 0px; letter-spacing: normal" class="c52 c26" align="start"&gt;
+      &lt;font face="Courier New"&gt;&lt;span class="c0"&gt;&amp;#160; &amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;idade =&lt;/span&gt;&lt;span class="Apple-converted-space"&gt;&amp;#160;&lt;/span&gt;&lt;/font&gt;&lt;font face="Courier New" color="rgb(217, 11, 0)"&gt;&lt;span class="c0 c36"&gt;56&lt;/span&gt;&lt;/font&gt;&lt;font face="Courier New"&gt;&lt;span class="c0"&gt;;&lt;/span&gt;&lt;/font&gt;
+    &lt;/p&gt;
+    &lt;p style="white-space: normal; margin-top: 0px; text-transform: none; font-variant: normal; margin-right: 0px; text-indent: 154.5pt; margin-left: 0px; word-spacing: 0px; line-height: normal; margin-bottom: 0px; letter-spacing: normal" class="c52 c26" align="start"&gt;
+      &lt;font face="Courier New"&gt;&lt;span class="c0"&gt;fimPrincipal&lt;/span&gt;&lt;/font&gt;
+    &lt;/p&gt;
+    &lt;p style="white-space: normal; margin-top: 0px; text-transform: none; font-variant: normal; margin-right: 0px; text-indent: 0px; margin-left: 0px; word-spacing: 0px; line-height: normal; margin-bottom: 0px; height: 11pt; letter-spacing: normal" class="c7 c55" align="justify"&gt;
+      
+    &lt;/p&gt;
+    &lt;p style="white-space: normal; margin-top: 0px; text-transform: none; font-variant: normal; margin-right: 0px; text-indent: 36pt; margin-left: 0px; word-spacing: 0px; line-height: normal; margin-bottom: 0px; letter-spacing: normal" class="c8" align="justify"&gt;
+      &lt;font face="Trebuchet MS"&gt;&lt;span class="c3"&gt;No c&amp;#243;digo acima, vemos a 
+      vari&amp;#225;vel nome recebendo o valor &amp;#8220;Estev&amp;#227;o&amp;#8221;, e a vari&amp;#225;vel idade recebendo 
+      o valor 56.&lt;/span&gt;&lt;/font&gt;
+    &lt;/p&gt;
+    &lt;p style="white-space: normal; margin-top: 0px; text-transform: none; font-variant: normal; margin-right: 0px; text-indent: 36pt; margin-left: 0px; word-spacing: 0px; line-height: normal; margin-bottom: 0px; letter-spacing: normal" class="c8" align="justify"&gt;
+      &lt;font face="Trebuchet MS"&gt;&lt;span class="c3"&gt;Falando de atribui&amp;#231;&amp;#227;o de 
+      valores, &amp;#233; um bom momento para se abordar os s&amp;#237;mbolos literais. Os 
+      s&amp;#237;mbolos literais s&amp;#227;o valores que n&amp;#227;o est&amp;#227;o atrelados a uma vari&amp;#225;vel, 
+      sendo digitados diretamente no c&amp;#243;digo. No c&amp;#243;digo anterior, o nome&lt;/span&gt;&lt;span class="Apple-converted-space"&gt;&amp;#160;&lt;/span&gt;&lt;span class="c3"&gt;&amp;#8220;Estev&amp;#227;o&amp;#8221;&lt;/span&gt;&lt;span class="c3"&gt;&amp;#160;e 
+      o n&amp;#250;mero&lt;/span&gt;&lt;span class="Apple-converted-space"&gt;&amp;#160;&lt;/span&gt;&lt;span class="c3"&gt;55&lt;/span&gt;&lt;span class="c3"&gt;&amp;#160;s&amp;#227;o 
+      s&amp;#237;mbolos literais representando respectivamente um texto e um inteiro. &amp;#192; 
+      seguir, uma tabela mostrando os s&amp;#237;mbolos literais de cada tipo de dado:&lt;/span&gt;&lt;/font&gt;
+    &lt;/p&gt;
+    &lt;p style="white-space: normal; margin-top: 0px; text-transform: none; font-variant: normal; margin-right: 0px; text-indent: 36pt; margin-left: 0px; word-spacing: 0px; line-height: normal; margin-bottom: 0px; height: 11pt; letter-spacing: normal" class="c7 c40" align="start"&gt;
+      
+    &lt;/p&gt;
+    &lt;p style="white-space: normal; margin-top: 0px; text-transform: none; font-variant: normal; margin-right: 0px; text-indent: 349pt; margin-left: 0px; word-spacing: 0px; line-height: normal; margin-bottom: 0px; height: 11pt; letter-spacing: normal" class="c7 c61" align="center"&gt;
+      
+    &lt;/p&gt;
+    &lt;a style="white-space: normal; text-transform: none; font-variant: normal; text-indent: 0px; word-spacing: 0px; line-height: normal; letter-spacing: normal" href="#" align="start" name="1ac924644e4eb3c6c66d6863e5b412d1b564610b"&gt;&lt;font size="medium" face="Times New Roman"&gt;
+&lt;/font&gt;&lt;/a&gt;&lt;font size="medium" face="Times New Roman"&gt;&lt;a style="white-space: normal; text-transform: none; font-variant: normal; text-indent: 0px; word-spacing: 0px; line-height: normal; letter-spacing: normal" href="#" align="start" name="1"&gt;
+&lt;/a&gt;&lt;/font&gt;
+    &lt;table style="word-spacing: 0px; text-transform: none; letter-spacing: normal; text-indent: 0px" class="c49" cellspacing="0" cellpadding="0"&gt;
+      &lt;tr&gt;
+        &lt;td style="padding-right: 5pt; border: 1pt solid rgb(0, 0, 0); padding-left: 5pt; width: 151.9pt; padding-top: 5pt; background-color: rgb(176, 179, 178); padding-bottom: 5pt" class="c50 c18"&gt;
+          &lt;p style="margin-right: 0px; margin-top: 0px; margin-bottom: 0px; text-indent: 6pt; margin-left: 0px" class="c14" align="center"&gt;
+            &lt;font size="12pt" face="Trebuchet MS"&gt;&lt;span style="background-color: rgb(176, 179, 178)" class="c5 c3"&gt;Tipo&lt;/span&gt;&lt;span style="background-color: rgb(176, 179, 178)" class="c5 c3"&gt;&amp;#160;de 
+            Dado&lt;/span&gt;&lt;/font&gt;
+          &lt;/p&gt;
+        &lt;/td&gt;
+        &lt;td style="padding-right: 5pt; border: 1pt solid rgb(0, 0, 0); padding-left: 5pt; width: 158.9pt; padding-top: 5pt; background-color: rgb(176, 179, 178); padding-bottom: 5pt" class="c64 c18"&gt;
+          &lt;p style="margin-right: 0px; margin-top: 0px; margin-bottom: 0px; text-indent: 6pt; margin-left: 0px" class="c14" align="center"&gt;
+            &lt;font size="12pt" face="Trebuchet MS"&gt;&lt;span style="background-color: rgb(176, 179, 178)" class="c3 c5"&gt;Exemplo&lt;/span&gt;&lt;/font&gt;
+          &lt;/p&gt;
+        &lt;/td&gt;
+        &lt;td style="padding-right: 5pt; border: 1pt solid rgb(0, 0, 0); padding-left: 5pt; width: 157.2pt; padding-top: 5pt; background-color: rgb(176, 179, 178); padding-bottom: 5pt" class="c18 c58"&gt;
+          &lt;p style="margin-right: 0px; margin-top: 0px; margin-bottom: 0px; text-indent: 6pt; margin-left: 0px" class="c14" align="center"&gt;
+            &lt;font size="12pt" face="Trebuchet MS"&gt;&lt;span style="background-color: rgb(176, 179, 178)" class="c5 c3"&gt;Descri&amp;#231;&amp;#227;o&lt;/span&gt;&lt;/font&gt;
+          &lt;/p&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td style="padding-right: 5pt; border: 1pt solid rgb(0, 0, 0); padding-left: 5pt; width: 151.9pt; padding-top: 5pt; padding-bottom: 5pt" class="c50"&gt;
+          &lt;p style="margin-right: 0px; margin-top: 0px; margin-bottom: 0px; text-indent: 6pt; margin-left: 0px" class="c14" align="center"&gt;
+            &lt;font size="12pt" face="Trebuchet MS"&gt;&lt;span class="c3 c12"&gt;texto&lt;/span&gt;&lt;/font&gt;
+          &lt;/p&gt;
+        &lt;/td&gt;
+        &lt;td style="padding-right: 5pt; border: 1pt solid rgb(0, 0, 0); padding-left: 5pt; width: 158.9pt; padding-top: 5pt; padding-bottom: 5pt" class="c64"&gt;
+          &lt;p style="margin-right: 0px; margin-top: 0px; margin-bottom: 0px; text-indent: 6pt; margin-left: 0px" class="c14" align="center"&gt;
+            &lt;font size="12pt" face="Trebuchet MS"&gt;&lt;span class="c3 c12"&gt;&amp;#8220;Pense 
+            diferente&amp;#8221;&lt;/span&gt;&lt;/font&gt;
+          &lt;/p&gt;
+        &lt;/td&gt;
+        &lt;td style="padding-right: 5pt; border: 1pt solid rgb(0, 0, 0); padding-left: 5pt; width: 157.2pt; padding-top: 5pt; padding-bottom: 5pt" class="c58"&gt;
+          &lt;p style="margin-right: 0px; margin-top: 0px; margin-bottom: 0px; text-indent: 6pt; margin-left: 0px" class="c14" align="center"&gt;
+            &lt;font size="12pt" face="Trebuchet MS"&gt;&lt;span class="c3 c12"&gt;Qualquer 
+            texto entre aspas duplas&lt;/span&gt;&lt;/font&gt;
+          &lt;/p&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td style="padding-right: 5pt; border: 1pt solid rgb(0, 0, 0); padding-left: 5pt; width: 151.9pt; padding-top: 5pt; padding-bottom: 5pt" class="c50"&gt;
+          &lt;p style="margin-right: 0px; margin-top: 0px; margin-bottom: 0px; text-indent: 6pt; margin-left: 0px" class="c14" align="center"&gt;
+            &lt;font size="12pt" face="Trebuchet MS"&gt;&lt;span class="c3 c12"&gt;caracter&lt;/span&gt;&lt;/font&gt;
+          &lt;/p&gt;
+        &lt;/td&gt;
+        &lt;td style="padding-right: 5pt; border: 1pt solid rgb(0, 0, 0); padding-left: 5pt; width: 158.9pt; padding-top: 5pt; padding-bottom: 5pt" class="c64"&gt;
+          &lt;p style="margin-right: 0px; margin-top: 0px; margin-bottom: 0px; text-indent: 6pt; margin-left: 0px" class="c14" align="center"&gt;
+            &lt;font size="12pt" face="Trebuchet MS"&gt;&lt;span class="c3 c12"&gt;&amp;#8216;c&amp;#8217;&lt;/span&gt;&lt;/font&gt;
+          &lt;/p&gt;
+        &lt;/td&gt;
+        &lt;td style="padding-right: 5pt; border: 1pt solid rgb(0, 0, 0); padding-left: 5pt; width: 157.2pt; padding-top: 5pt; padding-bottom: 5pt" class="c58"&gt;
+          &lt;p style="margin-right: 0px; margin-top: 0px; margin-bottom: 0px; text-indent: 6pt; margin-left: 0px" class="c14" align="center"&gt;
+            &lt;font size="12pt" face="Trebuchet MS"&gt;&lt;span class="c3 c12"&gt;Um 
+            caracter entre aspas simples&lt;/span&gt;&lt;/font&gt;
+          &lt;/p&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td style="padding-right: 5pt; border: 1pt solid rgb(0, 0, 0); padding-left: 5pt; width: 151.9pt; padding-top: 5pt; padding-bottom: 5pt" class="c50"&gt;
+          &lt;p style="margin-right: 0px; margin-top: 0px; margin-bottom: 0px; text-indent: 6pt; margin-left: 0px" class="c14" align="center"&gt;
+            &lt;font size="12pt" face="Trebuchet MS"&gt;&lt;span class="c3 c12"&gt;real&lt;/span&gt;&lt;/font&gt;
+          &lt;/p&gt;
+        &lt;/td&gt;
+        &lt;td style="padding-right: 5pt; border: 1pt solid rgb(0, 0, 0); padding-left: 5pt; width: 158.9pt; padding-top: 5pt; padding-bottom: 5pt" class="c64"&gt;
+          &lt;p style="margin-right: 0px; margin-top: 0px; margin-bottom: 0px; text-indent: 6pt; margin-left: 0px" class="c14" align="center"&gt;
+            &lt;font size="12pt" face="Trebuchet MS"&gt;&lt;span class="c3 c12"&gt;9.7&lt;/span&gt;&lt;/font&gt;
+          &lt;/p&gt;
+        &lt;/td&gt;
+        &lt;td style="padding-right: 5pt; border: 1pt solid rgb(0, 0, 0); padding-left: 5pt; width: 157.2pt; padding-top: 5pt; padding-bottom: 5pt" class="c58"&gt;
+          &lt;p style="margin-right: 0px; margin-top: 0px; margin-bottom: 0px; text-indent: 6pt; margin-left: 0px" class="c14" align="center"&gt;
+            &lt;font size="12pt" face="Trebuchet MS"&gt;&lt;span class="c3 c12"&gt;N&amp;#250;mero 
+            com casas decimais separadas por um ponto&lt;/span&gt;&lt;/font&gt;
+          &lt;/p&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td style="padding-right: 5pt; border: 1pt solid rgb(0, 0, 0); padding-left: 5pt; width: 151.9pt; padding-top: 5pt; padding-bottom: 5pt" class="c50"&gt;
+          &lt;p style="margin-right: 0px; margin-top: 0px; margin-bottom: 0px; text-indent: 6pt; margin-left: 0px" class="c14" align="center"&gt;
+            &lt;font size="12pt" face="Trebuchet MS"&gt;&lt;span class="c3 c12"&gt;inteiro&lt;/span&gt;&lt;/font&gt;
+          &lt;/p&gt;
+        &lt;/td&gt;
+        &lt;td style="padding-right: 5pt; border: 1pt solid rgb(0, 0, 0); padding-left: 5pt; width: 158.9pt; padding-top: 5pt; padding-bottom: 5pt" class="c64"&gt;
+          &lt;p style="margin-right: 0px; margin-top: 0px; margin-bottom: 0px; text-indent: 6pt; margin-left: 0px" class="c14" align="center"&gt;
+            &lt;font size="12pt" face="Trebuchet MS"&gt;&lt;span class="c3 c12"&gt;10&lt;/span&gt;&lt;/font&gt;
+          &lt;/p&gt;
+        &lt;/td&gt;
+        &lt;td style="padding-right: 5pt; border: 1pt solid rgb(0, 0, 0); padding-left: 5pt; width: 157.2pt; padding-top: 5pt; padding-bottom: 5pt" class="c58"&gt;
+          &lt;p style="margin-right: 0px; margin-top: 0px; margin-bottom: 0px; text-indent: 6pt; margin-left: 0px" class="c14" align="center"&gt;
+            &lt;font size="12pt" face="Trebuchet MS"&gt;&lt;span class="c3 c12"&gt;N&amp;#250;mero 
+            inteiro&lt;/span&gt;&lt;/font&gt;
+          &lt;/p&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td style="padding-right: 5pt; border: 1pt solid rgb(0, 0, 0); padding-left: 5pt; width: 151.9pt; padding-top: 5pt; padding-bottom: 5pt" class="c50"&gt;
+          &lt;p style="margin-right: 0px; margin-top: 0px; margin-bottom: 0px; text-indent: 6pt; margin-left: 0px" class="c14" align="center"&gt;
+            &lt;font size="12pt" face="Trebuchet MS"&gt;&lt;span class="c3 c12"&gt;logico&lt;/span&gt;&lt;/font&gt;
+          &lt;/p&gt;
+        &lt;/td&gt;
+        &lt;td style="padding-right: 5pt; border: 1pt solid rgb(0, 0, 0); padding-left: 5pt; width: 158.9pt; padding-top: 5pt; padding-bottom: 5pt" class="c64"&gt;
+          &lt;p style="margin-right: 0px; margin-top: 0px; margin-bottom: 0px; text-indent: 6pt; margin-left: 0px" class="c14" align="center"&gt;
+            &lt;font size="12pt" face="Trebuchet MS"&gt;&lt;span class="c3 c12"&gt;verdadeiro, 
+            falso&lt;/span&gt;&lt;/font&gt;
+          &lt;/p&gt;
+        &lt;/td&gt;
+        &lt;td style="padding-right: 5pt; border: 1pt solid rgb(0, 0, 0); padding-left: 5pt; width: 157.2pt; padding-top: 5pt; padding-bottom: 5pt" class="c58"&gt;
+          &lt;p style="margin-right: 0px; margin-top: 0px; margin-bottom: 0px; text-indent: 6pt; margin-left: 0px" class="c14" align="center"&gt;
+            &lt;font size="12pt" face="Trebuchet MS"&gt;&lt;span class="c3 c12"&gt;verdadeiro 
+            ou falso&lt;/span&gt;&lt;/font&gt;
+          &lt;/p&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/table&gt;
+    &lt;p style="white-space: normal; margin-top: 0px; text-transform: none; font-variant: normal; margin-right: 0px; text-indent: 36pt; margin-left: 0px; word-spacing: 0px; line-height: normal; margin-bottom: 0px; height: 11pt; letter-spacing: normal" class="c7 c40" align="start"&gt;
+      
+    &lt;/p&gt;
+    &lt;p style="white-space: normal; margin-top: 0px; text-transform: none; font-variant: normal; margin-right: 0px; text-indent: 36pt; margin-left: 0px; word-spacing: 0px; line-height: normal; margin-bottom: 0px; letter-spacing: normal" class="c8" align="justify"&gt;
+      &lt;font face="Trebuchet MS"&gt;&lt;span class="c3"&gt;N&amp;#227;o existe um s&amp;#237;mbolo literal 
+      para vetores.&lt;/span&gt;&lt;/font&gt;
+    &lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</descricao>
+</funcionalidade>

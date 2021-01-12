@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<funcionalidade>
+    <nome>abs</nome>
+    <index>3</index>
+    <parent>Funções Embutidas</parent>
+    <descricao>&lt;html&gt;
+  &lt;head&gt;
+    
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h3 style="white-space: normal; padding-bottom: 4pt; text-transform: none; font-variant: normal; text-indent: 0px; word-spacing: 0px; line-height: 1.15; padding-top: 14pt; letter-spacing: normal" class="c26" align="left"&gt;
+      &lt;span&gt;inteiro/real&lt;/span&gt;&lt;span class="Apple-converted-space"&gt;&amp;#160;&lt;/span&gt;&lt;span&gt;abs(inteiro/real 
+      n)&lt;/span&gt;
+    &lt;/h3&gt;
+    &lt;p style="white-space: normal; margin-top: 0px; text-transform: none; font-variant: normal; margin-right: 0px; text-indent: 0px; margin-left: 0px; word-spacing: 0px; line-height: normal; margin-bottom: 0px; letter-spacing: normal" class="c26" align="start"&gt;
+      &lt;span&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;Retorna o valor absoluto de um n&amp;#250;mero. O tipo de dado do 
+      retorno ser&amp;#225; de acordo com o tipo de dado do par&amp;#226;metro.&lt;/span&gt;
+    &lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</descricao>
+</funcionalidade>

@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<funcionalidade>
+    <nome>Operadores e Comparadores</nome>
+    <index>5</index>
+    <parent>Estutura Básica</parent>
+    <descricao>&lt;html&gt;
+  &lt;head&gt;
+    
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h3 style="white-space: normal; padding-bottom: 4pt; text-transform: none; font-variant: normal; text-indent: 0px; word-spacing: 0px; line-height: 1.15; padding-top: 14pt; letter-spacing: normal" class="c26" align="left"&gt;
+      &lt;span&gt;Operadores e Comparadores&lt;/span&gt;
+    &lt;/h3&gt;
+    &lt;p style="white-space: normal; margin-top: 0px; text-transform: none; font-variant: normal; margin-right: 0px; text-indent: 53pt; margin-left: 0px; word-spacing: 0px; line-height: normal; margin-bottom: 0px; letter-spacing: normal" class="c55 c26 c66" align="justify"&gt;
+      &lt;font face="Trebuchet MS"&gt;&lt;span class="c3"&gt;Para somar, subtrair, 
+      concatenar, comparar, relacionar logicamente, existem diversos 
+      operadores e comparadores na linguagem Calango. Abaixo, est&amp;#227;o as tabelas 
+      com os diversos operadores, separados por tipo.&lt;/span&gt;&lt;/font&gt;
+    &lt;/p&gt;
+    &lt;p style="white-space: normal; margin-top: 0px; text-transform: none; font-variant: normal; margin-right: 0px; text-indent: 53pt; margin-left: 0px; word-spacing: 0px; line-height: normal; margin-bottom: 0px; height: 11pt; letter-spacing: normal" class="c7 c65" align="center"&gt;
+      
+    &lt;/p&gt;
+    &lt;a style="white-space: normal; text-transform: none; font-variant: normal; text-indent: 0px; word-spacing: 0px; line-height: normal; letter-spacing: normal" href="#" align="start" name="0238894a21a500fbfd2110afbe2b7f8cb54c6c17"&gt;&lt;font size="medium" face="Times New Roman"&gt;
+&lt;/font&gt;&lt;/a&gt;&lt;font size="medium" face="Times New Roman"&gt;&lt;a style="white-space: normal; text-transform: none; font-variant: normal; text-indent: 0px; word-spacing: 0px; line-height: normal; letter-spacing: normal" href="#" align="start" name="2"&gt;
+&lt;/a&gt;&lt;/font&gt;
+    &lt;table style="word-spacing: 0px; text-transform: none; letter-spacing: normal; text-indent: 0px" class="c49" cellspacing="0" cellpadding="0"&gt;
+      &lt;tr&gt;
+        &lt;td style="padding-right: 5pt; border: 1pt solid rgb(0, 0, 0); padding-left: 5pt; width: 114.2pt; padding-top: 5pt; background-color: rgb(176, 179, 178); padding-bottom: 5pt" class="c37 c18"&gt;
+          &lt;p style="margin-right: 0px; margin-top: 0px; margin-bottom: 0px; text-indent: -1.5pt; margin-left: 0px" class="c26 c35" align="center"&gt;
+            &lt;font face="Trebuchet MS"&gt;&lt;span style="background-color: rgb(176, 179, 178)" class="c3 c18"&gt;Operador 
+            aritm&amp;#233;tico&lt;/span&gt;&lt;/font&gt;
+          &lt;/p&gt;
+        &lt;/td&gt;
+        &lt;td style="padding-right: 5pt; border: 1pt solid rgb(0, 0, 0); padding-left: 5pt; width: 115.8pt; padding-top: 5pt; background-color: rgb(176, 179, 178); padding-bottom: 5pt" class="c18 c48"&gt;
+          &lt;p style="margin-right: 0px; margin-top: 0px; margin-bottom: 0px; text-indent: -1.5pt; margin-left: 0px" class="c35 c26" align="center"&gt;
+            &lt;font face="Trebuchet MS"&gt;&lt;span style="background-color: rgb(176, 179, 178)" class="c3 c18"&gt;Descri&amp;#231;&amp;#227;o&lt;/span&gt;&lt;/font&gt;
+          &lt;/p&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td style="padding-right: 5pt; border: 1pt solid rgb(0, 0, 0); padding-left: 5pt; width: 114.2pt; padding-top: 5pt; padding-bottom: 5pt" class="c37"&gt;
+          &lt;p style="margin-right: 0px; margin-top: 0px; margin-bottom: 0px; text-indent: -1.5pt; margin-left: 0px" class="c35 c26" align="center"&gt;
+            &lt;font face="Trebuchet MS"&gt;&lt;span class="c3"&gt;+&lt;/span&gt;&lt;/font&gt;
+          &lt;/p&gt;
+        &lt;/td&gt;
+        &lt;td style="padding-right: 5pt; border: 1pt solid rgb(0, 0, 0); padding-left: 5pt; width: 115.8pt; padding-top: 5pt; padding-bottom: 5pt" class="c48"&gt;
+          &lt;p style="margin-right: 0px; margin-top: 0px; margin-bottom: 0px; text-indent: -1.5pt; margin-left: 0px" class="c35 c26" align="center"&gt;
+            &lt;font face="Trebuchet MS"&gt;&lt;span class="c3"&gt;Operador de soma&lt;/span&gt;&lt;/font&gt;
+          &lt;/p&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td style="padding-right: 5pt; border: 1pt solid rgb(0, 0, 0); padding-left: 5pt; width: 114.2pt; padding-top: 5pt; padding-bottom: 5pt" class="c37"&gt;
+          &lt;p style="margin-right: 0px; margin-top: 0px; margin-bottom: 0px; text-indent: -1.5pt; margin-left: 0px" class="c35 c26" align="center"&gt;
+            &lt;font face="Trebuchet MS"&gt;&lt;span class="c3"&gt;-&lt;/span&gt;&lt;/font&gt;
+          &lt;/p&gt;
+        &lt;/td&gt;
+        &lt;td style="padding-right: 5pt; border: 1pt solid rgb(0, 0, 0); padding-left: 5pt; width: 115.8pt; padding-top: 5pt; padding-bottom: 5pt" class="c48"&gt;
+          &lt;p style="margin-right: 0px; margin-top: 0px; margin-bottom: 0px; text-indent: -1.5pt; margin-left: 0px" class="c35 c26" align="center"&gt;
+            &lt;font face="Trebuchet MS"&gt;&lt;span class="c3"&gt;Operador de subtra&amp;#231;&amp;#227;o&lt;/span&gt;&lt;/font&gt;
+          &lt;/p&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td style="padding-right: 5pt; border: 1pt solid rgb(0, 0, 0); padding-left: 5pt; width: 114.2pt; padding-top: 5pt; padding-bottom: 5pt" class="c37"&gt;
+          &lt;p style="margin-right: 0px; margin-top: 0px; margin-bottom: 0px; text-indent: -1.5pt; margin-left: 0px" class="c35 c26" align="center"&gt;
+            &lt;font face="Trebuchet MS"&gt;&lt;span class="c3"&gt;*&lt;/span&gt;&lt;/font&gt;
+          &lt;/p&gt;
+        &lt;/td&gt;
+        &lt;td style="padding-right: 5pt; border: 1pt solid rgb(0, 0, 0); padding-left: 5pt; width: 115.8pt; padding-top: 5pt; padding-bottom: 5pt" class="c48"&gt;
+          &lt;p style="margin-right: 0px; margin-top: 0px; margin-bottom: 0px; text-indent: -1.5pt; margin-left: 0px" class="c35 c26" align="center"&gt;
+            &lt;font face="Trebuchet MS"&gt;&lt;span class="c3"&gt;Operador de 
+            multiplica&amp;#231;&amp;#227;o&lt;/span&gt;&lt;/font&gt;
+          &lt;/p&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td style="padding-right: 5pt; border: 1pt solid rgb(0, 0, 0); padding-left: 5pt; width: 114.2pt; padding-top: 5pt; padding-bottom: 5pt" class="c37"&gt;
+          &lt;p style="margin-right: 0px; margin-top: 0px; margin-bottom: 0px; text-indent: -1.5pt; margin-left: 0px" class="c35 c26" align="center"&gt;
+            &lt;font face="Trebuchet MS"&gt;&lt;span class="c3"&gt;/&lt;/span&gt;&lt;/font&gt;
+          &lt;/p&gt;
+        &lt;/td&gt;
+        &lt;td style="padding-right: 5pt; border: 1pt solid rgb(0, 0, 0); padding-left: 5pt; width: 115.8pt; padding-top: 5pt; padding-bottom: 5pt" class="c48"&gt;
+          &lt;p style="margin-right: 0px; margin-top: 0px; margin-bottom: 0px; text-indent: -1.5pt; margin-left: 0px" class="c35 c26" align="center"&gt;
+            &lt;font face="Trebuchet MS"&gt;&lt;span class="c3"&gt;Operador de divis&amp;#227;o&lt;/span&gt;&lt;/font&gt;
+          &lt;/p&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td style="padding-right: 5pt; border: 1pt solid rgb(0, 0, 0); padding-left: 5pt; width: 114.2pt; padding-top: 5pt; padding-bottom: 5pt" class="c37"&gt;
+          &lt;p style="margin-right: 0px; margin-top: 0px; margin-bottom: 0px; text-indent: -1.5pt; margin-left: 0px" class="c35 c26" align="center"&gt;
+            &lt;font face="Trebuchet MS"&gt;&lt;span class="c3"&gt;mod&lt;/span&gt;&lt;/font&gt;
+          &lt;/p&gt;
+        &lt;/td&gt;
+        &lt;td style="padding-right: 5pt; border: 1pt solid rgb(0, 0, 0); padding-left: 5pt; width: 115.8pt; padding-top: 5pt; padding-bottom: 5pt" class="c48"&gt;
+          &lt;p style="margin-right: 0px; margin-top: 0px; margin-bottom: 0px; text-indent: -1.5pt; margin-left: 0px" class="c35 c26" align="center"&gt;
+            &lt;font face="Trebuchet MS"&gt;&lt;span class="c3"&gt;Operador de resto&lt;/span&gt;&lt;/font&gt;
+          &lt;/p&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/table&gt;
+    &lt;p style="white-space: normal; margin-top: 0px; text-transform: none; font-variant: normal; margin-right: 0px; text-indent: -1.5pt; margin-left: 0px; word-spacing: 0px; line-height: normal; margin-bottom: 0px; height: 11pt; letter-spacing: normal" class="c7 c46" align="start"&gt;
+      
+    &lt;/p&gt;
+    &lt;p style="white-space: normal; margin-top: 0px; text-transform: none; font-variant: normal; margin-right: 0px; text-indent: -1.5pt; margin-left: 0px; word-spacing: 0px; line-height: normal; margin-bottom: 0px; height: 11pt; letter-spacing: normal" class="c35 c7" align="center"&gt;
+      
+    &lt;/p&gt;
+    &lt;a style="white-space: normal; text-transform: none; font-variant: normal; text-indent: 0px; word-spacing: 0px; line-height: normal; letter-spacing: normal" href="#" align="start" name="a4335301e2822bd20763d14e213f706c388e63b4"&gt;&lt;font size="medium" face="Times New Roman"&gt;
+&lt;/font&gt;&lt;/a&gt;&lt;font size="medium" face="Times New Roman"&gt;&lt;a style="white-space: normal; text-transform: none; font-variant: normal; text-indent: 0px; word-spacing: 0px; line-height: normal; letter-spacing: normal" href="#" align="start" name="3"&gt;
+&lt;/a&gt;&lt;/font&gt;
+    &lt;table style="word-spacing: 0px; text-transform: none; letter-spacing: normal; text-indent: 0px" class="c49" cellspacing="0" cellpadding="0"&gt;
+      &lt;tr&gt;
+        &lt;td style="padding-right: 5pt; border: 1pt solid rgb(0, 0, 0); padding-left: 5pt; width: 114.2pt; padding-top: 5pt; background-color: rgb(176, 179, 178); padding-bottom: 5pt" class="c37 c18"&gt;
+          &lt;p style="margin-right: 0px; margin-top: 0px; margin-bottom: 0px; text-indent: -1.5pt; margin-left: 0px" class="c35 c26" align="center"&gt;
+            &lt;font face="Trebuchet MS"&gt;&lt;span style="background-color: rgb(176, 179, 178)" class="c3 c18"&gt;Operador 
+            de texto&lt;/span&gt;&lt;/font&gt;
+          &lt;/p&gt;
+        &lt;/td&gt;
+        &lt;td style="padding-right: 5pt; border: 1pt solid rgb(0, 0, 0); padding-left: 5pt; width: 125.5pt; padding-top: 5pt; background-color: rgb(176, 179, 178); padding-bottom: 5pt" class="c11"&gt;
+          &lt;p style="margin-right: 0px; margin-top: 0px; margin-bottom: 0px; text-indent: -1.5pt; margin-left: 0px" class="c35 c26" align="center"&gt;
+            &lt;font face="Trebuchet MS"&gt;&lt;span style="background-color: rgb(176, 179, 178)" class="c3 c18"&gt;Descri&amp;#231;&amp;#227;o&lt;/span&gt;&lt;/font&gt;
+          &lt;/p&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td style="padding-right: 5pt; border: 1pt solid rgb(0, 0, 0); padding-left: 5pt; width: 114.2pt; padding-top: 5pt; padding-bottom: 5pt" class="c37"&gt;
+          &lt;p style="margin-right: 0px; margin-top: 0px; margin-bottom: 0px; text-indent: -1.5pt; margin-left: 0px" class="c35 c26" align="center"&gt;
+            &lt;font face="Trebuchet MS"&gt;&lt;span class="c3"&gt;+&lt;/span&gt;&lt;/font&gt;
+          &lt;/p&gt;
+        &lt;/td&gt;
+        &lt;td style="padding-right: 5pt; border: 1pt solid rgb(0, 0, 0); padding-left: 5pt; width: 125.5pt; padding-top: 5pt; padding-bottom: 5pt" class="c67"&gt;
+          &lt;p style="margin-right: 0px; margin-top: 0px; margin-bottom: 0px; text-indent: -1.5pt; margin-left: 0px" class="c35 c26" align="center"&gt;
+            &lt;font face="Trebuchet MS"&gt;&lt;span class="c3"&gt;Concatenar textos&lt;/span&gt;&lt;/font&gt;
+          &lt;/p&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/table&gt;
+    &lt;p style="white-space: normal; margin-top: 0px; text-transform: none; font-variant: normal; margin-right: 0px; text-indent: 0px; margin-left: 0px; word-spacing: 0px; line-height: normal; margin-bottom: 0px; height: 11pt; letter-spacing: normal" class="c7" align="start"&gt;
+      
+    &lt;/p&gt;
+    &lt;p style="white-space: normal; margin-top: 0px; text-transform: none; font-variant: normal; margin-right: 0px; text-indent: 53pt; margin-left: 0px; word-spacing: 0px; line-height: normal; margin-bottom: 0px; height: 11pt; letter-spacing: normal" class="c7 c65" align="center"&gt;
+      
+    &lt;/p&gt;
+    &lt;a style="white-space: normal; text-transform: none; font-variant: normal; text-indent: 0px; word-spacing: 0px; line-height: normal; letter-spacing: normal" href="#" align="start" name="dd7edae9f7b38fff6c891d2742123c7e70cf90d6"&gt;&lt;font size="medium" face="Times New Roman"&gt;
+&lt;/font&gt;&lt;/a&gt;&lt;font size="medium" face="Times New Roman"&gt;&lt;a style="white-space: normal; text-transform: none; font-variant: normal; text-indent: 0px; word-spacing: 0px; line-height: normal; letter-spacing: normal" href="#" align="start" name="4"&gt;
+&lt;/a&gt;&lt;/font&gt;
+    &lt;table style="word-spacing: 0px; text-transform: none; letter-spacing: normal; text-indent: 0px" class="c49" cellspacing="0" cellpadding="0"&gt;
+      &lt;tr&gt;
+        &lt;td style="padding-right: 5pt; border: 1pt solid rgb(0, 0, 0); padding-left: 5pt; width: 125.5pt; padding-top: 5pt; background-color: rgb(176, 179, 178); padding-bottom: 5pt" class="c11"&gt;
+          &lt;p style="margin-right: 0px; margin-top: 0px; margin-bottom: 0px; text-indent: -1.5pt; margin-left: 0px" class="c35 c26" align="center"&gt;
+            &lt;font face="Trebuchet MS"&gt;&lt;span style="background-color: rgb(176, 179, 178)" class="c3 c18"&gt;Operadores 
+            l&amp;#243;gicos&lt;/span&gt;&lt;/font&gt;
+          &lt;/p&gt;
+        &lt;/td&gt;
+        &lt;td style="padding-right: 5pt; border: 1pt solid rgb(0, 0, 0); padding-left: 5pt; width: 115.8pt; padding-top: 5pt; background-color: rgb(176, 179, 178); padding-bottom: 5pt" class="c48 c18"&gt;
+          &lt;p style="margin-right: 0px; margin-top: 0px; margin-bottom: 0px; text-indent: -1.5pt; margin-left: 0px" class="c35 c26" align="center"&gt;
+            &lt;font face="Trebuchet MS"&gt;&lt;span style="background-color: rgb(176, 179, 178)" class="c3 c18"&gt;Descri&amp;#231;&amp;#227;o&lt;/span&gt;&lt;/font&gt;
+          &lt;/p&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td style="padding-right: 5pt; border: 1pt solid rgb(0, 0, 0); padding-left: 5pt; width: 125.5pt; padding-top: 5pt; padding-bottom: 5pt" class="c67"&gt;
+          &lt;p style="margin-right: 0px; margin-top: 0px; margin-bottom: 0px; text-indent: -1.5pt; margin-left: 0px" class="c35 c26" align="center"&gt;
+            &lt;font face="Trebuchet MS"&gt;&lt;span class="c3"&gt;e&lt;/span&gt;&lt;/font&gt;
+          &lt;/p&gt;
+        &lt;/td&gt;
+        &lt;td style="padding-right: 5pt; border: 1pt solid rgb(0, 0, 0); padding-left: 5pt; width: 115.8pt; padding-top: 5pt; padding-bottom: 5pt" class="c48"&gt;
+          &lt;p style="margin-right: 0px; margin-top: 0px; margin-bottom: 0px; text-indent: -1.5pt; margin-left: 0px" class="c35 c26" align="center"&gt;
+            &lt;font face="Trebuchet MS"&gt;&lt;span class="c3"&gt;Realiza a opera&amp;#231;&amp;#227;o 
+            l&amp;#243;gica&lt;/span&gt;&lt;span class="Apple-converted-space"&gt;&amp;#160;&lt;/span&gt;&lt;span class="c3 c34"&gt;&lt;i&gt;e&lt;/i&gt;&lt;/span&gt;&lt;/font&gt;
+          &lt;/p&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td style="padding-right: 5pt; border: 1pt solid rgb(0, 0, 0); padding-left: 5pt; width: 125.5pt; padding-top: 5pt; padding-bottom: 5pt" class="c67"&gt;
+          &lt;p style="margin-right: 0px; margin-top: 0px; margin-bottom: 0px; text-indent: -1.5pt; margin-left: 0px" class="c35 c26" align="center"&gt;
+            &lt;font face="Trebuchet MS"&gt;&lt;span class="c3"&gt;ou&lt;/span&gt;&lt;/font&gt;
+          &lt;/p&gt;
+        &lt;/td&gt;
+        &lt;td style="padding-right: 5pt; border: 1pt solid rgb(0, 0, 0); padding-left: 5pt; width: 115.8pt; padding-top: 5pt; padding-bottom: 5pt" class="c48"&gt;
+          &lt;p style="margin-right: 0px; margin-top: 0px; margin-bottom: 0px; text-indent: -1.5pt; margin-left: 0px" class="c35 c26" align="center"&gt;
+            &lt;font face="Trebuchet MS"&gt;&lt;span class="c3"&gt;Realiza a opera&amp;#231;&amp;#227;o 
+            l&amp;#243;gica&lt;/span&gt;&lt;span class="Apple-converted-space"&gt;&amp;#160;&lt;/span&gt;&lt;span class="c3 c34"&gt;&lt;i&gt;ou&lt;/i&gt;&lt;/span&gt;&lt;/font&gt;
+          &lt;/p&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/table&gt;
+    &lt;p style="white-space: normal; margin-top: 0px; text-transform: none; font-variant: normal; margin-right: 0px; text-indent: -1.5pt; margin-left: 0px; word-spacing: 0px; line-height: normal; margin-bottom: 0px; letter-spacing: normal" class="c35 c26" align="center"&gt;
+      &lt;font face="Times New Roman"&gt;&lt;span class="c47"&gt;&amp;#160;&lt;/span&gt;&lt;/font&gt;
+    &lt;/p&gt;
+    &lt;a style="white-space: normal; text-transform: none; font-variant: normal; text-indent: 0px; word-spacing: 0px; line-height: normal; letter-spacing: normal" href="#" align="start" name="ec9f2145c5844b8f2207453f219893441777e1f4"&gt;&lt;font size="medium" face="Times New Roman"&gt;
+&lt;/font&gt;&lt;/a&gt;&lt;font size="medium" face="Times New Roman"&gt;&lt;a style="white-space: normal; text-transform: none; font-variant: normal; text-indent: 0px; word-spacing: 0px; line-height: normal; letter-spacing: normal" href="#" align="start" name="5"&gt;
+&lt;/a&gt;&lt;/font&gt;
+    &lt;table style="word-spacing: 0px; text-transform: none; letter-spacing: normal; text-indent: 0px" class="c49" cellspacing="0" cellpadding="0"&gt;
+      &lt;tr&gt;
+        &lt;td style="padding-right: 5pt; border: 1pt solid rgb(0, 0, 0); padding-left: 5pt; width: 140.5pt; padding-top: 5pt; background-color: rgb(176, 179, 178); padding-bottom: 5pt" class="c18 c59"&gt;
+          &lt;p style="margin-right: 0px; margin-top: 0px; margin-bottom: 0px; text-indent: -1.5pt; margin-left: 0px" class="c35 c26" align="center"&gt;
+            &lt;font face="Trebuchet MS"&gt;&lt;span style="background-color: rgb(176, 179, 178)" class="c3 c18"&gt;Comparadores&lt;/span&gt;&lt;/font&gt;
+          &lt;/p&gt;
+        &lt;/td&gt;
+        &lt;td style="padding-right: 5pt; border: 1pt solid rgb(0, 0, 0); padding-left: 5pt; width: 130pt; padding-top: 5pt; background-color: rgb(176, 179, 178); padding-bottom: 5pt" class="c23 c18"&gt;
+          &lt;p style="margin-right: 0px; margin-top: 0px; margin-bottom: 0px; text-indent: -1.5pt; margin-left: 0px" class="c35 c26" align="center"&gt;
+            &lt;font face="Trebuchet MS"&gt;&lt;span style="background-color: rgb(176, 179, 178)" class="c3 c18"&gt;Descri&amp;#231;&amp;#227;o&lt;/span&gt;&lt;/font&gt;
+          &lt;/p&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td style="padding-right: 5pt; border: 1pt solid rgb(0, 0, 0); padding-left: 5pt; width: 140.5pt; padding-top: 5pt; padding-bottom: 5pt" class="c59"&gt;
+          &lt;p style="margin-right: 0px; margin-top: 0px; margin-bottom: 0px; text-indent: -1.5pt; margin-left: 0px" class="c35 c26" align="center"&gt;
+            &lt;font face="Trebuchet MS"&gt;&lt;span class="c3"&gt;&amp;#160;==&lt;/span&gt;&lt;/font&gt;
+          &lt;/p&gt;
+        &lt;/td&gt;
+        &lt;td style="padding-right: 5pt; border: 1pt solid rgb(0, 0, 0); padding-left: 5pt; width: 130pt; padding-top: 5pt; padding-bottom: 5pt" class="c23"&gt;
+          &lt;p style="margin-right: 0px; margin-top: 0px; margin-bottom: 0px; text-indent: -1.5pt; margin-left: 0px" class="c35 c26" align="center"&gt;
+            &lt;font face="Trebuchet MS"&gt;&lt;span class="c3"&gt;Compara&amp;#231;&amp;#227;o de igualdade&lt;/span&gt;&lt;/font&gt;
+          &lt;/p&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td style="padding-right: 5pt; border: 1pt solid rgb(0, 0, 0); padding-left: 5pt; width: 140.5pt; padding-top: 5pt; padding-bottom: 5pt" class="c59"&gt;
+          &lt;p style="margin-right: 0px; margin-top: 0px; margin-bottom: 0px; text-indent: -1.5pt; margin-left: 0px" class="c35 c26" align="center"&gt;
+            &lt;font face="Trebuchet MS"&gt;&lt;span class="c3"&gt;!=&lt;/span&gt;&lt;/font&gt;
+          &lt;/p&gt;
+        &lt;/td&gt;
+        &lt;td style="padding-right: 5pt; border: 1pt solid rgb(0, 0, 0); padding-left: 5pt; width: 130pt; padding-top: 5pt; padding-bottom: 5pt" class="c23"&gt;
+          &lt;p style="margin-right: 0px; margin-top: 0px; margin-bottom: 0px; text-indent: -1.5pt; margin-left: 0px" class="c35 c26" align="center"&gt;
+            &lt;font face="Trebuchet MS"&gt;&lt;span class="c3"&gt;Compara&amp;#231;&amp;#227;o de diferen&amp;#231;a&lt;/span&gt;&lt;/font&gt;
+          &lt;/p&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td style="padding-right: 5pt; border: 1pt solid rgb(0, 0, 0); padding-left: 5pt; width: 140.5pt; padding-top: 5pt; padding-bottom: 5pt" class="c59"&gt;
+          &lt;p style="margin-right: 0px; margin-top: 0px; margin-bottom: 0px; text-indent: -1.5pt; margin-left: 0px" class="c35 c26" align="center"&gt;
+            &lt;font face="Trebuchet MS"&gt;&lt;span class="c3"&gt;&amp;lt;=&lt;/span&gt;&lt;/font&gt;
+          &lt;/p&gt;
+        &lt;/td&gt;
+        &lt;td style="padding-right: 5pt; border: 1pt solid rgb(0, 0, 0); padding-left: 5pt; width: 130pt; padding-top: 5pt; padding-bottom: 5pt" class="c23"&gt;
+          &lt;p style="margin-right: 0px; margin-top: 0px; margin-bottom: 0px; text-indent: -1.5pt; margin-left: 0px" class="c35 c26" align="center"&gt;
+            &lt;font face="Trebuchet MS"&gt;&lt;span class="c3"&gt;Compara&amp;#231;&amp;#227;o de menor ou 
+            igual&lt;/span&gt;&lt;/font&gt;
+          &lt;/p&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td style="padding-right: 5pt; border: 1pt solid rgb(0, 0, 0); padding-left: 5pt; width: 140.5pt; padding-top: 5pt; padding-bottom: 5pt" class="c59"&gt;
+          &lt;p style="margin-right: 0px; margin-top: 0px; margin-bottom: 0px; text-indent: -1.5pt; margin-left: 0px" class="c35 c26" align="center"&gt;
+            &lt;font face="Trebuchet MS"&gt;&lt;span class="c3"&gt;&amp;gt;=&lt;/span&gt;&lt;/font&gt;
+          &lt;/p&gt;
+        &lt;/td&gt;
+        &lt;td style="padding-right: 5pt; border: 1pt solid rgb(0, 0, 0); padding-left: 5pt; width: 130pt; padding-top: 5pt; padding-bottom: 5pt" class="c23"&gt;
+          &lt;p style="margin-right: 0px; margin-top: 0px; margin-bottom: 0px; text-indent: -1.5pt; margin-left: 0px" class="c35 c26" align="center"&gt;
+            &lt;font face="Trebuchet MS"&gt;&lt;span class="c3"&gt;Compara&amp;#231;&amp;#227;o de maior ou 
+            igual&lt;/span&gt;&lt;/font&gt;
+          &lt;/p&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/table&gt;
+    &lt;p style="white-space: normal; margin-top: 0px; text-transform: none; font-variant: normal; margin-right: 0px; text-indent: 0px; margin-left: 0px; word-spacing: 0px; line-height: normal; margin-bottom: 0px; height: 11pt; letter-spacing: normal" class="c7" align="start"&gt;
+      
+    &lt;/p&gt;
+    &lt;p style="white-space: normal; margin-top: 0px; text-transform: none; font-variant: normal; margin-right: 0px; text-indent: 36pt; margin-left: 0px; word-spacing: 0px; line-height: normal; margin-bottom: 0px; letter-spacing: normal" class="c8" align="justify"&gt;
+      &lt;font face="Trebuchet MS"&gt;&lt;span class="c3"&gt;&amp;#201; importante notar que a 
+      compara&amp;#231;&amp;#227;o de s&amp;#237;mbolos do tipo texto n&amp;#227;o s&amp;#227;o feitas atrav&amp;#233;s dos 
+      comparadores acima, e sim atrav&amp;#233;s da fun&amp;#231;&amp;#227;o embutida comparaTexto, que 
+      ser&amp;#225; vista mais adiante.&lt;/span&gt;&lt;/font&gt;
+    &lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</descricao>
+</funcionalidade>

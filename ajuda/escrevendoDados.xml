@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<funcionalidade>
+    <nome>Escrevendo Dados</nome>
+    <index>1</index>
+    <parent>Escrevendo e Lendo Dados</parent>
+    <descricao>&lt;html&gt;
+  &lt;head&gt;
+    
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h3 style="white-space: normal; padding-bottom: 4pt; text-transform: none; font-variant: normal; text-indent: 0px; word-spacing: 0px; line-height: 1.15; padding-top: 14pt; letter-spacing: normal" class="c26" align="left"&gt;
+      &lt;span&gt;Escrevendo Dados&lt;/span&gt;
+    &lt;/h3&gt;
+    &lt;p style="white-space: normal; margin-top: 0px; text-transform: none; font-variant: normal; margin-right: 0px; text-indent: 36pt; margin-left: 0px; word-spacing: 0px; line-height: normal; margin-bottom: 0px; letter-spacing: normal" class="c8" align="justify"&gt;
+      &lt;font face="Trebuchet MS"&gt;&lt;span class="c3"&gt;Para escrever dados na sa&amp;#237;da 
+      utilizada pelo Calango, basta utilizar a fun&amp;#231;&amp;#227;o&lt;/span&gt;&lt;span class="Apple-converted-space"&gt;&amp;#160;&lt;/span&gt;&lt;span class="c3"&gt;escreva&lt;/span&gt;&lt;span class="c3"&gt;&amp;#160;ou&lt;/span&gt;&lt;span class="c3"&gt;escreval&lt;/span&gt;&lt;span class="c3"&gt;, 
+      ambas recebendo como par&amp;#226;metro o que ser&amp;#225; impresso. Este valor pode ser 
+      um inteiro, &amp;#160;texto, l&amp;#243;gico, etc. A diferen&amp;#231;a entre as duas fun&amp;#231;&amp;#245;es &amp;#233; que 
+      a primeira apenas imprime o valor e segue na mesma linha, enquanto que a 
+      segunda imprime e pula para a pr&amp;#243;xima linha. O c&amp;#243;digo abaixo exemplifica 
+      algumas escritas.&lt;/span&gt;&lt;/font&gt;
+    &lt;/p&gt;
+    &lt;p style="white-space: normal; margin-top: 0px; text-transform: none; font-variant: normal; margin-right: 0px; text-indent: 36pt; margin-left: 0px; word-spacing: 0px; line-height: normal; margin-bottom: 0px; height: 11pt; letter-spacing: normal" class="c7 c40" align="start"&gt;
+      
+    &lt;/p&gt;
+    &lt;p style="white-space: normal; margin-top: 0px; text-transform: none; font-variant: normal; margin-right: 0px; text-indent: 63pt; margin-left: 0px; word-spacing: 0px; line-height: normal; margin-bottom: 0px; letter-spacing: normal" class="c27 c26" align="start"&gt;
+      &lt;font face="Courier New" color="rgb(0, 61, 204)"&gt;&lt;span class="c17 c0"&gt;algoritmo&lt;/span&gt;&lt;/font&gt;&lt;font face="Courier New"&gt;&lt;span class="c0"&gt;&amp;#160;Escrevendo;&lt;/span&gt;&lt;/font&gt;
+    &lt;/p&gt;
+    &lt;p style="white-space: normal; margin-top: 0px; text-transform: none; font-variant: normal; margin-right: 0px; text-indent: 63pt; margin-left: 0px; word-spacing: 0px; line-height: normal; margin-bottom: 0px; letter-spacing: normal" class="c27 c26" align="start"&gt;
+      &lt;font face="Courier New"&gt;&lt;span class="c0"&gt;&amp;#160;&lt;/span&gt;&lt;/font&gt;
+    &lt;/p&gt;
+    &lt;p style="white-space: normal; margin-top: 0px; text-transform: none; font-variant: normal; margin-right: 0px; text-indent: 63pt; margin-left: 0px; word-spacing: 0px; line-height: normal; margin-bottom: 0px; letter-spacing: normal" class="c27 c26" align="start"&gt;
+      &lt;font face="Courier New"&gt;&lt;span class="c0"&gt;principal&lt;/span&gt;&lt;/font&gt;
+    &lt;/p&gt;
+    &lt;p style="white-space: normal; margin-top: 0px; text-transform: none; font-variant: normal; margin-right: 0px; text-indent: 63pt; margin-left: 0px; word-spacing: 0px; line-height: normal; margin-bottom: 0px; letter-spacing: normal" class="c27 c26" align="start"&gt;
+      &lt;font face="Courier New"&gt;&lt;span class="c0"&gt;&amp;#160; &amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&lt;/span&gt;&lt;/font&gt;&lt;font face="Courier New" color="rgb(85, 142, 40)"&gt;&lt;span class="c0 c31"&gt;texto&lt;/span&gt;&lt;/font&gt;&lt;font face="Courier New"&gt;&lt;span class="c0"&gt;&amp;#160;nome;&lt;/span&gt;&lt;/font&gt;
+    &lt;/p&gt;
+    &lt;p style="white-space: normal; margin-top: 0px; text-transform: none; font-variant: normal; margin-right: 0px; text-indent: 63pt; margin-left: 0px; word-spacing: 0px; line-height: normal; margin-bottom: 0px; letter-spacing: normal" class="c27 c26" align="start"&gt;
+      &lt;font face="Courier New"&gt;&lt;span class="c0"&gt;&amp;#160; &amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&lt;/span&gt;&lt;/font&gt;&lt;font face="Courier New" color="rgb(85, 142, 40)"&gt;&lt;span class="c31 c0"&gt;inteiro&lt;/span&gt;&lt;/font&gt;&lt;font face="Courier New"&gt;&lt;span class="c0"&gt;&amp;#160;idade;&lt;/span&gt;&lt;/font&gt;
+    &lt;/p&gt;
+    &lt;p style="white-space: normal; margin-top: 0px; text-transform: none; font-variant: normal; margin-right: 0px; text-indent: 63pt; margin-left: 0px; word-spacing: 0px; line-height: normal; margin-bottom: 0px; letter-spacing: normal" class="c27 c26" align="start"&gt;
+      &lt;font face="Courier New"&gt;&lt;span class="c0"&gt;&amp;#160; &amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;nome =&lt;/span&gt;&lt;span class="Apple-converted-space"&gt;&amp;#160;&lt;/span&gt;&lt;/font&gt;&lt;font face="Courier New" color="rgb(217, 11, 0)"&gt;&lt;span class="c0 c36"&gt;&amp;#8220;Estev&amp;#227;o&amp;#8221;&lt;/span&gt;&lt;/font&gt;&lt;font face="Courier New"&gt;&lt;span class="c0"&gt;;&lt;/span&gt;&lt;/font&gt;
+    &lt;/p&gt;
+    &lt;p style="white-space: normal; margin-top: 0px; text-transform: none; font-variant: normal; margin-right: 0px; text-indent: 63pt; margin-left: 0px; word-spacing: 0px; line-height: normal; margin-bottom: 0px; letter-spacing: normal" class="c27 c26" align="start"&gt;
+      &lt;font face="Courier New"&gt;&lt;span class="c0"&gt;&amp;#160; &amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;idade =&lt;/span&gt;&lt;span class="Apple-converted-space"&gt;&amp;#160;&lt;/span&gt;&lt;/font&gt;&lt;font face="Courier New" color="rgb(217, 11, 0)"&gt;&lt;span class="c0 c36"&gt;56&lt;/span&gt;&lt;/font&gt;&lt;font face="Courier New"&gt;&lt;span class="c0"&gt;;&lt;/span&gt;&lt;/font&gt;
+    &lt;/p&gt;
+    &lt;p style="white-space: normal; margin-top: 0px; text-transform: none; font-variant: normal; margin-right: 0px; text-indent: 63pt; margin-left: 0px; word-spacing: 0px; line-height: normal; margin-bottom: 0px; letter-spacing: normal" class="c26 c27" align="start"&gt;
+      &lt;font face="Courier New"&gt;&lt;span class="c0"&gt;&amp;#160; &amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&lt;/span&gt;&lt;/font&gt;
+    &lt;/p&gt;
+    &lt;p style="white-space: normal; margin-top: 0px; text-transform: none; font-variant: normal; margin-right: 0px; text-indent: 63pt; margin-left: 0px; word-spacing: 0px; line-height: normal; margin-bottom: 0px; letter-spacing: normal" class="c27 c26" align="start"&gt;
+      &lt;font face="Courier New"&gt;&lt;span class="c0"&gt;&amp;#160; &amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;escreva(&lt;/span&gt;&lt;/font&gt;&lt;font face="Courier New" color="rgb(217, 11, 0)"&gt;&lt;span class="c0 c36"&gt;&amp;#8220;Nome: 
+      &amp;#8221;&lt;/span&gt;&lt;/font&gt;&lt;font face="Courier New"&gt;&lt;span class="c0"&gt;); // 
+      Imprime e permanece na linha&lt;/span&gt;&lt;/font&gt;
+    &lt;/p&gt;
+    &lt;p style="white-space: normal; margin-top: 0px; text-transform: none; font-variant: normal; margin-right: 0px; text-indent: 63pt; margin-left: 0px; word-spacing: 0px; line-height: normal; margin-bottom: 0px; letter-spacing: normal" class="c27 c26" align="start"&gt;
+      &lt;font face="Courier New"&gt;&lt;span class="c0"&gt;&amp;#160; 
+      &amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;escreval(nome);&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;// Imprime e salta linha&lt;/span&gt;&lt;/font&gt;
+    &lt;/p&gt;
+    &lt;p style="white-space: normal; margin-top: 0px; text-transform: none; font-variant: normal; margin-right: 0px; text-indent: 63pt; margin-left: 0px; word-spacing: 0px; line-height: normal; margin-bottom: 0px; letter-spacing: normal" class="c27 c26" align="start"&gt;
+      &lt;font face="Courier New"&gt;&lt;span class="c0"&gt;&amp;#160; &amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;escreva(&lt;/span&gt;&lt;/font&gt;&lt;font face="Courier New" color="rgb(217, 11, 0)"&gt;&lt;span class="c0 c36"&gt;&amp;#8220;Idade: 
+      &amp;#8221;&lt;/span&gt;&lt;/font&gt;&lt;font face="Courier New"&gt;&lt;span class="c0"&gt;&amp;#160;+ idade);&lt;/span&gt;&lt;/font&gt;
+    &lt;/p&gt;
+    &lt;p style="white-space: normal; margin-top: 0px; text-transform: none; font-variant: normal; margin-right: 0px; text-indent: 63pt; margin-left: 0px; word-spacing: 0px; line-height: normal; margin-bottom: 0px; letter-spacing: normal" class="c27 c26" align="start"&gt;
+      &lt;font face="Courier New"&gt;&lt;span class="c0"&gt;fimPrincipal&lt;/span&gt;&lt;/font&gt;
+    &lt;/p&gt;
+    &lt;p style="white-space: normal; margin-top: 0px; text-transform: none; font-variant: normal; margin-right: 0px; text-indent: 36pt; margin-left: 0px; word-spacing: 0px; line-height: normal; margin-bottom: 0px; height: 11pt; letter-spacing: normal" class="c7 c40" align="start"&gt;
+      
+    &lt;/p&gt;
+    &lt;p style="white-space: normal; margin-top: 0px; text-transform: none; font-variant: normal; margin-right: 0px; text-indent: 36pt; margin-left: 0px; word-spacing: 0px; line-height: normal; margin-bottom: 0px; letter-spacing: normal" class="c40 c26" align="start"&gt;
+      &lt;font face="Trebuchet MS"&gt;&lt;span class="c3"&gt;A sa&amp;#237;da ser&amp;#225;:&lt;/span&gt;&lt;/font&gt;
+    &lt;/p&gt;
+    &lt;p style="white-space: normal; margin-top: 0px; text-transform: none; font-variant: normal; margin-right: 0px; text-indent: 36pt; margin-left: 0px; word-spacing: 0px; line-height: normal; margin-bottom: 0px; height: 11pt; letter-spacing: normal" class="c7 c40" align="start"&gt;
+      
+    &lt;/p&gt;
+    &lt;p style="white-space: normal; margin-top: 0px; text-transform: none; font-variant: normal; margin-right: 0px; text-indent: 63pt; margin-left: 0px; word-spacing: 0px; line-height: normal; margin-bottom: 0px; letter-spacing: normal" class="c27 c26" align="start"&gt;
+      &lt;font face="Courier New"&gt;&lt;span class="c0"&gt;Nome: Estev&amp;#227;o&lt;/span&gt;&lt;/font&gt;
+    &lt;/p&gt;
+    &lt;p style="white-space: normal; margin-top: 0px; text-transform: none; font-variant: normal; margin-right: 0px; text-indent: 63pt; margin-left: 0px; word-spacing: 0px; line-height: normal; margin-bottom: 0px; letter-spacing: normal" class="c27 c26" align="start"&gt;
+      &lt;font face="Courier New"&gt;&lt;span class="c0"&gt;Idade: 56&lt;/span&gt;&lt;/font&gt;
+    &lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</descricao>
+</funcionalidade>
