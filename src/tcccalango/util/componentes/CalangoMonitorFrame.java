@@ -4,7 +4,6 @@
  */
 package tcccalango.util.componentes;
 
-import com.sun.awt.AWTUtilities;
 import java.awt.BorderLayout;
 import java.awt.Graphics;
 import java.awt.HeadlessException;
@@ -131,7 +130,10 @@ public class CalangoMonitorFrame extends JDialog implements IMonitorFrame {
         add(imgPanel);
         
         // Define a janela como transparente (pode nÃ£o funcionar)
-        AWTUtilities.setWindowOpaque(this, false);
+        //AWTUtilities.setWindowOpaque(this, false);
+
+        // Java 11
+        this.setOpacity(0);
     }
 
     public void removeConsole() {
