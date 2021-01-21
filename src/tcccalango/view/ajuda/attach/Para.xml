@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<funcionalidade>
+    <nome>Para</nome>
+    <index>5</index>
+    <descricao>&lt;html&gt;
+  &lt;head&gt;
+    
+  &lt;/head&gt;
+  &lt;body&gt;
+&lt;p class=&quot;MsoNormal&quot; style=&quot;text-align:justify;text-indent:36.0pt;border:none;
+mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:yes&quot;&gt;&lt;span style=&quot;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;mso-fareast-font-family:&amp;quot;Trebuchet MS&amp;quot;;
+mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt;A última estrutura de &lt;span class=&quot;SpellE&quot;&gt;repetiçao&lt;/span&gt;
+a ser avaliada é a estrutura &lt;b style=&quot;mso-bidi-font-weight:normal&quot;&gt;&lt;i&gt;para&lt;/i&gt;&lt;/b&gt;,
+espelhada na estrutura &lt;b style=&quot;mso-bidi-font-weight:normal&quot;&gt;&lt;i&gt;for&lt;/i&gt;&lt;/b&gt; da
+linguagem C. A diferença desta repetição loop para as outras, é que nas
+anteriores havia a necessidade explicita de inicializar uma variável (&lt;i&gt;i = 1&lt;/i&gt;),
+declarar explicitamente a expressão a ser avaliada (&lt;i&gt;i &amp;lt;= 10&lt;/i&gt;) e
+explicitar o incremento a ser realizado sobre a variável &lt;i&gt;i&lt;/i&gt; (&lt;i&gt;i = i + 1&lt;/i&gt;),
+o que não há necessidade na repetição &lt;span class=&quot;GramE&quot;&gt;&lt;b style=&quot;mso-bidi-font-weight:
+normal&quot;&gt;&lt;i style=&quot;mso-bidi-font-style:normal&quot;&gt;para&lt;/i&gt;&lt;/b&gt; ,&lt;/span&gt; pois todas
+estas informações já são definidas na primeira desta estrutura de repetição.
+Exemplo:&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+
+
+&lt;div align=&quot;center&quot;&gt;
+        &lt;img src=&quot;attach/img/condicionalPara1.png&quot; /&gt;
+    &lt;/div&gt;
+
+&lt;p class=&quot;MsoNormal&quot; style=&quot;text-align:justify;text-indent:36.0pt;border:none;
+mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:yes&quot;&gt;&lt;span style=&quot;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;mso-fareast-font-family:&amp;quot;Trebuchet MS&amp;quot;;
+mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt;Neste código, &lt;i&gt;i&lt;/i&gt; é a variável de
+controle. Esta repetição irá executar pela primeira vez com o valor &lt;span class=&quot;GramE&quot;&gt;1&lt;/span&gt; atribuído à &lt;i&gt;i&lt;/i&gt;, e a última execução terá o valor 10
+atribuído a ela. Do mesmo modo que é feito nas outras repetições, após a
+execução desta estrutura, o valor de i será 11 que indica o encerramento da
+repetição.&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+
+  &lt;/body&gt;
+&lt;/html&gt;
+</descricao>
+</funcionalidade>

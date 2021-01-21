@@ -1,64 +1,56 @@
-/*
- * TCCCalangoApp.java
- */
-
 package tcccalango;
 
+import java.awt.Window;
+import java.io.File;
 import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
-import tcccalango.view.TCCCalangoView;
 import org.jdesktop.application.Application;
 import org.jdesktop.application.SingleFrameApplication;
+import tcccalango.view.TCCCalangoView;
 
-/**
- * The main class of the application.
- */
 public class TCCCalangoApp extends SingleFrameApplication {
+   private TCCCalangoView view;
 
-    /**
-     * At startup create and show the main frame of the application.
-     */
-    @Override protected void startup() {
-        show(new TCCCalangoView(this));
-    }
+   protected void startup() {
+      this.show(this.view);
+   }
 
-    /**
-     * This method is to initialize the specified window by injecting resources.
-     * Windows shown in our application come fully initialized from the GUI
-     * builder, so this additional configuration is not needed.
-     */
-    @Override protected void configureWindow(java.awt.Window root) {
-    }
+   protected void initialize(String[] args) {
+      this.view = new TCCCalangoView(this);
+      if (args.length > 0 && args[0].endsWith(".clg")) {
+         this.view.carregaArquivo(new File(args[0]));
+      } else {
+         this.view.novoArquivo();
+      }
 
-    /**
-     * A convenient static getter for the application instance.
-     * @return the instance of TCCCalangoApp
-     */
-    public static TCCCalangoApp getApplication() {
-        return Application.getInstance(TCCCalangoApp.class);
-    }
+   }
 
-    /**
-     * Main method launching the application.
-     */
-    public static void main(String[] args) {
-        try {
-                System.setProperty("apple.laf.useScreenMenuBar", "true");
-                System.setProperty("com.apple.mrj.application.apple.menu.about.name", "Calango");
-                UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
-        }
-        catch(ClassNotFoundException e) {
-                System.out.println("ClassNotFoundException: " + e.getMessage());
-        }
-        catch(InstantiationException e) {
-                System.out.println("InstantiationException: " + e.getMessage());
-        }
-        catch(IllegalAccessException e) {
-                System.out.println("IllegalAccessException: " + e.getMessage());
-        }
-        catch(UnsupportedLookAndFeelException e) {
-                System.out.println("UnsupportedLookAndFeelException: " + e.getMessage());
-        }
-        launch(TCCCalangoApp.class, args);
-    }
+   protected void configureWindow(Window root) {
+   }
+
+   public static TCCCalangoApp getApplication() {
+      return (TCCCalangoApp)Application.getInstance(TCCCalangoApp.class);
+   }
+
+   public static void main(String[] args) {
+      try {
+         System.setProperty("apple.laf.useScreenMenuBar", "true");
+         System.setProperty("com.apple.mrj.application.apple.menu.about.name", "Calango");
+         if (System.getProperty("os.name").toUpperCase().contains("LINUX")) {
+            UIManager.setLookAndFeel("com.sun.java.swing.plaf.gtk.GTKLookAndFeel");
+         } else {
+            UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
+         }
+      } catch (ClassNotFoundException var2) {
+         System.out.println("ClassNotFoundException: " + var2.getMessage());
+      } catch (InstantiationException var3) {
+         System.out.println("InstantiationException: " + var3.getMessage());
+      } catch (IllegalAccessException var4) {
+         System.out.println("IllegalAccessException: " + var4.getMessage());
+      } catch (UnsupportedLookAndFeelException var5) {
+         System.out.println("UnsupportedLookAndFeelException: " + var5.getMessage());
+      }
+
+      launch(TCCCalangoApp.class, args);
+   }
 }

@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<funcionalidade>
+    <nome>Atribuição de variáveis</nome>
+    <index>4</index>
+    <descricao>&lt;html&gt;
+  &lt;body&gt;
+    &lt;p class=&quot;MsoNormal&quot; style=&quot;text-align:justify;text-indent:36.0pt;border:none;
+mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:yes&quot;&gt;&lt;span style=&quot;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;mso-fareast-font-family:&amp;quot;Trebuchet MS&amp;quot;;
+mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt;A atribuição de um valor &lt;span class=&quot;GramE&quot;&gt;à&lt;/span&gt; uma variável é feita através do operador de atribuição =
+(igual), sendo o identificador da variável à esquerda do operador, e o valor a
+ser atribuído à direita do operador. Um exemplo está no código abaixo.&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+        &lt;img src=&quot;attach/img/exemplo-atribuicao-variaveis.png&quot; /&gt;
+    &lt;/div&gt;
+
+
+&lt;p class=&quot;MsoNormal&quot; style=&quot;text-align:justify;border:none;mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;
+mso-border-shadow:yes&quot;&gt;&lt;span style=&quot;font-size:12.0pt;line-height:115%;
+font-family:&amp;quot;Times New Roman&amp;quot;,&amp;quot;serif&amp;quot;;mso-fareast-font-family:&amp;quot;Times New Roman&amp;quot;&quot;&gt;&lt;o:p&gt;&amp;nbsp;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p class=&quot;MsoNormal&quot; style=&quot;text-align:justify;text-indent:36.0pt;border:none;
+mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:yes&quot;&gt;&lt;span style=&quot;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;mso-fareast-font-family:&amp;quot;Trebuchet MS&amp;quot;;
+mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt;No código acima, vemos &lt;span class=&quot;GramE&quot;&gt;a
+variável nome&lt;/span&gt; recebendo o valor “Estevão”, e a variável idade recebendo
+o valor 56.&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p class=&quot;MsoNormal&quot; style=&quot;text-align:justify;text-indent:36.0pt;border:none;
+mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:yes&quot;&gt;&lt;span style=&quot;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;mso-fareast-font-family:&amp;quot;Trebuchet MS&amp;quot;;
+mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt;Falando de atribuição de valores, é um bom
+momento para se abordar os símbolos literais. Os símbolos literais são valores
+que não estão atrelados a uma variável, sendo digitados diretamente no código.
+No código anterior, o nome “Estevão” e o número 55 são símbolos literais
+representando respectivamente um texto e um inteiro. &lt;span class=&quot;GramE&quot;&gt;À&lt;/span&gt;
+seguir, uma tabela mostrando os símbolos literais de cada tipo de dado:&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p class=&quot;MsoNormal&quot; style=&quot;text-indent:36.0pt;border:none;mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;
+mso-border-shadow:yes&quot;&gt;&lt;span style=&quot;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;
+mso-fareast-font-family:&amp;quot;Trebuchet MS&amp;quot;;mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt;&lt;o:p&gt;&amp;nbsp;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;table class=&quot;MsoNormalTable&quot; border=&quot;1&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot; width=&quot;100%&quot; style=&quot;width:100.0%;margin-left:5.0pt;border-collapse:collapse;border:none;
+ mso-border-alt:solid windowtext .5pt;mso-yfti-tbllook:1184;mso-padding-alt:
+ 0cm 5.4pt 0cm 5.4pt;mso-border-insideh:.5pt solid windowtext;mso-border-insidev:
+ .5pt solid windowtext&quot;&gt;
+ &lt;tbody&gt;&lt;tr style=&quot;mso-yfti-irow:0;mso-yfti-firstrow:yes&quot;&gt;
+  &lt;td valign=&quot;top&quot; style=&quot;border:solid black 1.0pt;background:#B0B3B2;mso-shading:
+  #B0B3B2;mso-pattern:solid #B0B3B2;padding:5.0pt 5.0pt 5.0pt 5.0pt&quot;&gt;
+  &lt;p class=&quot;MsoNormal&quot; align=&quot;center&quot; style=&quot;text-align:center;text-indent:6.0pt;
+  border:none;mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:
+  yes&quot;&gt;&lt;span style=&quot;font-size:12.0pt;line-height:115%;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;
+  mso-fareast-font-family:&amp;quot;Trebuchet MS&amp;quot;;mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;;
+  background:#B0B3B2;mso-shading:#B0B3B2;mso-pattern:solid #B0B3B2&quot;&gt;Tipo de
+  Dado&lt;/span&gt;&lt;/p&gt;
+  &lt;/td&gt;
+  &lt;td valign=&quot;top&quot; style=&quot;border:solid black 1.0pt;border-left:none;mso-border-left-alt:
+  solid black 1.0pt;background:#B0B3B2;mso-shading:#B0B3B2;mso-pattern:solid #B0B3B2;
+  padding:5.0pt 5.0pt 5.0pt 5.0pt&quot;&gt;
+  &lt;p class=&quot;MsoNormal&quot; align=&quot;center&quot; style=&quot;text-align:center;text-indent:6.0pt;
+  border:none;mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:
+  yes&quot;&gt;&lt;span style=&quot;font-size:12.0pt;line-height:115%;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;
+  mso-fareast-font-family:&amp;quot;Trebuchet MS&amp;quot;;mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;;
+  background:#B0B3B2;mso-shading:#B0B3B2;mso-pattern:solid #B0B3B2&quot;&gt;Exemplo&lt;/span&gt;&lt;/p&gt;
+  &lt;/td&gt;
+  &lt;td valign=&quot;top&quot; style=&quot;border:solid black 1.0pt;border-left:none;mso-border-left-alt:
+  solid black 1.0pt;background:#B0B3B2;mso-shading:#B0B3B2;mso-pattern:solid #B0B3B2;
+  padding:5.0pt 5.0pt 5.0pt 5.0pt&quot;&gt;
+  &lt;p class=&quot;MsoNormal&quot; align=&quot;center&quot; style=&quot;text-align:center;text-indent:6.0pt;
+  border:none;mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:
+  yes&quot;&gt;&lt;span style=&quot;font-size:12.0pt;line-height:115%;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;
+  mso-fareast-font-family:&amp;quot;Trebuchet MS&amp;quot;;mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;;
+  background:#B0B3B2;mso-shading:#B0B3B2;mso-pattern:solid #B0B3B2&quot;&gt;Descrição&lt;/span&gt;&lt;/p&gt;
+  &lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr style=&quot;mso-yfti-irow:1&quot;&gt;
+  &lt;td valign=&quot;top&quot; style=&quot;border:solid black 1.0pt;border-top:none;mso-border-top-alt:
+  solid black 1.0pt;padding:5.0pt 5.0pt 5.0pt 5.0pt&quot;&gt;
+  &lt;p class=&quot;MsoNormal&quot; align=&quot;center&quot; style=&quot;text-align:center;text-indent:6.0pt;
+  border:none;mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:
+  yes&quot;&gt;&lt;span class=&quot;GramE&quot;&gt;&lt;span style=&quot;font-size:12.0pt;line-height:115%;
+  font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;mso-fareast-font-family:&amp;quot;Trebuchet MS&amp;quot;;
+  mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt;texto&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+  &lt;/td&gt;
+  &lt;td valign=&quot;top&quot; style=&quot;border-top:none;border-left:none;border-bottom:solid black 1.0pt;
+  border-right:solid black 1.0pt;mso-border-top-alt:solid black 1.0pt;
+  mso-border-left-alt:solid black 1.0pt;padding:5.0pt 5.0pt 5.0pt 5.0pt&quot;&gt;
+  &lt;p class=&quot;MsoNormal&quot; align=&quot;center&quot; style=&quot;text-align:center;text-indent:6.0pt;
+  border:none;mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:
+  yes&quot;&gt;&lt;span style=&quot;font-size:12.0pt;line-height:115%;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;
+  mso-fareast-font-family:&amp;quot;Trebuchet MS&amp;quot;;mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt;“Pense
+  diferente”&lt;/span&gt;&lt;/p&gt;
+  &lt;/td&gt;
+  &lt;td valign=&quot;top&quot; style=&quot;border-top:none;border-left:none;border-bottom:solid black 1.0pt;
+  border-right:solid black 1.0pt;mso-border-top-alt:solid black 1.0pt;
+  mso-border-left-alt:solid black 1.0pt;padding:5.0pt 5.0pt 5.0pt 5.0pt&quot;&gt;
+  &lt;p class=&quot;MsoNormal&quot; align=&quot;center&quot; style=&quot;text-align:center;text-indent:6.0pt;
+  border:none;mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:
+  yes&quot;&gt;&lt;span style=&quot;font-size:12.0pt;line-height:115%;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;
+  mso-fareast-font-family:&amp;quot;Trebuchet MS&amp;quot;;mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt;Qualquer
+  texto entre aspas duplas&lt;/span&gt;&lt;/p&gt;
+  &lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr style=&quot;mso-yfti-irow:2&quot;&gt;
+  &lt;td valign=&quot;top&quot; style=&quot;border:solid black 1.0pt;border-top:none;mso-border-top-alt:
+  solid black 1.0pt;padding:5.0pt 5.0pt 5.0pt 5.0pt&quot;&gt;
+  &lt;p class=&quot;MsoNormal&quot; align=&quot;center&quot; style=&quot;text-align:center;text-indent:6.0pt;
+  border:none;mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:
+  yes&quot;&gt;&lt;span class=&quot;SpellE&quot;&gt;&lt;span class=&quot;GramE&quot;&gt;&lt;span style=&quot;font-size:12.0pt;
+  line-height:115%;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;mso-fareast-font-family:
+  &amp;quot;Trebuchet MS&amp;quot;;mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt;caracter&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+  &lt;/td&gt;
+  &lt;td valign=&quot;top&quot; style=&quot;border-top:none;border-left:none;border-bottom:solid black 1.0pt;
+  border-right:solid black 1.0pt;mso-border-top-alt:solid black 1.0pt;
+  mso-border-left-alt:solid black 1.0pt;padding:5.0pt 5.0pt 5.0pt 5.0pt&quot;&gt;
+  &lt;p class=&quot;MsoNormal&quot; align=&quot;center&quot; style=&quot;text-align:center;text-indent:6.0pt;
+  border:none;mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:
+  yes&quot;&gt;&lt;span style=&quot;font-size:12.0pt;line-height:115%;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;
+  mso-fareast-font-family:&amp;quot;Trebuchet MS&amp;quot;;mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt;‘c’&lt;/span&gt;&lt;/p&gt;
+  &lt;/td&gt;
+  &lt;td valign=&quot;top&quot; style=&quot;border-top:none;border-left:none;border-bottom:solid black 1.0pt;
+  border-right:solid black 1.0pt;mso-border-top-alt:solid black 1.0pt;
+  mso-border-left-alt:solid black 1.0pt;padding:5.0pt 5.0pt 5.0pt 5.0pt&quot;&gt;
+  &lt;p class=&quot;MsoNormal&quot; align=&quot;center&quot; style=&quot;text-align:center;text-indent:6.0pt;
+  border:none;mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:
+  yes&quot;&gt;&lt;span style=&quot;font-size:12.0pt;line-height:115%;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;
+  mso-fareast-font-family:&amp;quot;Trebuchet MS&amp;quot;;mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt;Um
+  &lt;span class=&quot;SpellE&quot;&gt;caracter&lt;/span&gt; entre aspas simples&lt;/span&gt;&lt;/p&gt;
+  &lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr style=&quot;mso-yfti-irow:3&quot;&gt;
+  &lt;td valign=&quot;top&quot; style=&quot;border:solid black 1.0pt;border-top:none;mso-border-top-alt:
+  solid black 1.0pt;padding:5.0pt 5.0pt 5.0pt 5.0pt&quot;&gt;
+  &lt;p class=&quot;MsoNormal&quot; align=&quot;center&quot; style=&quot;text-align:center;text-indent:6.0pt;
+  border:none;mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:
+  yes&quot;&gt;&lt;span class=&quot;GramE&quot;&gt;&lt;span style=&quot;font-size:12.0pt;line-height:115%;
+  font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;mso-fareast-font-family:&amp;quot;Trebuchet MS&amp;quot;;
+  mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt;real&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+  &lt;/td&gt;
+  &lt;td valign=&quot;top&quot; style=&quot;border-top:none;border-left:none;border-bottom:solid black 1.0pt;
+  border-right:solid black 1.0pt;mso-border-top-alt:solid black 1.0pt;
+  mso-border-left-alt:solid black 1.0pt;padding:5.0pt 5.0pt 5.0pt 5.0pt&quot;&gt;
+  &lt;p class=&quot;MsoNormal&quot; align=&quot;center&quot; style=&quot;text-align:center;text-indent:6.0pt;
+  border:none;mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:
+  yes&quot;&gt;&lt;span style=&quot;font-size:12.0pt;line-height:115%;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;
+  mso-fareast-font-family:&amp;quot;Trebuchet MS&amp;quot;;mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt;9.7&lt;/span&gt;&lt;/p&gt;
+  &lt;/td&gt;
+  &lt;td valign=&quot;top&quot; style=&quot;border-top:none;border-left:none;border-bottom:solid black 1.0pt;
+  border-right:solid black 1.0pt;mso-border-top-alt:solid black 1.0pt;
+  mso-border-left-alt:solid black 1.0pt;padding:5.0pt 5.0pt 5.0pt 5.0pt&quot;&gt;
+  &lt;p class=&quot;MsoNormal&quot; align=&quot;center&quot; style=&quot;text-align:center;text-indent:6.0pt;
+  border:none;mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:
+  yes&quot;&gt;&lt;span style=&quot;font-size:12.0pt;line-height:115%;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;
+  mso-fareast-font-family:&amp;quot;Trebuchet MS&amp;quot;;mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt;Número
+  com casas decimais separadas por um ponto&lt;/span&gt;&lt;/p&gt;
+  &lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr style=&quot;mso-yfti-irow:4&quot;&gt;
+  &lt;td valign=&quot;top&quot; style=&quot;border:solid black 1.0pt;border-top:none;mso-border-top-alt:
+  solid black 1.0pt;padding:5.0pt 5.0pt 5.0pt 5.0pt&quot;&gt;
+  &lt;p class=&quot;MsoNormal&quot; align=&quot;center&quot; style=&quot;text-align:center;text-indent:6.0pt;
+  border:none;mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:
+  yes&quot;&gt;&lt;span class=&quot;GramE&quot;&gt;&lt;span style=&quot;font-size:12.0pt;line-height:115%;
+  font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;mso-fareast-font-family:&amp;quot;Trebuchet MS&amp;quot;;
+  mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt;inteiro&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+  &lt;/td&gt;
+  &lt;td valign=&quot;top&quot; style=&quot;border-top:none;border-left:none;border-bottom:solid black 1.0pt;
+  border-right:solid black 1.0pt;mso-border-top-alt:solid black 1.0pt;
+  mso-border-left-alt:solid black 1.0pt;padding:5.0pt 5.0pt 5.0pt 5.0pt&quot;&gt;
+  &lt;p class=&quot;MsoNormal&quot; align=&quot;center&quot; style=&quot;text-align:center;text-indent:6.0pt;
+  border:none;mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:
+  yes&quot;&gt;&lt;span style=&quot;font-size:12.0pt;line-height:115%;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;
+  mso-fareast-font-family:&amp;quot;Trebuchet MS&amp;quot;;mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt;10&lt;/span&gt;&lt;/p&gt;
+  &lt;/td&gt;
+  &lt;td valign=&quot;top&quot; style=&quot;border-top:none;border-left:none;border-bottom:solid black 1.0pt;
+  border-right:solid black 1.0pt;mso-border-top-alt:solid black 1.0pt;
+  mso-border-left-alt:solid black 1.0pt;padding:5.0pt 5.0pt 5.0pt 5.0pt&quot;&gt;
+  &lt;p class=&quot;MsoNormal&quot; align=&quot;center&quot; style=&quot;text-align:center;text-indent:6.0pt;
+  border:none;mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:
+  yes&quot;&gt;&lt;span style=&quot;font-size:12.0pt;line-height:115%;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;
+  mso-fareast-font-family:&amp;quot;Trebuchet MS&amp;quot;;mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt;Número
+  inteiro&lt;/span&gt;&lt;/p&gt;
+  &lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr style=&quot;mso-yfti-irow:5;mso-yfti-lastrow:yes&quot;&gt;
+  &lt;td valign=&quot;top&quot; style=&quot;border:solid black 1.0pt;border-top:none;mso-border-top-alt:
+  solid black 1.0pt;padding:5.0pt 5.0pt 5.0pt 5.0pt&quot;&gt;
+  &lt;p class=&quot;MsoNormal&quot; align=&quot;center&quot; style=&quot;text-align:center;text-indent:6.0pt;
+  border:none;mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:
+  yes&quot;&gt;&lt;span class=&quot;SpellE&quot;&gt;&lt;span class=&quot;GramE&quot;&gt;&lt;span style=&quot;font-size:12.0pt;
+  line-height:115%;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;mso-fareast-font-family:
+  &amp;quot;Trebuchet MS&amp;quot;;mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt;logico&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+  &lt;/td&gt;
+  &lt;td valign=&quot;top&quot; style=&quot;border-top:none;border-left:none;border-bottom:solid black 1.0pt;
+  border-right:solid black 1.0pt;mso-border-top-alt:solid black 1.0pt;
+  mso-border-left-alt:solid black 1.0pt;padding:5.0pt 5.0pt 5.0pt 5.0pt&quot;&gt;
+  &lt;p class=&quot;MsoNormal&quot; align=&quot;center&quot; style=&quot;text-align:center;text-indent:6.0pt;
+  border:none;mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:
+  yes&quot;&gt;&lt;span class=&quot;GramE&quot;&gt;&lt;span style=&quot;font-size:12.0pt;line-height:115%;
+  font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;mso-fareast-font-family:&amp;quot;Trebuchet MS&amp;quot;;
+  mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt;verdadeiro&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-size:12.0pt;line-height:115%;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;
+  mso-fareast-font-family:&amp;quot;Trebuchet MS&amp;quot;;mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt;,
+  falso&lt;/span&gt;&lt;/p&gt;
+  &lt;/td&gt;
+  &lt;td valign=&quot;top&quot; style=&quot;border-top:none;border-left:none;border-bottom:solid black 1.0pt;
+  border-right:solid black 1.0pt;mso-border-top-alt:solid black 1.0pt;
+  mso-border-left-alt:solid black 1.0pt;padding:5.0pt 5.0pt 5.0pt 5.0pt&quot;&gt;
+  &lt;p class=&quot;MsoNormal&quot; align=&quot;center&quot; style=&quot;text-align:center;text-indent:6.0pt;
+  border:none;mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:
+  yes&quot;&gt;&lt;span class=&quot;GramE&quot;&gt;&lt;span style=&quot;font-size:12.0pt;line-height:115%;
+  font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;mso-fareast-font-family:&amp;quot;Trebuchet MS&amp;quot;;
+  mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt;verdadeiro&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-size:12.0pt;line-height:115%;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;
+  mso-fareast-font-family:&amp;quot;Trebuchet MS&amp;quot;;mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt;
+  ou falso&lt;/span&gt;&lt;/p&gt;
+  &lt;/td&gt;
+ &lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+
+&lt;p class=&quot;MsoNormal&quot; style=&quot;text-indent:36.0pt;border:none;mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;
+mso-border-shadow:yes&quot;&gt;&lt;o:p&gt;&amp;nbsp;&lt;/o:p&gt;&lt;/p&gt;
+
+&lt;p class=&quot;MsoNormal&quot; style=&quot;text-align:justify;text-indent:36.0pt;border:none;
+mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:yes&quot;&gt;&lt;span style=&quot;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;mso-fareast-font-family:&amp;quot;Trebuchet MS&amp;quot;;
+mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt;No vetor, para atribuir valores é necessário saber qual a posição no vetor quer atribuir. Como mostra o exemplo abaixo:&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+
+   &lt;div align=&quot;center&quot;&gt;
+        &lt;img src=&quot;attach/img/exemplo-atribuicao-vetor.png&quot; /&gt;
+    &lt;/div&gt;
+
+
+
+  &lt;/body&gt;
+&lt;/html&gt;
+</descricao>
+</funcionalidade>

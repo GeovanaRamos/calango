@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<funcaoEmbutida>
+    <nome>caracterAscii</nome>
+    <index>14</index>
+    <descricao>&lt;html&gt;
+  &lt;head&gt;
+
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p class=&quot;MsoNormal&quot; style=&quot;text-indent:35.45pt&quot;&gt;&lt;span style=&quot;mso-fareast-font-family:
+&amp;quot;Times New Roman&amp;quot;&quot;&gt;A função &lt;span class=&quot;SpellE&quot;&gt;&lt;span class=&quot;GramE&quot;&gt;&lt;b&gt;caracterAscii&lt;/b&gt;&lt;/span&gt;&lt;/span&gt;&lt;b&gt;
+&lt;/b&gt; possui como objetivo retornar através de um &lt;span class=&quot;SpellE&quot;&gt;caracter&lt;/span&gt;
+passado como parâmetro o seu código correspondente da tabela &lt;span class=&quot;SpellE&quot;&gt;ascii&lt;/span&gt;. A declaração da função segue a seguinte sintaxe: &lt;b&gt;inteiro
+&lt;span class=&quot;SpellE&quot;&gt;&lt;span class=&quot;GramE&quot;&gt;caracterAscii&lt;/span&gt;&lt;/span&gt; (&lt;span class=&quot;SpellE&quot;&gt;caracter&lt;/span&gt; c). &lt;/b&gt;A função recebe como parâmetro um valor do
+tipo &lt;span class=&quot;SpellE&quot;&gt;caracter&lt;/span&gt; e seu retorno é um valor do tipo
+inteiro que representa o código correspondente na tabela &lt;span class=&quot;SpellE&quot;&gt;ascii&lt;/span&gt;.&lt;/span&gt;&lt;span style=&quot;mso-fareast-font-family:&amp;quot;Times New Roman&amp;quot;;color:black;mso-themecolor:
+text1;mso-bidi-font-weight:bold&quot;&gt;&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+
+     &lt;br/&gt;
+     &lt;br/&gt;
+     &lt;div align=&quot;center&quot;&gt;
+        &lt;img src=&quot;attach/img/exemplo-caracter-ascii.png&quot; /&gt;
+    &lt;/div&gt;
+
+     &lt;br/&gt;
+&lt;p class=&quot;MsoNormal&quot; style=&quot;text-indent:1.0cm&quot;&gt;&lt;span style=&quot;mso-fareast-font-family:
+&amp;quot;Times New Roman&amp;quot;&quot;&gt;Caso o usuário
+digite o &lt;span class=&quot;SpellE&quot;&gt;caracter&lt;/span&gt; “a” sua saída será o valor &lt;span class=&quot;SpellE&quot;&gt;ascii&lt;/span&gt; do &lt;span class=&quot;SpellE&quot;&gt;caracter&lt;/span&gt; “a”:&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+     &lt;br/&gt;
+     &lt;br/&gt;
+     &lt;div align=&quot;center&quot;&gt;
+        &lt;img src=&quot;attach/img/exemplo-console-caracter-ascii.png&quot; /&gt;
+    &lt;/div&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</descricao>
+    <tipoRetorno>inteiro</tipoRetorno>
+    <descricaoRetorno>código ASCII referente ao caractere</descricaoRetorno>
+    <parametros>
+        <parametros>
+            <tipo>caracter</tipo>
+            <nome>c</nome>
+            <descricao>caractere a ter o código retornado</descricao>
+        </parametros>
+    </parametros>
+</funcaoEmbutida>

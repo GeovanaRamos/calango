@@ -1,0 +1,313 @@
+// Nome: Júlio César Menezes Noronha
+// Matrícula: UC13101546
+// Data: 04/06/2013
+
+//--------------------------------------------------------------------//
+
+algoritmo notasEspetaculo;
+
+// Síntese
+//  Objetivo: Fazer um estudo da aceitação do espetáculo do Cirque de Soleil.
+//  Entrada : Quantidade de espectadores, número do ingresso, nota ao espetáculo de cada espectador e o nome do responsável pela pesquisa.
+//		      Caso o usuário deseje continuar, uma classificação para comparar com todos os espectadores.
+//  Saída   : Tabela com o nome do responsável pela pesquisa, número do ingresso, nota atribuída e sua respectiva classificação.
+//            Caso o usuário deseje continuar, todos os espectadores que tenham a classificação solicitada.
+
+principal
+
+	// Declarações
+	inteiro ingressos[200],qtdEspectadores,qtdRuim,qtdMedio,qtdOtimo,qtdExcelente,cont,numClassificacao;
+	real notas[200];
+	texto classificacoes[200],nome,classificacao;
+	caracter continua;
+
+	// Instruções
+
+	qtdRuim=0;
+	qtdMedio=0;
+	qtdOtimo=0;
+	qtdExcelente=0;
+
+	qtdEspectadores=leValidaInteiro("Informe o número de espectadores que foram ao espetáculo.",1,200);
+
+	para(cont de 0 ate qtdEspectadores-1 passo 1)faca
+		leValidaIngresso(ingressos,cont);
+		leValidaNota(notas,cont,ingressos);
+		classificaNota(classificacoes,notas,cont);
+
+		se(comparaTexto(classificacoes[cont],"Ruim")==0)entao
+			qtdRuim=qtdRuim+1;
+		senao
+			se(comparaTexto(classificacoes[cont],"Médio")==0)entao
+				qtdMedio=qtdMedio+1;
+			senao
+				se(comparaTexto(classificacoes[cont],"Ótimo")==0)entao
+					qtdOtimo=qtdOtimo+1;
+				senao
+					qtdExcelente=qtdExcelente+1;
+				fimSe
+			fimSe
+		fimSe
+
+	fimPara
+
+	nome=leValidaNome();
+	apresentaDados(ingressos,notas,classificacoes,nome,qtdEspectadores,qtdRuim,qtdMedio,qtdOtimo,qtdExcelente);
+	continua=leValidaContinua();
+
+	enquanto(continua=='s')faca
+
+		numClassificacao=leValidaInteiro("Informe uma classificação (1-Ruim,2-Médio,3-Ótimo,4-Excelente): ",1,4);
+
+		escolha(numClassificacao)
+
+		caso 1
+			classificacao="Ruim";
+			interrompa;
+
+		caso 2
+			classificacao="Médio";
+			interrompa;
+
+		caso 3
+			classificacao="Ótimo";
+			interrompa;
+
+		caso 4
+			classificacao="Excelente";
+			interrompa;
+
+		fimEscolha
+
+		comparaClassificacoes(ingressos,classificacoes,classificacao,qtdEspectadores);
+		continua=leValidaContinua();
+
+	fimEnquanto
+
+
+fimPrincipal
+
+//--------------------------------------------------------------------//
+
+// Objetivo: Ler e validar vetor de números inteiros.
+// Parâmetros: Referência ao vetor inteiro, índice do vetor a ser usado.
+// Retorno: Nenhum
+
+procedimento leValidaIngresso (inteiro ingresso[],inteiro cont)
+
+	inteiro cont2,valida;
+
+	faca
+
+		escreva("Informe o ingresso do espectador ",cont+1,": ");
+		leia(ingresso[cont]);
+		limpaTela();
+
+		se(ingresso[cont]<=125)entao
+			escreval("Dado inválido, deve ser maior que 125.");
+		fimSe
+
+		valida=0;
+
+		se(cont>0)entao
+			para(cont2 de 0 ate cont-1 passo 1)faca
+				se(ingresso[cont2]==ingresso[cont])entao
+					valida=1;
+					interrompa;
+				fimSe
+			fimPara
+		fimSe
+
+		se(valida==1)entao
+			escreval("Ingresso ",ingresso[cont]," já foi cadastrado, informe novamente.");
+		fimSe
+
+	enquanto(ingresso[cont]<=125 ou valida==1);
+
+fimProcedimento
+
+//--------------------------------------------------------------------//
+
+// Objetivo: Ler e validar as notas.
+// Parâmetros: Referência aos vetores notas e ingressos, índice do vetor a ser usado.
+// Retorno: Nenhum.
+
+procedimento leValidaNota (real notas[], inteiro cont, inteiro ingressos[])
+
+	faca
+
+		escreva("Espectador com ingresso ",ingressos[cont]," digite a nota que você dá ao espetáculo: ");
+		leia(notas[cont]);
+		limpaTela();
+
+		se(notas[cont]<30 ou notas[cont]>100)entao
+			escreval("Nota inválida, deve ser entre 30 e 100.");
+		fimSe
+
+	enquanto(notas[cont]<30 ou notas[cont]>100);
+
+fimProcedimento
+
+//--------------------------------------------------------------------//
+
+// Objetivo: Ler e validar o números inteiros.
+// Parâmetros: Mensagem, valores máximo e mínimo.
+// Retorno: Número validado.
+
+funcao inteiro leValidaInteiro(texto msg, inteiro min, inteiro max)
+
+	inteiro qtd;
+
+	faca
+
+		escreva(msg);
+		leia(qtd);
+		limpaTela();
+
+		se(qtd<min ou qtd>max)entao
+			escreval("Dado inválido, deve ser maior que ",min," e menor que ",max,".");
+		fimSe
+
+	enquanto(qtd<min ou qtd>max);
+
+	retorna qtd;
+
+fimFuncao
+
+//--------------------------------------------------------------------//
+
+// Objetivo: Obter a classificação de acordo com a nota.
+// Parâmetros: Referência ao vetor classificações, nota obtida e índice do vetor a ser usado .
+// Retorno: Nenhum
+
+procedimento classificaNota (texto classificacoes[], real notas[], inteiro cont)
+
+	se(notas[cont]<50)entao
+		classificacoes[cont]="Ruim";
+	senao
+		se(notas[cont]>=50 e notas[cont]<70)entao
+			classificacoes[cont]="Médio";
+		senao
+			se(notas[cont]>=70 e notas[cont]<90)entao
+				classificacoes[cont]="Ótimo";
+			senao
+				classificacoes[cont]="Excelente";
+			fimSe
+		fimSe
+	fimSe
+
+fimProcedimento
+
+//--------------------------------------------------------------------//
+
+// Objetivo: Ler e retornar um caracter.
+// Parâmetros: Nenhum
+// Retorno: 's' ou 'n'
+
+funcao caracter leValidaContinua ()
+
+	caracter continua;
+
+	faca
+
+		escreva("Deseja continuar (S/N)?");
+		leiaCaracter(continua);
+		continua=minusculoCaracter(continua);
+		limpaTela();
+
+		se(continua!='s' e continua!='n')entao
+			escreval("Opção inválida.");
+		fimSe
+
+	enquanto(continua!='s' e continua!='n');
+
+	retorna continua;
+
+fimFuncao
+
+//--------------------------------------------------------------------//
+
+// Objetivo: Ler e validar nomes.
+// Parâmetros: Nenhum.
+// Retorno: Nome validado.
+
+funcao texto leValidaNome ()
+
+	texto nome;
+
+	faca
+
+		escreva("Digite o nome do responsável pela pesquisa: ");
+		leia(nome);
+		limpaTela();
+
+		se((comparaTexto(nome,"")==0) ou (comparaTexto(nome," ")==0))entao
+			escreval("Nome não pode ser vazio.");
+		fimSe
+
+	enquanto((comparaTexto(nome,"")==0) ou (comparaTexto(nome," ")==0));
+
+	retorna nome;
+
+fimFuncao
+
+//--------------------------------------------------------------------//
+
+// Objetivo: Comparar todos os pesquisados com uma classificação e apresentar quem tem tal classificação.
+// Parâmetros: Referência aos vetores ingressos e classificações, classificação solicitada e a quantidade de espectadores.
+// Retorno: Nenhum.
+
+procedimento comparaClassificacoes (inteiro ingressos[], texto classificacoes[],texto classificacao, inteiro qtdEspectadores)
+
+	inteiro cont, qtdIguais;
+
+	qtdIguais=0;
+
+	escreval("Classificação solicitada: ",classificacao);
+	escreval("");
+
+	para(cont de 0 ate qtdEspectadores-1 passo 1)faca
+
+		se(comparaTexto(classificacoes[cont],classificacao)==0)entao
+			escreval("Espectador ",ingressos[cont]," deu a classificação ",classificacao);
+			qtdIguais=qtdIguais+1;
+		fimSe
+
+	fimPara
+
+	se(qtdIguais==0)entao
+		escreval("Não existe espectador para a classificação ",classificacao);
+	fimSe
+
+	escreval("");
+
+fimProcedimento
+
+//--------------------------------------------------------------------//
+
+// Objetivo: Apresentar os dados obtidos.
+// Parâmetros: Referência aos vetores ingressos, notas e classificações, nome do responsável pela pesquisa,quantidade de
+//             espectadores e cada classificação.
+// Retorno: Nenhum.
+
+procedimento apresentaDados (inteiro ingressos[],real notas[], texto classificacoes[], texto nome, inteiro qtdEspectadores, inteiro qtdRuim, inteiro qtdMedio, inteiro qtdOtimo, inteiro qtdExcelente)
+
+	inteiro cont;
+
+	nome=minusculo(nome);
+	escreval("Responsável pela pesquisa: ",nome);
+	escreval("");
+	escreval("INGRESSO        NOTA        CLASSIFICAÇÃO");
+
+	para(cont de 0 ate qtdEspectadores-1 passo 1)faca
+		escreval(ingressos[cont]:8,"        ",notas[cont]:5:1,"          ",classificacoes[cont]);
+	fimPara
+
+	escreval("");
+	escreval("Ruim      - ",qtdRuim);
+	escreval("Médio     - ",qtdMedio);
+	escreval("Ótimo     - ",qtdOtimo);
+	escreval("Excelente - ",qtdExcelente);
+	escreval("");
+
+fimProcedimento

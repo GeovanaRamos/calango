@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<funcionalidade>
+    <nome>Se</nome>
+    <index>1</index>
+    <descricao>&lt;html&gt;
+  &lt;head&gt;
+    
+  &lt;/head&gt;
+  &lt;body&gt;
+  &lt;p class=&quot;MsoNormal&quot; style=&quot;border:none;mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;
+mso-border-shadow:yes&quot;&gt;&lt;span style=&quot;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;
+mso-fareast-font-family:&amp;quot;Trebuchet MS&amp;quot;;mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt;A
+estrutura condicional mais simples é a estrutura &lt;b style=&quot;mso-bidi-font-weight:
+normal&quot;&gt;&lt;i style=&quot;mso-bidi-font-style:normal&quot;&gt;se&lt;/i&gt;&lt;/b&gt;, análoga ao &lt;span class=&quot;SpellE&quot;&gt;&lt;span class=&quot;GramE&quot;&gt;&lt;b style=&quot;mso-bidi-font-weight:normal&quot;&gt;&lt;i style=&quot;mso-bidi-font-style:normal&quot;&gt;if&lt;/i&gt;&lt;/b&gt;&lt;/span&gt;&lt;/span&gt; na linguagem C. Ela
+segue a forma de &lt;/span&gt;&lt;b style=&quot;mso-bidi-font-weight:normal&quot;&gt;&lt;i style=&quot;mso-bidi-font-style:normal&quot;&gt;&lt;span style=&quot;font-family:&amp;quot;Courier New&amp;quot;;
+mso-fareast-font-family:&amp;quot;Courier New&amp;quot;&quot;&gt;se&lt;/span&gt;&lt;/i&gt;&lt;/b&gt;&lt;span style=&quot;font-family:
+&amp;quot;Courier New&amp;quot;;mso-fareast-font-family:&amp;quot;Courier New&amp;quot;&quot;&gt; (expressão) &lt;span class=&quot;SpellE&quot;&gt;&lt;b style=&quot;mso-bidi-font-weight:normal&quot;&gt;&lt;i style=&quot;mso-bidi-font-style:
+normal&quot;&gt;entao&lt;/i&gt;&lt;/b&gt;&lt;/span&gt; .. &lt;span class=&quot;SpellE&quot;&gt;&lt;span class=&quot;GramE&quot;&gt;&lt;b style=&quot;mso-bidi-font-weight:normal&quot;&gt;&lt;i style=&quot;mso-bidi-font-style:normal&quot;&gt;fimSe&lt;/i&gt;&lt;/b&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;mso-fareast-font-family:&amp;quot;Trebuchet MS&amp;quot;;
+mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt;, onde a expressão deve resultar em um
+valor booleano (lógico). Um exemplo de uso básico desta estrutura é demonstrado
+no código abaixo.&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+
+  &lt;div align=&quot;center&quot;&gt;
+        &lt;img src=&quot;attach/img/condicionalSe1.png&quot; /&gt;
+    &lt;/div&gt;
+
+&lt;p class=&quot;MsoNormal&quot; style=&quot;text-indent:36.0pt;border:none;mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;
+mso-border-shadow:yes&quot;&gt;&lt;span style=&quot;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;
+mso-fareast-font-family:&amp;quot;Trebuchet MS&amp;quot;;mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt;Neste
+código, se o usuário informar um número maior ou igual a 18, ele irá imprimir a
+mensagem &lt;/span&gt;&lt;span style=&quot;font-family:&amp;quot;Courier New&amp;quot;;mso-fareast-font-family:
+&amp;quot;Courier New&amp;quot;&quot;&gt;Você já pode dirigir&lt;span class=&quot;GramE&quot;&gt;!&lt;span style=&quot;font-family:
+&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;mso-fareast-font-family:&amp;quot;Trebuchet MS&amp;quot;;mso-bidi-font-family:
+&amp;quot;Trebuchet MS&amp;quot;&quot;&gt;.&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;
+mso-fareast-font-family:&amp;quot;Trebuchet MS&amp;quot;;mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt; No
+entanto, caso o valor seja menor que 18, nenhuma mensagem será exibida. Para
+que isso não ocorra, pode-se usar a estrutura &lt;span class=&quot;SpellE&quot;&gt;&lt;b style=&quot;mso-bidi-font-weight:normal&quot;&gt;&lt;i style=&quot;mso-bidi-font-style:normal&quot;&gt;senao&lt;/i&gt;&lt;/b&gt;&lt;/span&gt;,
+que faz parte da condicional &lt;b style=&quot;mso-bidi-font-weight:normal&quot;&gt;&lt;i style=&quot;mso-bidi-font-style:normal&quot;&gt;se&lt;/i&gt;&lt;/b&gt;, conforme visto no código abaixo.&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;div align=&quot;center&quot;&gt;
+        &lt;img src=&quot;attach/img/condicionalSe2.png&quot; /&gt;
+    &lt;/div&gt;
+
+&lt;span style=&quot;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;
+mso-fareast-font-family:&amp;quot;Trebuchet MS&amp;quot;;mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt;Agora,
+qualquer idade informada irá receber uma mensagem de retorno. Mas e se for
+necessário fazer mais de uma avaliação condicional? Pode-se usar então a
+estrutura &lt;span class=&quot;SpellE&quot;&gt;&lt;b style=&quot;mso-bidi-font-weight:normal&quot;&gt;&lt;i style=&quot;mso-bidi-font-style:normal&quot;&gt;senao&lt;/i&gt;&lt;/b&gt;&lt;/span&gt; seguido de &lt;b style=&quot;mso-bidi-font-weight:normal&quot;&gt;&lt;i style=&quot;mso-bidi-font-style:normal&quot;&gt;se&lt;/i&gt;&lt;/b&gt;
+(&lt;span class=&quot;SpellE&quot;&gt;expressao&lt;/span&gt;) &lt;span class=&quot;SpellE&quot;&gt;&lt;b style=&quot;mso-bidi-font-weight:
+normal&quot;&gt;&lt;i style=&quot;mso-bidi-font-style:normal&quot;&gt;entao&lt;/i&gt;&lt;/b&gt;&lt;/span&gt;, conforme mostrado
+a seguir:&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+        &lt;img src=&quot;attach/img/condicionalSe3.png&quot; /&gt;
+    &lt;/div&gt;
+
+&lt;p class=&quot;MsoNormal&quot; style=&quot;text-align:justify;text-indent:36.0pt;border:none;
+mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:yes&quot;&gt;&lt;span style=&quot;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;mso-fareast-font-family:&amp;quot;Trebuchet MS&amp;quot;;
+mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt;Podem existir quantos &lt;/span&gt;&lt;span class=&quot;SpellE&quot;&gt;&lt;b style=&quot;mso-bidi-font-weight:normal&quot;&gt;&lt;i style=&quot;mso-bidi-font-style:
+normal&quot;&gt;&lt;span style=&quot;font-family:&amp;quot;Courier New&amp;quot;;mso-fareast-font-family:&amp;quot;Courier New&amp;quot;&quot;&gt;senao&lt;/span&gt;&lt;/i&gt;&lt;/b&gt;&lt;/span&gt;&lt;span style=&quot;font-family:&amp;quot;Courier New&amp;quot;;mso-fareast-font-family:&amp;quot;Courier New&amp;quot;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;mso-fareast-font-family:&amp;quot;Trebuchet MS&amp;quot;;
+mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt;seguido&lt;/span&gt;&lt;span style=&quot;font-family:
+&amp;quot;Courier New&amp;quot;;mso-fareast-font-family:&amp;quot;Courier New&amp;quot;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;mso-fareast-font-family:&amp;quot;Trebuchet MS&amp;quot;;
+mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt;de&lt;/span&gt;&lt;span style=&quot;font-family:&amp;quot;Courier New&amp;quot;;
+mso-fareast-font-family:&amp;quot;Courier New&amp;quot;&quot;&gt; &lt;b style=&quot;mso-bidi-font-weight:normal&quot;&gt;&lt;i style=&quot;mso-bidi-font-style:normal&quot;&gt;se&lt;/i&gt;&lt;/b&gt;&lt;/span&gt;&lt;span style=&quot;font-family:
+&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;mso-fareast-font-family:&amp;quot;Trebuchet MS&amp;quot;;mso-bidi-font-family:
+&amp;quot;Trebuchet MS&amp;quot;&quot;&gt; &lt;span class=&quot;GramE&quot;&gt;quanto forem&lt;/span&gt; necessários. &lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+
+
+
+  &lt;/body&gt;
+&lt;/html&gt;
+</descricao>
+</funcionalidade>

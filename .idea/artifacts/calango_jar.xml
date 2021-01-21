@@ -3,16 +3,15 @@
     <output-path>$PROJECT_DIR$/out/artifacts/calango_jar</output-path>
     <root id="archive" name="calango.jar">
       <element id="module-output" name="calango" />
-      <element id="extracted-dir" path="$PROJECT_DIR$/src/meta-inf/lib/activation-1.1.1.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="$PROJECT_DIR$/src/meta-inf/lib/jaxb-impl-2.3.0.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="$PROJECT_DIR$/src/meta-inf/lib/jaxb-api-2.3.1.wso2v1.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="$PROJECT_DIR$/src/meta-inf/lib/calango-interpreter.jar" path-in-jar="/" />
       <element id="extracted-dir" path="$PROJECT_DIR$/src/meta-inf/lib/jaxb-core-2.3.0.jar" path-in-jar="/" />
       <element id="extracted-dir" path="$PROJECT_DIR$/src/meta-inf/lib/bsaf-1.9.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/src/meta-inf/lib/jaxb-impl-2.3.0.jar" path-in-jar="/" />
       <element id="extracted-dir" path="$PROJECT_DIR$/src/meta-inf/lib/rsyntaxtextarea.jar" path-in-jar="/" />
-      <element id="directory" name="ajuda">
-        <element id="dir-copy" path="$PROJECT_DIR$/ajuda" />
-      </element>
+      <element id="extracted-dir" path="$PROJECT_DIR$/src/meta-inf/lib/jaxb-api-2.3.1.wso2v1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/src/meta-inf/lib/string-template-4.3.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/src/meta-inf/lib/activation-1.1.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/src/meta-inf/lib/autocomplete.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/src/meta-inf/lib/antlr-4.9.1-complete.jar" path-in-jar="/" />
     </root>
   </artifact>
 </component>

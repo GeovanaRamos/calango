@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<funcionalidade>
+    <nome>Lendo Dados</nome>
+    <index>2</index>
+    <descricao>&lt;html&gt;
+  &lt;head&gt;
+    
+  &lt;/head&gt;
+  &lt;body&gt;
+     &lt;p class=&quot;MsoNormal&quot; style=&quot;text-align:justify;text-indent:36.0pt;border:none;
+mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:yes&quot;&gt;&lt;span style=&quot;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;mso-fareast-font-family:&amp;quot;Trebuchet MS&amp;quot;;
+mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt;Semelhante à escrita de dados, a leitura
+ocorre por meio da função embutida &lt;b style=&quot;mso-bidi-font-weight:normal&quot;&gt;&lt;i style=&quot;mso-bidi-font-style:normal&quot;&gt;leia&lt;/i&gt;&lt;/b&gt; ou &lt;span class=&quot;SpellE&quot;&gt;&lt;span class=&quot;GramE&quot;&gt;&lt;b style=&quot;mso-bidi-font-weight:normal&quot;&gt;&lt;i style=&quot;mso-bidi-font-style:
+normal&quot;&gt;leiaCaracter&lt;/i&gt;&lt;/b&gt;&lt;/span&gt;&lt;/span&gt;, como demonstrada no código abaixo.&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p class=&quot;MsoNormal&quot; style=&quot;text-indent:63.0pt;border:none;mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;
+mso-border-shadow:yes&quot;&gt;&lt;span style=&quot;font-family:&amp;quot;Courier New&amp;quot;;mso-fareast-font-family:
+&amp;quot;Courier New&amp;quot;&quot;&gt;&lt;o:p&gt;&amp;nbsp;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+        &lt;img src=&quot;attach/img/exemplo-lendo-dados.png&quot; /&gt;
+    &lt;/div&gt;
+
+&lt;p class=&quot;MsoNormal&quot; style=&quot;text-indent:35.45pt&quot;&gt;&lt;span style=&quot;font-family:&amp;quot;Trebuchet MS&amp;quot;;
+mso-fareast-font-family:&amp;quot;Courier New&amp;quot;;mso-bidi-font-family:&amp;quot;Courier New&amp;quot;&quot;&gt;Caso
+o usuário digite nome = “Estevão“, idade = 56 e sexo = M, sua saída será:&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+
+   &lt;br /&gt;
+   &lt;div align=&quot;center&quot;&gt;
+        &lt;img src=&quot;attach/img/exemplo-console-lendo.png&quot; /&gt;
+   &lt;/div&gt;
+
+&lt;p &lt;p  class=&quot;MsoNormal&quot; style=&quot;text-align:justify;text-indent:36.0pt;border:none;
+mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:yes&quot;&gt;
+&lt;span style=&quot;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;
+mso-fareast-font-family:&amp;quot;Trebuchet MS&amp;quot;;mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt;O
+dado que o usuário informar deve ser compatível com o tipo de dado da variável onde
+será armazenado, caso contrário, um erro de execução será apresentado e o
+algoritmo será encerrado.&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;
+&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</descricao>
+</funcionalidade>

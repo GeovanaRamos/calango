@@ -1,63 +1,62 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package tcccalango.view;
 
-import tcccalango.util.settings.CalangoSettings;
-
-/**
- *
- * @author JessicaLuanne
- */
 public enum EnumCamposCoresEditaveis {
-    COMENTARIO(1, "Comentário"),
-    CONSTANTE_TEXTO(2, "Constante texto"),
-    CONSTANTE_NUMERICA(3, "Constante numérica"),
-    FUNDO_EDITOR(4, "Fundo do Editor"),
-    PALAVRA_CHAVE(5, "Palabra Chave"),
-    TIPO_DADO(6, "Tipo de Dado"),
-    TEXTO_GERAL(7, "Texto em Geral");
-    
-    private String descricao;
-    private int id;
+   COMENTARIO(1, "Comentário"),
+   CONSTANTE_TEXTO(2, "Constante texto"),
+   CONSTANTE_NUMERICA(3, "Constante numérica"),
+   FUNDO_EDITOR(4, "Fundo do Editor"),
+   PALAVRA_CHAVE(5, "Palabra Chave"),
+   TIPO_DADO(6, "Tipo de Dado"),
+   TEXTO_GERAL(7, "Texto em Geral");
 
-    private EnumCamposCoresEditaveis(int id,String descricao) {
-        this.descricao = descricao;
-    }
+   private String descricao;
+   private int id;
 
-    public String getDescricao() {
-        return descricao;
-    }
+   private EnumCamposCoresEditaveis(int id, String descricao) {
+      this.descricao = descricao;
+   }
 
-    public void setDescricao(String descricao) {
-        this.descricao = descricao;
-    }
+   public String getDescricao() {
+      return this.descricao;
+   }
 
-    public int getId() {
-        return id;
-    }
+   public void setDescricao(String descricao) {
+      this.descricao = descricao;
+   }
 
-    public void setId(int id) {
-        this.id = id;
-    }
+   public int getId() {
+      return this.id;
+   }
 
-    public EnumCamposCoresEditaveis getEnumByDescricao(String desc){
-        for (EnumCamposCoresEditaveis campo : values()) {
-            if(campo.getDescricao().equalsIgnoreCase(desc)){
-                return campo;
-            }
-        }
-        return null;
-    }
-    
-    public int getIdEnumByDescricao(String desc){
-        for (EnumCamposCoresEditaveis campo : values()) {
-            if(campo.getDescricao().equalsIgnoreCase(desc)){
-                return campo.getId();
-            }
-        }
-        return 0;
-    }
-    
+   public void setId(int id) {
+      this.id = id;
+   }
+
+   public EnumCamposCoresEditaveis getEnumByDescricao(String desc) {
+      EnumCamposCoresEditaveis[] arr$ = values();
+      int len$ = arr$.length;
+
+      for(int i$ = 0; i$ < len$; ++i$) {
+         EnumCamposCoresEditaveis campo = arr$[i$];
+         if (campo.getDescricao().equalsIgnoreCase(desc)) {
+            return campo;
+         }
+      }
+
+      return null;
+   }
+
+   public int getIdEnumByDescricao(String desc) {
+      EnumCamposCoresEditaveis[] arr$ = values();
+      int len$ = arr$.length;
+
+      for(int i$ = 0; i$ < len$; ++i$) {
+         EnumCamposCoresEditaveis campo = arr$[i$];
+         if (campo.getDescricao().equalsIgnoreCase(desc)) {
+            return campo.getId();
+         }
+      }
+
+      return 0;
+   }
 }

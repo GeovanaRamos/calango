@@ -1,32 +1,20 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package tcccalango.util.componentes;
 
 import javax.swing.JButton;
 import javax.swing.JComponent;
 
-/**
- *
- * @author Gabriel
- */
 public interface IMonitorFrame {
+   JButton getButton();
 
-    JButton getButton();
+   void setConsole(JComponent var1);
 
-    /**
-     * Define o componente que serÃ¡ posicionado no lugar da "tela" do "monitor"
-     * @param console
-     */
-    void setConsole(JComponent console);
+   void setVisible(boolean var1);
 
-    public void setVisible(boolean b);
+   boolean requestFocusInWindow();
 
-    public boolean requestFocusInWindow();
+   void removeConsole();
 
-    public void removeConsole();
+   boolean isConsole(JComponent var1);
 
-    public boolean isConsole(JComponent jpConsole);
-    
+   void setModal(boolean var1);
 }

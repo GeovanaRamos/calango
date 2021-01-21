@@ -1,42 +1,38 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package tcccalango.util.interpretador;
 
 import br.ucb.calango.api.publica.CalangoIn;
 import tcccalango.util.componentes.CalangoConsole;
 
-/**
- *
- * @author Claeber
- */
 public class CalangoIDEIn implements CalangoIn {
+   private CalangoConsole tpConsole;
 
-    private CalangoConsole tpConsole;
-    public CalangoIDEIn(){
-    }
-    public CalangoIDEIn(CalangoConsole tpConsole){
-        this.tpConsole = tpConsole;
-    }
+   public CalangoIDEIn() {
+   }
 
-    public String read() {
-        String texto = tpConsole.nextLine();
-        return texto;
-    }
+   public CalangoIDEIn(CalangoConsole tpConsole) {
+      this.tpConsole = tpConsole;
+   }
 
-    public CalangoConsole getTpConsole() {
-        return tpConsole;
-    }
+   public String read() {
+      this.tpConsole.requestFocusInWindow();
+      this.tpConsole.requestFocus();
+      String texto = this.tpConsole.nextLine();
+      return texto;
+   }
 
-    public void setTpConsole(CalangoConsole tpConsole) {
-        this.tpConsole = tpConsole;
-    }
+   public CalangoConsole getTpConsole() {
+      return this.tpConsole;
+   }
 
-    public Character readChar() {
-        Character character = tpConsole.nextCharacter();
-        tpConsole.append("\n");
-        return character;
-    }
-    
+   public void setTpConsole(CalangoConsole tpConsole) {
+      this.tpConsole = tpConsole;
+   }
+
+   public Character readChar() {
+      this.tpConsole.requestFocusInWindow();
+      this.tpConsole.requestFocus();
+      Character character = this.tpConsole.nextCharacter();
+      this.tpConsole.append("\n");
+      return character;
+   }
 }

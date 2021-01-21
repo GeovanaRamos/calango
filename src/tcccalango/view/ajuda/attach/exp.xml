@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<funcaoEmbutida>
+    <nome>exp</nome>
+    <index>4</index>
+    <descricao>&lt;html&gt;
+  &lt;head&gt;
+
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p class=&quot;MsoNormal&quot; style=&quot;text-indent:1.0cm&quot;&gt;&lt;span style=&quot;mso-fareast-font-family:
+&amp;quot;Times New Roman&amp;quot;&quot;&gt;A função &lt;span class=&quot;SpellE&quot;&gt;&lt;b&gt;exp&lt;/b&gt;&lt;/span&gt;&lt;b&gt; &lt;/b&gt;possui
+como objetivo calcular o valor exponencial de um número. Sua declaração segue a
+seguinte sintaxe: &lt;b&gt;inteiro/real &lt;span class=&quot;SpellE&quot;&gt;exp&lt;/span&gt; (inteiro/real
+b, inteiro/real e)&lt;/b&gt;. A função recebe como parâmetro dois valores, o primeiro
+é a base, o segundo é o expoente. Os valores podem ser do tipo inteiro ou real
+influenciando no retorno. Caso o resultado do cálculo realizado seja real, o
+retorno da função será um valor do tipo real ou se o resultado do calculo for
+inteiro, o retorno da função será um valor do tipo inteiro.&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+
+     &lt;br/&gt;
+     &lt;br/&gt;
+     &lt;div align=&quot;center&quot;&gt;
+        &lt;img src=&quot;attach/img/exemplo-exp.png&quot; /&gt;
+    &lt;/div&gt;
+
+     &lt;br/&gt;
+&lt;p class=&quot;MsoNormal&quot; style=&quot;text-indent:1.0cm&quot;&gt;&lt;span style=&quot;mso-fareast-font-family:
+&amp;quot;Times New Roman&amp;quot;&quot;&gt;Caso o usuário
+digite 2 para a primeira variável e 3 para a segunda, a saída será o resultado
+de 2 elevado a 3 que é:&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+
+     &lt;br/&gt;
+     &lt;br/&gt;
+     &lt;div align=&quot;center&quot;&gt;
+        &lt;img src=&quot;attach/img/exemplo-console-exp.png&quot; /&gt;
+    &lt;/div&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</descricao>
+    <tipoRetorno>inteiro/real</tipoRetorno>
+    <descricaoRetorno>valor da base elevada ao expoente</descricaoRetorno>
+    <parametros>
+        <parametros>
+            <tipo>inteiro/real</tipo>
+            <nome>b</nome>
+            <descricao>base</descricao>
+        </parametros>
+        <parametros>
+            <tipo>inteiro/real</tipo>
+            <nome>e</nome>
+            <descricao>expoente</descricao>
+        </parametros>
+    </parametros>
+</funcaoEmbutida>

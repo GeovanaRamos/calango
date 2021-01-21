@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<funcionalidade>
+    <nome>Declaração de variáveis</nome>
+    <index>3</index>
+    <descricao>&lt;html&gt;
+  &lt;head&gt;
+    
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p class=&quot;MsoNormal&quot; style=&quot;text-align:justify;text-indent:36.0pt&quot;&gt;&lt;span style=&quot;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;mso-fareast-font-family:&amp;quot;Trebuchet MS&amp;quot;;
+mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt;A declaração de variáveis, caso existe, é
+obrigatoriamente a primeira coisa a aparecer no algoritmo. Deve vir logo em
+seguida à abertura do bloco (seja ele o bloco principal - como visto acima -,
+ou blocos de funções - como será visto adiante).&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p class=&quot;MsoNormal&quot; style=&quot;text-align:justify;text-indent:36.0pt&quot;&gt;&lt;span style=&quot;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;mso-fareast-font-family:&amp;quot;Trebuchet MS&amp;quot;;
+mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt;Um exemplo de declaração de variáveis é
+visto no código a seguir.&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+        &lt;img src=&quot;attach/img/exemplo-declaracao-variaveis1.png&quot; /&gt;
+    &lt;/div&gt;
+
+&lt;p class=&quot;MsoNormal&quot; style=&quot;text-align:justify;text-indent:36.0pt;border:none;
+mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:yes&quot;&gt;&lt;span style=&quot;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;mso-fareast-font-family:&amp;quot;Trebuchet MS&amp;quot;;
+mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt;Neste código, é possível ver que podem
+ocorrer várias declarações de um mesmo tipo de dado em apenas uma linha, ou em
+várias. Existem duas variáveis do tipo texto sendo declaradas: nome e &lt;span class=&quot;SpellE&quot;&gt;&lt;span class=&quot;GramE&quot;&gt;sobreNome&lt;/span&gt;&lt;/span&gt;, ambas na mesma linha.
+Mas existem duas do tipo real sendo declaradas em linhas distintas: peso e
+altura. Não é possível atribuir um valor à variável no mesmo momento de sua
+declaração. Também é importante notar que todas as variáveis precisam receber
+um valor antes de seu uso no código. Este processo se dá por meio de uma
+atribuição, como será vista na próxima seção.&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p class=&quot;MsoNormal&quot; style=&quot;text-align:justify;text-indent:36.0pt;border:none;
+mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:yes&quot;&gt;&lt;span style=&quot;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;mso-fareast-font-family:&amp;quot;Trebuchet MS&amp;quot;;
+mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt;A tabela abaixo exibe os tipos de dados
+disponíveis para uso, junto com sua aproximação na linguagem C.&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p class=&quot;MsoNormal&quot; align=&quot;center&quot; style=&quot;text-align:center;text-indent:349.0pt;
+border:none;mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:yes&quot;&gt;&lt;span style=&quot;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;mso-fareast-font-family:&amp;quot;Trebuchet MS&amp;quot;;
+mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt;&lt;o:p&gt;&amp;nbsp;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;table class=&quot;MsoNormalTable&quot; border=&quot;1&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot; width=&quot;100%&quot; style=&quot;width:100.0%;margin-left:5.0pt;border-collapse:collapse;border:none;
+ mso-border-alt:solid windowtext .5pt;mso-yfti-tbllook:1184;mso-padding-alt:
+ 0cm 5.4pt 0cm 5.4pt;mso-border-insideh:.5pt solid windowtext;mso-border-insidev:
+ .5pt solid windowtext&quot;&gt;
+ &lt;tbody&gt;&lt;tr style=&quot;mso-yfti-irow:0;mso-yfti-firstrow:yes&quot;&gt;
+  &lt;td valign=&quot;top&quot; style=&quot;border:solid black 1.0pt;background:#B0B3B2;mso-shading:
+  #B0B3B2;mso-pattern:solid #B0B3B2;padding:5.0pt 5.0pt 5.0pt 5.0pt&quot;&gt;
+  &lt;p class=&quot;MsoNormal&quot; align=&quot;center&quot; style=&quot;text-align:center;text-indent:-1.5pt;
+  border:none;mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:
+  yes&quot;&gt;&lt;span style=&quot;font-size:12.0pt;line-height:115%;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;
+  mso-fareast-font-family:&amp;quot;Trebuchet MS&amp;quot;;mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;;
+  background:#B0B3B2;mso-shading:#B0B3B2;mso-pattern:solid #B0B3B2&quot;&gt;Calango&lt;/span&gt;&lt;/p&gt;
+  &lt;/td&gt;
+  &lt;td valign=&quot;top&quot; style=&quot;border:solid black 1.0pt;border-left:none;mso-border-left-alt:
+  solid black 1.0pt;background:#B0B3B2;mso-shading:#B0B3B2;mso-pattern:solid #B0B3B2;
+  padding:5.0pt 5.0pt 5.0pt 5.0pt&quot;&gt;
+  &lt;p class=&quot;MsoNormal&quot; align=&quot;center&quot; style=&quot;text-align:center;text-indent:-1.5pt;
+  border:none;mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:
+  yes&quot;&gt;&lt;span style=&quot;font-size:12.0pt;line-height:115%;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;
+  mso-fareast-font-family:&amp;quot;Trebuchet MS&amp;quot;;mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;;
+  background:#B0B3B2;mso-shading:#B0B3B2;mso-pattern:solid #B0B3B2&quot;&gt;C&lt;/span&gt;&lt;/p&gt;
+  &lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr style=&quot;mso-yfti-irow:1&quot;&gt;
+  &lt;td valign=&quot;top&quot; style=&quot;border:solid black 1.0pt;border-top:none;mso-border-top-alt:
+  solid black 1.0pt;padding:5.0pt 5.0pt 5.0pt 5.0pt&quot;&gt;
+  &lt;p class=&quot;MsoNormal&quot; align=&quot;center&quot; style=&quot;text-align:center;text-indent:-1.5pt;
+  border:none;mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:
+  yes&quot;&gt;&lt;span class=&quot;GramE&quot;&gt;&lt;span style=&quot;font-size:12.0pt;line-height:115%;
+  font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;mso-fareast-font-family:&amp;quot;Trebuchet MS&amp;quot;;
+  mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt;texto&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+  &lt;/td&gt;
+  &lt;td valign=&quot;top&quot; style=&quot;border-top:none;border-left:none;border-bottom:solid black 1.0pt;
+  border-right:solid black 1.0pt;mso-border-top-alt:solid black 1.0pt;
+  mso-border-left-alt:solid black 1.0pt;padding:5.0pt 5.0pt 5.0pt 5.0pt&quot;&gt;
+  &lt;p class=&quot;MsoNormal&quot; align=&quot;center&quot; style=&quot;text-align:center;text-indent:-1.5pt;
+  border:none;mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:
+  yes&quot;&gt;&lt;span class=&quot;SpellE&quot;&gt;&lt;span class=&quot;GramE&quot;&gt;&lt;span style=&quot;font-size:12.0pt;
+  line-height:115%;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;mso-fareast-font-family:
+  &amp;quot;Trebuchet MS&amp;quot;;mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt;char&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-size:12.0pt;line-height:115%;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;
+  mso-fareast-font-family:&amp;quot;Trebuchet MS&amp;quot;;mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt;*&lt;/span&gt;&lt;/p&gt;
+  &lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr style=&quot;mso-yfti-irow:2&quot;&gt;
+  &lt;td valign=&quot;top&quot; style=&quot;border:solid black 1.0pt;border-top:none;mso-border-top-alt:
+  solid black 1.0pt;padding:5.0pt 5.0pt 5.0pt 5.0pt&quot;&gt;
+  &lt;p class=&quot;MsoNormal&quot; align=&quot;center&quot; style=&quot;text-align:center;text-indent:-1.5pt;
+  border:none;mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:
+  yes&quot;&gt;&lt;span class=&quot;SpellE&quot;&gt;&lt;span class=&quot;GramE&quot;&gt;&lt;span style=&quot;font-size:12.0pt;
+  line-height:115%;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;mso-fareast-font-family:
+  &amp;quot;Trebuchet MS&amp;quot;;mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt;caracter&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+  &lt;/td&gt;
+  &lt;td valign=&quot;top&quot; style=&quot;border-top:none;border-left:none;border-bottom:solid black 1.0pt;
+  border-right:solid black 1.0pt;mso-border-top-alt:solid black 1.0pt;
+  mso-border-left-alt:solid black 1.0pt;padding:5.0pt 5.0pt 5.0pt 5.0pt&quot;&gt;
+  &lt;p class=&quot;MsoNormal&quot; align=&quot;center&quot; style=&quot;text-align:center;text-indent:-1.5pt;
+  border:none;mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:
+  yes&quot;&gt;&lt;span class=&quot;SpellE&quot;&gt;&lt;span class=&quot;GramE&quot;&gt;&lt;span style=&quot;font-size:12.0pt;
+  line-height:115%;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;mso-fareast-font-family:
+  &amp;quot;Trebuchet MS&amp;quot;;mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt;char&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+  &lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr style=&quot;mso-yfti-irow:3&quot;&gt;
+  &lt;td valign=&quot;top&quot; style=&quot;border:solid black 1.0pt;border-top:none;mso-border-top-alt:
+  solid black 1.0pt;padding:5.0pt 5.0pt 5.0pt 5.0pt&quot;&gt;
+  &lt;p class=&quot;MsoNormal&quot; align=&quot;center&quot; style=&quot;text-align:center;text-indent:-1.5pt;
+  border:none;mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:
+  yes&quot;&gt;&lt;span class=&quot;GramE&quot;&gt;&lt;span style=&quot;font-size:12.0pt;line-height:115%;
+  font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;mso-fareast-font-family:&amp;quot;Trebuchet MS&amp;quot;;
+  mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt;real&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+  &lt;/td&gt;
+  &lt;td valign=&quot;top&quot; style=&quot;border-top:none;border-left:none;border-bottom:solid black 1.0pt;
+  border-right:solid black 1.0pt;mso-border-top-alt:solid black 1.0pt;
+  mso-border-left-alt:solid black 1.0pt;padding:5.0pt 5.0pt 5.0pt 5.0pt&quot;&gt;
+  &lt;p class=&quot;MsoNormal&quot; align=&quot;center&quot; style=&quot;text-align:center;text-indent:-1.5pt;
+  border:none;mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:
+  yes&quot;&gt;&lt;span class=&quot;SpellE&quot;&gt;&lt;span class=&quot;GramE&quot;&gt;&lt;span style=&quot;font-size:12.0pt;
+  line-height:115%;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;mso-fareast-font-family:
+  &amp;quot;Trebuchet MS&amp;quot;;mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt;double&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+  &lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr style=&quot;mso-yfti-irow:4&quot;&gt;
+  &lt;td valign=&quot;top&quot; style=&quot;border:solid black 1.0pt;border-top:none;mso-border-top-alt:
+  solid black 1.0pt;padding:5.0pt 5.0pt 5.0pt 5.0pt&quot;&gt;
+  &lt;p class=&quot;MsoNormal&quot; align=&quot;center&quot; style=&quot;text-align:center;text-indent:-1.5pt;
+  border:none;mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:
+  yes&quot;&gt;&lt;span class=&quot;GramE&quot;&gt;&lt;span style=&quot;font-size:12.0pt;line-height:115%;
+  font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;mso-fareast-font-family:&amp;quot;Trebuchet MS&amp;quot;;
+  mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt;inteiro&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+  &lt;/td&gt;
+  &lt;td valign=&quot;top&quot; style=&quot;border-top:none;border-left:none;border-bottom:solid black 1.0pt;
+  border-right:solid black 1.0pt;mso-border-top-alt:solid black 1.0pt;
+  mso-border-left-alt:solid black 1.0pt;padding:5.0pt 5.0pt 5.0pt 5.0pt&quot;&gt;
+  &lt;p class=&quot;MsoNormal&quot; align=&quot;center&quot; style=&quot;text-align:center;text-indent:-1.5pt;
+  border:none;mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:
+  yes&quot;&gt;&lt;span class=&quot;SpellE&quot;&gt;&lt;span class=&quot;GramE&quot;&gt;&lt;span style=&quot;font-size:12.0pt;
+  line-height:115%;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;mso-fareast-font-family:
+  &amp;quot;Trebuchet MS&amp;quot;;mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt;int&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+  &lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr style=&quot;mso-yfti-irow:5;mso-yfti-lastrow:yes&quot;&gt;
+  &lt;td valign=&quot;top&quot; style=&quot;border:solid black 1.0pt;border-top:none;mso-border-top-alt:
+  solid black 1.0pt;padding:5.0pt 5.0pt 5.0pt 5.0pt&quot;&gt;
+  &lt;p class=&quot;MsoNormal&quot; align=&quot;center&quot; style=&quot;text-align:center;text-indent:-1.5pt;
+  border:none;mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:
+  yes&quot;&gt;&lt;span class=&quot;SpellE&quot;&gt;&lt;span class=&quot;GramE&quot;&gt;&lt;span style=&quot;font-size:12.0pt;
+  line-height:115%;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;mso-fareast-font-family:
+  &amp;quot;Trebuchet MS&amp;quot;;mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt;logico&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+  &lt;/td&gt;
+  &lt;td valign=&quot;top&quot; style=&quot;border-top:none;border-left:none;border-bottom:solid black 1.0pt;
+  border-right:solid black 1.0pt;mso-border-top-alt:solid black 1.0pt;
+  mso-border-left-alt:solid black 1.0pt;padding:5.0pt 5.0pt 5.0pt 5.0pt&quot;&gt;
+  &lt;p class=&quot;MsoNormal&quot; align=&quot;center&quot; style=&quot;text-align:center;text-indent:-1.5pt;
+  border:none;mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:
+  yes&quot;&gt;&lt;span style=&quot;font-size:12.0pt;line-height:115%;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;
+  mso-fareast-font-family:&amp;quot;Trebuchet MS&amp;quot;;mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt;0,
+  1&lt;/span&gt;&lt;/p&gt;
+  &lt;/td&gt;
+ &lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;p class=&quot;MsoNormal&quot; style=&quot;text-align:justify;text-indent:36.0pt;border:none;
+mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:yes&quot;&gt;&lt;o:p&gt;&amp;nbsp;&lt;/o:p&gt;&lt;/p&gt;
+&lt;p class=&quot;MsoNormal&quot; style=&quot;text-align:justify;text-indent:36.0pt;border:none;
+mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:yes&quot;&gt;&lt;span style=&quot;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;mso-fareast-font-family:&amp;quot;Trebuchet MS&amp;quot;;
+mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt;São necessárias algumas observações. A
+linguagem Calango possui o tipo texto, que não possui um equivalente direto em
+C (um tipo string), mas pode ser representado por um vetor de caracteres com a
+devida terminação. Outro tipo inexistente na linguagem C é o tipo &lt;span class=&quot;SpellE&quot;&gt;logico&lt;/span&gt; (&lt;span class=&quot;SpellE&quot;&gt;boolean&lt;/span&gt;). Pode-se fazer a
+comparação com os valores &lt;span class=&quot;GramE&quot;&gt;0&lt;/span&gt; e 1 na linguagem C, que em
+expressões condicionais atuam como um valor booleano.&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p class=&quot;MsoNormal&quot; style=&quot;text-align:justify;text-indent:36.0pt;border:none;
+mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:yes&quot;&gt;&lt;span style=&quot;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;mso-fareast-font-family:&amp;quot;Trebuchet MS&amp;quot;;
+mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt;É possível criar vetores (&lt;span class=&quot;SpellE&quot;&gt;arrays&lt;/span&gt;) na linguagem Calango. Na declaração de uma
+variável, basta adicionar colchetes com um número inteiro entre eles após o
+identificador da variável. Um exemplo no código &lt;span class=&quot;GramE&quot;&gt;à&lt;/span&gt;
+seguir.&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+        &lt;img src=&quot;attach/img/exemplo-declaracao-variaveis2.png&quot; /&gt;
+    &lt;/div&gt;
+
+
+&lt;p class=&quot;MsoNormal&quot; style=&quot;text-align:justify;text-indent:36.0pt;border:none;
+mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:yes&quot;&gt;&lt;span style=&quot;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;mso-fareast-font-family:&amp;quot;Trebuchet MS&amp;quot;;
+mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt;No código acima, foram criadas três
+variáveis, sendo duas delas vetores de 10 posições (eventos e anos).&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+
+
+
+
+
+
+  &lt;/body&gt;
+&lt;/html&gt;
+</descricao>
+</funcionalidade>

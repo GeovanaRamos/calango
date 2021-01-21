@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<funcionalidade>
+    <nome>Condicionais e Repetições</nome>
+    <index>3</index>
+    <descricao>&lt;html&gt;
+  &lt;head&gt;
+    
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p class=&quot;MsoNormal&quot; style=&quot;text-align:justify;text-indent:36.0pt&quot;&gt;&lt;span style=&quot;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;mso-fareast-font-family:&amp;quot;Trebuchet MS&amp;quot;;
+mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt;Os condicionais e repetições (loops) são a
+maneira de dar vida ao algoritmo. Na linguagem Calango, existem loops da mesma
+forma que na linguagem C em termos de funcionamento e de sintaxe.&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</descricao>
+    <include src="Se.xml"/>
+    <include src="Escolha.xml"/>
+    <include src="Enquanto.xml"/>
+    <include src="FacaEnquanto.xml"/>
+    <include src="Para.xml"/>
+</funcionalidade>

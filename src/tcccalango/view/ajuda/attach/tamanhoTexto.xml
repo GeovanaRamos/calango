@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<funcaoEmbutida>
+    <nome>tamanhoTexto</nome>
+    <index>2</index>
+    <descricao>&lt;html&gt;
+  &lt;head&gt;
+    
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p class=&quot;MsoNormal&quot; style=&quot;text-indent:1.0cm&quot;&gt;&lt;span style=&quot;mso-fareast-font-family:
+&amp;quot;Times New Roman&amp;quot;&quot;&gt;A função &lt;span class=&quot;SpellE&quot;&gt;&lt;span class=&quot;GramE&quot;&gt;&lt;b&gt;tamantoTexto&lt;/b&gt;&lt;/span&gt;&lt;/span&gt;&lt;b&gt;
+&lt;/b&gt; possui como objetivo retornar o tamanho do texto em números de caracteres.
+A declaração da função segue a seguinte sintaxe: &lt;b&gt;inteiro &lt;span class=&quot;SpellE&quot;&gt;&lt;span class=&quot;GramE&quot;&gt;tamanhoTexto&lt;/span&gt;&lt;/span&gt; (texto t)&lt;/b&gt;. A função recebe como
+parâmetro um texto e seu retorno é o numero de caracteres contidos no texto.&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+
+     &lt;br/&gt;
+     &lt;br/&gt;
+     &lt;div align=&quot;center&quot;&gt;
+        &lt;img src=&quot;attach/img/exemplo-tamanho-texto.png&quot; /&gt;
+    &lt;/div&gt;
+
+ &lt;br/&gt;
+&lt;p class=&quot;MsoNormal&quot; style=&quot;text-indent:1.0cm&quot;&gt;&lt;span style=&quot;mso-fareast-font-family:
+&amp;quot;Times New Roman&amp;quot;&quot;&gt;Caso o usuário digite
+a palavra “teste“, a saída será o tamanho do texto digitado:&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+
+ &lt;br/&gt;
+ &lt;br/&gt;
+    &lt;div align=&quot;center&quot;&gt;
+        &lt;img src=&quot;attach/img/exemplo-console-tamanho-texto.png&quot; /&gt;
+    &lt;/div&gt;
+
+  &lt;/body&gt;
+&lt;/html&gt;
+</descricao>
+    <tipoRetorno>inteiro</tipoRetorno>
+    <descricaoRetorno>número de caracteres no texto</descricaoRetorno>
+    <parametros>
+        <parametros>
+            <tipo>texto</tipo>
+            <nome>t</nome>
+            <descricao>texto a ter o número de caracteres contado</descricao>
+        </parametros>
+    </parametros>
+</funcaoEmbutida>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<funcaoEmbutida>
+    <nome>comparaTexto</nome>
+    <index>1</index>
+    <descricao>&lt;html&gt;
+  &lt;head&gt;
+    
+  &lt;/head&gt;
+  &lt;body&gt;
+      &lt;p class=&quot;MsoListParagraphCxSpFirst&quot; style=&quot;margin-left:0cm;mso-add-space:auto;
+text-indent:1.0cm&quot;&gt;
+           &lt;span style=&quot;mso-fareast-font-family:&amp;quot;Times New Roman&amp;quot;&quot;&gt;A
+função &lt;span class=&quot;SpellE&quot;&gt;&lt;span class=&quot;GramE&quot;&gt;&lt;b&gt;comparaTexto&lt;/b&gt;&lt;/span&gt;&lt;/span&gt;&lt;b&gt;
+&lt;/b&gt; possui como objetivo comparar duas variáveis do tipo texto e retornar um
+valor inteiro informando se as variáveis são iguais ou diferentes. Sua
+declaração é da seguinte forma: “&lt;b&gt;inteiro &lt;span class=&quot;SpellE&quot;&gt;&lt;span class=&quot;GramE&quot;&gt;comparaTexto&lt;/span&gt;&lt;/span&gt; (texto t1, texto t2)&lt;/b&gt;”. A função
+recebe como parâmetros dois textos. Como retorno pode-se obter três valores: um
+valor &lt;span class=&quot;GramE&quot;&gt;0&lt;/span&gt; (zero) caso os dois símbolos sejam iguais, um
+valor negativo caso o primeiro símbolo discrepante &lt;span class=&quot;SpellE&quot;&gt;sejamenor&lt;/span&gt;
+(em termos de seu valor na tabela ASCII) que o segundo símbolo ou um valor
+positivo caso o primeiro símbolo discrepante seja maior (novamente em termos de
+seu valor na tabela ASCII) que o segundo símbolo.&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;
+     &lt;/p&gt;
+     &lt;br/&gt;
+     &lt;br/&gt;
+     &lt;div align=&quot;center&quot;&gt;
+        &lt;img src=&quot;attach/img/exemplo-compara-texto.png&quot; /&gt;
+    &lt;/div&gt;
+
+     &lt;br/&gt;
+     &lt;p class=&quot;MsoListParagraphCxSpMiddle&quot; style=&quot;margin-left:0cm;mso-add-space:auto;
+text-indent:35.45pt&quot;&gt;&lt;span style=&quot;mso-fareast-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt;Sua
+saída será o resultado da comparação entre os dois textos:&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+     &lt;br/&gt;
+     &lt;br/&gt;
+
+   &lt;div align=&quot;center&quot;&gt;
+        &lt;img src=&quot;attach/img/exemplo-console-compara-texto.png&quot; /&gt;
+    &lt;/div&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</descricao>
+    <tipoRetorno>inteiro</tipoRetorno>
+    <descricaoRetorno>resultado da comparação</descricaoRetorno>
+    <parametros>
+        <parametros>
+            <tipo>texto</tipo>
+            <nome>t1</nome>
+            <descricao>um texto a ser comparado</descricao>
+        </parametros>
+        <parametros>
+            <tipo>texto</tipo>
+            <nome>t2</nome>
+            <descricao>outro texto a ser comparado</descricao>
+        </parametros>
+    </parametros>
+</funcaoEmbutida>

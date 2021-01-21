@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<funcionalidade>
+    <nome>Enquanto</nome>
+    <index>3</index>
+    <descricao>&lt;html&gt;
+  &lt;head&gt;
+    
+  &lt;/head&gt;
+  &lt;body&gt;
+&lt;p class=&quot;MsoNormal&quot; style=&quot;text-align:justify;text-indent:36.0pt;border:none;
+mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:yes&quot;&gt;&lt;span style=&quot;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;mso-fareast-font-family:&amp;quot;Trebuchet MS&amp;quot;;
+mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt;A primeira estrutura de repetição a ser
+avaliada é o &lt;/span&gt;&lt;b style=&quot;mso-bidi-font-weight:normal&quot;&gt;&lt;i style=&quot;mso-bidi-font-style:
+normal&quot;&gt;&lt;span style=&quot;font-family:&amp;quot;Courier New&amp;quot;;mso-fareast-font-family:&amp;quot;Courier New&amp;quot;&quot;&gt;enquanto&lt;/span&gt;&lt;/i&gt;&lt;/b&gt;&lt;span style=&quot;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;mso-fareast-font-family:&amp;quot;Trebuchet MS&amp;quot;;
+mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt;. Esta estrutura é equivalente &lt;span class=&quot;GramE&quot;&gt;a&lt;/span&gt; repetição &lt;/span&gt;&lt;span class=&quot;SpellE&quot;&gt;&lt;b style=&quot;mso-bidi-font-weight:
+normal&quot;&gt;&lt;i style=&quot;mso-bidi-font-style:normal&quot;&gt;&lt;span style=&quot;font-family:&amp;quot;Courier New&amp;quot;;
+mso-fareast-font-family:&amp;quot;Courier New&amp;quot;&quot;&gt;while&lt;/span&gt;&lt;/i&gt;&lt;/b&gt;&lt;/span&gt;&lt;span style=&quot;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;mso-fareast-font-family:&amp;quot;Trebuchet MS&amp;quot;;
+mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt; na linguagem C. Ela executa um bloco de
+código enquanto sua condição for verdadeira, sendo a condição avaliada antes da
+execução do código. Exemplo: &lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;	
+
+&lt;div align=&quot;center&quot;&gt;
+        &lt;img src=&quot;attach/img/condicionalEnquanto1.png&quot; /&gt;
+    &lt;/div&gt;
+
+&lt;p class=&quot;MsoNormal&quot; style=&quot;text-align:justify;text-indent:36.0pt&quot;&gt;&lt;span style=&quot;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;mso-fareast-font-family:&amp;quot;Trebuchet MS&amp;quot;;
+mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt;A repetição começa com &lt;i&gt;i&lt;/i&gt; valendo &lt;span class=&quot;GramE&quot;&gt;1&lt;/span&gt;, sendo esta variável incrementada de 1 a cada repetição.
+Essa repetição, portanto, irá executar 10 vezes (&lt;i&gt;i &lt;/i&gt;de &lt;span class=&quot;GramE&quot;&gt;1&lt;/span&gt;
+até 10), sendo que a variável i ao atingir o valor 11 a condição é avaliada
+como falsa, resultando na não-execução do corpo da repetição.&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+
+  &lt;/body&gt;
+&lt;/html&gt;
+</descricao>
+</funcionalidade>

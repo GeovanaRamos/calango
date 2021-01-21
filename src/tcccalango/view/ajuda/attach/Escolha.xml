@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<funcionalidade>
+    <nome>Escolha</nome>
+    <index>2</index>
+    <descricao>&lt;html&gt;
+  &lt;head&gt;
+    
+  &lt;/head&gt;
+  &lt;body&gt;
+
+&lt;p class=&quot;MsoNormal&quot; style=&quot;border:none;mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;
+mso-border-shadow:yes&quot;&gt;
+&lt;span style=&quot;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;mso-fareast-font-family:&amp;quot;Trebuchet MS&amp;quot;;
+mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt;Outra estrutura condicional semelhante à
+estrutura &lt;b style=&quot;mso-bidi-font-weight:normal&quot;&gt;&lt;i&gt;se&lt;/i&gt;&lt;/b&gt; é a &lt;b style=&quot;mso-bidi-font-weight:normal&quot;&gt;&lt;i style=&quot;mso-bidi-font-style:normal&quot;&gt;escolha&lt;/i&gt;&lt;/b&gt;.
+Ela pode ser comparada a um &lt;b style=&quot;mso-bidi-font-weight:normal&quot;&gt;&lt;i&gt;se&lt;/i&gt;&lt;/b&gt;
+com diversos &lt;span class=&quot;SpellE&quot;&gt;&lt;b style=&quot;mso-bidi-font-weight:normal&quot;&gt;&lt;i&gt;senao&lt;/i&gt;&lt;/b&gt;&lt;/span&gt;&lt;i&gt;
+&lt;b style=&quot;mso-bidi-font-weight:normal&quot;&gt;se&lt;/b&gt;&lt;/i&gt; e um possível &lt;span class=&quot;SpellE&quot;&gt;&lt;b style=&quot;mso-bidi-font-weight:normal&quot;&gt;&lt;i&gt;senao&lt;/i&gt;&lt;/b&gt;&lt;/span&gt;.
+Basicamente, usa-se uma variável de controle, a declara-se comparações de
+igualdade a serem feitas sobre ela. Diferentemente do condicional &lt;i&gt;se&lt;/i&gt;,
+apenas os tipos de dado &lt;span class=&quot;SpellE&quot;&gt;caracter&lt;/span&gt; e inteiro são
+permitidos. Abaixo, dois códigos que executam a mesma tarefa: um usando um
+bloco &lt;b style=&quot;mso-bidi-font-weight:normal&quot;&gt;&lt;i style=&quot;mso-bidi-font-style:
+normal&quot;&gt;se&lt;/i&gt;&lt;/b&gt; e outro usando &lt;span class=&quot;GramE&quot;&gt;o &lt;b style=&quot;mso-bidi-font-weight:
+normal&quot;&gt;&lt;i style=&quot;mso-bidi-font-style:normal&quot;&gt;escolha&lt;/i&gt;&lt;/b&gt;&lt;/span&gt;.&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;
+&lt;/p&gt;
+&lt;div align=&quot;center&quot;&gt;
+        &lt;img src=&quot;attach/img/condicionalEscolha1.png&quot; /&gt;
+    &lt;/div&gt;
+&lt;br/&gt;
+&lt;br/&gt;
+&lt;br/&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+        &lt;img src=&quot;attach/img/condicionalEscolha2.png&quot; /&gt;
+    &lt;/div&gt;
+
+&lt;p class=&quot;MsoNormal&quot; style=&quot;text-align:justify;text-indent:36.0pt;border:none;
+mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:yes&quot;&gt;&lt;span style=&quot;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;mso-fareast-font-family:&amp;quot;Trebuchet MS&amp;quot;;
+mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt;O primeiro algoritmo utiliza uma estrutura
+de condicionais &lt;/span&gt;&lt;b style=&quot;mso-bidi-font-weight:normal&quot;&gt;&lt;i style=&quot;mso-bidi-font-style:normal&quot;&gt;&lt;span style=&quot;font-family:&amp;quot;Courier New&amp;quot;;
+mso-fareast-font-family:&amp;quot;Courier New&amp;quot;&quot;&gt;se&lt;/span&gt;&lt;/i&gt;&lt;/b&gt;&lt;span style=&quot;font-family:
+&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;mso-fareast-font-family:&amp;quot;Trebuchet MS&amp;quot;;mso-bidi-font-family:
+&amp;quot;Trebuchet MS&amp;quot;&quot;&gt;, enquanto que o segundo usa a estrutura &lt;/span&gt;&lt;b style=&quot;mso-bidi-font-weight:normal&quot;&gt;&lt;i style=&quot;mso-bidi-font-style:normal&quot;&gt;&lt;span style=&quot;font-family:&amp;quot;Courier New&amp;quot;;mso-fareast-font-family:&amp;quot;Courier New&amp;quot;&quot;&gt;escolha&lt;/span&gt;&lt;/i&gt;&lt;/b&gt;&lt;span style=&quot;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;mso-fareast-font-family:&amp;quot;Trebuchet MS&amp;quot;;
+mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt;. &lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p class=&quot;MsoNormal&quot; style=&quot;text-align:justify;text-indent:36.0pt;border:none;
+mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:yes&quot;&gt;&lt;span style=&quot;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;mso-fareast-font-family:&amp;quot;Trebuchet MS&amp;quot;;
+mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt;Vamos avaliar linha por linha a estrutura
+usada no segundo algoritmo.&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p class=&quot;MsoNormal&quot; style=&quot;text-align:justify;text-indent:36.0pt;border:none;
+mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:yes&quot;&gt;&lt;span style=&quot;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;mso-fareast-font-family:&amp;quot;Trebuchet MS&amp;quot;;
+mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt;Na linha &lt;span class=&quot;GramE&quot;&gt;6&lt;/span&gt;,
+começa a estrutura &lt;/span&gt;&lt;b style=&quot;mso-bidi-font-weight:normal&quot;&gt;&lt;i style=&quot;mso-bidi-font-style:normal&quot;&gt;&lt;span style=&quot;font-family:&amp;quot;Courier New&amp;quot;;
+mso-fareast-font-family:&amp;quot;Courier New&amp;quot;&quot;&gt;escolha&lt;/span&gt;&lt;/i&gt;&lt;/b&gt;&lt;span style=&quot;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;mso-fareast-font-family:&amp;quot;Trebuchet MS&amp;quot;;
+mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt;. Ela é seguida pela abertura de um
+parêntese, o nome de uma variável, e o fechamento do parêntese. A variável
+informada aqui é chamada de variável de controle, e é ela que será comparada em
+cada &lt;/span&gt;&lt;b style=&quot;mso-bidi-font-weight:normal&quot;&gt;&lt;i style=&quot;mso-bidi-font-style:
+normal&quot;&gt;&lt;span style=&quot;font-family:&amp;quot;Courier New&amp;quot;;mso-fareast-font-family:&amp;quot;Courier New&amp;quot;&quot;&gt;caso&lt;/span&gt;&lt;/i&gt;&lt;/b&gt;&lt;span style=&quot;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;mso-fareast-font-family:&amp;quot;Trebuchet MS&amp;quot;;
+mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt;.&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;
+&lt;span style=&quot;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;mso-fareast-font-family:&amp;quot;Trebuchet MS&amp;quot;;
+mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt;Na linha &lt;span class=&quot;GramE&quot;&gt;7&lt;/span&gt;, o
+primeiro &lt;b style=&quot;mso-bidi-font-weight:normal&quot;&gt;&lt;i style=&quot;mso-bidi-font-style:
+normal&quot;&gt;caso&lt;/i&gt;&lt;/b&gt; é declarado, através da palavra &lt;b style=&quot;mso-bidi-font-weight:
+normal&quot;&gt;&lt;i style=&quot;mso-bidi-font-style:normal&quot;&gt;caso&lt;/i&gt;&lt;/b&gt; seguida de um
+literal do mesmo tipo da variável de controle. A comparação a ser executada
+aqui é equivalente à comparação &lt;/span&gt;&lt;span style=&quot;font-family:&amp;quot;Courier New&amp;quot;;
+mso-fareast-font-family:&amp;quot;Courier New&amp;quot;&quot;&gt;numero == 1&lt;/span&gt;
+&lt;span style=&quot;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;mso-fareast-font-family:&amp;quot;Trebuchet MS&amp;quot;;
+mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt;. Caso seja verdadeira, o código deste
+bloco (linhas 8 e 9) será executado.&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;
+&lt;/p&gt;
+&lt;p class=&quot;MsoNormal&quot; style=&quot;text-align:justify;text-indent:36.0pt;border:none;
+mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:yes&quot;&gt;&lt;span style=&quot;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;mso-fareast-font-family:&amp;quot;Trebuchet MS&amp;quot;;
+mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt;Na linha &lt;span class=&quot;GramE&quot;&gt;8&lt;/span&gt;, é apresentado
+o texto &lt;/span&gt;&lt;span style=&quot;font-family:&amp;quot;Courier New&amp;quot;;mso-fareast-font-family:
+&amp;quot;Courier New&amp;quot;&quot;&gt;Primeiro&lt;/span&gt;&lt;span style=&quot;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;
+mso-fareast-font-family:&amp;quot;Trebuchet MS&amp;quot;;mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt; na
+saída. Neste bloco&lt;span class=&quot;GramE&quot;&gt; &lt;span style=&quot;mso-spacerun:yes&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/span&gt;poderiam
+existir blocos condicionais, loops, atribuições, chamadas de &lt;span class=&quot;SpellE&quot;&gt;sub-algoritmo&lt;/span&gt;, etc.&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p class=&quot;MsoNormal&quot; style=&quot;text-align:justify;text-indent:36.0pt;border:none;
+mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:yes&quot;&gt;&lt;span style=&quot;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;mso-fareast-font-family:&amp;quot;Trebuchet MS&amp;quot;;
+mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt;Na linha 9, o comando &lt;/span&gt;&lt;span style=&quot;font-family:&amp;quot;Courier New&amp;quot;;mso-fareast-font-family:&amp;quot;Courier New&amp;quot;&quot;&gt;interrompa&lt;/span&gt;&lt;span style=&quot;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;mso-fareast-font-family:&amp;quot;Trebuchet MS&amp;quot;;
+mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt; é utilizado para impedir que os casos
+seguintes sejam executados. Isto ocorre de maneira semelhante à linguagem C: se
+a comparação de um &lt;b style=&quot;mso-bidi-font-weight:normal&quot;&gt;&lt;i style=&quot;mso-bidi-font-style:
+normal&quot;&gt;caso&lt;/i&gt;&lt;/b&gt; for verdadeira, todos os &lt;b style=&quot;mso-bidi-font-weight:
+normal&quot;&gt;&lt;i style=&quot;mso-bidi-font-style:normal&quot;&gt;casos&lt;/i&gt;&lt;/b&gt; seguintes serão
+executados, como em um efeito cascata. Este efeito é desejável caso a ação a
+ser executada é a mesma para diversos casos. O comando &lt;/span&gt;&lt;span style=&quot;font-family:&amp;quot;Courier New&amp;quot;;mso-fareast-font-family:&amp;quot;Courier New&amp;quot;&quot;&gt;interrompa&lt;/span&gt;&lt;span style=&quot;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;mso-fareast-font-family:&amp;quot;Trebuchet MS&amp;quot;;
+mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt; impede que isso aconteça, encerrando ali
+a execução do bloco &lt;i&gt;escolha&lt;/i&gt;.&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p class=&quot;MsoNormal&quot; style=&quot;text-align:justify;text-indent:36.0pt;border:none;
+mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:yes&quot;&gt;&lt;span style=&quot;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;mso-fareast-font-family:&amp;quot;Trebuchet MS&amp;quot;;
+mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt;As linhas 10 - 15 são outros casos
+semelhantes ao já avaliado.&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p class=&quot;MsoNormal&quot; style=&quot;text-align:justify;text-indent:36.0pt;border:none;
+mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:yes&quot;&gt;&lt;span style=&quot;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;mso-fareast-font-family:&amp;quot;Trebuchet MS&amp;quot;;
+mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt;Na linha 16, está o comando &lt;/span&gt;&lt;span class=&quot;SpellE&quot;&gt;&lt;span class=&quot;GramE&quot;&gt;&lt;b style=&quot;mso-bidi-font-weight:normal&quot;&gt;&lt;i style=&quot;mso-bidi-font-style:normal&quot;&gt;&lt;span style=&quot;font-family:&amp;quot;Courier New&amp;quot;;
+mso-fareast-font-family:&amp;quot;Courier New&amp;quot;&quot;&gt;outroCaso&lt;/span&gt;&lt;/i&gt;&lt;/b&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;mso-fareast-font-family:&amp;quot;Trebuchet MS&amp;quot;;
+mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt;, que será executado se nenhum &lt;b style=&quot;mso-bidi-font-weight:normal&quot;&gt;&lt;i style=&quot;mso-bidi-font-style:normal&quot;&gt;caso&lt;/i&gt;&lt;/b&gt;
+for executado. Não é necessário usar o comando &lt;/span&gt;&lt;span style=&quot;font-family:
+&amp;quot;Courier New&amp;quot;;mso-fareast-font-family:&amp;quot;Courier New&amp;quot;&quot;&gt;interrompa&lt;/span&gt;&lt;span style=&quot;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;mso-fareast-font-family:&amp;quot;Trebuchet MS&amp;quot;;
+mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt;, pois não existe mais nenhum &lt;b style=&quot;mso-bidi-font-weight:normal&quot;&gt;&lt;i style=&quot;mso-bidi-font-style:normal&quot;&gt;caso&lt;/i&gt;&lt;/b&gt;
+entre o &lt;span class=&quot;SpellE&quot;&gt;&lt;b style=&quot;mso-bidi-font-weight:normal&quot;&gt;&lt;i style=&quot;mso-bidi-font-style:normal&quot;&gt;outrocaso&lt;/i&gt;&lt;/b&gt;&lt;/span&gt; e o &lt;span class=&quot;SpellE&quot;&gt;&lt;span class=&quot;GramE&quot;&gt;&lt;b style=&quot;mso-bidi-font-weight:normal&quot;&gt;&lt;i style=&quot;mso-bidi-font-style:normal&quot;&gt;fimEscolha&lt;/i&gt;&lt;/b&gt;&lt;/span&gt;&lt;/span&gt;. O bloco &lt;/span&gt;&lt;span class=&quot;SpellE&quot;&gt;&lt;span class=&quot;GramE&quot;&gt;&lt;b style=&quot;mso-bidi-font-weight:normal&quot;&gt;&lt;i style=&quot;mso-bidi-font-style:normal&quot;&gt;&lt;span style=&quot;font-family:&amp;quot;Courier New&amp;quot;;
+mso-fareast-font-family:&amp;quot;Courier New&amp;quot;&quot;&gt;outroCaso&lt;/span&gt;&lt;/i&gt;&lt;/b&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;mso-fareast-font-family:&amp;quot;Trebuchet MS&amp;quot;;
+mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt; é opcional e deve ser obrigatoriamente o
+último bloco do comando &lt;b style=&quot;mso-bidi-font-weight:normal&quot;&gt;&lt;i style=&quot;mso-bidi-font-style:normal&quot;&gt;escolha.&lt;/i&gt;&lt;/b&gt;&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</descricao>
+</funcionalidade>

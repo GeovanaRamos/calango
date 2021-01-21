@@ -1,148 +1,189 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package tcccalango.util.indentacao;
 
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-/**
- *
- * @author Gabriel
- */
 public class IndentadorCalango {
-    
-    private static final String TOKEN_REGEXP = "(\\s*(principal|para.+faca|se.+entao|senao|(funcao|procedimento)[^)]+\\)|faca|enquanto[^)]+\\)(;|\\s*faca)|fimSe|fimPara|fimFuncao|fimProcedimento|fimEnquanto|fimPrincipal|//.+|(logico|texto|caracter|inteiro|real)\\s+.+(=.+)?;|interrompa;|.+=.+;|retorna.*;|(.+=)?.+\\(.*\\);|algoritmo.+;)|\\*/)(\\n\\s*)*";
-    private static final Pattern TOKEN_PATTERN = Pattern.compile(TOKEN_REGEXP);
-    private static final Map<String, String> blocos = new HashMap<String, String>();
-    
-    static {
-        blocos.put("principal", "fimPrincipal");
-        blocos.put("para", "fimPara");
-        blocos.put("se", "senao");
-        blocos.put("senao", "fimSe");
-        blocos.put("funcao", "fimFuncao");
-        blocos.put("enquantofaca", "fimEnquanto");
-        blocos.put("faca", "enquanto");
-        blocos.put("procedimento", "fimProcedimento");
-        blocos.put("/*", "*/");
-    }
-    
-    private String identacao;
+   private static final String TOKEN_REGEXP = "([ \\t]*(principal|para.+faca|se.+entao|caso.+|senao|senaoSe.+entao|outroCaso|escolha.+\\)|(funcao|procedimento).+\\)|faca|enquanto.+\\)[ \\t.]*(;|faca)|fimSe|fimPara|fimFuncao|fimProcedimento|fimEnquanto|fimEscolha|fimPrincipal|//.*|(logico|texto|caracter|inteiro|real)[ \\t.]+.+(=.+)?[ \\t.]*;|interrompa[ \\t.]*;|.+=.+;|retorna.*;|(.+=)?.+\\(.*\\)[ \\t]*;|algoritmo.+;)|\\*/)[ \\t]*(//.*[ \\t]*)?(\\n\\s*)*";
+   private static final Pattern TOKEN_PATTERN = Pattern.compile("([ \\t]*(principal|para.+faca|se.+entao|caso.+|senao|senaoSe.+entao|outroCaso|escolha.+\\)|(funcao|procedimento).+\\)|faca|enquanto.+\\)[ \\t.]*(;|faca)|fimSe|fimPara|fimFuncao|fimProcedimento|fimEnquanto|fimEscolha|fimPrincipal|//.*|(logico|texto|caracter|inteiro|real)[ \\t.]+.+(=.+)?[ \\t.]*;|interrompa[ \\t.]*;|.+=.+;|retorna.*;|(.+=)?.+\\(.*\\)[ \\t]*;|algoritmo.+;)|\\*/)[ \\t]*(//.*[ \\t]*)?(\\n\\s*)*");
+   private String identacao;
 
-    public IndentadorCalango(String identacao) {
-        this.identacao = identacao;
-    }
+   public String identa(String codigo) {
+      Matcher m = TOKEN_PATTERN.matcher(codigo);
+      List<String> groups = new ArrayList();
+      int lastIndex = 0;
+      int lastSize = 0;
 
-    public IndentadorCalango() {
-        this("\t");
-    }
+      while(m.find()) {
+         if (m.start() > lastIndex + lastSize) {
+            groups.add(codigo.substring(lastIndex + lastSize, m.start()));
+         }
 
-    public String getIdentacao() {
-        return identacao;
-    }
+         String group = m.group();
+         lastIndex = m.start();
+         lastSize = group.length();
+         groups.add(group.replaceAll("\\n[ \\t]*", "\n").replaceAll("^[ \\t]+|[ \\t]+$", ""));
+      }
 
-    public void setIdentacao(String identacao) {
-        this.identacao = identacao;
-    }
-    
-    public String identa(String codigo){
-        StringBuffer sb = retiraIdentacao(codigo);
+      StringBuilder indent = new StringBuilder();
 
-        System.out.println(sb);
+      while(!groups.isEmpty()) {
+         this.token(indent, "", groups);
+      }
 
-        List<String> linhas = new ArrayList<String>(Arrays.asList(sb.toString().split("\n")));
+      return indent.toString();
+   }
 
-        StringBuilder codigoIdentado = new StringBuilder();
-        
-        identa(null, null, linhas, null, codigoIdentado);
-        
-        return codigoIdentado.toString().replace("\n"+identacao, "\n");
-    }
+   private void token(StringBuilder codigo, String indent, List<String> tokens) {
+      String line = (String)tokens.remove(0);
+      String token = line.trim();
+      if (token.matches("principal([^A-Za-z_0-9].*)?")) {
+         this.principal(line, codigo, indent, tokens);
+      } else if (token.matches("para([^A-Za-z_0-9].*)?")) {
+         this.para(line, codigo, indent, tokens);
+      } else if (token.matches("senao([^A-Za-z_0-9].*)?")) {
+         this.senao(line, codigo, indent, tokens);
+      } else if (token.matches("se([^A-Za-z_0-9].*)?")) {
+         this.se(line, codigo, indent, tokens);
+      } else if (token.matches("escolha([^A-Za-z_0-9].*)?")) {
+         this.escolha(line, codigo, indent, tokens);
+      } else if (token.matches("(funcao|procedimento)([^A-Za-z_0-9].*)?")) {
+         this.funcaoProcedimento(line, codigo, indent, tokens);
+      } else if (token.matches("faca([^A-Za-z_0-9].*)?")) {
+         this.faca(line, codigo, indent, tokens);
+      } else if (token.matches("enquanto([^A-Za-z_0-9].*)?")) {
+         this.enquanto(line, codigo, indent, tokens);
+      } else if (token.matches("/\\*.*")) {
+         this.comentarioBloco(line, codigo, indent, tokens);
+      } else if (token.matches("//.*")) {
+         this.comentarioLinha(line, codigo, indent, tokens);
+      } else {
+         this.generic(line, codigo, indent, tokens);
+      }
 
-    private void identa(String aberturaBloco, String chave, List<String> linhas, String tab, StringBuilder codigoIdentado){
-        if (aberturaBloco==null || chave==null){
-            aberturaBloco = linhas.remove(0);
-            String[] chaves = aberturaBloco.split("((\\s+|\\([^\\n]*\\)|;)+)");
+   }
 
-            chave = chaves.toString().replaceAll("[\\[\\]\\,]", "");
-            if (!blocos.containsKey(chave) && blocos.containsValue(chave) && chaves.length!=0){
-                chave = chaves[0];
-            }
-        }
+   private void escolha(String line, StringBuilder codigo, String indent, List<String> tokens) {
+      this.generic(line, codigo, indent, tokens);
 
-        codigoIdentado.append((tab==null?"":tab)).append(aberturaBloco).append("\n");
-
-        do{
-            String current = linhas.remove(0);
-            String[] currentChaves = current.split("(\\s+|\\([^\\n]*\\)|;)+");
-
-            String currentChave = Arrays.asList(currentChaves).toString().replaceAll("[\\[\\]\\,\\s]", "").trim();
-            if (!blocos.containsKey(currentChave) && !blocos.containsValue(currentChave) && currentChaves.length!=0){
-                currentChave = currentChaves[0].trim();
-            }
-            
-            if (blocos.values().contains(currentChave)){
-                if (currentChave.equals(blocos.get(chave))){
-                    if (blocos.containsKey(blocos.get(chave))){
-                        identa(current, currentChave, linhas, (tab==null?"":tab), codigoIdentado);
-                    }else{
-                        codigoIdentado.append((tab==null?"":tab)).append(current).append("\n");
-                    }
-                    return;
-                }else if (!chave.equals("/*")){
-                    if (currentChave.equals(blocos.get(blocos.get(chave)))){
-                        codigoIdentado.append((tab==null?"":tab)).append(current).append("\n");
-                        return;
-                    }else{
-                        //System.err.println(codigoIdentado);
-                        //throw new RuntimeException("Código Inválido");
-                    }
-                }
+      while(!tokens.isEmpty()) {
+         String child = ((String)tokens.get(0)).trim();
+         if (child.matches("(caso([^A-Za-z_0-9].*)?|outroCaso)")) {
+            this.generic((String)tokens.remove(0), codigo, indent, tokens);
+         } else {
+            if (child.equals("fimEscolha")) {
+               this.generic((String)tokens.remove(0), codigo, indent, tokens);
+               return;
             }
 
-            if (chave.equals("/*")){
-                codigoIdentado.append((tab==null?"":tab)).append(current).append("\n");
-            }else if (blocos.containsKey(currentChave)){
-                identa(current, currentChave, linhas, identacao+(tab==null?"":tab), codigoIdentado);
-            }else{
-                codigoIdentado.append((tab==null?"":tab)).append(identacao).append(current).append("\n");
-            }
-        }while(!linhas.isEmpty());
-    }
+            this.token(codigo, indent + this.identacao, tokens);
+         }
+      }
 
-    private StringBuffer retiraIdentacao(String algoritmo){
-        Matcher matcher = TOKEN_PATTERN.matcher(algoritmo);
+   }
 
-        StringBuffer sb = new StringBuffer();
+   private void comentarioLinha(String line, StringBuilder codigo, String indent, List<String> tokens) {
+      this.generic(line, codigo, indent, tokens);
+   }
 
-        while(matcher.find()){
+   private void generic(String line, StringBuilder codigo, String indent, List<String> tokens) {
+      codigo.append(indent).append(line);
+      if (!line.endsWith("\n")) {
+         codigo.append("\n");
+      }
 
-            String group = matcher.group().replaceAll("[ \\t]*\\n[ \\t]*", "\n").replaceAll("^[ \\t]+|[ \\t]+$", "");
-            
-            if (group.matches("(fimPrincipal|fimProcedimento|fimFuncao)\\n*")){
-                if (!group.endsWith("\n")){
-                    group = group + "\n";
-                }
-                if (!group.endsWith("\n\n")){
-                    group = group + "\n";
-                }
-            }else{
-                if (!group.endsWith("\n")){
-                    group = group + "\n";
-                }
-            }
-            matcher.appendReplacement(sb, group);
-            
+   }
 
-        }
+   private void senao(String line, StringBuilder codigo, String indent, List<String> tokens) {
+      this.se(line, codigo, indent, tokens);
+   }
 
-        return sb;
-    }
+   private void se(String line, StringBuilder codigo, String indent, List<String> tokens) {
+      this.generic(line, codigo, indent, tokens);
+
+      while(!tokens.isEmpty()) {
+         String child = ((String)tokens.get(0)).trim();
+         if (child.matches("(senao|senaoSe)([^A-Za-z_0-9].*)?")) {
+            this.token(codigo, indent, tokens);
+            return;
+         }
+
+         if (child.matches("fimSe([^A-Za-z_0-9].*)?")) {
+            this.generic((String)tokens.remove(0), codigo, indent, tokens);
+            return;
+         }
+
+         this.token(codigo, indent + this.identacao, tokens);
+      }
+
+   }
+
+   private void principal(String line, StringBuilder codigo, String indent, List<String> tokens) {
+      this.blocoSimples(line, "fimPrincipal([^A-Za-z_0-9].*)?", codigo, indent, tokens);
+   }
+
+   private void para(String line, StringBuilder codigo, String indent, List<String> tokens) {
+      this.blocoSimples(line, "fimPara([^A-Za-z_0-9].*)?", codigo, indent, tokens);
+   }
+
+   private void funcaoProcedimento(String line, StringBuilder codigo, String indent, List<String> tokens) {
+      this.blocoSimples(line, "fim(Funcao|Procedimento)([^A-Za-z_0-9].*)?", codigo, indent, tokens);
+   }
+
+   private void faca(String line, StringBuilder codigo, String indent, List<String> tokens) {
+      this.blocoSimples(line, "enquanto.+\\)[ \\t.]*;.*", codigo, indent, tokens);
+   }
+
+   private void enquanto(String line, StringBuilder codigo, String indent, List<String> tokens) {
+      this.blocoSimples(line, "fimEnquanto([^A-Za-z_0-9].*)?", codigo, indent, tokens);
+   }
+
+   private void comentarioBloco(String line, StringBuilder codigo, String indent, List<String> tokens) {
+      this.generic(line, codigo, indent, tokens);
+
+      String child;
+      do {
+         if (tokens.isEmpty()) {
+            return;
+         }
+
+         String childLine = (String)tokens.remove(0);
+         this.generic(childLine, codigo, indent, tokens);
+         child = line.trim();
+      } while(!child.matches(".*\\*/"));
+
+   }
+
+   private void blocoSimples(String line, String endRegexp, StringBuilder codigo, String indent, List<String> tokens) {
+      this.generic(line, codigo, indent, tokens);
+
+      while(!tokens.isEmpty()) {
+         String child = ((String)tokens.get(0)).trim();
+         if (child.matches(endRegexp)) {
+            this.generic((String)tokens.remove(0), codigo, indent, tokens);
+            return;
+         }
+
+         this.token(codigo, indent + this.identacao, tokens);
+      }
+
+   }
+
+   public IndentadorCalango(String identacao) {
+      this.identacao = identacao;
+   }
+
+   public IndentadorCalango() {
+      this("\t");
+   }
+
+   public String getIdentacao() {
+      return this.identacao;
+   }
+
+   public void setIdentacao(String identacao) {
+      this.identacao = identacao;
+   }
 }

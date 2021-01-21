@@ -1,0 +1,257 @@
+algoritmo megaSena;
+// Síntese
+//  Objetivo: Simular o sorteio da mega sena.
+//  Entrada : Qtd de jogadores (até 10),  6 a 15 números apostados de cada jogador.
+//  Saída   : 6 números sorteados, identificador de cada jogagor, seus números apostados e quantos ele acertou,
+//            e quem acertou a sena.
+
+principal
+	// Declarações
+	inteiro sorteados[6],identificador[10],qtdJogadores,qtdNumeros,contJogador,contNumeros,cont, acertos,milionarios;
+	inteiro apostados[10][15];
+
+	// Instruções
+
+	//----------------------------------------------------------------------------------------//
+
+	qtdJogadores=leValidaInteiro(1,10,"Informe o numero de jogadores:");
+
+	para(contJogador de 0 ate qtdJogadores-1 passo 1)faca
+		sorteiaNumeros(identificador,9999);
+	fimPara
+
+	//----------------------------------------------------------------------------------------//
+
+	para(contJogador de 0 ate qtdJogadores-1 passo 1)faca
+		escreval("Jogador com identificador ",identificador[contJogador]);
+		qtdNumeros=leValidaInteiro(6,15,"Informe a quantidade de números que voce deseja apostar:");
+		leValidaNumeros(apostados[contJogador],qtdNumeros);
+	fimPara
+
+	//----------------------------------------------------------------------------------------//
+
+	sorteiaNumeros(sorteados,59);
+	ordenaVetor(sorteados,6);
+
+	para(cont de 0 ate qtdJogadores-1 passo 1)faca
+		ordenaVetor(apostados[cont],15);
+	fimPara
+
+	escreval("Numeros Sorteados: ");
+
+	para(cont de 0 ate 5 passo 1) faca
+		escreva(sorteados[cont],"     ");
+	fimPara
+
+	//----------------------------------------------------------------------------------------//
+
+	para(contJogador de 0 ate qtdJogadores-1 passo 1) faca
+		escreval("");
+		escreval("Numeros apostados do jogador ",identificador[contJogador],":");
+		para(contNumeros de 0 ate 14 passo 1) faca
+			se(apostados[contJogador][contNumeros]!=99)entao
+				escreva(apostados[contJogador][contNumeros],"     ");
+			fimSe
+		fimPara
+		escreval("");
+	fimPara
+
+	escreval("");
+	milionarios=0;
+
+	para(contJogador de 0 ate qtdJogadores-2 passo 1) faca
+		acertos=0;
+		para(cont de 0 ate 14 passo 1)faca
+			para(contNumeros de 0 ate 14 passo 1)faca
+				se(apostados[contJogador][contNumeros]==sorteados[cont])entao
+					acertos=acertos+1;
+				fimSe
+			fimPara
+		fimPara
+		se(acertos==6)entao
+			milionarios=milionarios+1;
+			escreval("");
+			escreval("Jogador ",identificador[contJogador]," acertou a sena!!!");
+		fimSe
+	fimPara
+
+	se(milionarios==0)entao
+		escreval("Sem novo milionário.");
+	fimSe
+
+fimPrincipal
+
+//---------------------------------------------------------------------------------------//
+
+// Objetivo: Ler e validar números inteiros
+// Parâmetros: Valores mínimo e máximo
+// Retorno: Número validado
+
+funcao inteiro leValidaInteiro (inteiro min, inteiro max, texto msg)
+
+	inteiro int;
+
+	faca
+
+		escreva(msg);
+		leia(int);
+		limpaTela();
+
+		se(int<min ou int>max)entao
+			escreval("Dado inválido.");
+		fimSe
+
+	enquanto(int<min ou int>max);
+
+	retorna int;
+
+fimFuncao
+
+//---------------------------------------------------------------------------------------//
+
+// Objetivo: Ler, validar identificadores e checar se não há códigos iguais anteriormente
+// Parâmetros: Referência ao vetor de identificador, nº identificador
+// Retorno: Nenhum
+
+procedimento leValidaCodigo (inteiro identificador[], inteiro cont)
+
+	inteiro cont2,valida;
+
+	faca
+
+		escreva("Digite o identificador do jogador ",cont+1,": ");
+		leia(identificador[cont]);
+		limpaTela();
+
+		se(cont>0)entao
+			para(cont2 de 0 ate cont-1 passo 1)faca
+				se(identificador[cont2]==identificador[cont])entao
+					valida=1;
+					interrompa;
+				senao
+					valida=0;
+				fimSe
+			fimPara
+		senao
+			valida=0;
+		fimSe
+
+		se(valida==1)entao
+			escreval("Identificador ",identificador[cont]," já existente. Informe novamente.");
+		fimSe
+
+	enquanto(valida==1);
+
+fimProcedimento
+
+//---------------------------------------------------------------------------------------//
+
+// Objetivo: Ler, validar números apostados e checar se não há números repetidos.
+// Parâmetros: Referência ao vetor apostados,quantidade de números que se deseja apostar
+// Retorno: Nenhum
+
+procedimento leValidaNumeros (inteiro apostados[], inteiro qtd)
+
+	inteiro cont,cont2,valida;
+
+	para(cont de 0 ate qtd-1 passo 1)faca
+
+		faca
+
+			faca
+				escreva("Aposte no ",cont+1,"º numero: ");
+				leia(apostados[cont]);
+				limpaTela();
+
+				se(apostados[cont]<1 ou apostados[cont]>60)entao
+					escreval("Numero invalido.");
+				fimSe
+			enquanto(apostados[cont]<1 ou apostados[cont]>60);
+
+			se(cont>0)entao
+				para(cont2 de 0 ate cont-1 passo 1)faca
+					se(apostados[cont2]==apostados[cont])entao
+						valida=1;
+						interrompa;
+					senao
+						valida=0;
+					fimSe
+				fimPara
+			senao
+				valida=0;
+			fimSe
+
+			se(valida==1)entao
+				escreval("Numero ",apostados[cont]," já foi apostado. Aposte novamente.");
+			fimSe
+
+		enquanto(valida==1);
+	fimPara
+
+
+	se(qtd<14)entao
+
+		para(cont de qtd ate 14 passo 1)faca
+			apostados[cont]=99;
+		fimPara
+
+	fimSe
+
+fimProcedimento
+
+//---------------------------------------------------------------------------------------//
+
+// Objetivo: Sortear uma quantidade de numeros.
+// Parâmetros: Referência ao vetor a ser sorteado, numero máximo a ser sorteado.
+// Retorno: Nenhum
+
+procedimento sorteiaNumeros (inteiro sorteados[], inteiro max)
+
+	inteiro cont,cont2,valida;
+
+	para(cont de 0 ate 5 passo 1)faca
+
+		faca
+
+			sorteados[cont]=(aleatorio(max))+1;
+
+			se(cont>0)entao
+				para(cont2 de 0 ate cont-1 passo 1)faca
+					se(sorteados[cont2]==sorteados[cont])entao
+						valida=1;
+						interrompa;
+					senao
+						valida=0;
+					fimSe
+				fimPara
+			senao
+				valida=0;
+			fimSe
+
+		enquanto(valida==1);
+
+	fimPara
+
+fimProcedimento
+
+//---------------------------------------------------------------------------------------//
+
+// Objetivo: Ordenar um vetor.
+// Parâmetros: Referência a um vetor e sua quantidade de elementos
+// Retorno: Nenhum
+
+procedimento ordenaVetor (inteiro vetor[], inteiro qtd)
+
+	inteiro cont,cont2,aux;
+
+	para(cont de 0 ate qtd-2 passo 1)faca
+		para (cont2 de cont+1 ate qtd-1 passo 1)faca
+			se (vetor[cont2] < vetor[cont])entao
+				aux=vetor[cont];
+				vetor[cont]=vetor[cont2];
+				vetor[cont2]=aux;
+			fimSe
+		fimPara
+	fimPara
+
+fimProcedimento

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<funcaoEmbutida>
+    <nome>raizQuadrada</nome>
+    <index>6</index>
+    <descricao>&lt;html&gt;
+  &lt;head&gt;
+    
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p class=&quot;MsoNormal&quot; style=&quot;text-indent:1.0cm&quot;&gt;&lt;span style=&quot;mso-fareast-font-family:
+&amp;quot;Times New Roman&amp;quot;&quot;&gt;A função &lt;span class=&quot;SpellE&quot;&gt;&lt;span class=&quot;GramE&quot;&gt;&lt;b&gt;raizQuadrada&lt;/b&gt;&lt;/span&gt;&lt;/span&gt;&lt;b&gt;
+&lt;/b&gt; possui como objetivo é retornar o valor da raiz quadrada de um numero. A
+declaração da função segue a seguinte sintaxe: &lt;b&gt;inteiro/real &lt;span class=&quot;SpellE&quot;&gt;&lt;span class=&quot;GramE&quot;&gt;raizQuadrada&lt;/span&gt;&lt;/span&gt; (inteiro/real n)&lt;/b&gt;.
+A função recebe como parâmetro um valor do tipo inteiro ou real e seu retorno
+poderá ser um valor do tipo real ou inteiro.&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+
+     &lt;br/&gt;
+     &lt;br/&gt;
+     &lt;div align=&quot;center&quot;&gt;
+        &lt;img src=&quot;attach/img/exemplo-raiz-quadrada.png&quot; /&gt;
+    &lt;/div&gt;
+
+     &lt;br/&gt;
+
+&lt;p class=&quot;MsoNormal&quot; style=&quot;text-indent:1.0cm&quot;&gt;&lt;span style=&quot;mso-fareast-font-family:
+&amp;quot;Times New Roman&amp;quot;&quot;&gt;Caso o usuário
+digite 4 para a primeira variável e 5.2 para a segunda, a saída será a raiz
+quadrada de 4 e de 5.2:&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+
+     &lt;br/&gt;
+     &lt;br/&gt;
+     &lt;div align=&quot;center&quot;&gt;
+        &lt;img src=&quot;attach/img/exemplo-console-raiz-quadrada.png&quot; /&gt;
+    &lt;/div&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</descricao>
+    <tipoRetorno>inteiro/real</tipoRetorno>
+    <descricaoRetorno>raiz quadrada de n</descricaoRetorno>
+    <parametros>
+        <parametros>
+            <tipo>inteiro/real</tipo>
+            <nome>n</nome>
+            <descricao>número a ter a raiz quadrada calculada</descricao>
+        </parametros>
+    </parametros>
+</funcaoEmbutida>
