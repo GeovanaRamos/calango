@@ -28,6 +28,7 @@ import br.ucb.calango.simbolos.SimboloLiteral;
 import br.ucb.calango.simbolos.SimboloMetodo;
 import br.ucb.calango.simbolos.SimboloVariavel;
 import java.lang.reflect.Array;
+import java.util.Locale;
 import java.util.Random;
 
 public class AcoesExpressoes {
@@ -278,7 +279,7 @@ public class AcoesExpressoes {
             valor = expressao.getValor(Double.class);
          }
 
-         return new SimboloLiteral(String.class, String.format(formato, valor));
+         return new SimboloLiteral(String.class, String.format(Locale.US, formato, valor));
       }
    }
 
