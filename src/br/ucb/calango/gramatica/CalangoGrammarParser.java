@@ -625,53 +625,53 @@ public class CalangoGrammarParser extends Parser {
                         }
 
                         switch(alt1) {
-                        case 1:
-                           this.pushFollow(FOLLOW_funcao_ou_procedimento_in_algoritmo718);
-                           funcao_ou_procedimento5 = this.funcao_ou_procedimento();
-                           --this.state._fsp;
-                           if (this.state.failed) {
-                              return retval;
-                           }
-
-                           if (this.state.backtracking == 0) {
-                              stream_funcao_ou_procedimento.add(funcao_ou_procedimento5.getTree());
-                           }
-                           break;
-                        default:
-                           EOF6 = (Token)this.match(this.input, -1, FOLLOW_EOF_in_algoritmo727);
-                           if (this.state.failed) {
-                              return retval;
-                           }
-
-                           if (this.state.backtracking == 0) {
-                              stream_EOF.add(EOF6);
-                           }
-
-                           if (this.state.backtracking == 0) {
-                              retval.tree = root_0;
-                              new RewriteRuleSubtreeStream(this.adaptor, "rule retval", retval != null ? retval.tree : null);
-                              root_0 = (CommonTree)this.adaptor.nil();
-                              CommonTree root_1 = (CommonTree)this.adaptor.nil();
-                              root_1 = (CommonTree)this.adaptor.becomeRoot((Object)((CommonTree)this.adaptor.create(7, (String)"ALGORITMO")), root_1);
-
-                              while(stream_funcao_ou_procedimento.hasNext()) {
-                                 this.adaptor.addChild(root_1, stream_funcao_ou_procedimento.nextTree());
+                           case 1:
+                              this.pushFollow(FOLLOW_funcao_ou_procedimento_in_algoritmo718);
+                              funcao_ou_procedimento5 = this.funcao_ou_procedimento();
+                              --this.state._fsp;
+                              if (this.state.failed) {
+                                 return retval;
                               }
 
-                              stream_funcao_ou_procedimento.reset();
-                              this.adaptor.addChild(root_1, stream_principal.nextTree());
-                              this.adaptor.addChild(root_1, stream_EOF.nextNode());
-                              this.adaptor.addChild(root_0, root_1);
-                              retval.tree = root_0;
-                           }
+                              if (this.state.backtracking == 0) {
+                                 stream_funcao_ou_procedimento.add(funcao_ou_procedimento5.getTree());
+                              }
+                              break;
+                           default:
+                              EOF6 = (Token)this.match(this.input, -1, FOLLOW_EOF_in_algoritmo727);
+                              if (this.state.failed) {
+                                 return retval;
+                              }
 
-                           retval.stop = this.input.LT(-1);
-                           if (this.state.backtracking == 0) {
-                              retval.tree = (CommonTree)this.adaptor.rulePostProcessing(root_0);
-                              this.adaptor.setTokenBoundaries(retval.tree, retval.start, retval.stop);
-                           }
+                              if (this.state.backtracking == 0) {
+                                 stream_EOF.add(EOF6);
+                              }
 
-                           return retval;
+                              if (this.state.backtracking == 0) {
+                                 retval.tree = root_0;
+                                 new RewriteRuleSubtreeStream(this.adaptor, "rule retval", retval != null ? retval.tree : null);
+                                 root_0 = (CommonTree)this.adaptor.nil();
+                                 CommonTree root_1 = (CommonTree)this.adaptor.nil();
+                                 root_1 = (CommonTree)this.adaptor.becomeRoot((CommonTree)this.adaptor.create(7, "ALGORITMO"), root_1);
+
+                                 while(stream_funcao_ou_procedimento.hasNext()) {
+                                    this.adaptor.addChild(root_1, stream_funcao_ou_procedimento.nextTree());
+                                 }
+
+                                 stream_funcao_ou_procedimento.reset();
+                                 this.adaptor.addChild(root_1, stream_principal.nextTree());
+                                 this.adaptor.addChild(root_1, stream_EOF.nextNode());
+                                 this.adaptor.addChild(root_0, root_1);
+                                 retval.tree = root_0;
+                              }
+
+                              retval.stop = this.input.LT(-1);
+                              if (this.state.backtracking == 0) {
+                                 retval.tree = (CommonTree)this.adaptor.rulePostProcessing(root_0);
+                                 this.adaptor.setTokenBoundaries(retval.tree, retval.start, retval.stop);
+                              }
+
+                              return retval;
                         }
                      }
                   }
@@ -714,29 +714,29 @@ public class CalangoGrammarParser extends Parser {
          }
 
          switch(alt2) {
-         case 1:
-            this.pushFollow(FOLLOW_funcao_in_funcao_ou_procedimento772);
-            funcao7 = this.funcao();
-            --this.state._fsp;
-            if (this.state.failed) {
-               return retval;
-            }
+            case 1:
+               this.pushFollow(FOLLOW_funcao_in_funcao_ou_procedimento772);
+               funcao7 = this.funcao();
+               --this.state._fsp;
+               if (this.state.failed) {
+                  return retval;
+               }
 
-            if (this.state.backtracking == 0) {
-               this.adaptor.addChild(root_0, funcao7.getTree());
-            }
-            break;
-         case 2:
-            this.pushFollow(FOLLOW_procedimento_in_funcao_ou_procedimento776);
-            procedimento8 = this.procedimento();
-            --this.state._fsp;
-            if (this.state.failed) {
-               return retval;
-            }
+               if (this.state.backtracking == 0) {
+                  this.adaptor.addChild(root_0, funcao7.getTree());
+               }
+               break;
+            case 2:
+               this.pushFollow(FOLLOW_procedimento_in_funcao_ou_procedimento776);
+               procedimento8 = this.procedimento();
+               --this.state._fsp;
+               if (this.state.failed) {
+                  return retval;
+               }
 
-            if (this.state.backtracking == 0) {
-               this.adaptor.addChild(root_0, procedimento8.getTree());
-            }
+               if (this.state.backtracking == 0) {
+                  this.adaptor.addChild(root_0, procedimento8.getTree());
+               }
          }
 
          retval.stop = this.input.LT(-1);
@@ -825,71 +825,71 @@ public class CalangoGrammarParser extends Parser {
          }
 
          switch(alt3) {
-         case 1:
-            this.pushFollow(FOLLOW_decl_parametros_in_funcao809);
-            decl_parametros13 = this.decl_parametros();
-            --this.state._fsp;
-            if (this.state.failed) {
-               return retval;
-            }
-
-            if (this.state.backtracking == 0) {
-               stream_decl_parametros.add(decl_parametros13.getTree());
-            }
-         default:
-            char_literal14 = (Token)this.match(this.input, 102, FOLLOW_102_in_funcao812);
-            if (this.state.failed) {
-               return retval;
-            }
-
-            if (this.state.backtracking == 0) {
-               stream_102.add(char_literal14);
-            }
-
-            this.pushFollow(FOLLOW_corpo_in_funcao820);
-            corpo15 = this.corpo();
-            --this.state._fsp;
-            if (this.state.failed) {
-               return retval;
-            }
-
-            if (this.state.backtracking == 0) {
-               stream_corpo.add(corpo15.getTree());
-            }
-
-            FIM_FUNCAO16 = (Token)this.match(this.input, 39, FOLLOW_FIM_FUNCAO_in_funcao828);
-            if (this.state.failed) {
-               return retval;
-            }
-
-            if (this.state.backtracking == 0) {
-               stream_FIM_FUNCAO.add(FIM_FUNCAO16);
-            }
-
-            if (this.state.backtracking == 0) {
-               retval.tree = root_0;
-               new RewriteRuleSubtreeStream(this.adaptor, "rule retval", retval != null ? retval.tree : null);
-               root_0 = (CommonTree)this.adaptor.nil();
-               CommonTree root_1 = (CommonTree)this.adaptor.nil();
-               root_1 = (CommonTree)this.adaptor.becomeRoot((Object)stream_FUNCAO.nextNode(), root_1);
-               this.adaptor.addChild(root_1, stream_tipo_dado.nextTree());
-               this.adaptor.addChild(root_1, stream_IDENTIFICADOR.nextNode());
-               if (stream_decl_parametros.hasNext()) {
-                  this.adaptor.addChild(root_1, stream_decl_parametros.nextTree());
+            case 1:
+               this.pushFollow(FOLLOW_decl_parametros_in_funcao809);
+               decl_parametros13 = this.decl_parametros();
+               --this.state._fsp;
+               if (this.state.failed) {
+                  return retval;
                }
 
-               stream_decl_parametros.reset();
-               this.adaptor.addChild(root_1, stream_corpo.nextTree());
-               this.adaptor.addChild(root_1, stream_FIM_FUNCAO.nextNode());
-               this.adaptor.addChild(root_0, root_1);
-               retval.tree = root_0;
-            }
+               if (this.state.backtracking == 0) {
+                  stream_decl_parametros.add(decl_parametros13.getTree());
+               }
+            default:
+               char_literal14 = (Token)this.match(this.input, 102, FOLLOW_102_in_funcao812);
+               if (this.state.failed) {
+                  return retval;
+               }
 
-            retval.stop = this.input.LT(-1);
-            if (this.state.backtracking == 0) {
-               retval.tree = (CommonTree)this.adaptor.rulePostProcessing(root_0);
-               this.adaptor.setTokenBoundaries(retval.tree, retval.start, retval.stop);
-            }
+               if (this.state.backtracking == 0) {
+                  stream_102.add(char_literal14);
+               }
+
+               this.pushFollow(FOLLOW_corpo_in_funcao820);
+               corpo15 = this.corpo();
+               --this.state._fsp;
+               if (this.state.failed) {
+                  return retval;
+               }
+
+               if (this.state.backtracking == 0) {
+                  stream_corpo.add(corpo15.getTree());
+               }
+
+               FIM_FUNCAO16 = (Token)this.match(this.input, 39, FOLLOW_FIM_FUNCAO_in_funcao828);
+               if (this.state.failed) {
+                  return retval;
+               }
+
+               if (this.state.backtracking == 0) {
+                  stream_FIM_FUNCAO.add(FIM_FUNCAO16);
+               }
+
+               if (this.state.backtracking == 0) {
+                  retval.tree = root_0;
+                  new RewriteRuleSubtreeStream(this.adaptor, "rule retval", retval != null ? retval.tree : null);
+                  root_0 = (CommonTree)this.adaptor.nil();
+                  CommonTree root_1 = (CommonTree)this.adaptor.nil();
+                  root_1 = (CommonTree)this.adaptor.becomeRoot(stream_FUNCAO.nextNode(), root_1);
+                  this.adaptor.addChild(root_1, stream_tipo_dado.nextTree());
+                  this.adaptor.addChild(root_1, stream_IDENTIFICADOR.nextNode());
+                  if (stream_decl_parametros.hasNext()) {
+                     this.adaptor.addChild(root_1, stream_decl_parametros.nextTree());
+                  }
+
+                  stream_decl_parametros.reset();
+                  this.adaptor.addChild(root_1, stream_corpo.nextTree());
+                  this.adaptor.addChild(root_1, stream_FIM_FUNCAO.nextNode());
+                  this.adaptor.addChild(root_0, root_1);
+                  retval.tree = root_0;
+               }
+
+               retval.stop = this.input.LT(-1);
+               if (this.state.backtracking == 0) {
+                  retval.tree = (CommonTree)this.adaptor.rulePostProcessing(root_0);
+                  this.adaptor.setTokenBoundaries(retval.tree, retval.start, retval.stop);
+               }
          }
       } catch (RecognitionException var28) {
          this.reportError(var28);
@@ -959,70 +959,70 @@ public class CalangoGrammarParser extends Parser {
          }
 
          switch(alt4) {
-         case 1:
-            this.pushFollow(FOLLOW_decl_parametros_in_procedimento882);
-            decl_parametros20 = this.decl_parametros();
-            --this.state._fsp;
-            if (this.state.failed) {
-               return retval;
-            }
-
-            if (this.state.backtracking == 0) {
-               stream_decl_parametros.add(decl_parametros20.getTree());
-            }
-         default:
-            char_literal21 = (Token)this.match(this.input, 102, FOLLOW_102_in_procedimento885);
-            if (this.state.failed) {
-               return retval;
-            }
-
-            if (this.state.backtracking == 0) {
-               stream_102.add(char_literal21);
-            }
-
-            this.pushFollow(FOLLOW_corpo_in_procedimento893);
-            corpo22 = this.corpo();
-            --this.state._fsp;
-            if (this.state.failed) {
-               return retval;
-            }
-
-            if (this.state.backtracking == 0) {
-               stream_corpo.add(corpo22.getTree());
-            }
-
-            FIM_PROCEDIMENTO23 = (Token)this.match(this.input, 40, FOLLOW_FIM_PROCEDIMENTO_in_procedimento902);
-            if (this.state.failed) {
-               return retval;
-            }
-
-            if (this.state.backtracking == 0) {
-               stream_FIM_PROCEDIMENTO.add(FIM_PROCEDIMENTO23);
-            }
-
-            if (this.state.backtracking == 0) {
-               retval.tree = root_0;
-               new RewriteRuleSubtreeStream(this.adaptor, "rule retval", retval != null ? retval.tree : null);
-               root_0 = (CommonTree)this.adaptor.nil();
-               CommonTree root_1 = (CommonTree)this.adaptor.nil();
-               root_1 = (CommonTree)this.adaptor.becomeRoot((Object)stream_PROCEDIMENTO.nextNode(), root_1);
-               this.adaptor.addChild(root_1, stream_IDENTIFICADOR.nextNode());
-               if (stream_decl_parametros.hasNext()) {
-                  this.adaptor.addChild(root_1, stream_decl_parametros.nextTree());
+            case 1:
+               this.pushFollow(FOLLOW_decl_parametros_in_procedimento882);
+               decl_parametros20 = this.decl_parametros();
+               --this.state._fsp;
+               if (this.state.failed) {
+                  return retval;
                }
 
-               stream_decl_parametros.reset();
-               this.adaptor.addChild(root_1, stream_corpo.nextTree());
-               this.adaptor.addChild(root_1, stream_FIM_PROCEDIMENTO.nextNode());
-               this.adaptor.addChild(root_0, root_1);
-               retval.tree = root_0;
-            }
+               if (this.state.backtracking == 0) {
+                  stream_decl_parametros.add(decl_parametros20.getTree());
+               }
+            default:
+               char_literal21 = (Token)this.match(this.input, 102, FOLLOW_102_in_procedimento885);
+               if (this.state.failed) {
+                  return retval;
+               }
 
-            retval.stop = this.input.LT(-1);
-            if (this.state.backtracking == 0) {
-               retval.tree = (CommonTree)this.adaptor.rulePostProcessing(root_0);
-               this.adaptor.setTokenBoundaries(retval.tree, retval.start, retval.stop);
-            }
+               if (this.state.backtracking == 0) {
+                  stream_102.add(char_literal21);
+               }
+
+               this.pushFollow(FOLLOW_corpo_in_procedimento893);
+               corpo22 = this.corpo();
+               --this.state._fsp;
+               if (this.state.failed) {
+                  return retval;
+               }
+
+               if (this.state.backtracking == 0) {
+                  stream_corpo.add(corpo22.getTree());
+               }
+
+               FIM_PROCEDIMENTO23 = (Token)this.match(this.input, 40, FOLLOW_FIM_PROCEDIMENTO_in_procedimento902);
+               if (this.state.failed) {
+                  return retval;
+               }
+
+               if (this.state.backtracking == 0) {
+                  stream_FIM_PROCEDIMENTO.add(FIM_PROCEDIMENTO23);
+               }
+
+               if (this.state.backtracking == 0) {
+                  retval.tree = root_0;
+                  new RewriteRuleSubtreeStream(this.adaptor, "rule retval", retval != null ? retval.tree : null);
+                  root_0 = (CommonTree)this.adaptor.nil();
+                  CommonTree root_1 = (CommonTree)this.adaptor.nil();
+                  root_1 = (CommonTree)this.adaptor.becomeRoot(stream_PROCEDIMENTO.nextNode(), root_1);
+                  this.adaptor.addChild(root_1, stream_IDENTIFICADOR.nextNode());
+                  if (stream_decl_parametros.hasNext()) {
+                     this.adaptor.addChild(root_1, stream_decl_parametros.nextTree());
+                  }
+
+                  stream_decl_parametros.reset();
+                  this.adaptor.addChild(root_1, stream_corpo.nextTree());
+                  this.adaptor.addChild(root_1, stream_FIM_PROCEDIMENTO.nextNode());
+                  this.adaptor.addChild(root_0, root_1);
+                  retval.tree = root_0;
+               }
+
+               retval.stop = this.input.LT(-1);
+               if (this.state.backtracking == 0) {
+                  retval.tree = (CommonTree)this.adaptor.rulePostProcessing(root_0);
+                  this.adaptor.setTokenBoundaries(retval.tree, retval.start, retval.stop);
+               }
          }
       } catch (RecognitionException var26) {
          this.reportError(var26);
@@ -1081,7 +1081,7 @@ public class CalangoGrammarParser extends Parser {
             new RewriteRuleSubtreeStream(this.adaptor, "rule retval", retval != null ? retval.tree : null);
             root_0 = (CommonTree)this.adaptor.nil();
             CommonTree root_1 = (CommonTree)this.adaptor.nil();
-            root_1 = (CommonTree)this.adaptor.becomeRoot((Object)((CommonTree)this.adaptor.create(77, (String)"PRINCIPAL")), root_1);
+            root_1 = (CommonTree)this.adaptor.becomeRoot((CommonTree)this.adaptor.create(77, "PRINCIPAL"), root_1);
             this.adaptor.addChild(root_1, stream_corpo.nextTree());
             this.adaptor.addChild(root_0, root_1);
             retval.tree = root_0;
@@ -1119,67 +1119,67 @@ public class CalangoGrammarParser extends Parser {
             }
 
             switch(alt6) {
-            case 1:
-               this.pushFollow(FOLLOW_decl_variaveis_in_corpo1006);
-               decl_variaveis27 = this.decl_variaveis();
-               --this.state._fsp;
-               if (this.state.failed) {
-                  return retval;
-               }
-
-               if (this.state.backtracking == 0) {
-                  stream_decl_variaveis.add(decl_variaveis27.getTree());
-               }
-               break;
-            default:
-               alt6 = 2;
-               LA6_0 = this.input.LA(1);
-               if (LA6_0 == 32 || LA6_0 >= 34 && LA6_0 <= 36 || LA6_0 == 38 || LA6_0 == 46 || LA6_0 >= 49 && LA6_0 <= 51 || LA6_0 == 53 || LA6_0 == 70 || LA6_0 == 81 || LA6_0 == 83) {
-                  alt6 = 1;
-               }
-
-               switch(alt6) {
                case 1:
-                  this.pushFollow(FOLLOW_mult_statements_in_corpo1015);
-                  mult_statements28 = this.mult_statements();
+                  this.pushFollow(FOLLOW_decl_variaveis_in_corpo1006);
+                  decl_variaveis27 = this.decl_variaveis();
                   --this.state._fsp;
                   if (this.state.failed) {
                      return retval;
                   }
 
                   if (this.state.backtracking == 0) {
-                     stream_mult_statements.add(mult_statements28.getTree());
+                     stream_decl_variaveis.add(decl_variaveis27.getTree());
                   }
-               }
-
-               if (this.state.backtracking == 0) {
-                  retval.tree = root_0;
-                  new RewriteRuleSubtreeStream(this.adaptor, "rule retval", retval != null ? retval.tree : null);
-                  root_0 = (CommonTree)this.adaptor.nil();
-                  CommonTree root_1 = (CommonTree)this.adaptor.nil();
-                  root_1 = (CommonTree)this.adaptor.becomeRoot((Object)((CommonTree)this.adaptor.create(24, (String)"CORPO")), root_1);
-
-                  while(stream_decl_variaveis.hasNext()) {
-                     this.adaptor.addChild(root_1, stream_decl_variaveis.nextTree());
+                  break;
+               default:
+                  alt6 = 2;
+                  LA6_0 = this.input.LA(1);
+                  if (LA6_0 == 32 || LA6_0 >= 34 && LA6_0 <= 36 || LA6_0 == 38 || LA6_0 == 46 || LA6_0 >= 49 && LA6_0 <= 51 || LA6_0 == 53 || LA6_0 == 70 || LA6_0 == 81 || LA6_0 == 83) {
+                     alt6 = 1;
                   }
 
-                  stream_decl_variaveis.reset();
-                  if (stream_mult_statements.hasNext()) {
-                     this.adaptor.addChild(root_1, stream_mult_statements.nextTree());
+                  switch(alt6) {
+                     case 1:
+                        this.pushFollow(FOLLOW_mult_statements_in_corpo1015);
+                        mult_statements28 = this.mult_statements();
+                        --this.state._fsp;
+                        if (this.state.failed) {
+                           return retval;
+                        }
+
+                        if (this.state.backtracking == 0) {
+                           stream_mult_statements.add(mult_statements28.getTree());
+                        }
                   }
 
-                  stream_mult_statements.reset();
-                  this.adaptor.addChild(root_0, root_1);
-                  retval.tree = root_0;
-               }
+                  if (this.state.backtracking == 0) {
+                     retval.tree = root_0;
+                     new RewriteRuleSubtreeStream(this.adaptor, "rule retval", retval != null ? retval.tree : null);
+                     root_0 = (CommonTree)this.adaptor.nil();
+                     CommonTree root_1 = (CommonTree)this.adaptor.nil();
+                     root_1 = (CommonTree)this.adaptor.becomeRoot((CommonTree)this.adaptor.create(24, "CORPO"), root_1);
 
-               retval.stop = this.input.LT(-1);
-               if (this.state.backtracking == 0) {
-                  retval.tree = (CommonTree)this.adaptor.rulePostProcessing(root_0);
-                  this.adaptor.setTokenBoundaries(retval.tree, retval.start, retval.stop);
-               }
+                     while(stream_decl_variaveis.hasNext()) {
+                        this.adaptor.addChild(root_1, stream_decl_variaveis.nextTree());
+                     }
 
-               return retval;
+                     stream_decl_variaveis.reset();
+                     if (stream_mult_statements.hasNext()) {
+                        this.adaptor.addChild(root_1, stream_mult_statements.nextTree());
+                     }
+
+                     stream_mult_statements.reset();
+                     this.adaptor.addChild(root_0, root_1);
+                     retval.tree = root_0;
+                  }
+
+                  retval.stop = this.input.LT(-1);
+                  if (this.state.backtracking == 0) {
+                     retval.tree = (CommonTree)this.adaptor.rulePostProcessing(root_0);
+                     this.adaptor.setTokenBoundaries(retval.tree, retval.start, retval.stop);
+                  }
+
+                  return retval;
             }
          }
       } catch (RecognitionException var11) {
@@ -1208,57 +1208,57 @@ public class CalangoGrammarParser extends Parser {
             }
 
             switch(alt7) {
-            case 1:
-               this.pushFollow(FOLLOW_statements_in_mult_statements1059);
-               statements29 = this.statements();
-               --this.state._fsp;
-               if (this.state.failed) {
-                  return retval;
-               }
-
-               if (this.state.backtracking == 0) {
-                  stream_statements.add(statements29.getTree());
-               }
-
-               ++cnt7;
-               break;
-            default:
-               if (cnt7 < 1) {
-                  if (this.state.backtracking > 0) {
-                     this.state.failed = true;
+               case 1:
+                  this.pushFollow(FOLLOW_statements_in_mult_statements1059);
+                  statements29 = this.statements();
+                  --this.state._fsp;
+                  if (this.state.failed) {
                      return retval;
                   }
 
-                  EarlyExitException eee = new EarlyExitException(7, this.input);
-                  throw eee;
-               }
-
-               if (this.state.backtracking == 0) {
-                  retval.tree = root_0;
-                  new RewriteRuleSubtreeStream(this.adaptor, "rule retval", retval != null ? retval.tree : null);
-                  root_0 = (CommonTree)this.adaptor.nil();
-                  CommonTree root_1 = (CommonTree)this.adaptor.nil();
-                  root_1 = (CommonTree)this.adaptor.becomeRoot((Object)((CommonTree)this.adaptor.create(88, (String)"STATEMENTS")), root_1);
-                  if (!stream_statements.hasNext()) {
-                     throw new RewriteEarlyExitException();
+                  if (this.state.backtracking == 0) {
+                     stream_statements.add(statements29.getTree());
                   }
 
-                  while(stream_statements.hasNext()) {
-                     this.adaptor.addChild(root_1, stream_statements.nextTree());
+                  ++cnt7;
+                  break;
+               default:
+                  if (cnt7 < 1) {
+                     if (this.state.backtracking > 0) {
+                        this.state.failed = true;
+                        return retval;
+                     }
+
+                     EarlyExitException eee = new EarlyExitException(7, this.input);
+                     throw eee;
                   }
 
-                  stream_statements.reset();
-                  this.adaptor.addChild(root_0, root_1);
-                  retval.tree = root_0;
-               }
+                  if (this.state.backtracking == 0) {
+                     retval.tree = root_0;
+                     new RewriteRuleSubtreeStream(this.adaptor, "rule retval", retval != null ? retval.tree : null);
+                     root_0 = (CommonTree)this.adaptor.nil();
+                     CommonTree root_1 = (CommonTree)this.adaptor.nil();
+                     root_1 = (CommonTree)this.adaptor.becomeRoot((CommonTree)this.adaptor.create(88, "STATEMENTS"), root_1);
+                     if (!stream_statements.hasNext()) {
+                        throw new RewriteEarlyExitException();
+                     }
 
-               retval.stop = this.input.LT(-1);
-               if (this.state.backtracking == 0) {
-                  retval.tree = (CommonTree)this.adaptor.rulePostProcessing(root_0);
-                  this.adaptor.setTokenBoundaries(retval.tree, retval.start, retval.stop);
-               }
+                     while(stream_statements.hasNext()) {
+                        this.adaptor.addChild(root_1, stream_statements.nextTree());
+                     }
 
-               return retval;
+                     stream_statements.reset();
+                     this.adaptor.addChild(root_0, root_1);
+                     retval.tree = root_0;
+                  }
+
+                  retval.stop = this.input.LT(-1);
+                  if (this.state.backtracking == 0) {
+                     retval.tree = (CommonTree)this.adaptor.rulePostProcessing(root_0);
+                     this.adaptor.setTokenBoundaries(retval.tree, retval.start, retval.stop);
+                  }
+
+                  return retval;
             }
          }
       } catch (RecognitionException var9) {
@@ -1285,124 +1285,124 @@ public class CalangoGrammarParser extends Parser {
       try {
          byte alt8;
          switch(this.input.LA(1)) {
-         case 32:
-            alt8 = 2;
-            break;
-         case 34:
-            alt8 = 5;
-            break;
-         case 35:
-         case 36:
-         case 46:
-         case 49:
-         case 50:
-         case 51:
-         case 53:
-         case 81:
-            alt8 = 6;
-            break;
-         case 38:
-            alt8 = 1;
-            break;
-         case 70:
-            alt8 = 3;
-            break;
-         case 83:
-            alt8 = 4;
-            break;
-         default:
-            if (this.state.backtracking > 0) {
-               this.state.failed = true;
-               return retval;
-            }
+            case 32:
+               alt8 = 2;
+               break;
+            case 34:
+               alt8 = 5;
+               break;
+            case 35:
+            case 36:
+            case 46:
+            case 49:
+            case 50:
+            case 51:
+            case 53:
+            case 81:
+               alt8 = 6;
+               break;
+            case 38:
+               alt8 = 1;
+               break;
+            case 70:
+               alt8 = 3;
+               break;
+            case 83:
+               alt8 = 4;
+               break;
+            default:
+               if (this.state.backtracking > 0) {
+                  this.state.failed = true;
+                  return retval;
+               }
 
-            NoViableAltException nvae = new NoViableAltException("", 8, 0, this.input);
-            throw nvae;
+               NoViableAltException nvae = new NoViableAltException("", 8, 0, this.input);
+               throw nvae;
          }
 
          switch(alt8) {
-         case 1:
-            root_0 = (CommonTree)this.adaptor.nil();
-            this.pushFollow(FOLLOW_facaStm_in_statements1086);
-            facaStm30 = this.facaStm();
-            --this.state._fsp;
-            if (this.state.failed) {
-               return retval;
-            }
+            case 1:
+               root_0 = (CommonTree)this.adaptor.nil();
+               this.pushFollow(FOLLOW_facaStm_in_statements1086);
+               facaStm30 = this.facaStm();
+               --this.state._fsp;
+               if (this.state.failed) {
+                  return retval;
+               }
 
-            if (this.state.backtracking == 0) {
-               this.adaptor.addChild(root_0, facaStm30.getTree());
-            }
-            break;
-         case 2:
-            root_0 = (CommonTree)this.adaptor.nil();
-            this.pushFollow(FOLLOW_enquantoStm_in_statements1111);
-            enquantoStm31 = this.enquantoStm();
-            --this.state._fsp;
-            if (this.state.failed) {
-               return retval;
-            }
+               if (this.state.backtracking == 0) {
+                  this.adaptor.addChild(root_0, facaStm30.getTree());
+               }
+               break;
+            case 2:
+               root_0 = (CommonTree)this.adaptor.nil();
+               this.pushFollow(FOLLOW_enquantoStm_in_statements1111);
+               enquantoStm31 = this.enquantoStm();
+               --this.state._fsp;
+               if (this.state.failed) {
+                  return retval;
+               }
 
-            if (this.state.backtracking == 0) {
-               this.adaptor.addChild(root_0, enquantoStm31.getTree());
-            }
-            break;
-         case 3:
-            root_0 = (CommonTree)this.adaptor.nil();
-            this.pushFollow(FOLLOW_paraStm_in_statements1132);
-            paraStm32 = this.paraStm();
-            --this.state._fsp;
-            if (this.state.failed) {
-               return retval;
-            }
+               if (this.state.backtracking == 0) {
+                  this.adaptor.addChild(root_0, enquantoStm31.getTree());
+               }
+               break;
+            case 3:
+               root_0 = (CommonTree)this.adaptor.nil();
+               this.pushFollow(FOLLOW_paraStm_in_statements1132);
+               paraStm32 = this.paraStm();
+               --this.state._fsp;
+               if (this.state.failed) {
+                  return retval;
+               }
 
-            if (this.state.backtracking == 0) {
-               this.adaptor.addChild(root_0, paraStm32.getTree());
-            }
-            break;
-         case 4:
-            root_0 = (CommonTree)this.adaptor.nil();
-            this.pushFollow(FOLLOW_seStm_in_statements1157);
-            seStm33 = this.seStm();
-            --this.state._fsp;
-            if (this.state.failed) {
-               return retval;
-            }
+               if (this.state.backtracking == 0) {
+                  this.adaptor.addChild(root_0, paraStm32.getTree());
+               }
+               break;
+            case 4:
+               root_0 = (CommonTree)this.adaptor.nil();
+               this.pushFollow(FOLLOW_seStm_in_statements1157);
+               seStm33 = this.seStm();
+               --this.state._fsp;
+               if (this.state.failed) {
+                  return retval;
+               }
 
-            if (this.state.backtracking == 0) {
-               this.adaptor.addChild(root_0, seStm33.getTree());
-            }
-            break;
-         case 5:
-            root_0 = (CommonTree)this.adaptor.nil();
-            this.pushFollow(FOLLOW_escolhaStm_in_statements1184);
-            escolhaStm34 = this.escolhaStm();
-            --this.state._fsp;
-            if (this.state.failed) {
-               return retval;
-            }
+               if (this.state.backtracking == 0) {
+                  this.adaptor.addChild(root_0, seStm33.getTree());
+               }
+               break;
+            case 5:
+               root_0 = (CommonTree)this.adaptor.nil();
+               this.pushFollow(FOLLOW_escolhaStm_in_statements1184);
+               escolhaStm34 = this.escolhaStm();
+               --this.state._fsp;
+               if (this.state.failed) {
+                  return retval;
+               }
 
-            if (this.state.backtracking == 0) {
-               this.adaptor.addChild(root_0, escolhaStm34.getTree());
-            }
-            break;
-         case 6:
-            root_0 = (CommonTree)this.adaptor.nil();
-            this.pushFollow(FOLLOW_statementsSemiColon_in_statements1206);
-            statementsSemiColon35 = this.statementsSemiColon();
-            --this.state._fsp;
-            if (this.state.failed) {
-               return retval;
-            }
+               if (this.state.backtracking == 0) {
+                  this.adaptor.addChild(root_0, escolhaStm34.getTree());
+               }
+               break;
+            case 6:
+               root_0 = (CommonTree)this.adaptor.nil();
+               this.pushFollow(FOLLOW_statementsSemiColon_in_statements1206);
+               statementsSemiColon35 = this.statementsSemiColon();
+               --this.state._fsp;
+               if (this.state.failed) {
+                  return retval;
+               }
 
-            if (this.state.backtracking == 0) {
-               this.adaptor.addChild(root_0, statementsSemiColon35.getTree());
-            }
+               if (this.state.backtracking == 0) {
+                  this.adaptor.addChild(root_0, statementsSemiColon35.getTree());
+               }
 
-            char_literal36 = (Token)this.match(this.input, 104, FOLLOW_104_in_statements1208);
-            if (this.state.failed) {
-               return retval;
-            }
+               char_literal36 = (Token)this.match(this.input, 104, FOLLOW_104_in_statements1208);
+               if (this.state.failed) {
+                  return retval;
+               }
          }
 
          retval.stop = this.input.LT(-1);
@@ -1500,73 +1500,73 @@ public class CalangoGrammarParser extends Parser {
          }
 
          switch(alt9) {
-         case 1:
-            this.pushFollow(FOLLOW_mult_statements_in_seStm1243);
-            mult_statements42 = this.mult_statements();
-            --this.state._fsp;
-            if (this.state.failed) {
-               return retval;
-            }
-
-            if (this.state.backtracking == 0) {
-               stream_mult_statements.add(mult_statements42.getTree());
-            }
-         default:
-            int alt10 = 2;
-            int LA10_0 = this.input.LA(1);
-            if (LA10_0 >= 136 && LA10_0 <= 137) {
-               alt10 = 1;
-            }
-
-            switch(alt10) {
             case 1:
-               this.pushFollow(FOLLOW_senaoStm_in_seStm1252);
-               senaoStm43 = this.senaoStm();
+               this.pushFollow(FOLLOW_mult_statements_in_seStm1243);
+               mult_statements42 = this.mult_statements();
                --this.state._fsp;
                if (this.state.failed) {
                   return retval;
                }
 
                if (this.state.backtracking == 0) {
-                  stream_senaoStm.add(senaoStm43.getTree());
+                  stream_mult_statements.add(mult_statements42.getTree());
                }
             default:
-               string_literal44 = (Token)this.match(this.input, 127, FOLLOW_127_in_seStm1261);
-               if (this.state.failed) {
-                  return retval;
+               int alt10 = 2;
+               int LA10_0 = this.input.LA(1);
+               if (LA10_0 >= 136 && LA10_0 <= 137) {
+                  alt10 = 1;
                }
 
-               if (this.state.backtracking == 0) {
-                  stream_127.add(string_literal44);
+               switch(alt10) {
+                  case 1:
+                     this.pushFollow(FOLLOW_senaoStm_in_seStm1252);
+                     senaoStm43 = this.senaoStm();
+                     --this.state._fsp;
+                     if (this.state.failed) {
+                        return retval;
+                     }
+
+                     if (this.state.backtracking == 0) {
+                        stream_senaoStm.add(senaoStm43.getTree());
+                     }
+                  default:
+                     string_literal44 = (Token)this.match(this.input, 127, FOLLOW_127_in_seStm1261);
+                     if (this.state.failed) {
+                        return retval;
+                     }
+
+                     if (this.state.backtracking == 0) {
+                        stream_127.add(string_literal44);
+                     }
+
+                     if (this.state.backtracking == 0) {
+                        retval.tree = root_0;
+                        new RewriteRuleSubtreeStream(this.adaptor, "rule retval", retval != null ? retval.tree : null);
+                        root_0 = (CommonTree)this.adaptor.nil();
+                        CommonTree root_1 = (CommonTree)this.adaptor.nil();
+                        root_1 = (CommonTree)this.adaptor.becomeRoot((CommonTree)this.adaptor.create(83, "SE"), root_1);
+                        this.adaptor.addChild(root_1, stream_expressao.nextTree());
+                        if (stream_mult_statements.hasNext()) {
+                           this.adaptor.addChild(root_1, stream_mult_statements.nextTree());
+                        }
+
+                        stream_mult_statements.reset();
+                        if (stream_senaoStm.hasNext()) {
+                           this.adaptor.addChild(root_1, stream_senaoStm.nextTree());
+                        }
+
+                        stream_senaoStm.reset();
+                        this.adaptor.addChild(root_0, root_1);
+                        retval.tree = root_0;
+                     }
+
+                     retval.stop = this.input.LT(-1);
+                     if (this.state.backtracking == 0) {
+                        retval.tree = (CommonTree)this.adaptor.rulePostProcessing(root_0);
+                        this.adaptor.setTokenBoundaries(retval.tree, retval.start, retval.stop);
+                     }
                }
-
-               if (this.state.backtracking == 0) {
-                  retval.tree = root_0;
-                  new RewriteRuleSubtreeStream(this.adaptor, "rule retval", retval != null ? retval.tree : null);
-                  root_0 = (CommonTree)this.adaptor.nil();
-                  CommonTree root_1 = (CommonTree)this.adaptor.nil();
-                  root_1 = (CommonTree)this.adaptor.becomeRoot((Object)((CommonTree)this.adaptor.create(83, (String)"SE")), root_1);
-                  this.adaptor.addChild(root_1, stream_expressao.nextTree());
-                  if (stream_mult_statements.hasNext()) {
-                     this.adaptor.addChild(root_1, stream_mult_statements.nextTree());
-                  }
-
-                  stream_mult_statements.reset();
-                  if (stream_senaoStm.hasNext()) {
-                     this.adaptor.addChild(root_1, stream_senaoStm.nextTree());
-                  }
-
-                  stream_senaoStm.reset();
-                  this.adaptor.addChild(root_0, root_1);
-                  retval.tree = root_0;
-               }
-
-               retval.stop = this.input.LT(-1);
-               if (this.state.backtracking == 0) {
-                  retval.tree = (CommonTree)this.adaptor.rulePostProcessing(root_0);
-                  this.adaptor.setTokenBoundaries(retval.tree, retval.start, retval.stop);
-               }
-            }
          }
       } catch (RecognitionException var30) {
          this.reportError(var30);
@@ -1627,159 +1627,159 @@ public class CalangoGrammarParser extends Parser {
          byte alt11;
          label222:
          switch(alt14) {
-         case 1:
-            string_literal45 = (Token)this.match(this.input, 137, FOLLOW_137_in_senaoStm1343);
-            if (this.state.failed) {
-               return retval;
-            }
-
-            if (this.state.backtracking == 0) {
-               stream_137.add(string_literal45);
-            }
-
-            char_literal46 = (Token)this.match(this.input, 101, FOLLOW_101_in_senaoStm1345);
-            if (this.state.failed) {
-               return retval;
-            }
-
-            if (this.state.backtracking == 0) {
-               stream_101.add(char_literal46);
-            }
-
-            this.pushFollow(FOLLOW_expressao_in_senaoStm1347);
-            expressao47 = this.expressao();
-            --this.state._fsp;
-            if (this.state.failed) {
-               return retval;
-            }
-
-            if (this.state.backtracking == 0) {
-               stream_expressao.add(expressao47.getTree());
-            }
-
-            char_literal48 = (Token)this.match(this.input, 102, FOLLOW_102_in_senaoStm1349);
-            if (this.state.failed) {
-               return retval;
-            }
-
-            if (this.state.backtracking == 0) {
-               stream_102.add(char_literal48);
-            }
-
-            string_literal49 = (Token)this.match(this.input, 121, FOLLOW_121_in_senaoStm1351);
-            if (this.state.failed) {
-               return retval;
-            }
-
-            if (this.state.backtracking == 0) {
-               stream_121.add(string_literal49);
-            }
-
-            alt11 = 2;
-            LA11_0 = this.input.LA(1);
-            if (LA11_0 == 32 || LA11_0 >= 34 && LA11_0 <= 36 || LA11_0 == 38 || LA11_0 == 46 || LA11_0 >= 49 && LA11_0 <= 51 || LA11_0 == 53 || LA11_0 == 70 || LA11_0 == 81 || LA11_0 == 83) {
-               alt11 = 1;
-            }
-
-            switch(alt11) {
             case 1:
-               this.pushFollow(FOLLOW_mult_statements_in_senaoStm1359);
-               mult_statements50 = this.mult_statements();
+               string_literal45 = (Token)this.match(this.input, 137, FOLLOW_137_in_senaoStm1343);
+               if (this.state.failed) {
+                  return retval;
+               }
+
+               if (this.state.backtracking == 0) {
+                  stream_137.add(string_literal45);
+               }
+
+               char_literal46 = (Token)this.match(this.input, 101, FOLLOW_101_in_senaoStm1345);
+               if (this.state.failed) {
+                  return retval;
+               }
+
+               if (this.state.backtracking == 0) {
+                  stream_101.add(char_literal46);
+               }
+
+               this.pushFollow(FOLLOW_expressao_in_senaoStm1347);
+               expressao47 = this.expressao();
                --this.state._fsp;
                if (this.state.failed) {
                   return retval;
                }
 
                if (this.state.backtracking == 0) {
-                  stream_mult_statements.add(mult_statements50.getTree());
-               }
-            default:
-               int alt12 = 2;
-               int LA12_0 = this.input.LA(1);
-               if (LA12_0 >= 136 && LA12_0 <= 137) {
-                  alt12 = 1;
+                  stream_expressao.add(expressao47.getTree());
                }
 
-               switch(alt12) {
-               case 1:
-                  this.pushFollow(FOLLOW_senaoStm_in_senaoStm1362);
-                  senaoStm51 = this.senaoStm();
-                  --this.state._fsp;
-                  if (this.state.failed) {
-                     return retval;
-                  }
-
-                  if (this.state.backtracking == 0) {
-                     stream_senaoStm.add(senaoStm51.getTree());
-                  }
-               default:
-                  if (this.state.backtracking == 0) {
-                     retval.tree = root_0;
-                     new RewriteRuleSubtreeStream(this.adaptor, "rule retval", retval != null ? retval.tree : null);
-                     root_0 = (CommonTree)this.adaptor.nil();
-                     CommonTree root_1 = (CommonTree)this.adaptor.nil();
-                     root_1 = (CommonTree)this.adaptor.becomeRoot((Object)((CommonTree)this.adaptor.create(85, (String)"SENAO_SE")), root_1);
-                     this.adaptor.addChild(root_1, stream_expressao.nextTree());
-                     if (stream_mult_statements.hasNext()) {
-                        this.adaptor.addChild(root_1, stream_mult_statements.nextTree());
-                     }
-
-                     stream_mult_statements.reset();
-                     this.adaptor.addChild(root_0, root_1);
-                     if (stream_senaoStm.hasNext()) {
-                        this.adaptor.addChild(root_0, stream_senaoStm.nextTree());
-                     }
-
-                     stream_senaoStm.reset();
-                     retval.tree = root_0;
-                  }
-                  break label222;
-               }
-            }
-         case 2:
-            string_literal52 = (Token)this.match(this.input, 136, FOLLOW_136_in_senaoStm1403);
-            if (this.state.failed) {
-               return retval;
-            }
-
-            if (this.state.backtracking == 0) {
-               stream_136.add(string_literal52);
-            }
-
-            alt11 = 2;
-            LA11_0 = this.input.LA(1);
-            if (LA11_0 == 32 || LA11_0 >= 34 && LA11_0 <= 36 || LA11_0 == 38 || LA11_0 == 46 || LA11_0 >= 49 && LA11_0 <= 51 || LA11_0 == 53 || LA11_0 == 70 || LA11_0 == 81 || LA11_0 == 83) {
-               alt11 = 1;
-            }
-
-            switch(alt11) {
-            case 1:
-               this.pushFollow(FOLLOW_mult_statements_in_senaoStm1412);
-               mult_statements53 = this.mult_statements();
-               --this.state._fsp;
+               char_literal48 = (Token)this.match(this.input, 102, FOLLOW_102_in_senaoStm1349);
                if (this.state.failed) {
                   return retval;
                }
 
                if (this.state.backtracking == 0) {
-                  stream_mult_statements.add(mult_statements53.getTree());
+                  stream_102.add(char_literal48);
                }
-            default:
-               if (this.state.backtracking == 0) {
-                  retval.tree = root_0;
-                  new RewriteRuleSubtreeStream(this.adaptor, "rule retval", retval != null ? retval.tree : null);
-                  root_0 = (CommonTree)this.adaptor.nil();
-                  if (stream_mult_statements.hasNext()) {
-                     CommonTree root_1 = (CommonTree)this.adaptor.nil();
-                     root_1 = (CommonTree)this.adaptor.becomeRoot((Object)((CommonTree)this.adaptor.create(84, (String)"SENAO")), root_1);
-                     this.adaptor.addChild(root_1, stream_mult_statements.nextTree());
-                     this.adaptor.addChild(root_0, root_1);
-                  }
 
-                  stream_mult_statements.reset();
-                  retval.tree = root_0;
+               string_literal49 = (Token)this.match(this.input, 121, FOLLOW_121_in_senaoStm1351);
+               if (this.state.failed) {
+                  return retval;
                }
-            }
+
+               if (this.state.backtracking == 0) {
+                  stream_121.add(string_literal49);
+               }
+
+               alt11 = 2;
+               LA11_0 = this.input.LA(1);
+               if (LA11_0 == 32 || LA11_0 >= 34 && LA11_0 <= 36 || LA11_0 == 38 || LA11_0 == 46 || LA11_0 >= 49 && LA11_0 <= 51 || LA11_0 == 53 || LA11_0 == 70 || LA11_0 == 81 || LA11_0 == 83) {
+                  alt11 = 1;
+               }
+
+               switch(alt11) {
+                  case 1:
+                     this.pushFollow(FOLLOW_mult_statements_in_senaoStm1359);
+                     mult_statements50 = this.mult_statements();
+                     --this.state._fsp;
+                     if (this.state.failed) {
+                        return retval;
+                     }
+
+                     if (this.state.backtracking == 0) {
+                        stream_mult_statements.add(mult_statements50.getTree());
+                     }
+                  default:
+                     int alt12 = 2;
+                     int LA12_0 = this.input.LA(1);
+                     if (LA12_0 >= 136 && LA12_0 <= 137) {
+                        alt12 = 1;
+                     }
+
+                     switch(alt12) {
+                        case 1:
+                           this.pushFollow(FOLLOW_senaoStm_in_senaoStm1362);
+                           senaoStm51 = this.senaoStm();
+                           --this.state._fsp;
+                           if (this.state.failed) {
+                              return retval;
+                           }
+
+                           if (this.state.backtracking == 0) {
+                              stream_senaoStm.add(senaoStm51.getTree());
+                           }
+                        default:
+                           if (this.state.backtracking == 0) {
+                              retval.tree = root_0;
+                              new RewriteRuleSubtreeStream(this.adaptor, "rule retval", retval != null ? retval.tree : null);
+                              root_0 = (CommonTree)this.adaptor.nil();
+                              CommonTree root_1 = (CommonTree)this.adaptor.nil();
+                              root_1 = (CommonTree)this.adaptor.becomeRoot((CommonTree)this.adaptor.create(85, "SENAO_SE"), root_1);
+                              this.adaptor.addChild(root_1, stream_expressao.nextTree());
+                              if (stream_mult_statements.hasNext()) {
+                                 this.adaptor.addChild(root_1, stream_mult_statements.nextTree());
+                              }
+
+                              stream_mult_statements.reset();
+                              this.adaptor.addChild(root_0, root_1);
+                              if (stream_senaoStm.hasNext()) {
+                                 this.adaptor.addChild(root_0, stream_senaoStm.nextTree());
+                              }
+
+                              stream_senaoStm.reset();
+                              retval.tree = root_0;
+                           }
+                           break label222;
+                     }
+               }
+            case 2:
+               string_literal52 = (Token)this.match(this.input, 136, FOLLOW_136_in_senaoStm1403);
+               if (this.state.failed) {
+                  return retval;
+               }
+
+               if (this.state.backtracking == 0) {
+                  stream_136.add(string_literal52);
+               }
+
+               alt11 = 2;
+               LA11_0 = this.input.LA(1);
+               if (LA11_0 == 32 || LA11_0 >= 34 && LA11_0 <= 36 || LA11_0 == 38 || LA11_0 == 46 || LA11_0 >= 49 && LA11_0 <= 51 || LA11_0 == 53 || LA11_0 == 70 || LA11_0 == 81 || LA11_0 == 83) {
+                  alt11 = 1;
+               }
+
+               switch(alt11) {
+                  case 1:
+                     this.pushFollow(FOLLOW_mult_statements_in_senaoStm1412);
+                     mult_statements53 = this.mult_statements();
+                     --this.state._fsp;
+                     if (this.state.failed) {
+                        return retval;
+                     }
+
+                     if (this.state.backtracking == 0) {
+                        stream_mult_statements.add(mult_statements53.getTree());
+                     }
+                  default:
+                     if (this.state.backtracking == 0) {
+                        retval.tree = root_0;
+                        new RewriteRuleSubtreeStream(this.adaptor, "rule retval", retval != null ? retval.tree : null);
+                        root_0 = (CommonTree)this.adaptor.nil();
+                        if (stream_mult_statements.hasNext()) {
+                           CommonTree root_1 = (CommonTree)this.adaptor.nil();
+                           root_1 = (CommonTree)this.adaptor.becomeRoot((CommonTree)this.adaptor.create(84, "SENAO"), root_1);
+                           this.adaptor.addChild(root_1, stream_mult_statements.nextTree());
+                           this.adaptor.addChild(root_0, root_1);
+                        }
+
+                        stream_mult_statements.reset();
+                        retval.tree = root_0;
+                     }
+               }
          }
 
          retval.stop = this.input.LT(-1);
@@ -1863,95 +1863,95 @@ public class CalangoGrammarParser extends Parser {
                         }
 
                         switch(alt16) {
-                        case 1:
-                           this.pushFollow(FOLLOW_caso_in_escolhaStm1468);
-                           caso58 = this.caso();
-                           --this.state._fsp;
-                           if (this.state.failed) {
-                              return retval;
-                           }
-
-                           if (this.state.backtracking == 0) {
-                              stream_caso.add(caso58.getTree());
-                           }
-
-                           ++cnt15;
-                           break;
-                        default:
-                           if (cnt15 < 1) {
-                              if (this.state.backtracking > 0) {
-                                 this.state.failed = true;
-                                 return retval;
-                              }
-
-                              EarlyExitException eee = new EarlyExitException(15, this.input);
-                              throw eee;
-                           }
-
-                           alt16 = 2;
-                           LA16_0 = this.input.LA(1);
-                           if (LA16_0 == 69) {
-                              alt16 = 1;
-                           }
-
-                           switch(alt16) {
                            case 1:
-                              this.pushFollow(FOLLOW_outrocaso_in_escolhaStm1477);
-                              outrocaso59 = this.outrocaso();
+                              this.pushFollow(FOLLOW_caso_in_escolhaStm1468);
+                              caso58 = this.caso();
                               --this.state._fsp;
                               if (this.state.failed) {
                                  return retval;
                               }
 
                               if (this.state.backtracking == 0) {
-                                 stream_outrocaso.add(outrocaso59.getTree());
+                                 stream_caso.add(caso58.getTree());
                               }
-                           }
 
-                           string_literal60 = (Token)this.match(this.input, 124, FOLLOW_124_in_escolhaStm1486);
-                           if (this.state.failed) {
+                              ++cnt15;
+                              break;
+                           default:
+                              if (cnt15 < 1) {
+                                 if (this.state.backtracking > 0) {
+                                    this.state.failed = true;
+                                    return retval;
+                                 }
+
+                                 EarlyExitException eee = new EarlyExitException(15, this.input);
+                                 throw eee;
+                              }
+
+                              alt16 = 2;
+                              LA16_0 = this.input.LA(1);
+                              if (LA16_0 == 69) {
+                                 alt16 = 1;
+                              }
+
+                              switch(alt16) {
+                                 case 1:
+                                    this.pushFollow(FOLLOW_outrocaso_in_escolhaStm1477);
+                                    outrocaso59 = this.outrocaso();
+                                    --this.state._fsp;
+                                    if (this.state.failed) {
+                                       return retval;
+                                    }
+
+                                    if (this.state.backtracking == 0) {
+                                       stream_outrocaso.add(outrocaso59.getTree());
+                                    }
+                              }
+
+                              string_literal60 = (Token)this.match(this.input, 124, FOLLOW_124_in_escolhaStm1486);
+                              if (this.state.failed) {
+                                 return retval;
+                              }
+
+                              if (this.state.backtracking == 0) {
+                                 stream_124.add(string_literal60);
+                              }
+
+                              if (this.state.backtracking == 0) {
+                                 retval.tree = root_0;
+                                 new RewriteRuleSubtreeStream(this.adaptor, "rule retval", retval != null ? retval.tree : null);
+                                 root_0 = (CommonTree)this.adaptor.nil();
+                                 CommonTree root_1 = (CommonTree)this.adaptor.nil();
+                                 root_1 = (CommonTree)this.adaptor.becomeRoot((CommonTree)this.adaptor.create(34, "ESCOLHA"), root_1);
+                                 this.adaptor.addChild(root_1, stream_IDENTIFICADOR.nextNode());
+                                 CommonTree root_2 = (CommonTree)this.adaptor.nil();
+                                 root_2 = (CommonTree)this.adaptor.becomeRoot((CommonTree)this.adaptor.create(12, "CASOS"), root_2);
+                                 if (!stream_caso.hasNext()) {
+                                    throw new RewriteEarlyExitException();
+                                 }
+
+                                 while(stream_caso.hasNext()) {
+                                    this.adaptor.addChild(root_2, stream_caso.nextTree());
+                                 }
+
+                                 stream_caso.reset();
+                                 this.adaptor.addChild(root_1, root_2);
+                                 if (stream_outrocaso.hasNext()) {
+                                    this.adaptor.addChild(root_1, stream_outrocaso.nextTree());
+                                 }
+
+                                 stream_outrocaso.reset();
+                                 this.adaptor.addChild(root_0, root_1);
+                                 retval.tree = root_0;
+                              }
+
+                              retval.stop = this.input.LT(-1);
+                              if (this.state.backtracking == 0) {
+                                 retval.tree = (CommonTree)this.adaptor.rulePostProcessing(root_0);
+                                 this.adaptor.setTokenBoundaries(retval.tree, retval.start, retval.stop);
+                              }
+
                               return retval;
-                           }
-
-                           if (this.state.backtracking == 0) {
-                              stream_124.add(string_literal60);
-                           }
-
-                           if (this.state.backtracking == 0) {
-                              retval.tree = root_0;
-                              new RewriteRuleSubtreeStream(this.adaptor, "rule retval", retval != null ? retval.tree : null);
-                              root_0 = (CommonTree)this.adaptor.nil();
-                              CommonTree root_1 = (CommonTree)this.adaptor.nil();
-                              root_1 = (CommonTree)this.adaptor.becomeRoot((Object)((CommonTree)this.adaptor.create(34, (String)"ESCOLHA")), root_1);
-                              this.adaptor.addChild(root_1, stream_IDENTIFICADOR.nextNode());
-                              CommonTree root_2 = (CommonTree)this.adaptor.nil();
-                              root_2 = (CommonTree)this.adaptor.becomeRoot((Object)((CommonTree)this.adaptor.create(12, (String)"CASOS")), root_2);
-                              if (!stream_caso.hasNext()) {
-                                 throw new RewriteEarlyExitException();
-                              }
-
-                              while(stream_caso.hasNext()) {
-                                 this.adaptor.addChild(root_2, stream_caso.nextTree());
-                              }
-
-                              stream_caso.reset();
-                              this.adaptor.addChild(root_1, root_2);
-                              if (stream_outrocaso.hasNext()) {
-                                 this.adaptor.addChild(root_1, stream_outrocaso.nextTree());
-                              }
-
-                              stream_outrocaso.reset();
-                              this.adaptor.addChild(root_0, root_1);
-                              retval.tree = root_0;
-                           }
-
-                           retval.stop = this.input.LT(-1);
-                           if (this.state.backtracking == 0) {
-                              retval.tree = (CommonTree)this.adaptor.rulePostProcessing(root_0);
-                              this.adaptor.setTokenBoundaries(retval.tree, retval.start, retval.stop);
-                           }
-
-                           return retval;
                         }
                      }
                   }
@@ -1996,57 +1996,57 @@ public class CalangoGrammarParser extends Parser {
 
          byte alt17;
          switch(this.input.LA(1)) {
-         case 15:
-            alt17 = 3;
-            break;
-         case 48:
-            alt17 = 2;
-            break;
-         case 89:
-            alt17 = 1;
-            break;
-         default:
-            if (this.state.backtracking > 0) {
-               this.state.failed = true;
-               return retval;
-            }
+            case 15:
+               alt17 = 3;
+               break;
+            case 48:
+               alt17 = 2;
+               break;
+            case 89:
+               alt17 = 1;
+               break;
+            default:
+               if (this.state.backtracking > 0) {
+                  this.state.failed = true;
+                  return retval;
+               }
 
-            NoViableAltException nvae = new NoViableAltException("", 17, 0, this.input);
-            throw nvae;
+               NoViableAltException nvae = new NoViableAltException("", 17, 0, this.input);
+               throw nvae;
          }
 
          switch(alt17) {
-         case 1:
-            this.pushFollow(FOLLOW_caso_negativo_in_caso1543);
-            caso_negativo62 = this.caso_negativo();
-            --this.state._fsp;
-            if (this.state.failed) {
-               return retval;
-            }
+            case 1:
+               this.pushFollow(FOLLOW_caso_negativo_in_caso1543);
+               caso_negativo62 = this.caso_negativo();
+               --this.state._fsp;
+               if (this.state.failed) {
+                  return retval;
+               }
 
-            if (this.state.backtracking == 0) {
-               stream_caso_negativo.add(caso_negativo62.getTree());
-            }
-            break;
-         case 2:
-            INTEIRO_LITERAL63 = (Token)this.match(this.input, 48, FOLLOW_INTEIRO_LITERAL_in_caso1547);
-            if (this.state.failed) {
-               return retval;
-            }
+               if (this.state.backtracking == 0) {
+                  stream_caso_negativo.add(caso_negativo62.getTree());
+               }
+               break;
+            case 2:
+               INTEIRO_LITERAL63 = (Token)this.match(this.input, 48, FOLLOW_INTEIRO_LITERAL_in_caso1547);
+               if (this.state.failed) {
+                  return retval;
+               }
 
-            if (this.state.backtracking == 0) {
-               stream_INTEIRO_LITERAL.add(INTEIRO_LITERAL63);
-            }
-            break;
-         case 3:
-            CHAR_LITERAL64 = (Token)this.match(this.input, 15, FOLLOW_CHAR_LITERAL_in_caso1551);
-            if (this.state.failed) {
-               return retval;
-            }
+               if (this.state.backtracking == 0) {
+                  stream_INTEIRO_LITERAL.add(INTEIRO_LITERAL63);
+               }
+               break;
+            case 3:
+               CHAR_LITERAL64 = (Token)this.match(this.input, 15, FOLLOW_CHAR_LITERAL_in_caso1551);
+               if (this.state.failed) {
+                  return retval;
+               }
 
-            if (this.state.backtracking == 0) {
-               stream_CHAR_LITERAL.add(CHAR_LITERAL64);
-            }
+               if (this.state.backtracking == 0) {
+                  stream_CHAR_LITERAL.add(CHAR_LITERAL64);
+               }
          }
 
          int alt18 = 2;
@@ -2056,53 +2056,53 @@ public class CalangoGrammarParser extends Parser {
          }
 
          switch(alt18) {
-         case 1:
-            this.pushFollow(FOLLOW_mult_statements_in_caso1560);
-            mult_statements65 = this.mult_statements();
-            --this.state._fsp;
-            if (this.state.failed) {
-               return retval;
-            }
-
-            if (this.state.backtracking == 0) {
-               stream_mult_statements.add(mult_statements65.getTree());
-            }
-         default:
-            if (this.state.backtracking == 0) {
-               retval.tree = root_0;
-               new RewriteRuleSubtreeStream(this.adaptor, "rule retval", retval != null ? retval.tree : null);
-               root_0 = (CommonTree)this.adaptor.nil();
-               CommonTree root_1 = (CommonTree)this.adaptor.nil();
-               root_1 = (CommonTree)this.adaptor.becomeRoot((Object)((CommonTree)this.adaptor.create(11, (String)"CASO")), root_1);
-               if (stream_caso_negativo.hasNext()) {
-                  this.adaptor.addChild(root_1, stream_caso_negativo.nextTree());
+            case 1:
+               this.pushFollow(FOLLOW_mult_statements_in_caso1560);
+               mult_statements65 = this.mult_statements();
+               --this.state._fsp;
+               if (this.state.failed) {
+                  return retval;
                }
 
-               stream_caso_negativo.reset();
-               if (stream_INTEIRO_LITERAL.hasNext()) {
-                  this.adaptor.addChild(root_1, stream_INTEIRO_LITERAL.nextNode());
+               if (this.state.backtracking == 0) {
+                  stream_mult_statements.add(mult_statements65.getTree());
+               }
+            default:
+               if (this.state.backtracking == 0) {
+                  retval.tree = root_0;
+                  new RewriteRuleSubtreeStream(this.adaptor, "rule retval", retval != null ? retval.tree : null);
+                  root_0 = (CommonTree)this.adaptor.nil();
+                  CommonTree root_1 = (CommonTree)this.adaptor.nil();
+                  root_1 = (CommonTree)this.adaptor.becomeRoot((CommonTree)this.adaptor.create(11, "CASO"), root_1);
+                  if (stream_caso_negativo.hasNext()) {
+                     this.adaptor.addChild(root_1, stream_caso_negativo.nextTree());
+                  }
+
+                  stream_caso_negativo.reset();
+                  if (stream_INTEIRO_LITERAL.hasNext()) {
+                     this.adaptor.addChild(root_1, stream_INTEIRO_LITERAL.nextNode());
+                  }
+
+                  stream_INTEIRO_LITERAL.reset();
+                  if (stream_CHAR_LITERAL.hasNext()) {
+                     this.adaptor.addChild(root_1, stream_CHAR_LITERAL.nextNode());
+                  }
+
+                  stream_CHAR_LITERAL.reset();
+                  if (stream_mult_statements.hasNext()) {
+                     this.adaptor.addChild(root_1, stream_mult_statements.nextTree());
+                  }
+
+                  stream_mult_statements.reset();
+                  this.adaptor.addChild(root_0, root_1);
+                  retval.tree = root_0;
                }
 
-               stream_INTEIRO_LITERAL.reset();
-               if (stream_CHAR_LITERAL.hasNext()) {
-                  this.adaptor.addChild(root_1, stream_CHAR_LITERAL.nextNode());
+               retval.stop = this.input.LT(-1);
+               if (this.state.backtracking == 0) {
+                  retval.tree = (CommonTree)this.adaptor.rulePostProcessing(root_0);
+                  this.adaptor.setTokenBoundaries(retval.tree, retval.start, retval.stop);
                }
-
-               stream_CHAR_LITERAL.reset();
-               if (stream_mult_statements.hasNext()) {
-                  this.adaptor.addChild(root_1, stream_mult_statements.nextTree());
-               }
-
-               stream_mult_statements.reset();
-               this.adaptor.addChild(root_0, root_1);
-               retval.tree = root_0;
-            }
-
-            retval.stop = this.input.LT(-1);
-            if (this.state.backtracking == 0) {
-               retval.tree = (CommonTree)this.adaptor.rulePostProcessing(root_0);
-               this.adaptor.setTokenBoundaries(retval.tree, retval.start, retval.stop);
-            }
          }
       } catch (RecognitionException var21) {
          this.reportError(var21);
@@ -2148,7 +2148,7 @@ public class CalangoGrammarParser extends Parser {
             new RewriteRuleSubtreeStream(this.adaptor, "rule retval", retval != null ? retval.tree : null);
             root_0 = (CommonTree)this.adaptor.nil();
             CommonTree root_1 = (CommonTree)this.adaptor.nil();
-            root_1 = (CommonTree)this.adaptor.becomeRoot((Object)((CommonTree)this.adaptor.create(67, (String)"NEGACAO_MATEMATICA")), root_1);
+            root_1 = (CommonTree)this.adaptor.becomeRoot((CommonTree)this.adaptor.create(67, "NEGACAO_MATEMATICA"), root_1);
             this.adaptor.addChild(root_1, stream_INTEIRO_LITERAL.nextNode());
             this.adaptor.addChild(root_0, root_1);
             retval.tree = root_0;
@@ -2195,38 +2195,38 @@ public class CalangoGrammarParser extends Parser {
          }
 
          switch(alt19) {
-         case 1:
-            this.pushFollow(FOLLOW_mult_statements_in_outrocaso1663);
-            mult_statements69 = this.mult_statements();
-            --this.state._fsp;
-            if (this.state.failed) {
-               return retval;
-            }
-
-            if (this.state.backtracking == 0) {
-               stream_mult_statements.add(mult_statements69.getTree());
-            }
-         default:
-            if (this.state.backtracking == 0) {
-               retval.tree = root_0;
-               new RewriteRuleSubtreeStream(this.adaptor, "rule retval", retval != null ? retval.tree : null);
-               root_0 = (CommonTree)this.adaptor.nil();
-               CommonTree root_1 = (CommonTree)this.adaptor.nil();
-               root_1 = (CommonTree)this.adaptor.becomeRoot((Object)((CommonTree)this.adaptor.create(69, (String)"OUTROCASO")), root_1);
-               if (stream_mult_statements.hasNext()) {
-                  this.adaptor.addChild(root_1, stream_mult_statements.nextTree());
+            case 1:
+               this.pushFollow(FOLLOW_mult_statements_in_outrocaso1663);
+               mult_statements69 = this.mult_statements();
+               --this.state._fsp;
+               if (this.state.failed) {
+                  return retval;
                }
 
-               stream_mult_statements.reset();
-               this.adaptor.addChild(root_0, root_1);
-               retval.tree = root_0;
-            }
+               if (this.state.backtracking == 0) {
+                  stream_mult_statements.add(mult_statements69.getTree());
+               }
+            default:
+               if (this.state.backtracking == 0) {
+                  retval.tree = root_0;
+                  new RewriteRuleSubtreeStream(this.adaptor, "rule retval", retval != null ? retval.tree : null);
+                  root_0 = (CommonTree)this.adaptor.nil();
+                  CommonTree root_1 = (CommonTree)this.adaptor.nil();
+                  root_1 = (CommonTree)this.adaptor.becomeRoot((CommonTree)this.adaptor.create(69, "OUTROCASO"), root_1);
+                  if (stream_mult_statements.hasNext()) {
+                     this.adaptor.addChild(root_1, stream_mult_statements.nextTree());
+                  }
 
-            retval.stop = this.input.LT(-1);
-            if (this.state.backtracking == 0) {
-               retval.tree = (CommonTree)this.adaptor.rulePostProcessing(root_0);
-               this.adaptor.setTokenBoundaries(retval.tree, retval.start, retval.stop);
-            }
+                  stream_mult_statements.reset();
+                  this.adaptor.addChild(root_0, root_1);
+                  retval.tree = root_0;
+               }
+
+               retval.stop = this.input.LT(-1);
+               if (this.state.backtracking == 0) {
+                  retval.tree = (CommonTree)this.adaptor.rulePostProcessing(root_0);
+                  this.adaptor.setTokenBoundaries(retval.tree, retval.start, retval.stop);
+               }
          }
       } catch (RecognitionException var12) {
          this.reportError(var12);
@@ -2388,51 +2388,51 @@ public class CalangoGrammarParser extends Parser {
          }
 
          switch(alt20) {
-         case 1:
-            this.pushFollow(FOLLOW_mult_statements_in_paraStm1742);
-            mult_statements81 = this.mult_statements();
-            --this.state._fsp;
-            if (this.state.failed) {
-               return retval;
-            }
-
-            if (this.state.backtracking == 0) {
-               stream_mult_statements.add(mult_statements81.getTree());
-            }
-         default:
-            string_literal82 = (Token)this.match(this.input, 125, FOLLOW_125_in_paraStm1751);
-            if (this.state.failed) {
-               return retval;
-            }
-
-            if (this.state.backtracking == 0) {
-               stream_125.add(string_literal82);
-            }
-
-            if (this.state.backtracking == 0) {
-               retval.tree = root_0;
-               new RewriteRuleSubtreeStream(this.adaptor, "rule retval", retval != null ? retval.tree : null);
-               root_0 = (CommonTree)this.adaptor.nil();
-               CommonTree root_1 = (CommonTree)this.adaptor.nil();
-               root_1 = (CommonTree)this.adaptor.becomeRoot((Object)((CommonTree)this.adaptor.create(70, (String)"PARA")), root_1);
-               this.adaptor.addChild(root_1, stream_IDENTIFICADOR.nextNode());
-               this.adaptor.addChild(root_1, stream_expressao.nextTree());
-               this.adaptor.addChild(root_1, stream_expressao.nextTree());
-               this.adaptor.addChild(root_1, stream_expressao.nextTree());
-               if (stream_mult_statements.hasNext()) {
-                  this.adaptor.addChild(root_1, stream_mult_statements.nextTree());
+            case 1:
+               this.pushFollow(FOLLOW_mult_statements_in_paraStm1742);
+               mult_statements81 = this.mult_statements();
+               --this.state._fsp;
+               if (this.state.failed) {
+                  return retval;
                }
 
-               stream_mult_statements.reset();
-               this.adaptor.addChild(root_0, root_1);
-               retval.tree = root_0;
-            }
+               if (this.state.backtracking == 0) {
+                  stream_mult_statements.add(mult_statements81.getTree());
+               }
+            default:
+               string_literal82 = (Token)this.match(this.input, 125, FOLLOW_125_in_paraStm1751);
+               if (this.state.failed) {
+                  return retval;
+               }
 
-            retval.stop = this.input.LT(-1);
-            if (this.state.backtracking == 0) {
-               retval.tree = (CommonTree)this.adaptor.rulePostProcessing(root_0);
-               this.adaptor.setTokenBoundaries(retval.tree, retval.start, retval.stop);
-            }
+               if (this.state.backtracking == 0) {
+                  stream_125.add(string_literal82);
+               }
+
+               if (this.state.backtracking == 0) {
+                  retval.tree = root_0;
+                  new RewriteRuleSubtreeStream(this.adaptor, "rule retval", retval != null ? retval.tree : null);
+                  root_0 = (CommonTree)this.adaptor.nil();
+                  CommonTree root_1 = (CommonTree)this.adaptor.nil();
+                  root_1 = (CommonTree)this.adaptor.becomeRoot((CommonTree)this.adaptor.create(70, "PARA"), root_1);
+                  this.adaptor.addChild(root_1, stream_IDENTIFICADOR.nextNode());
+                  this.adaptor.addChild(root_1, stream_expressao.nextTree());
+                  this.adaptor.addChild(root_1, stream_expressao.nextTree());
+                  this.adaptor.addChild(root_1, stream_expressao.nextTree());
+                  if (stream_mult_statements.hasNext()) {
+                     this.adaptor.addChild(root_1, stream_mult_statements.nextTree());
+                  }
+
+                  stream_mult_statements.reset();
+                  this.adaptor.addChild(root_0, root_1);
+                  retval.tree = root_0;
+               }
+
+               retval.stop = this.input.LT(-1);
+               if (this.state.backtracking == 0) {
+                  retval.tree = (CommonTree)this.adaptor.rulePostProcessing(root_0);
+                  this.adaptor.setTokenBoundaries(retval.tree, retval.start, retval.stop);
+               }
          }
       } catch (RecognitionException var40) {
          this.reportError(var40);
@@ -2522,48 +2522,48 @@ public class CalangoGrammarParser extends Parser {
          }
 
          switch(alt21) {
-         case 1:
-            this.pushFollow(FOLLOW_mult_statements_in_enquantoStm1819);
-            mult_statements88 = this.mult_statements();
-            --this.state._fsp;
-            if (this.state.failed) {
-               return retval;
-            }
-
-            if (this.state.backtracking == 0) {
-               stream_mult_statements.add(mult_statements88.getTree());
-            }
-         default:
-            string_literal89 = (Token)this.match(this.input, 123, FOLLOW_123_in_enquantoStm1828);
-            if (this.state.failed) {
-               return retval;
-            }
-
-            if (this.state.backtracking == 0) {
-               stream_123.add(string_literal89);
-            }
-
-            if (this.state.backtracking == 0) {
-               retval.tree = root_0;
-               new RewriteRuleSubtreeStream(this.adaptor, "rule retval", retval != null ? retval.tree : null);
-               root_0 = (CommonTree)this.adaptor.nil();
-               CommonTree root_1 = (CommonTree)this.adaptor.nil();
-               root_1 = (CommonTree)this.adaptor.becomeRoot((Object)((CommonTree)this.adaptor.create(33, (String)"ENQUANTO_STM")), root_1);
-               this.adaptor.addChild(root_1, stream_expressao.nextTree());
-               if (stream_mult_statements.hasNext()) {
-                  this.adaptor.addChild(root_1, stream_mult_statements.nextTree());
+            case 1:
+               this.pushFollow(FOLLOW_mult_statements_in_enquantoStm1819);
+               mult_statements88 = this.mult_statements();
+               --this.state._fsp;
+               if (this.state.failed) {
+                  return retval;
                }
 
-               stream_mult_statements.reset();
-               this.adaptor.addChild(root_0, root_1);
-               retval.tree = root_0;
-            }
+               if (this.state.backtracking == 0) {
+                  stream_mult_statements.add(mult_statements88.getTree());
+               }
+            default:
+               string_literal89 = (Token)this.match(this.input, 123, FOLLOW_123_in_enquantoStm1828);
+               if (this.state.failed) {
+                  return retval;
+               }
 
-            retval.stop = this.input.LT(-1);
-            if (this.state.backtracking == 0) {
-               retval.tree = (CommonTree)this.adaptor.rulePostProcessing(root_0);
-               this.adaptor.setTokenBoundaries(retval.tree, retval.start, retval.stop);
-            }
+               if (this.state.backtracking == 0) {
+                  stream_123.add(string_literal89);
+               }
+
+               if (this.state.backtracking == 0) {
+                  retval.tree = root_0;
+                  new RewriteRuleSubtreeStream(this.adaptor, "rule retval", retval != null ? retval.tree : null);
+                  root_0 = (CommonTree)this.adaptor.nil();
+                  CommonTree root_1 = (CommonTree)this.adaptor.nil();
+                  root_1 = (CommonTree)this.adaptor.becomeRoot((CommonTree)this.adaptor.create(33, "ENQUANTO_STM"), root_1);
+                  this.adaptor.addChild(root_1, stream_expressao.nextTree());
+                  if (stream_mult_statements.hasNext()) {
+                     this.adaptor.addChild(root_1, stream_mult_statements.nextTree());
+                  }
+
+                  stream_mult_statements.reset();
+                  this.adaptor.addChild(root_0, root_1);
+                  retval.tree = root_0;
+               }
+
+               retval.stop = this.input.LT(-1);
+               if (this.state.backtracking == 0) {
+                  retval.tree = (CommonTree)this.adaptor.rulePostProcessing(root_0);
+                  this.adaptor.setTokenBoundaries(retval.tree, retval.start, retval.stop);
+               }
          }
       } catch (RecognitionException var26) {
          this.reportError(var26);
@@ -2610,7 +2610,7 @@ public class CalangoGrammarParser extends Parser {
             new RewriteRuleSubtreeStream(this.adaptor, "rule retval", retval != null ? retval.tree : null);
             root_0 = (CommonTree)this.adaptor.nil();
             CommonTree root_1 = (CommonTree)this.adaptor.nil();
-            root_1 = (CommonTree)this.adaptor.becomeRoot((Object)stream_FACA.nextNode(), root_1);
+            root_1 = (CommonTree)this.adaptor.becomeRoot(stream_FACA.nextNode(), root_1);
             this.adaptor.addChild(root_1, stream_corpo_facaStm.nextTree());
             this.adaptor.addChild(root_0, root_1);
             retval.tree = root_0;
@@ -2676,88 +2676,88 @@ public class CalangoGrammarParser extends Parser {
          }
 
          switch(alt22) {
-         case 1:
-            string_literal92 = (Token)this.match(this.input, 32, FOLLOW_ENQUANTO_in_corpo_facaStm1927);
-            if (this.state.failed) {
-               return retval;
-            }
+            case 1:
+               string_literal92 = (Token)this.match(this.input, 32, FOLLOW_ENQUANTO_in_corpo_facaStm1927);
+               if (this.state.failed) {
+                  return retval;
+               }
 
-            if (this.state.backtracking == 0) {
-               stream_ENQUANTO.add(string_literal92);
-            }
+               if (this.state.backtracking == 0) {
+                  stream_ENQUANTO.add(string_literal92);
+               }
 
-            char_literal93 = (Token)this.match(this.input, 101, FOLLOW_101_in_corpo_facaStm1929);
-            if (this.state.failed) {
-               return retval;
-            }
+               char_literal93 = (Token)this.match(this.input, 101, FOLLOW_101_in_corpo_facaStm1929);
+               if (this.state.failed) {
+                  return retval;
+               }
 
-            if (this.state.backtracking == 0) {
-               stream_101.add(char_literal93);
-            }
+               if (this.state.backtracking == 0) {
+                  stream_101.add(char_literal93);
+               }
 
-            this.pushFollow(FOLLOW_expressao_in_corpo_facaStm1931);
-            expressao94 = this.expressao();
-            --this.state._fsp;
-            if (this.state.failed) {
-               return retval;
-            }
+               this.pushFollow(FOLLOW_expressao_in_corpo_facaStm1931);
+               expressao94 = this.expressao();
+               --this.state._fsp;
+               if (this.state.failed) {
+                  return retval;
+               }
 
-            if (this.state.backtracking == 0) {
-               stream_expressao.add(expressao94.getTree());
-            }
+               if (this.state.backtracking == 0) {
+                  stream_expressao.add(expressao94.getTree());
+               }
 
-            char_literal95 = (Token)this.match(this.input, 102, FOLLOW_102_in_corpo_facaStm1933);
-            if (this.state.failed) {
-               return retval;
-            }
+               char_literal95 = (Token)this.match(this.input, 102, FOLLOW_102_in_corpo_facaStm1933);
+               if (this.state.failed) {
+                  return retval;
+               }
 
-            if (this.state.backtracking == 0) {
-               stream_102.add(char_literal95);
-            }
+               if (this.state.backtracking == 0) {
+                  stream_102.add(char_literal95);
+               }
 
-            char_literal96 = (Token)this.match(this.input, 104, FOLLOW_104_in_corpo_facaStm1935);
-            if (this.state.failed) {
-               return retval;
-            }
+               char_literal96 = (Token)this.match(this.input, 104, FOLLOW_104_in_corpo_facaStm1935);
+               if (this.state.failed) {
+                  return retval;
+               }
 
-            if (this.state.backtracking == 0) {
-               stream_104.add(char_literal96);
-            }
+               if (this.state.backtracking == 0) {
+                  stream_104.add(char_literal96);
+               }
 
-            if (this.state.backtracking == 0) {
-               retval.tree = root_0;
-               new RewriteRuleSubtreeStream(this.adaptor, "rule retval", retval != null ? retval.tree : null);
+               if (this.state.backtracking == 0) {
+                  retval.tree = root_0;
+                  new RewriteRuleSubtreeStream(this.adaptor, "rule retval", retval != null ? retval.tree : null);
+                  root_0 = (CommonTree)this.adaptor.nil();
+                  CommonTree root_1 = (CommonTree)this.adaptor.nil();
+                  root_1 = (CommonTree)this.adaptor.becomeRoot((CommonTree)this.adaptor.create(32, "ENQUANTO"), root_1);
+                  this.adaptor.addChild(root_1, stream_expressao.nextTree());
+                  this.adaptor.addChild(root_0, root_1);
+                  retval.tree = root_0;
+               }
+               break;
+            case 2:
                root_0 = (CommonTree)this.adaptor.nil();
-               CommonTree root_1 = (CommonTree)this.adaptor.nil();
-               root_1 = (CommonTree)this.adaptor.becomeRoot((Object)((CommonTree)this.adaptor.create(32, (String)"ENQUANTO")), root_1);
-               this.adaptor.addChild(root_1, stream_expressao.nextTree());
-               this.adaptor.addChild(root_0, root_1);
-               retval.tree = root_0;
-            }
-            break;
-         case 2:
-            root_0 = (CommonTree)this.adaptor.nil();
-            this.pushFollow(FOLLOW_statements_in_corpo_facaStm1969);
-            statements97 = this.statements();
-            --this.state._fsp;
-            if (this.state.failed) {
-               return retval;
-            }
+               this.pushFollow(FOLLOW_statements_in_corpo_facaStm1969);
+               statements97 = this.statements();
+               --this.state._fsp;
+               if (this.state.failed) {
+                  return retval;
+               }
 
-            if (this.state.backtracking == 0) {
-               this.adaptor.addChild(root_0, statements97.getTree());
-            }
+               if (this.state.backtracking == 0) {
+                  this.adaptor.addChild(root_0, statements97.getTree());
+               }
 
-            this.pushFollow(FOLLOW_corpo_facaStm_in_corpo_facaStm1971);
-            corpo_facaStm98 = this.corpo_facaStm();
-            --this.state._fsp;
-            if (this.state.failed) {
-               return retval;
-            }
+               this.pushFollow(FOLLOW_corpo_facaStm_in_corpo_facaStm1971);
+               corpo_facaStm98 = this.corpo_facaStm();
+               --this.state._fsp;
+               if (this.state.failed) {
+                  return retval;
+               }
 
-            if (this.state.backtracking == 0) {
-               this.adaptor.addChild(root_0, corpo_facaStm98.getTree());
-            }
+               if (this.state.backtracking == 0) {
+                  this.adaptor.addChild(root_0, corpo_facaStm98.getTree());
+               }
          }
 
          retval.stop = this.input.LT(-1);
@@ -2790,158 +2790,158 @@ public class CalangoGrammarParser extends Parser {
       try {
          byte alt23;
          switch(this.input.LA(1)) {
-         case 35:
-         case 36:
-            alt23 = 6;
-            break;
-         case 46:
-            int LA23_1 = this.input.LA(2);
-            if (LA23_1 == 101) {
-               alt23 = 3;
+            case 35:
+            case 36:
+               alt23 = 6;
                break;
-            } else {
-               if (LA23_1 >= 105 && LA23_1 <= 106) {
-                  alt23 = 1;
+            case 46:
+               int LA23_1 = this.input.LA(2);
+               if (LA23_1 == 101) {
+                  alt23 = 3;
                   break;
-               }
+               } else {
+                  if (LA23_1 >= 105 && LA23_1 <= 106) {
+                     alt23 = 1;
+                     break;
+                  }
 
+                  if (this.state.backtracking > 0) {
+                     this.state.failed = true;
+                     return retval;
+                  }
+
+                  NoViableAltException nvae = new NoViableAltException("", 23, 1, this.input);
+                  throw nvae;
+               }
+            case 49:
+               alt23 = 7;
+               break;
+            case 50:
+               alt23 = 4;
+               break;
+            case 51:
+               alt23 = 5;
+               break;
+            case 53:
+               alt23 = 2;
+               break;
+            case 81:
+               alt23 = 8;
+               break;
+            default:
                if (this.state.backtracking > 0) {
                   this.state.failed = true;
                   return retval;
                }
 
-               NoViableAltException nvae = new NoViableAltException("", 23, 1, this.input);
+               NoViableAltException nvae = new NoViableAltException("", 23, 0, this.input);
                throw nvae;
-            }
-         case 49:
-            alt23 = 7;
-            break;
-         case 50:
-            alt23 = 4;
-            break;
-         case 51:
-            alt23 = 5;
-            break;
-         case 53:
-            alt23 = 2;
-            break;
-         case 81:
-            alt23 = 8;
-            break;
-         default:
-            if (this.state.backtracking > 0) {
-               this.state.failed = true;
-               return retval;
-            }
-
-            NoViableAltException nvae = new NoViableAltException("", 23, 0, this.input);
-            throw nvae;
          }
 
          switch(alt23) {
-         case 1:
-            root_0 = (CommonTree)this.adaptor.nil();
-            this.pushFollow(FOLLOW_atribuicaoStm_in_statementsSemiColon1988);
-            atribuicaoStm99 = this.atribuicaoStm();
-            --this.state._fsp;
-            if (this.state.failed) {
-               return retval;
-            }
+            case 1:
+               root_0 = (CommonTree)this.adaptor.nil();
+               this.pushFollow(FOLLOW_atribuicaoStm_in_statementsSemiColon1988);
+               atribuicaoStm99 = this.atribuicaoStm();
+               --this.state._fsp;
+               if (this.state.failed) {
+                  return retval;
+               }
 
-            if (this.state.backtracking == 0) {
-               this.adaptor.addChild(root_0, atribuicaoStm99.getTree());
-            }
-            break;
-         case 2:
-            root_0 = (CommonTree)this.adaptor.nil();
-            this.pushFollow(FOLLOW_limpatela_in_statementsSemiColon1996);
-            limpatela100 = this.limpatela();
-            --this.state._fsp;
-            if (this.state.failed) {
-               return retval;
-            }
+               if (this.state.backtracking == 0) {
+                  this.adaptor.addChild(root_0, atribuicaoStm99.getTree());
+               }
+               break;
+            case 2:
+               root_0 = (CommonTree)this.adaptor.nil();
+               this.pushFollow(FOLLOW_limpatela_in_statementsSemiColon1996);
+               limpatela100 = this.limpatela();
+               --this.state._fsp;
+               if (this.state.failed) {
+                  return retval;
+               }
 
-            if (this.state.backtracking == 0) {
-               this.adaptor.addChild(root_0, limpatela100.getTree());
-            }
-            break;
-         case 3:
-            root_0 = (CommonTree)this.adaptor.nil();
-            this.pushFollow(FOLLOW_chamadaRotina_in_statementsSemiColon2008);
-            chamadaRotina101 = this.chamadaRotina();
-            --this.state._fsp;
-            if (this.state.failed) {
-               return retval;
-            }
+               if (this.state.backtracking == 0) {
+                  this.adaptor.addChild(root_0, limpatela100.getTree());
+               }
+               break;
+            case 3:
+               root_0 = (CommonTree)this.adaptor.nil();
+               this.pushFollow(FOLLOW_chamadaRotina_in_statementsSemiColon2008);
+               chamadaRotina101 = this.chamadaRotina();
+               --this.state._fsp;
+               if (this.state.failed) {
+                  return retval;
+               }
 
-            if (this.state.backtracking == 0) {
-               this.adaptor.addChild(root_0, chamadaRotina101.getTree());
-            }
-            break;
-         case 4:
-            root_0 = (CommonTree)this.adaptor.nil();
-            this.pushFollow(FOLLOW_lerStatement_in_statementsSemiColon2016);
-            lerStatement102 = this.lerStatement();
-            --this.state._fsp;
-            if (this.state.failed) {
-               return retval;
-            }
+               if (this.state.backtracking == 0) {
+                  this.adaptor.addChild(root_0, chamadaRotina101.getTree());
+               }
+               break;
+            case 4:
+               root_0 = (CommonTree)this.adaptor.nil();
+               this.pushFollow(FOLLOW_lerStatement_in_statementsSemiColon2016);
+               lerStatement102 = this.lerStatement();
+               --this.state._fsp;
+               if (this.state.failed) {
+                  return retval;
+               }
 
-            if (this.state.backtracking == 0) {
-               this.adaptor.addChild(root_0, lerStatement102.getTree());
-            }
-            break;
-         case 5:
-            root_0 = (CommonTree)this.adaptor.nil();
-            this.pushFollow(FOLLOW_lerCaracterStatement_in_statementsSemiColon2025);
-            lerCaracterStatement103 = this.lerCaracterStatement();
-            --this.state._fsp;
-            if (this.state.failed) {
-               return retval;
-            }
+               if (this.state.backtracking == 0) {
+                  this.adaptor.addChild(root_0, lerStatement102.getTree());
+               }
+               break;
+            case 5:
+               root_0 = (CommonTree)this.adaptor.nil();
+               this.pushFollow(FOLLOW_lerCaracterStatement_in_statementsSemiColon2025);
+               lerCaracterStatement103 = this.lerCaracterStatement();
+               --this.state._fsp;
+               if (this.state.failed) {
+                  return retval;
+               }
 
-            if (this.state.backtracking == 0) {
-               this.adaptor.addChild(root_0, lerCaracterStatement103.getTree());
-            }
-            break;
-         case 6:
-            root_0 = (CommonTree)this.adaptor.nil();
-            this.pushFollow(FOLLOW_escreverStatement_in_statementsSemiColon2033);
-            escreverStatement104 = this.escreverStatement();
-            --this.state._fsp;
-            if (this.state.failed) {
-               return retval;
-            }
+               if (this.state.backtracking == 0) {
+                  this.adaptor.addChild(root_0, lerCaracterStatement103.getTree());
+               }
+               break;
+            case 6:
+               root_0 = (CommonTree)this.adaptor.nil();
+               this.pushFollow(FOLLOW_escreverStatement_in_statementsSemiColon2033);
+               escreverStatement104 = this.escreverStatement();
+               --this.state._fsp;
+               if (this.state.failed) {
+                  return retval;
+               }
 
-            if (this.state.backtracking == 0) {
-               this.adaptor.addChild(root_0, escreverStatement104.getTree());
-            }
-            break;
-         case 7:
-            root_0 = (CommonTree)this.adaptor.nil();
-            this.pushFollow(FOLLOW_interrompa_in_statementsSemiColon2042);
-            interrompa105 = this.interrompa();
-            --this.state._fsp;
-            if (this.state.failed) {
-               return retval;
-            }
+               if (this.state.backtracking == 0) {
+                  this.adaptor.addChild(root_0, escreverStatement104.getTree());
+               }
+               break;
+            case 7:
+               root_0 = (CommonTree)this.adaptor.nil();
+               this.pushFollow(FOLLOW_interrompa_in_statementsSemiColon2042);
+               interrompa105 = this.interrompa();
+               --this.state._fsp;
+               if (this.state.failed) {
+                  return retval;
+               }
 
-            if (this.state.backtracking == 0) {
-               this.adaptor.addChild(root_0, interrompa105.getTree());
-            }
-            break;
-         case 8:
-            root_0 = (CommonTree)this.adaptor.nil();
-            this.pushFollow(FOLLOW_retornaStm_in_statementsSemiColon2058);
-            retornaStm106 = this.retornaStm();
-            --this.state._fsp;
-            if (this.state.failed) {
-               return retval;
-            }
+               if (this.state.backtracking == 0) {
+                  this.adaptor.addChild(root_0, interrompa105.getTree());
+               }
+               break;
+            case 8:
+               root_0 = (CommonTree)this.adaptor.nil();
+               this.pushFollow(FOLLOW_retornaStm_in_statementsSemiColon2058);
+               retornaStm106 = this.retornaStm();
+               --this.state._fsp;
+               if (this.state.failed) {
+                  return retval;
+               }
 
-            if (this.state.backtracking == 0) {
-               this.adaptor.addChild(root_0, retornaStm106.getTree());
-            }
+               if (this.state.backtracking == 0) {
+                  this.adaptor.addChild(root_0, retornaStm106.getTree());
+               }
          }
 
          retval.stop = this.input.LT(-1);
@@ -3000,124 +3000,124 @@ public class CalangoGrammarParser extends Parser {
          }
 
          switch(alt25) {
-         case 1:
-            char_literal108 = (Token)this.match(this.input, 106, FOLLOW_106_in_atribuicaoStm2090);
-            if (this.state.failed) {
-               return retval;
-            }
-
-            if (this.state.backtracking == 0) {
-               stream_106.add(char_literal108);
-            }
-
-            this.pushFollow(FOLLOW_expressao_in_atribuicaoStm2094);
-            identVetor = this.expressao();
-            --this.state._fsp;
-            if (this.state.failed) {
-               return retval;
-            }
-
-            if (this.state.backtracking == 0) {
-               stream_expressao.add(identVetor.getTree());
-            }
-
-            char_literal109 = (Token)this.match(this.input, 108, FOLLOW_108_in_atribuicaoStm2096);
-            if (this.state.failed) {
-               return retval;
-            }
-
-            if (this.state.backtracking == 0) {
-               stream_108.add(char_literal109);
-            }
-
-            int alt24 = 2;
-            int LA24_0 = this.input.LA(1);
-            if (LA24_0 == 106) {
-               alt24 = 1;
-            }
-
-            switch(alt24) {
             case 1:
-               char_literal110 = (Token)this.match(this.input, 106, FOLLOW_106_in_atribuicaoStm2099);
+               char_literal108 = (Token)this.match(this.input, 106, FOLLOW_106_in_atribuicaoStm2090);
                if (this.state.failed) {
                   return retval;
                }
 
                if (this.state.backtracking == 0) {
-                  stream_106.add(char_literal110);
+                  stream_106.add(char_literal108);
                }
 
-               this.pushFollow(FOLLOW_expressao_in_atribuicaoStm2103);
-               identMatriz = this.expressao();
+               this.pushFollow(FOLLOW_expressao_in_atribuicaoStm2094);
+               identVetor = this.expressao();
                --this.state._fsp;
                if (this.state.failed) {
                   return retval;
                }
 
                if (this.state.backtracking == 0) {
-                  stream_expressao.add(identMatriz.getTree());
+                  stream_expressao.add(identVetor.getTree());
                }
 
-               char_literal111 = (Token)this.match(this.input, 108, FOLLOW_108_in_atribuicaoStm2105);
+               char_literal109 = (Token)this.match(this.input, 108, FOLLOW_108_in_atribuicaoStm2096);
                if (this.state.failed) {
                   return retval;
                }
 
                if (this.state.backtracking == 0) {
-                  stream_108.add(char_literal111);
-               }
-            }
-         default:
-            char_literal112 = (Token)this.match(this.input, 105, FOLLOW_105_in_atribuicaoStm2111);
-            if (this.state.failed) {
-               return retval;
-            }
-
-            if (this.state.backtracking == 0) {
-               stream_105.add(char_literal112);
-            }
-
-            this.pushFollow(FOLLOW_expressao_in_atribuicaoStm2115);
-            valorAtribuido = this.expressao();
-            --this.state._fsp;
-            if (this.state.failed) {
-               return retval;
-            }
-
-            if (this.state.backtracking == 0) {
-               stream_expressao.add(valorAtribuido.getTree());
-            }
-
-            if (this.state.backtracking == 0) {
-               retval.tree = root_0;
-               RewriteRuleSubtreeStream stream_identVetor = new RewriteRuleSubtreeStream(this.adaptor, "rule identVetor", identVetor != null ? identVetor.tree : null);
-               new RewriteRuleSubtreeStream(this.adaptor, "rule retval", retval != null ? retval.tree : null);
-               RewriteRuleSubtreeStream stream_identMatriz = new RewriteRuleSubtreeStream(this.adaptor, "rule identMatriz", identMatriz != null ? identMatriz.tree : null);
-               RewriteRuleSubtreeStream stream_valorAtribuido = new RewriteRuleSubtreeStream(this.adaptor, "rule valorAtribuido", valorAtribuido != null ? valorAtribuido.tree : null);
-               root_0 = (CommonTree)this.adaptor.nil();
-               CommonTree root_1 = (CommonTree)this.adaptor.nil();
-               root_1 = (CommonTree)this.adaptor.becomeRoot((Object)((CommonTree)this.adaptor.create(9, (String)"ATRIBUICAO")), root_1);
-               this.adaptor.addChild(root_1, stream_IDENTIFICADOR.nextNode());
-               this.adaptor.addChild(root_1, stream_valorAtribuido.nextTree());
-               if (stream_identVetor.hasNext()) {
-                  this.adaptor.addChild(root_1, stream_identVetor.nextTree());
+                  stream_108.add(char_literal109);
                }
 
-               stream_identVetor.reset();
-               if (stream_identMatriz.hasNext()) {
-                  this.adaptor.addChild(root_1, stream_identMatriz.nextTree());
+               int alt24 = 2;
+               int LA24_0 = this.input.LA(1);
+               if (LA24_0 == 106) {
+                  alt24 = 1;
                }
 
-               stream_identMatriz.reset();
-               this.adaptor.addChild(root_0, root_1);
-               retval.tree = root_0;
-            }
+               switch(alt24) {
+                  case 1:
+                     char_literal110 = (Token)this.match(this.input, 106, FOLLOW_106_in_atribuicaoStm2099);
+                     if (this.state.failed) {
+                        return retval;
+                     }
 
-            retval.stop = this.input.LT(-1);
-            if (this.state.backtracking == 0) {
-               retval.tree = (CommonTree)this.adaptor.rulePostProcessing(root_0);
-               this.adaptor.setTokenBoundaries(retval.tree, retval.start, retval.stop);
-            }
+                     if (this.state.backtracking == 0) {
+                        stream_106.add(char_literal110);
+                     }
+
+                     this.pushFollow(FOLLOW_expressao_in_atribuicaoStm2103);
+                     identMatriz = this.expressao();
+                     --this.state._fsp;
+                     if (this.state.failed) {
+                        return retval;
+                     }
+
+                     if (this.state.backtracking == 0) {
+                        stream_expressao.add(identMatriz.getTree());
+                     }
+
+                     char_literal111 = (Token)this.match(this.input, 108, FOLLOW_108_in_atribuicaoStm2105);
+                     if (this.state.failed) {
+                        return retval;
+                     }
+
+                     if (this.state.backtracking == 0) {
+                        stream_108.add(char_literal111);
+                     }
+               }
+            default:
+               char_literal112 = (Token)this.match(this.input, 105, FOLLOW_105_in_atribuicaoStm2111);
+               if (this.state.failed) {
+                  return retval;
+               }
+
+               if (this.state.backtracking == 0) {
+                  stream_105.add(char_literal112);
+               }
+
+               this.pushFollow(FOLLOW_expressao_in_atribuicaoStm2115);
+               valorAtribuido = this.expressao();
+               --this.state._fsp;
+               if (this.state.failed) {
+                  return retval;
+               }
+
+               if (this.state.backtracking == 0) {
+                  stream_expressao.add(valorAtribuido.getTree());
+               }
+
+               if (this.state.backtracking == 0) {
+                  retval.tree = root_0;
+                  RewriteRuleSubtreeStream stream_identVetor = new RewriteRuleSubtreeStream(this.adaptor, "rule identVetor", identVetor != null ? identVetor.tree : null);
+                  new RewriteRuleSubtreeStream(this.adaptor, "rule retval", retval != null ? retval.tree : null);
+                  RewriteRuleSubtreeStream stream_identMatriz = new RewriteRuleSubtreeStream(this.adaptor, "rule identMatriz", identMatriz != null ? identMatriz.tree : null);
+                  RewriteRuleSubtreeStream stream_valorAtribuido = new RewriteRuleSubtreeStream(this.adaptor, "rule valorAtribuido", valorAtribuido != null ? valorAtribuido.tree : null);
+                  root_0 = (CommonTree)this.adaptor.nil();
+                  CommonTree root_1 = (CommonTree)this.adaptor.nil();
+                  root_1 = (CommonTree)this.adaptor.becomeRoot((CommonTree)this.adaptor.create(9, "ATRIBUICAO"), root_1);
+                  this.adaptor.addChild(root_1, stream_IDENTIFICADOR.nextNode());
+                  this.adaptor.addChild(root_1, stream_valorAtribuido.nextTree());
+                  if (stream_identVetor.hasNext()) {
+                     this.adaptor.addChild(root_1, stream_identVetor.nextTree());
+                  }
+
+                  stream_identVetor.reset();
+                  if (stream_identMatriz.hasNext()) {
+                     this.adaptor.addChild(root_1, stream_identMatriz.nextTree());
+                  }
+
+                  stream_identMatriz.reset();
+                  this.adaptor.addChild(root_0, root_1);
+                  retval.tree = root_0;
+               }
+
+               retval.stop = this.input.LT(-1);
+               if (this.state.backtracking == 0) {
+                  retval.tree = (CommonTree)this.adaptor.rulePostProcessing(root_0);
+                  this.adaptor.setTokenBoundaries(retval.tree, retval.start, retval.stop);
+               }
          }
       } catch (RecognitionException var30) {
          this.reportError(var30);
@@ -3175,7 +3175,7 @@ public class CalangoGrammarParser extends Parser {
             new RewriteRuleSubtreeStream(this.adaptor, "rule retval", retval != null ? retval.tree : null);
             root_0 = (CommonTree)this.adaptor.nil();
             CommonTree root_1 = (CommonTree)this.adaptor.nil();
-            root_1 = (CommonTree)this.adaptor.becomeRoot((Object)stream_LIMPA_TELA.nextNode(), root_1);
+            root_1 = (CommonTree)this.adaptor.becomeRoot(stream_LIMPA_TELA.nextNode(), root_1);
             this.adaptor.addChild(root_0, root_1);
             retval.tree = root_0;
          }
@@ -3236,48 +3236,48 @@ public class CalangoGrammarParser extends Parser {
          }
 
          switch(alt26) {
-         case 1:
-            this.pushFollow(FOLLOW_parametros_chamada_in_chamadaRotina2204);
-            parametros_chamada118 = this.parametros_chamada();
-            --this.state._fsp;
-            if (this.state.failed) {
-               return retval;
-            }
-
-            if (this.state.backtracking == 0) {
-               stream_parametros_chamada.add(parametros_chamada118.getTree());
-            }
-         default:
-            char_literal119 = (Token)this.match(this.input, 102, FOLLOW_102_in_chamadaRotina2207);
-            if (this.state.failed) {
-               return retval;
-            }
-
-            if (this.state.backtracking == 0) {
-               stream_102.add(char_literal119);
-            }
-
-            if (this.state.backtracking == 0) {
-               retval.tree = root_0;
-               new RewriteRuleSubtreeStream(this.adaptor, "rule retval", retval != null ? retval.tree : null);
-               root_0 = (CommonTree)this.adaptor.nil();
-               CommonTree root_1 = (CommonTree)this.adaptor.nil();
-               root_1 = (CommonTree)this.adaptor.becomeRoot((Object)((CommonTree)this.adaptor.create(13, (String)"CHAMADA")), root_1);
-               this.adaptor.addChild(root_1, stream_IDENTIFICADOR.nextNode());
-               if (stream_parametros_chamada.hasNext()) {
-                  this.adaptor.addChild(root_1, stream_parametros_chamada.nextTree());
+            case 1:
+               this.pushFollow(FOLLOW_parametros_chamada_in_chamadaRotina2204);
+               parametros_chamada118 = this.parametros_chamada();
+               --this.state._fsp;
+               if (this.state.failed) {
+                  return retval;
                }
 
-               stream_parametros_chamada.reset();
-               this.adaptor.addChild(root_0, root_1);
-               retval.tree = root_0;
-            }
+               if (this.state.backtracking == 0) {
+                  stream_parametros_chamada.add(parametros_chamada118.getTree());
+               }
+            default:
+               char_literal119 = (Token)this.match(this.input, 102, FOLLOW_102_in_chamadaRotina2207);
+               if (this.state.failed) {
+                  return retval;
+               }
 
-            retval.stop = this.input.LT(-1);
-            if (this.state.backtracking == 0) {
-               retval.tree = (CommonTree)this.adaptor.rulePostProcessing(root_0);
-               this.adaptor.setTokenBoundaries(retval.tree, retval.start, retval.stop);
-            }
+               if (this.state.backtracking == 0) {
+                  stream_102.add(char_literal119);
+               }
+
+               if (this.state.backtracking == 0) {
+                  retval.tree = root_0;
+                  new RewriteRuleSubtreeStream(this.adaptor, "rule retval", retval != null ? retval.tree : null);
+                  root_0 = (CommonTree)this.adaptor.nil();
+                  CommonTree root_1 = (CommonTree)this.adaptor.nil();
+                  root_1 = (CommonTree)this.adaptor.becomeRoot((CommonTree)this.adaptor.create(13, "CHAMADA"), root_1);
+                  this.adaptor.addChild(root_1, stream_IDENTIFICADOR.nextNode());
+                  if (stream_parametros_chamada.hasNext()) {
+                     this.adaptor.addChild(root_1, stream_parametros_chamada.nextTree());
+                  }
+
+                  stream_parametros_chamada.reset();
+                  this.adaptor.addChild(root_0, root_1);
+                  retval.tree = root_0;
+               }
+
+               retval.stop = this.input.LT(-1);
+               if (this.state.backtracking == 0) {
+                  retval.tree = (CommonTree)this.adaptor.rulePostProcessing(root_0);
+                  this.adaptor.setTokenBoundaries(retval.tree, retval.start, retval.stop);
+               }
          }
       } catch (RecognitionException var18) {
          this.reportError(var18);
@@ -3343,61 +3343,61 @@ public class CalangoGrammarParser extends Parser {
                      }
 
                      switch(alt27) {
-                     case 1:
-                        char_literal123 = (Token)this.match(this.input, 20, FOLLOW_CONCATENACAO_in_lerStatement2249);
-                        if (this.state.failed) {
-                           return retval;
-                        }
-
-                        if (this.state.backtracking == 0) {
-                           stream_CONCATENACAO.add(char_literal123);
-                        }
-
-                        this.pushFollow(FOLLOW_expressao_in_lerStatement2251);
-                        expressao124 = this.expressao();
-                        --this.state._fsp;
-                        if (this.state.failed) {
-                           return retval;
-                        }
-
-                        if (this.state.backtracking == 0) {
-                           stream_expressao.add(expressao124.getTree());
-                        }
-                        break;
-                     default:
-                        char_literal125 = (Token)this.match(this.input, 102, FOLLOW_102_in_lerStatement2255);
-                        if (this.state.failed) {
-                           return retval;
-                        }
-
-                        if (this.state.backtracking == 0) {
-                           stream_102.add(char_literal125);
-                        }
-
-                        if (this.state.backtracking == 0) {
-                           retval.tree = root_0;
-                           new RewriteRuleSubtreeStream(this.adaptor, "rule retval", retval != null ? retval.tree : null);
-                           root_0 = (CommonTree)this.adaptor.nil();
-                           CommonTree root_1 = (CommonTree)this.adaptor.nil();
-                           root_1 = (CommonTree)this.adaptor.becomeRoot((Object)stream_LEIA.nextNode(), root_1);
-                           this.adaptor.addChild(root_1, stream_expressao.nextTree());
-
-                           while(stream_expressao.hasNext()) {
-                              this.adaptor.addChild(root_1, stream_expressao.nextTree());
+                        case 1:
+                           char_literal123 = (Token)this.match(this.input, 20, FOLLOW_CONCATENACAO_in_lerStatement2249);
+                           if (this.state.failed) {
+                              return retval;
                            }
 
-                           stream_expressao.reset();
-                           this.adaptor.addChild(root_0, root_1);
-                           retval.tree = root_0;
-                        }
+                           if (this.state.backtracking == 0) {
+                              stream_CONCATENACAO.add(char_literal123);
+                           }
 
-                        retval.stop = this.input.LT(-1);
-                        if (this.state.backtracking == 0) {
-                           retval.tree = (CommonTree)this.adaptor.rulePostProcessing(root_0);
-                           this.adaptor.setTokenBoundaries(retval.tree, retval.start, retval.stop);
-                        }
+                           this.pushFollow(FOLLOW_expressao_in_lerStatement2251);
+                           expressao124 = this.expressao();
+                           --this.state._fsp;
+                           if (this.state.failed) {
+                              return retval;
+                           }
 
-                        return retval;
+                           if (this.state.backtracking == 0) {
+                              stream_expressao.add(expressao124.getTree());
+                           }
+                           break;
+                        default:
+                           char_literal125 = (Token)this.match(this.input, 102, FOLLOW_102_in_lerStatement2255);
+                           if (this.state.failed) {
+                              return retval;
+                           }
+
+                           if (this.state.backtracking == 0) {
+                              stream_102.add(char_literal125);
+                           }
+
+                           if (this.state.backtracking == 0) {
+                              retval.tree = root_0;
+                              new RewriteRuleSubtreeStream(this.adaptor, "rule retval", retval != null ? retval.tree : null);
+                              root_0 = (CommonTree)this.adaptor.nil();
+                              CommonTree root_1 = (CommonTree)this.adaptor.nil();
+                              root_1 = (CommonTree)this.adaptor.becomeRoot(stream_LEIA.nextNode(), root_1);
+                              this.adaptor.addChild(root_1, stream_expressao.nextTree());
+
+                              while(stream_expressao.hasNext()) {
+                                 this.adaptor.addChild(root_1, stream_expressao.nextTree());
+                              }
+
+                              stream_expressao.reset();
+                              this.adaptor.addChild(root_0, root_1);
+                              retval.tree = root_0;
+                           }
+
+                           retval.stop = this.input.LT(-1);
+                           if (this.state.backtracking == 0) {
+                              retval.tree = (CommonTree)this.adaptor.rulePostProcessing(root_0);
+                              this.adaptor.setTokenBoundaries(retval.tree, retval.start, retval.stop);
+                           }
+
+                           return retval;
                      }
                   }
                }
@@ -3466,61 +3466,61 @@ public class CalangoGrammarParser extends Parser {
                      }
 
                      switch(alt28) {
-                     case 1:
-                        char_literal129 = (Token)this.match(this.input, 20, FOLLOW_CONCATENACAO_in_lerCaracterStatement2301);
-                        if (this.state.failed) {
-                           return retval;
-                        }
-
-                        if (this.state.backtracking == 0) {
-                           stream_CONCATENACAO.add(char_literal129);
-                        }
-
-                        this.pushFollow(FOLLOW_expressao_in_lerCaracterStatement2303);
-                        expressao130 = this.expressao();
-                        --this.state._fsp;
-                        if (this.state.failed) {
-                           return retval;
-                        }
-
-                        if (this.state.backtracking == 0) {
-                           stream_expressao.add(expressao130.getTree());
-                        }
-                        break;
-                     default:
-                        char_literal131 = (Token)this.match(this.input, 102, FOLLOW_102_in_lerCaracterStatement2307);
-                        if (this.state.failed) {
-                           return retval;
-                        }
-
-                        if (this.state.backtracking == 0) {
-                           stream_102.add(char_literal131);
-                        }
-
-                        if (this.state.backtracking == 0) {
-                           retval.tree = root_0;
-                           new RewriteRuleSubtreeStream(this.adaptor, "rule retval", retval != null ? retval.tree : null);
-                           root_0 = (CommonTree)this.adaptor.nil();
-                           CommonTree root_1 = (CommonTree)this.adaptor.nil();
-                           root_1 = (CommonTree)this.adaptor.becomeRoot((Object)stream_LEIA_CARACTER.nextNode(), root_1);
-                           this.adaptor.addChild(root_1, stream_expressao.nextTree());
-
-                           while(stream_expressao.hasNext()) {
-                              this.adaptor.addChild(root_1, stream_expressao.nextTree());
+                        case 1:
+                           char_literal129 = (Token)this.match(this.input, 20, FOLLOW_CONCATENACAO_in_lerCaracterStatement2301);
+                           if (this.state.failed) {
+                              return retval;
                            }
 
-                           stream_expressao.reset();
-                           this.adaptor.addChild(root_0, root_1);
-                           retval.tree = root_0;
-                        }
+                           if (this.state.backtracking == 0) {
+                              stream_CONCATENACAO.add(char_literal129);
+                           }
 
-                        retval.stop = this.input.LT(-1);
-                        if (this.state.backtracking == 0) {
-                           retval.tree = (CommonTree)this.adaptor.rulePostProcessing(root_0);
-                           this.adaptor.setTokenBoundaries(retval.tree, retval.start, retval.stop);
-                        }
+                           this.pushFollow(FOLLOW_expressao_in_lerCaracterStatement2303);
+                           expressao130 = this.expressao();
+                           --this.state._fsp;
+                           if (this.state.failed) {
+                              return retval;
+                           }
 
-                        return retval;
+                           if (this.state.backtracking == 0) {
+                              stream_expressao.add(expressao130.getTree());
+                           }
+                           break;
+                        default:
+                           char_literal131 = (Token)this.match(this.input, 102, FOLLOW_102_in_lerCaracterStatement2307);
+                           if (this.state.failed) {
+                              return retval;
+                           }
+
+                           if (this.state.backtracking == 0) {
+                              stream_102.add(char_literal131);
+                           }
+
+                           if (this.state.backtracking == 0) {
+                              retval.tree = root_0;
+                              new RewriteRuleSubtreeStream(this.adaptor, "rule retval", retval != null ? retval.tree : null);
+                              root_0 = (CommonTree)this.adaptor.nil();
+                              CommonTree root_1 = (CommonTree)this.adaptor.nil();
+                              root_1 = (CommonTree)this.adaptor.becomeRoot(stream_LEIA_CARACTER.nextNode(), root_1);
+                              this.adaptor.addChild(root_1, stream_expressao.nextTree());
+
+                              while(stream_expressao.hasNext()) {
+                                 this.adaptor.addChild(root_1, stream_expressao.nextTree());
+                              }
+
+                              stream_expressao.reset();
+                              this.adaptor.addChild(root_0, root_1);
+                              retval.tree = root_0;
+                           }
+
+                           retval.stop = this.input.LT(-1);
+                           if (this.state.backtracking == 0) {
+                              retval.tree = (CommonTree)this.adaptor.rulePostProcessing(root_0);
+                              this.adaptor.setTokenBoundaries(retval.tree, retval.start, retval.stop);
+                           }
+
+                           return retval;
                      }
                   }
                }
@@ -3589,183 +3589,183 @@ public class CalangoGrammarParser extends Parser {
          CommonTree root_1;
          label205:
          switch(alt31) {
-         case 1:
-            string_literal132 = (Token)this.match(this.input, 35, FOLLOW_ESCREVA_in_escreverStatement2345);
-            if (this.state.failed) {
-               return retval;
-            }
-
-            if (this.state.backtracking == 0) {
-               stream_ESCREVA.add(string_literal132);
-            }
-
-            char_literal133 = (Token)this.match(this.input, 101, FOLLOW_101_in_escreverStatement2347);
-            if (this.state.failed) {
-               return retval;
-            }
-
-            if (this.state.backtracking == 0) {
-               stream_101.add(char_literal133);
-            }
-
-            this.pushFollow(FOLLOW_expressaoEscreva_in_escreverStatement2349);
-            expressaoEscreva134 = this.expressaoEscreva();
-            --this.state._fsp;
-            if (this.state.failed) {
-               return retval;
-            }
-
-            if (this.state.backtracking == 0) {
-               stream_expressaoEscreva.add(expressaoEscreva134.getTree());
-            }
-
-            while(true) {
-               alt30 = 2;
-               LA30_0 = this.input.LA(1);
-               if (LA30_0 == 20) {
-                  alt30 = 1;
+            case 1:
+               string_literal132 = (Token)this.match(this.input, 35, FOLLOW_ESCREVA_in_escreverStatement2345);
+               if (this.state.failed) {
+                  return retval;
                }
 
-               switch(alt30) {
-               case 1:
-                  char_literal135 = (Token)this.match(this.input, 20, FOLLOW_CONCATENACAO_in_escreverStatement2352);
-                  if (this.state.failed) {
-                     return retval;
-                  }
-
-                  if (this.state.backtracking == 0) {
-                     stream_CONCATENACAO.add(char_literal135);
-                  }
-
-                  this.pushFollow(FOLLOW_expressaoEscreva_in_escreverStatement2354);
-                  expressaoEscreva136 = this.expressaoEscreva();
-                  --this.state._fsp;
-                  if (this.state.failed) {
-                     return retval;
-                  }
-
-                  if (this.state.backtracking == 0) {
-                     stream_expressaoEscreva.add(expressaoEscreva136.getTree());
-                  }
-                  break;
-               default:
-                  char_literal137 = (Token)this.match(this.input, 102, FOLLOW_102_in_escreverStatement2358);
-                  if (this.state.failed) {
-                     return retval;
-                  }
-
-                  if (this.state.backtracking == 0) {
-                     stream_102.add(char_literal137);
-                  }
-
-                  if (this.state.backtracking == 0) {
-                     retval.tree = root_0;
-                     new RewriteRuleSubtreeStream(this.adaptor, "rule retval", retval != null ? retval.tree : null);
-                     root_0 = (CommonTree)this.adaptor.nil();
-                     root_1 = (CommonTree)this.adaptor.nil();
-                     root_1 = (CommonTree)this.adaptor.becomeRoot((Object)((CommonTree)this.adaptor.create(35, (String)"ESCREVA")), root_1);
-                     this.adaptor.addChild(root_1, stream_expressaoEscreva.nextTree());
-
-                     while(stream_expressaoEscreva.hasNext()) {
-                        this.adaptor.addChild(root_1, stream_expressaoEscreva.nextTree());
-                     }
-
-                     stream_expressaoEscreva.reset();
-                     this.adaptor.addChild(root_0, root_1);
-                     retval.tree = root_0;
-                  }
-                  break label205;
-               }
-            }
-         case 2:
-            string_literal138 = (Token)this.match(this.input, 36, FOLLOW_ESCREVAL_in_escreverStatement2384);
-            if (this.state.failed) {
-               return retval;
-            }
-
-            if (this.state.backtracking == 0) {
-               stream_ESCREVAL.add(string_literal138);
-            }
-
-            char_literal139 = (Token)this.match(this.input, 101, FOLLOW_101_in_escreverStatement2386);
-            if (this.state.failed) {
-               return retval;
-            }
-
-            if (this.state.backtracking == 0) {
-               stream_101.add(char_literal139);
-            }
-
-            this.pushFollow(FOLLOW_expressaoEscreva_in_escreverStatement2388);
-            expressaoEscreva140 = this.expressaoEscreva();
-            --this.state._fsp;
-            if (this.state.failed) {
-               return retval;
-            }
-
-            if (this.state.backtracking == 0) {
-               stream_expressaoEscreva.add(expressaoEscreva140.getTree());
-            }
-
-            label184:
-            while(true) {
-               alt30 = 2;
-               LA30_0 = this.input.LA(1);
-               if (LA30_0 == 20) {
-                  alt30 = 1;
+               if (this.state.backtracking == 0) {
+                  stream_ESCREVA.add(string_literal132);
                }
 
-               switch(alt30) {
-               case 1:
-                  char_literal141 = (Token)this.match(this.input, 20, FOLLOW_CONCATENACAO_in_escreverStatement2391);
-                  if (this.state.failed) {
-                     return retval;
-                  }
-
-                  if (this.state.backtracking == 0) {
-                     stream_CONCATENACAO.add(char_literal141);
-                  }
-
-                  this.pushFollow(FOLLOW_expressaoEscreva_in_escreverStatement2393);
-                  expressaoEscreva142 = this.expressaoEscreva();
-                  --this.state._fsp;
-                  if (this.state.failed) {
-                     return retval;
-                  }
-
-                  if (this.state.backtracking == 0) {
-                     stream_expressaoEscreva.add(expressaoEscreva142.getTree());
-                  }
-                  break;
-               default:
-                  char_literal143 = (Token)this.match(this.input, 102, FOLLOW_102_in_escreverStatement2397);
-                  if (this.state.failed) {
-                     return retval;
-                  }
-
-                  if (this.state.backtracking == 0) {
-                     stream_102.add(char_literal143);
-                  }
-
-                  if (this.state.backtracking == 0) {
-                     retval.tree = root_0;
-                     new RewriteRuleSubtreeStream(this.adaptor, "rule retval", retval != null ? retval.tree : null);
-                     root_0 = (CommonTree)this.adaptor.nil();
-                     root_1 = (CommonTree)this.adaptor.nil();
-                     root_1 = (CommonTree)this.adaptor.becomeRoot((Object)((CommonTree)this.adaptor.create(36, (String)"ESCREVAL")), root_1);
-                     this.adaptor.addChild(root_1, stream_expressaoEscreva.nextTree());
-
-                     while(stream_expressaoEscreva.hasNext()) {
-                        this.adaptor.addChild(root_1, stream_expressaoEscreva.nextTree());
-                     }
-
-                     stream_expressaoEscreva.reset();
-                     this.adaptor.addChild(root_0, root_1);
-                     retval.tree = root_0;
-                  }
-                  break label184;
+               char_literal133 = (Token)this.match(this.input, 101, FOLLOW_101_in_escreverStatement2347);
+               if (this.state.failed) {
+                  return retval;
                }
-            }
+
+               if (this.state.backtracking == 0) {
+                  stream_101.add(char_literal133);
+               }
+
+               this.pushFollow(FOLLOW_expressaoEscreva_in_escreverStatement2349);
+               expressaoEscreva134 = this.expressaoEscreva();
+               --this.state._fsp;
+               if (this.state.failed) {
+                  return retval;
+               }
+
+               if (this.state.backtracking == 0) {
+                  stream_expressaoEscreva.add(expressaoEscreva134.getTree());
+               }
+
+               while(true) {
+                  alt30 = 2;
+                  LA30_0 = this.input.LA(1);
+                  if (LA30_0 == 20) {
+                     alt30 = 1;
+                  }
+
+                  switch(alt30) {
+                     case 1:
+                        char_literal135 = (Token)this.match(this.input, 20, FOLLOW_CONCATENACAO_in_escreverStatement2352);
+                        if (this.state.failed) {
+                           return retval;
+                        }
+
+                        if (this.state.backtracking == 0) {
+                           stream_CONCATENACAO.add(char_literal135);
+                        }
+
+                        this.pushFollow(FOLLOW_expressaoEscreva_in_escreverStatement2354);
+                        expressaoEscreva136 = this.expressaoEscreva();
+                        --this.state._fsp;
+                        if (this.state.failed) {
+                           return retval;
+                        }
+
+                        if (this.state.backtracking == 0) {
+                           stream_expressaoEscreva.add(expressaoEscreva136.getTree());
+                        }
+                        break;
+                     default:
+                        char_literal137 = (Token)this.match(this.input, 102, FOLLOW_102_in_escreverStatement2358);
+                        if (this.state.failed) {
+                           return retval;
+                        }
+
+                        if (this.state.backtracking == 0) {
+                           stream_102.add(char_literal137);
+                        }
+
+                        if (this.state.backtracking == 0) {
+                           retval.tree = root_0;
+                           new RewriteRuleSubtreeStream(this.adaptor, "rule retval", retval != null ? retval.tree : null);
+                           root_0 = (CommonTree)this.adaptor.nil();
+                           root_1 = (CommonTree)this.adaptor.nil();
+                           root_1 = (CommonTree)this.adaptor.becomeRoot((CommonTree)this.adaptor.create(35, "ESCREVA"), root_1);
+                           this.adaptor.addChild(root_1, stream_expressaoEscreva.nextTree());
+
+                           while(stream_expressaoEscreva.hasNext()) {
+                              this.adaptor.addChild(root_1, stream_expressaoEscreva.nextTree());
+                           }
+
+                           stream_expressaoEscreva.reset();
+                           this.adaptor.addChild(root_0, root_1);
+                           retval.tree = root_0;
+                        }
+                        break label205;
+                  }
+               }
+            case 2:
+               string_literal138 = (Token)this.match(this.input, 36, FOLLOW_ESCREVAL_in_escreverStatement2384);
+               if (this.state.failed) {
+                  return retval;
+               }
+
+               if (this.state.backtracking == 0) {
+                  stream_ESCREVAL.add(string_literal138);
+               }
+
+               char_literal139 = (Token)this.match(this.input, 101, FOLLOW_101_in_escreverStatement2386);
+               if (this.state.failed) {
+                  return retval;
+               }
+
+               if (this.state.backtracking == 0) {
+                  stream_101.add(char_literal139);
+               }
+
+               this.pushFollow(FOLLOW_expressaoEscreva_in_escreverStatement2388);
+               expressaoEscreva140 = this.expressaoEscreva();
+               --this.state._fsp;
+               if (this.state.failed) {
+                  return retval;
+               }
+
+               if (this.state.backtracking == 0) {
+                  stream_expressaoEscreva.add(expressaoEscreva140.getTree());
+               }
+
+               label184:
+               while(true) {
+                  alt30 = 2;
+                  LA30_0 = this.input.LA(1);
+                  if (LA30_0 == 20) {
+                     alt30 = 1;
+                  }
+
+                  switch(alt30) {
+                     case 1:
+                        char_literal141 = (Token)this.match(this.input, 20, FOLLOW_CONCATENACAO_in_escreverStatement2391);
+                        if (this.state.failed) {
+                           return retval;
+                        }
+
+                        if (this.state.backtracking == 0) {
+                           stream_CONCATENACAO.add(char_literal141);
+                        }
+
+                        this.pushFollow(FOLLOW_expressaoEscreva_in_escreverStatement2393);
+                        expressaoEscreva142 = this.expressaoEscreva();
+                        --this.state._fsp;
+                        if (this.state.failed) {
+                           return retval;
+                        }
+
+                        if (this.state.backtracking == 0) {
+                           stream_expressaoEscreva.add(expressaoEscreva142.getTree());
+                        }
+                        break;
+                     default:
+                        char_literal143 = (Token)this.match(this.input, 102, FOLLOW_102_in_escreverStatement2397);
+                        if (this.state.failed) {
+                           return retval;
+                        }
+
+                        if (this.state.backtracking == 0) {
+                           stream_102.add(char_literal143);
+                        }
+
+                        if (this.state.backtracking == 0) {
+                           retval.tree = root_0;
+                           new RewriteRuleSubtreeStream(this.adaptor, "rule retval", retval != null ? retval.tree : null);
+                           root_0 = (CommonTree)this.adaptor.nil();
+                           root_1 = (CommonTree)this.adaptor.nil();
+                           root_1 = (CommonTree)this.adaptor.becomeRoot((CommonTree)this.adaptor.create(36, "ESCREVAL"), root_1);
+                           this.adaptor.addChild(root_1, stream_expressaoEscreva.nextTree());
+
+                           while(stream_expressaoEscreva.hasNext()) {
+                              this.adaptor.addChild(root_1, stream_expressaoEscreva.nextTree());
+                           }
+
+                           stream_expressaoEscreva.reset();
+                           this.adaptor.addChild(root_0, root_1);
+                           retval.tree = root_0;
+                        }
+                        break label184;
+                  }
+               }
          }
 
          retval.stop = this.input.LT(-1);
@@ -3809,359 +3809,424 @@ public class CalangoGrammarParser extends Parser {
          int LA33_13;
          byte alt33;
          switch(this.input.LA(1)) {
-         case 5:
-            LA33_13 = this.input.LA(2);
-            if (this.synpred3_CalangoGrammar()) {
-               alt33 = 1;
-            } else if (this.synpred4_CalangoGrammar()) {
-               alt33 = 2;
-            } else {
-               alt33 = 3;
-            }
-            break;
-         case 10:
-            LA33_13 = this.input.LA(2);
-            if (this.synpred3_CalangoGrammar()) {
-               alt33 = 1;
-            } else if (this.synpred4_CalangoGrammar()) {
-               alt33 = 2;
-            } else {
-               alt33 = 3;
-            }
-            break;
-         case 15:
-            LA33_13 = this.input.LA(2);
-            if (this.synpred3_CalangoGrammar()) {
-               alt33 = 1;
-            } else if (this.synpred4_CalangoGrammar()) {
-               alt33 = 2;
-            } else {
-               alt33 = 3;
-            }
-            break;
-         case 46:
-            LA33_13 = this.input.LA(2);
-            if (this.synpred3_CalangoGrammar()) {
-               alt33 = 1;
-            } else if (this.synpred4_CalangoGrammar()) {
-               alt33 = 2;
-            } else {
-               alt33 = 3;
-            }
-            break;
-         case 48:
-            LA33_13 = this.input.LA(2);
-            if (this.synpred3_CalangoGrammar()) {
-               alt33 = 1;
-            } else if (this.synpred4_CalangoGrammar()) {
-               alt33 = 2;
-            } else {
-               alt33 = 3;
-            }
-            break;
-         case 65:
-            LA33_13 = this.input.LA(2);
-            if (this.synpred3_CalangoGrammar()) {
-               alt33 = 1;
-            } else if (this.synpred4_CalangoGrammar()) {
-               alt33 = 2;
-            } else {
-               alt33 = 3;
-            }
-            break;
-         case 66:
-            LA33_13 = this.input.LA(2);
-            if (this.synpred3_CalangoGrammar()) {
-               alt33 = 1;
-            } else if (this.synpred4_CalangoGrammar()) {
-               alt33 = 2;
-            } else {
-               alt33 = 3;
-            }
-            break;
-         case 79:
-            LA33_13 = this.input.LA(2);
-            if (this.synpred3_CalangoGrammar()) {
-               alt33 = 1;
-            } else if (this.synpred4_CalangoGrammar()) {
-               alt33 = 2;
-            } else {
-               alt33 = 3;
-            }
-            break;
-         case 89:
-            LA33_13 = this.input.LA(2);
-            if (this.synpred3_CalangoGrammar()) {
-               alt33 = 1;
-            } else if (this.synpred4_CalangoGrammar()) {
-               alt33 = 2;
-            } else {
-               alt33 = 3;
-            }
-            break;
-         case 92:
-            LA33_13 = this.input.LA(2);
-            if (this.synpred3_CalangoGrammar()) {
-               alt33 = 1;
-            } else if (this.synpred4_CalangoGrammar()) {
-               alt33 = 2;
-            } else {
-               alt33 = 3;
-            }
-            break;
-         case 101:
-            LA33_13 = this.input.LA(2);
-            if (this.synpred3_CalangoGrammar()) {
-               alt33 = 1;
-            } else if (this.synpred4_CalangoGrammar()) {
-               alt33 = 2;
-            } else {
-               alt33 = 3;
-            }
-            break;
-         case 109:
-            LA33_13 = this.input.LA(2);
-            if (this.synpred3_CalangoGrammar()) {
-               alt33 = 1;
-            } else if (this.synpred4_CalangoGrammar()) {
-               alt33 = 2;
-            } else {
-               alt33 = 3;
-            }
-            break;
-         case 110:
-            LA33_13 = this.input.LA(2);
-            if (this.synpred3_CalangoGrammar()) {
-               alt33 = 1;
-            } else if (this.synpred4_CalangoGrammar()) {
-               alt33 = 2;
-            } else {
-               alt33 = 3;
-            }
-            break;
-         case 112:
-            LA33_13 = this.input.LA(2);
-            if (this.synpred3_CalangoGrammar()) {
-               alt33 = 1;
-            } else if (this.synpred4_CalangoGrammar()) {
-               alt33 = 2;
-            } else {
-               alt33 = 3;
-            }
-            break;
-         case 114:
-            LA33_13 = this.input.LA(2);
-            if (this.synpred3_CalangoGrammar()) {
-               alt33 = 1;
-            } else if (this.synpred4_CalangoGrammar()) {
-               alt33 = 2;
-            } else {
-               alt33 = 3;
-            }
-            break;
-         case 115:
-            LA33_13 = this.input.LA(2);
-            if (this.synpred3_CalangoGrammar()) {
-               alt33 = 1;
-            } else if (this.synpred4_CalangoGrammar()) {
-               alt33 = 2;
-            } else {
-               alt33 = 3;
-            }
-            break;
-         case 116:
-            LA33_13 = this.input.LA(2);
-            if (this.synpred3_CalangoGrammar()) {
-               alt33 = 1;
-            } else if (this.synpred4_CalangoGrammar()) {
-               alt33 = 2;
-            } else {
-               alt33 = 3;
-            }
-            break;
-         case 117:
-            LA33_13 = this.input.LA(2);
-            if (this.synpred3_CalangoGrammar()) {
-               alt33 = 1;
-            } else if (this.synpred4_CalangoGrammar()) {
-               alt33 = 2;
-            } else {
-               alt33 = 3;
-            }
-            break;
-         case 118:
-            LA33_13 = this.input.LA(2);
-            if (this.synpred3_CalangoGrammar()) {
-               alt33 = 1;
-            } else if (this.synpred4_CalangoGrammar()) {
-               alt33 = 2;
-            } else {
-               alt33 = 3;
-            }
-            break;
-         case 119:
-            LA33_13 = this.input.LA(2);
-            if (this.synpred3_CalangoGrammar()) {
-               alt33 = 1;
-            } else if (this.synpred4_CalangoGrammar()) {
-               alt33 = 2;
-            } else {
-               alt33 = 3;
-            }
-            break;
-         case 122:
-            LA33_13 = this.input.LA(2);
-            if (this.synpred3_CalangoGrammar()) {
-               alt33 = 1;
-            } else if (this.synpred4_CalangoGrammar()) {
-               alt33 = 2;
-            } else {
-               alt33 = 3;
-            }
-            break;
-         case 128:
-            LA33_13 = this.input.LA(2);
-            if (this.synpred3_CalangoGrammar()) {
-               alt33 = 1;
-            } else if (this.synpred4_CalangoGrammar()) {
-               alt33 = 2;
-            } else {
-               alt33 = 3;
-            }
-            break;
-         case 129:
-            LA33_13 = this.input.LA(2);
-            if (this.synpred3_CalangoGrammar()) {
-               alt33 = 1;
-            } else if (this.synpred4_CalangoGrammar()) {
-               alt33 = 2;
-            } else {
-               alt33 = 3;
-            }
-            break;
-         case 130:
-            LA33_13 = this.input.LA(2);
-            if (this.synpred3_CalangoGrammar()) {
-               alt33 = 1;
-            } else if (this.synpred4_CalangoGrammar()) {
-               alt33 = 2;
-            } else {
-               alt33 = 3;
-            }
-            break;
-         case 131:
-            LA33_13 = this.input.LA(2);
-            if (this.synpred3_CalangoGrammar()) {
-               alt33 = 1;
-            } else if (this.synpred4_CalangoGrammar()) {
-               alt33 = 2;
-            } else {
-               alt33 = 3;
-            }
-            break;
-         case 133:
-            LA33_13 = this.input.LA(2);
-            if (this.synpred3_CalangoGrammar()) {
-               alt33 = 1;
-            } else if (this.synpred4_CalangoGrammar()) {
-               alt33 = 2;
-            } else {
-               alt33 = 3;
-            }
-            break;
-         case 135:
-            LA33_13 = this.input.LA(2);
-            if (this.synpred3_CalangoGrammar()) {
-               alt33 = 1;
-            } else if (this.synpred4_CalangoGrammar()) {
-               alt33 = 2;
-            } else {
-               alt33 = 3;
-            }
-            break;
-         case 138:
-            LA33_13 = this.input.LA(2);
-            if (this.synpred3_CalangoGrammar()) {
-               alt33 = 1;
-            } else if (this.synpred4_CalangoGrammar()) {
-               alt33 = 2;
-            } else {
-               alt33 = 3;
-            }
-            break;
-         default:
-            if (this.state.backtracking > 0) {
-               this.state.failed = true;
-               return retval;
-            }
+            case 5:
+               LA33_13 = this.input.LA(2);
+               if (this.synpred3_CalangoGrammar()) {
+                  alt33 = 1;
+               } else if (this.synpred4_CalangoGrammar()) {
+                  alt33 = 2;
+               } else {
+                  alt33 = 3;
+               }
+               break;
+            case 10:
+               LA33_13 = this.input.LA(2);
+               if (this.synpred3_CalangoGrammar()) {
+                  alt33 = 1;
+               } else if (this.synpred4_CalangoGrammar()) {
+                  alt33 = 2;
+               } else {
+                  alt33 = 3;
+               }
+               break;
+            case 15:
+               LA33_13 = this.input.LA(2);
+               if (this.synpred3_CalangoGrammar()) {
+                  alt33 = 1;
+               } else if (this.synpred4_CalangoGrammar()) {
+                  alt33 = 2;
+               } else {
+                  alt33 = 3;
+               }
+               break;
+            case 46:
+               LA33_13 = this.input.LA(2);
+               if (this.synpred3_CalangoGrammar()) {
+                  alt33 = 1;
+               } else if (this.synpred4_CalangoGrammar()) {
+                  alt33 = 2;
+               } else {
+                  alt33 = 3;
+               }
+               break;
+            case 48:
+               LA33_13 = this.input.LA(2);
+               if (this.synpred3_CalangoGrammar()) {
+                  alt33 = 1;
+               } else if (this.synpred4_CalangoGrammar()) {
+                  alt33 = 2;
+               } else {
+                  alt33 = 3;
+               }
+               break;
+            case 65:
+               LA33_13 = this.input.LA(2);
+               if (this.synpred3_CalangoGrammar()) {
+                  alt33 = 1;
+               } else if (this.synpred4_CalangoGrammar()) {
+                  alt33 = 2;
+               } else {
+                  alt33 = 3;
+               }
+               break;
+            case 66:
+               LA33_13 = this.input.LA(2);
+               if (this.synpred3_CalangoGrammar()) {
+                  alt33 = 1;
+               } else if (this.synpred4_CalangoGrammar()) {
+                  alt33 = 2;
+               } else {
+                  alt33 = 3;
+               }
+               break;
+            case 79:
+               LA33_13 = this.input.LA(2);
+               if (this.synpred3_CalangoGrammar()) {
+                  alt33 = 1;
+               } else if (this.synpred4_CalangoGrammar()) {
+                  alt33 = 2;
+               } else {
+                  alt33 = 3;
+               }
+               break;
+            case 89:
+               LA33_13 = this.input.LA(2);
+               if (this.synpred3_CalangoGrammar()) {
+                  alt33 = 1;
+               } else if (this.synpred4_CalangoGrammar()) {
+                  alt33 = 2;
+               } else {
+                  alt33 = 3;
+               }
+               break;
+            case 92:
+               LA33_13 = this.input.LA(2);
+               if (this.synpred3_CalangoGrammar()) {
+                  alt33 = 1;
+               } else if (this.synpred4_CalangoGrammar()) {
+                  alt33 = 2;
+               } else {
+                  alt33 = 3;
+               }
+               break;
+            case 101:
+               LA33_13 = this.input.LA(2);
+               if (this.synpred3_CalangoGrammar()) {
+                  alt33 = 1;
+               } else if (this.synpred4_CalangoGrammar()) {
+                  alt33 = 2;
+               } else {
+                  alt33 = 3;
+               }
+               break;
+            case 109:
+               LA33_13 = this.input.LA(2);
+               if (this.synpred3_CalangoGrammar()) {
+                  alt33 = 1;
+               } else if (this.synpred4_CalangoGrammar()) {
+                  alt33 = 2;
+               } else {
+                  alt33 = 3;
+               }
+               break;
+            case 110:
+               LA33_13 = this.input.LA(2);
+               if (this.synpred3_CalangoGrammar()) {
+                  alt33 = 1;
+               } else if (this.synpred4_CalangoGrammar()) {
+                  alt33 = 2;
+               } else {
+                  alt33 = 3;
+               }
+               break;
+            case 112:
+               LA33_13 = this.input.LA(2);
+               if (this.synpred3_CalangoGrammar()) {
+                  alt33 = 1;
+               } else if (this.synpred4_CalangoGrammar()) {
+                  alt33 = 2;
+               } else {
+                  alt33 = 3;
+               }
+               break;
+            case 114:
+               LA33_13 = this.input.LA(2);
+               if (this.synpred3_CalangoGrammar()) {
+                  alt33 = 1;
+               } else if (this.synpred4_CalangoGrammar()) {
+                  alt33 = 2;
+               } else {
+                  alt33 = 3;
+               }
+               break;
+            case 115:
+               LA33_13 = this.input.LA(2);
+               if (this.synpred3_CalangoGrammar()) {
+                  alt33 = 1;
+               } else if (this.synpred4_CalangoGrammar()) {
+                  alt33 = 2;
+               } else {
+                  alt33 = 3;
+               }
+               break;
+            case 116:
+               LA33_13 = this.input.LA(2);
+               if (this.synpred3_CalangoGrammar()) {
+                  alt33 = 1;
+               } else if (this.synpred4_CalangoGrammar()) {
+                  alt33 = 2;
+               } else {
+                  alt33 = 3;
+               }
+               break;
+            case 117:
+               LA33_13 = this.input.LA(2);
+               if (this.synpred3_CalangoGrammar()) {
+                  alt33 = 1;
+               } else if (this.synpred4_CalangoGrammar()) {
+                  alt33 = 2;
+               } else {
+                  alt33 = 3;
+               }
+               break;
+            case 118:
+               LA33_13 = this.input.LA(2);
+               if (this.synpred3_CalangoGrammar()) {
+                  alt33 = 1;
+               } else if (this.synpred4_CalangoGrammar()) {
+                  alt33 = 2;
+               } else {
+                  alt33 = 3;
+               }
+               break;
+            case 119:
+               LA33_13 = this.input.LA(2);
+               if (this.synpred3_CalangoGrammar()) {
+                  alt33 = 1;
+               } else if (this.synpred4_CalangoGrammar()) {
+                  alt33 = 2;
+               } else {
+                  alt33 = 3;
+               }
+               break;
+            case 122:
+               LA33_13 = this.input.LA(2);
+               if (this.synpred3_CalangoGrammar()) {
+                  alt33 = 1;
+               } else if (this.synpred4_CalangoGrammar()) {
+                  alt33 = 2;
+               } else {
+                  alt33 = 3;
+               }
+               break;
+            case 128:
+               LA33_13 = this.input.LA(2);
+               if (this.synpred3_CalangoGrammar()) {
+                  alt33 = 1;
+               } else if (this.synpred4_CalangoGrammar()) {
+                  alt33 = 2;
+               } else {
+                  alt33 = 3;
+               }
+               break;
+            case 129:
+               LA33_13 = this.input.LA(2);
+               if (this.synpred3_CalangoGrammar()) {
+                  alt33 = 1;
+               } else if (this.synpred4_CalangoGrammar()) {
+                  alt33 = 2;
+               } else {
+                  alt33 = 3;
+               }
+               break;
+            case 130:
+               LA33_13 = this.input.LA(2);
+               if (this.synpred3_CalangoGrammar()) {
+                  alt33 = 1;
+               } else if (this.synpred4_CalangoGrammar()) {
+                  alt33 = 2;
+               } else {
+                  alt33 = 3;
+               }
+               break;
+            case 131:
+               LA33_13 = this.input.LA(2);
+               if (this.synpred3_CalangoGrammar()) {
+                  alt33 = 1;
+               } else if (this.synpred4_CalangoGrammar()) {
+                  alt33 = 2;
+               } else {
+                  alt33 = 3;
+               }
+               break;
+            case 133:
+               LA33_13 = this.input.LA(2);
+               if (this.synpred3_CalangoGrammar()) {
+                  alt33 = 1;
+               } else if (this.synpred4_CalangoGrammar()) {
+                  alt33 = 2;
+               } else {
+                  alt33 = 3;
+               }
+               break;
+            case 135:
+               LA33_13 = this.input.LA(2);
+               if (this.synpred3_CalangoGrammar()) {
+                  alt33 = 1;
+               } else if (this.synpred4_CalangoGrammar()) {
+                  alt33 = 2;
+               } else {
+                  alt33 = 3;
+               }
+               break;
+            case 138:
+               LA33_13 = this.input.LA(2);
+               if (this.synpred3_CalangoGrammar()) {
+                  alt33 = 1;
+               } else if (this.synpred4_CalangoGrammar()) {
+                  alt33 = 2;
+               } else {
+                  alt33 = 3;
+               }
+               break;
+            default:
+               if (this.state.backtracking > 0) {
+                  this.state.failed = true;
+                  return retval;
+               }
 
-            NoViableAltException nvae = new NoViableAltException("", 33, 0, this.input);
-            throw nvae;
+               NoViableAltException nvae = new NoViableAltException("", 33, 0, this.input);
+               throw nvae;
          }
 
          label288:
          switch(alt33) {
-         case 1:
-            root_0 = (CommonTree)this.adaptor.nil();
-            this.pushFollow(FOLLOW_expressao_in_expressaoEscreva2447);
-            expressao144 = this.expressao();
-            --this.state._fsp;
-            if (this.state.failed) {
-               return retval;
-            }
-
-            if (this.state.backtracking == 0) {
-               this.adaptor.addChild(root_0, expressao144.getTree());
-            }
-            break;
-         case 2:
-            this.pushFollow(FOLLOW_expressao_in_expressaoEscreva2465);
-            expressao145 = this.expressao();
-            --this.state._fsp;
-            if (this.state.failed) {
-               return retval;
-            }
-
-            if (this.state.backtracking == 0) {
-               stream_expressao.add(expressao145.getTree());
-            }
-
-            char_literal146 = (Token)this.match(this.input, 103, FOLLOW_103_in_expressaoEscreva2467);
-            if (this.state.failed) {
-               return retval;
-            }
-
-            if (this.state.backtracking == 0) {
-               stream_103.add(char_literal146);
-            }
-
-            total = (Token)this.match(this.input, 48, FOLLOW_INTEIRO_LITERAL_in_expressaoEscreva2471);
-            if (this.state.failed) {
-               return retval;
-            }
-
-            if (this.state.backtracking == 0) {
-               stream_INTEIRO_LITERAL.add(total);
-            }
-
-            int alt32 = 2;
-            int LA32_0 = this.input.LA(1);
-            if (LA32_0 == 103) {
-               alt32 = 1;
-            }
-
-            switch(alt32) {
             case 1:
-               char_literal147 = (Token)this.match(this.input, 103, FOLLOW_103_in_expressaoEscreva2474);
+               root_0 = (CommonTree)this.adaptor.nil();
+               this.pushFollow(FOLLOW_expressao_in_expressaoEscreva2447);
+               expressao144 = this.expressao();
+               --this.state._fsp;
                if (this.state.failed) {
                   return retval;
                }
 
                if (this.state.backtracking == 0) {
-                  stream_103.add(char_literal147);
+                  this.adaptor.addChild(root_0, expressao144.getTree());
+               }
+               break;
+            case 2:
+               this.pushFollow(FOLLOW_expressao_in_expressaoEscreva2465);
+               expressao145 = this.expressao();
+               --this.state._fsp;
+               if (this.state.failed) {
+                  return retval;
                }
 
-               decimal = (Token)this.match(this.input, 48, FOLLOW_INTEIRO_LITERAL_in_expressaoEscreva2478);
+               if (this.state.backtracking == 0) {
+                  stream_expressao.add(expressao145.getTree());
+               }
+
+               char_literal146 = (Token)this.match(this.input, 103, FOLLOW_103_in_expressaoEscreva2467);
+               if (this.state.failed) {
+                  return retval;
+               }
+
+               if (this.state.backtracking == 0) {
+                  stream_103.add(char_literal146);
+               }
+
+               total = (Token)this.match(this.input, 48, FOLLOW_INTEIRO_LITERAL_in_expressaoEscreva2471);
+               if (this.state.failed) {
+                  return retval;
+               }
+
+               if (this.state.backtracking == 0) {
+                  stream_INTEIRO_LITERAL.add(total);
+               }
+
+               int alt32 = 2;
+               int LA32_0 = this.input.LA(1);
+               if (LA32_0 == 103) {
+                  alt32 = 1;
+               }
+
+               switch(alt32) {
+                  case 1:
+                     char_literal147 = (Token)this.match(this.input, 103, FOLLOW_103_in_expressaoEscreva2474);
+                     if (this.state.failed) {
+                        return retval;
+                     }
+
+                     if (this.state.backtracking == 0) {
+                        stream_103.add(char_literal147);
+                     }
+
+                     decimal = (Token)this.match(this.input, 48, FOLLOW_INTEIRO_LITERAL_in_expressaoEscreva2478);
+                     if (this.state.failed) {
+                        return retval;
+                     }
+
+                     if (this.state.backtracking == 0) {
+                        stream_INTEIRO_LITERAL.add(decimal);
+                     }
+                  default:
+                     if (this.state.backtracking == 0) {
+                        retval.tree = root_0;
+                        RewriteRuleTokenStream stream_total = new RewriteRuleTokenStream(this.adaptor, "token total", total);
+                        RewriteRuleTokenStream stream_decimal = new RewriteRuleTokenStream(this.adaptor, "token decimal", decimal);
+                        new RewriteRuleSubtreeStream(this.adaptor, "rule retval", retval != null ? retval.tree : null);
+                        root_0 = (CommonTree)this.adaptor.nil();
+                        CommonTree root_1 = (CommonTree)this.adaptor.nil();
+                        root_1 = (CommonTree)this.adaptor.becomeRoot((CommonTree)this.adaptor.create(41, "FORMATA_REAL"), root_1);
+                        this.adaptor.addChild(root_1, stream_expressao.nextTree());
+                        CommonTree root_2 = (CommonTree)this.adaptor.nil();
+                        root_2 = (CommonTree)this.adaptor.becomeRoot((CommonTree)this.adaptor.create(43, "FORMATA_REAL_TOTAL"), root_2);
+                        this.adaptor.addChild(root_2, stream_total.nextNode());
+                        this.adaptor.addChild(root_1, root_2);
+                        root_2 = (CommonTree)this.adaptor.nil();
+                        root_2 = (CommonTree)this.adaptor.becomeRoot((CommonTree)this.adaptor.create(42, "FORMATA_REAL_DECIMAL"), root_2);
+                        if (stream_decimal.hasNext()) {
+                           this.adaptor.addChild(root_2, stream_decimal.nextNode());
+                        }
+
+                        stream_decimal.reset();
+                        this.adaptor.addChild(root_1, root_2);
+                        this.adaptor.addChild(root_0, root_1);
+                        retval.tree = root_0;
+                     }
+                     break label288;
+               }
+            case 3:
+               this.pushFollow(FOLLOW_expressao_in_expressaoEscreva2517);
+               expressao148 = this.expressao();
+               --this.state._fsp;
+               if (this.state.failed) {
+                  return retval;
+               }
+
+               if (this.state.backtracking == 0) {
+                  stream_expressao.add(expressao148.getTree());
+               }
+
+               char_literal149 = (Token)this.match(this.input, 103, FOLLOW_103_in_expressaoEscreva2519);
+               if (this.state.failed) {
+                  return retval;
+               }
+
+               if (this.state.backtracking == 0) {
+                  stream_103.add(char_literal149);
+               }
+
+               char_literal150 = (Token)this.match(this.input, 103, FOLLOW_103_in_expressaoEscreva2521);
+               if (this.state.failed) {
+                  return retval;
+               }
+
+               if (this.state.backtracking == 0) {
+                  stream_103.add(char_literal150);
+               }
+
+               decimal = (Token)this.match(this.input, 48, FOLLOW_INTEIRO_LITERAL_in_expressaoEscreva2525);
                if (this.state.failed) {
                   return retval;
                }
@@ -4169,22 +4234,20 @@ public class CalangoGrammarParser extends Parser {
                if (this.state.backtracking == 0) {
                   stream_INTEIRO_LITERAL.add(decimal);
                }
-            default:
+
                if (this.state.backtracking == 0) {
                   retval.tree = root_0;
-                  RewriteRuleTokenStream stream_total = new RewriteRuleTokenStream(this.adaptor, "token total", total);
                   RewriteRuleTokenStream stream_decimal = new RewriteRuleTokenStream(this.adaptor, "token decimal", decimal);
                   new RewriteRuleSubtreeStream(this.adaptor, "rule retval", retval != null ? retval.tree : null);
                   root_0 = (CommonTree)this.adaptor.nil();
                   CommonTree root_1 = (CommonTree)this.adaptor.nil();
-                  root_1 = (CommonTree)this.adaptor.becomeRoot((Object)((CommonTree)this.adaptor.create(41, (String)"FORMATA_REAL")), root_1);
+                  root_1 = (CommonTree)this.adaptor.becomeRoot((CommonTree)this.adaptor.create(41, "FORMATA_REAL"), root_1);
                   this.adaptor.addChild(root_1, stream_expressao.nextTree());
                   CommonTree root_2 = (CommonTree)this.adaptor.nil();
-                  root_2 = (CommonTree)this.adaptor.becomeRoot((Object)((CommonTree)this.adaptor.create(43, (String)"FORMATA_REAL_TOTAL")), root_2);
-                  this.adaptor.addChild(root_2, stream_total.nextNode());
+                  root_2 = (CommonTree)this.adaptor.becomeRoot((CommonTree)this.adaptor.create(43, "FORMATA_REAL_TOTAL"), root_2);
                   this.adaptor.addChild(root_1, root_2);
                   root_2 = (CommonTree)this.adaptor.nil();
-                  root_2 = (CommonTree)this.adaptor.becomeRoot((Object)((CommonTree)this.adaptor.create(42, (String)"FORMATA_REAL_DECIMAL")), root_2);
+                  root_2 = (CommonTree)this.adaptor.becomeRoot((CommonTree)this.adaptor.create(42, "FORMATA_REAL_DECIMAL"), root_2);
                   if (stream_decimal.hasNext()) {
                      this.adaptor.addChild(root_2, stream_decimal.nextNode());
                   }
@@ -4194,69 +4257,6 @@ public class CalangoGrammarParser extends Parser {
                   this.adaptor.addChild(root_0, root_1);
                   retval.tree = root_0;
                }
-               break label288;
-            }
-         case 3:
-            this.pushFollow(FOLLOW_expressao_in_expressaoEscreva2517);
-            expressao148 = this.expressao();
-            --this.state._fsp;
-            if (this.state.failed) {
-               return retval;
-            }
-
-            if (this.state.backtracking == 0) {
-               stream_expressao.add(expressao148.getTree());
-            }
-
-            char_literal149 = (Token)this.match(this.input, 103, FOLLOW_103_in_expressaoEscreva2519);
-            if (this.state.failed) {
-               return retval;
-            }
-
-            if (this.state.backtracking == 0) {
-               stream_103.add(char_literal149);
-            }
-
-            char_literal150 = (Token)this.match(this.input, 103, FOLLOW_103_in_expressaoEscreva2521);
-            if (this.state.failed) {
-               return retval;
-            }
-
-            if (this.state.backtracking == 0) {
-               stream_103.add(char_literal150);
-            }
-
-            decimal = (Token)this.match(this.input, 48, FOLLOW_INTEIRO_LITERAL_in_expressaoEscreva2525);
-            if (this.state.failed) {
-               return retval;
-            }
-
-            if (this.state.backtracking == 0) {
-               stream_INTEIRO_LITERAL.add(decimal);
-            }
-
-            if (this.state.backtracking == 0) {
-               retval.tree = root_0;
-               RewriteRuleTokenStream stream_decimal = new RewriteRuleTokenStream(this.adaptor, "token decimal", decimal);
-               new RewriteRuleSubtreeStream(this.adaptor, "rule retval", retval != null ? retval.tree : null);
-               root_0 = (CommonTree)this.adaptor.nil();
-               CommonTree root_1 = (CommonTree)this.adaptor.nil();
-               root_1 = (CommonTree)this.adaptor.becomeRoot((Object)((CommonTree)this.adaptor.create(41, (String)"FORMATA_REAL")), root_1);
-               this.adaptor.addChild(root_1, stream_expressao.nextTree());
-               CommonTree root_2 = (CommonTree)this.adaptor.nil();
-               root_2 = (CommonTree)this.adaptor.becomeRoot((Object)((CommonTree)this.adaptor.create(43, (String)"FORMATA_REAL_TOTAL")), root_2);
-               this.adaptor.addChild(root_1, root_2);
-               root_2 = (CommonTree)this.adaptor.nil();
-               root_2 = (CommonTree)this.adaptor.becomeRoot((Object)((CommonTree)this.adaptor.create(42, (String)"FORMATA_REAL_DECIMAL")), root_2);
-               if (stream_decimal.hasNext()) {
-                  this.adaptor.addChild(root_2, stream_decimal.nextNode());
-               }
-
-               stream_decimal.reset();
-               this.adaptor.addChild(root_1, root_2);
-               this.adaptor.addChild(root_0, root_1);
-               retval.tree = root_0;
-            }
          }
 
          retval.stop = this.input.LT(-1);
@@ -4342,7 +4342,7 @@ public class CalangoGrammarParser extends Parser {
             new RewriteRuleSubtreeStream(this.adaptor, "rule retval", retval != null ? retval.tree : null);
             root_0 = (CommonTree)this.adaptor.nil();
             CommonTree root_1 = (CommonTree)this.adaptor.nil();
-            root_1 = (CommonTree)this.adaptor.becomeRoot((Object)((CommonTree)this.adaptor.create(81, (String)"RETORNA")), root_1);
+            root_1 = (CommonTree)this.adaptor.becomeRoot((CommonTree)this.adaptor.create(81, "RETORNA"), root_1);
             this.adaptor.addChild(root_1, stream_expressao.nextTree());
             this.adaptor.addChild(root_0, root_1);
             retval.tree = root_0;
@@ -4407,311 +4407,311 @@ public class CalangoGrammarParser extends Parser {
          NoViableAltException nvae;
          label225:
          switch(this.input.LA(1)) {
-         case 10:
-            alt35 = 7;
-            break;
-         case 15:
-            alt35 = 6;
-            break;
-         case 46:
-            switch(this.input.LA(2)) {
-            case 5:
-            case 20:
-            case 27:
-            case 29:
-            case 30:
-            case 31:
-            case 47:
-            case 54:
-            case 55:
-            case 58:
-            case 59:
-            case 62:
-            case 63:
-            case 64:
-            case 68:
-            case 89:
-            case 102:
-            case 103:
-            case 104:
-            case 108:
-            case 113:
-            case 132:
-            case 140:
-               alt35 = 1;
-               break label225;
+            case 10:
+               alt35 = 7;
+               break;
+            case 15:
+               alt35 = 6;
+               break;
+            case 46:
+               switch(this.input.LA(2)) {
+                  case 5:
+                  case 20:
+                  case 27:
+                  case 29:
+                  case 30:
+                  case 31:
+                  case 47:
+                  case 54:
+                  case 55:
+                  case 58:
+                  case 59:
+                  case 62:
+                  case 63:
+                  case 64:
+                  case 68:
+                  case 89:
+                  case 102:
+                  case 103:
+                  case 104:
+                  case 108:
+                  case 113:
+                  case 132:
+                  case 140:
+                     alt35 = 1;
+                     break label225;
+                  case 101:
+                     alt35 = 4;
+                     break label225;
+                  case 106:
+                     alt35 = 2;
+                     break label225;
+                  default:
+                     if (this.state.backtracking > 0) {
+                        this.state.failed = true;
+                        return retval;
+                     }
+
+                     nvae = new NoViableAltException("", 35, 1, this.input);
+                     throw nvae;
+               }
+            case 48:
+               alt35 = 8;
+               break;
+            case 79:
+               alt35 = 9;
+               break;
+            case 92:
+               alt35 = 5;
+               break;
             case 101:
-               alt35 = 4;
-               break label225;
-            case 106:
-               alt35 = 2;
-               break label225;
+               alt35 = 3;
+               break;
+            case 109:
+            case 110:
+            case 112:
+            case 114:
+            case 115:
+            case 116:
+            case 117:
+            case 118:
+            case 119:
+            case 122:
+            case 128:
+            case 129:
+            case 130:
+            case 131:
+            case 133:
+            case 135:
+            case 138:
+               alt35 = 10;
+               break;
             default:
                if (this.state.backtracking > 0) {
                   this.state.failed = true;
                   return retval;
                }
 
-               nvae = new NoViableAltException("", 35, 1, this.input);
+               nvae = new NoViableAltException("", 35, 0, this.input);
                throw nvae;
-            }
-         case 48:
-            alt35 = 8;
-            break;
-         case 79:
-            alt35 = 9;
-            break;
-         case 92:
-            alt35 = 5;
-            break;
-         case 101:
-            alt35 = 3;
-            break;
-         case 109:
-         case 110:
-         case 112:
-         case 114:
-         case 115:
-         case 116:
-         case 117:
-         case 118:
-         case 119:
-         case 122:
-         case 128:
-         case 129:
-         case 130:
-         case 131:
-         case 133:
-         case 135:
-         case 138:
-            alt35 = 10;
-            break;
-         default:
-            if (this.state.backtracking > 0) {
-               this.state.failed = true;
-               return retval;
-            }
-
-            nvae = new NoViableAltException("", 35, 0, this.input);
-            throw nvae;
          }
 
          label218:
          switch(alt35) {
-         case 1:
-            root_0 = (CommonTree)this.adaptor.nil();
-            IDENTIFICADOR154 = (Token)this.match(this.input, 46, FOLLOW_IDENTIFICADOR_in_termo2629);
-            if (this.state.failed) {
-               return retval;
-            }
-
-            if (this.state.backtracking == 0) {
-               IDENTIFICADOR154_tree = (CommonTree)this.adaptor.create(IDENTIFICADOR154);
-               this.adaptor.addChild(root_0, IDENTIFICADOR154_tree);
-            }
-            break;
-         case 2:
-            IDENTIFICADOR155 = (Token)this.match(this.input, 46, FOLLOW_IDENTIFICADOR_in_termo2639);
-            if (this.state.failed) {
-               return retval;
-            }
-
-            if (this.state.backtracking == 0) {
-               stream_IDENTIFICADOR.add(IDENTIFICADOR155);
-            }
-
-            char_literal156 = (Token)this.match(this.input, 106, FOLLOW_106_in_termo2641);
-            if (this.state.failed) {
-               return retval;
-            }
-
-            if (this.state.backtracking == 0) {
-               stream_106.add(char_literal156);
-            }
-
-            this.pushFollow(FOLLOW_expressao_in_termo2643);
-            expressao157 = this.expressao();
-            --this.state._fsp;
-            if (this.state.failed) {
-               return retval;
-            }
-
-            if (this.state.backtracking == 0) {
-               stream_expressao.add(expressao157.getTree());
-            }
-
-            char_literal158 = (Token)this.match(this.input, 108, FOLLOW_108_in_termo2645);
-            if (this.state.failed) {
-               return retval;
-            }
-
-            if (this.state.backtracking == 0) {
-               stream_108.add(char_literal158);
-            }
-
-            int alt34 = 2;
-            int LA34_0 = this.input.LA(1);
-            if (LA34_0 == 106) {
-               alt34 = 1;
-            }
-
-            switch(alt34) {
             case 1:
-               char_literal159 = (Token)this.match(this.input, 106, FOLLOW_106_in_termo2648);
+               root_0 = (CommonTree)this.adaptor.nil();
+               IDENTIFICADOR154 = (Token)this.match(this.input, 46, FOLLOW_IDENTIFICADOR_in_termo2629);
                if (this.state.failed) {
                   return retval;
                }
 
                if (this.state.backtracking == 0) {
-                  stream_106.add(char_literal159);
+                  IDENTIFICADOR154_tree = (CommonTree)this.adaptor.create(IDENTIFICADOR154);
+                  this.adaptor.addChild(root_0, IDENTIFICADOR154_tree);
+               }
+               break;
+            case 2:
+               IDENTIFICADOR155 = (Token)this.match(this.input, 46, FOLLOW_IDENTIFICADOR_in_termo2639);
+               if (this.state.failed) {
+                  return retval;
                }
 
-               this.pushFollow(FOLLOW_expressao_in_termo2650);
-               expressao160 = this.expressao();
+               if (this.state.backtracking == 0) {
+                  stream_IDENTIFICADOR.add(IDENTIFICADOR155);
+               }
+
+               char_literal156 = (Token)this.match(this.input, 106, FOLLOW_106_in_termo2641);
+               if (this.state.failed) {
+                  return retval;
+               }
+
+               if (this.state.backtracking == 0) {
+                  stream_106.add(char_literal156);
+               }
+
+               this.pushFollow(FOLLOW_expressao_in_termo2643);
+               expressao157 = this.expressao();
                --this.state._fsp;
                if (this.state.failed) {
                   return retval;
                }
 
                if (this.state.backtracking == 0) {
-                  stream_expressao.add(expressao160.getTree());
+                  stream_expressao.add(expressao157.getTree());
                }
 
-               char_literal161 = (Token)this.match(this.input, 108, FOLLOW_108_in_termo2652);
+               char_literal158 = (Token)this.match(this.input, 108, FOLLOW_108_in_termo2645);
                if (this.state.failed) {
                   return retval;
                }
 
                if (this.state.backtracking == 0) {
-                  stream_108.add(char_literal161);
+                  stream_108.add(char_literal158);
                }
-            default:
+
+               int alt34 = 2;
+               int LA34_0 = this.input.LA(1);
+               if (LA34_0 == 106) {
+                  alt34 = 1;
+               }
+
+               switch(alt34) {
+                  case 1:
+                     char_literal159 = (Token)this.match(this.input, 106, FOLLOW_106_in_termo2648);
+                     if (this.state.failed) {
+                        return retval;
+                     }
+
+                     if (this.state.backtracking == 0) {
+                        stream_106.add(char_literal159);
+                     }
+
+                     this.pushFollow(FOLLOW_expressao_in_termo2650);
+                     expressao160 = this.expressao();
+                     --this.state._fsp;
+                     if (this.state.failed) {
+                        return retval;
+                     }
+
+                     if (this.state.backtracking == 0) {
+                        stream_expressao.add(expressao160.getTree());
+                     }
+
+                     char_literal161 = (Token)this.match(this.input, 108, FOLLOW_108_in_termo2652);
+                     if (this.state.failed) {
+                        return retval;
+                     }
+
+                     if (this.state.backtracking == 0) {
+                        stream_108.add(char_literal161);
+                     }
+                  default:
+                     if (this.state.backtracking == 0) {
+                        retval.tree = root_0;
+                        new RewriteRuleSubtreeStream(this.adaptor, "rule retval", retval != null ? retval.tree : null);
+                        root_0 = (CommonTree)this.adaptor.nil();
+                        CommonTree root_1 = (CommonTree)this.adaptor.nil();
+                        root_1 = (CommonTree)this.adaptor.becomeRoot((CommonTree)this.adaptor.create(91, "TERMO_VETOR"), root_1);
+                        this.adaptor.addChild(root_1, stream_IDENTIFICADOR.nextNode());
+                        this.adaptor.addChild(root_1, stream_expressao.nextTree());
+                        if (stream_expressao.hasNext()) {
+                           this.adaptor.addChild(root_1, stream_expressao.nextTree());
+                        }
+
+                        stream_expressao.reset();
+                        this.adaptor.addChild(root_0, root_1);
+                        retval.tree = root_0;
+                     }
+                     break label218;
+               }
+            case 3:
+               root_0 = (CommonTree)this.adaptor.nil();
+               char_literal162 = (Token)this.match(this.input, 101, FOLLOW_101_in_termo2677);
+               if (this.state.failed) {
+                  return retval;
+               }
+
+               this.pushFollow(FOLLOW_expressao_in_termo2680);
+               expressao163 = this.expressao();
+               --this.state._fsp;
+               if (this.state.failed) {
+                  return retval;
+               }
+
                if (this.state.backtracking == 0) {
-                  retval.tree = root_0;
-                  new RewriteRuleSubtreeStream(this.adaptor, "rule retval", retval != null ? retval.tree : null);
-                  root_0 = (CommonTree)this.adaptor.nil();
-                  CommonTree root_1 = (CommonTree)this.adaptor.nil();
-                  root_1 = (CommonTree)this.adaptor.becomeRoot((Object)((CommonTree)this.adaptor.create(91, (String)"TERMO_VETOR")), root_1);
-                  this.adaptor.addChild(root_1, stream_IDENTIFICADOR.nextNode());
-                  this.adaptor.addChild(root_1, stream_expressao.nextTree());
-                  if (stream_expressao.hasNext()) {
-                     this.adaptor.addChild(root_1, stream_expressao.nextTree());
-                  }
-
-                  stream_expressao.reset();
-                  this.adaptor.addChild(root_0, root_1);
-                  retval.tree = root_0;
+                  this.adaptor.addChild(root_0, expressao163.getTree());
                }
-               break label218;
-            }
-         case 3:
-            root_0 = (CommonTree)this.adaptor.nil();
-            char_literal162 = (Token)this.match(this.input, 101, FOLLOW_101_in_termo2677);
-            if (this.state.failed) {
-               return retval;
-            }
 
-            this.pushFollow(FOLLOW_expressao_in_termo2680);
-            expressao163 = this.expressao();
-            --this.state._fsp;
-            if (this.state.failed) {
-               return retval;
-            }
+               char_literal164 = (Token)this.match(this.input, 102, FOLLOW_102_in_termo2682);
+               if (this.state.failed) {
+                  return retval;
+               }
+               break;
+            case 4:
+               root_0 = (CommonTree)this.adaptor.nil();
+               this.pushFollow(FOLLOW_chamadaRotina_in_termo2693);
+               chamadaRotina165 = this.chamadaRotina();
+               --this.state._fsp;
+               if (this.state.failed) {
+                  return retval;
+               }
 
-            if (this.state.backtracking == 0) {
-               this.adaptor.addChild(root_0, expressao163.getTree());
-            }
+               if (this.state.backtracking == 0) {
+                  this.adaptor.addChild(root_0, chamadaRotina165.getTree());
+               }
+               break;
+            case 5:
+               root_0 = (CommonTree)this.adaptor.nil();
+               TEXTO_LITERAL166 = (Token)this.match(this.input, 92, FOLLOW_TEXTO_LITERAL_in_termo2703);
+               if (this.state.failed) {
+                  return retval;
+               }
 
-            char_literal164 = (Token)this.match(this.input, 102, FOLLOW_102_in_termo2682);
-            if (this.state.failed) {
-               return retval;
-            }
-            break;
-         case 4:
-            root_0 = (CommonTree)this.adaptor.nil();
-            this.pushFollow(FOLLOW_chamadaRotina_in_termo2693);
-            chamadaRotina165 = this.chamadaRotina();
-            --this.state._fsp;
-            if (this.state.failed) {
-               return retval;
-            }
+               if (this.state.backtracking == 0) {
+                  TEXTO_LITERAL166_tree = (CommonTree)this.adaptor.create(TEXTO_LITERAL166);
+                  this.adaptor.addChild(root_0, TEXTO_LITERAL166_tree);
+               }
+               break;
+            case 6:
+               root_0 = (CommonTree)this.adaptor.nil();
+               CHAR_LITERAL167 = (Token)this.match(this.input, 15, FOLLOW_CHAR_LITERAL_in_termo2713);
+               if (this.state.failed) {
+                  return retval;
+               }
 
-            if (this.state.backtracking == 0) {
-               this.adaptor.addChild(root_0, chamadaRotina165.getTree());
-            }
-            break;
-         case 5:
-            root_0 = (CommonTree)this.adaptor.nil();
-            TEXTO_LITERAL166 = (Token)this.match(this.input, 92, FOLLOW_TEXTO_LITERAL_in_termo2703);
-            if (this.state.failed) {
-               return retval;
-            }
+               if (this.state.backtracking == 0) {
+                  CHAR_LITERAL167_tree = (CommonTree)this.adaptor.create(CHAR_LITERAL167);
+                  this.adaptor.addChild(root_0, CHAR_LITERAL167_tree);
+               }
+               break;
+            case 7:
+               root_0 = (CommonTree)this.adaptor.nil();
+               BOOL_LITERAL168 = (Token)this.match(this.input, 10, FOLLOW_BOOL_LITERAL_in_termo2723);
+               if (this.state.failed) {
+                  return retval;
+               }
 
-            if (this.state.backtracking == 0) {
-               TEXTO_LITERAL166_tree = (CommonTree)this.adaptor.create(TEXTO_LITERAL166);
-               this.adaptor.addChild(root_0, TEXTO_LITERAL166_tree);
-            }
-            break;
-         case 6:
-            root_0 = (CommonTree)this.adaptor.nil();
-            CHAR_LITERAL167 = (Token)this.match(this.input, 15, FOLLOW_CHAR_LITERAL_in_termo2713);
-            if (this.state.failed) {
-               return retval;
-            }
+               if (this.state.backtracking == 0) {
+                  BOOL_LITERAL168_tree = (CommonTree)this.adaptor.create(BOOL_LITERAL168);
+                  this.adaptor.addChild(root_0, BOOL_LITERAL168_tree);
+               }
+               break;
+            case 8:
+               root_0 = (CommonTree)this.adaptor.nil();
+               INTEIRO_LITERAL169 = (Token)this.match(this.input, 48, FOLLOW_INTEIRO_LITERAL_in_termo2733);
+               if (this.state.failed) {
+                  return retval;
+               }
 
-            if (this.state.backtracking == 0) {
-               CHAR_LITERAL167_tree = (CommonTree)this.adaptor.create(CHAR_LITERAL167);
-               this.adaptor.addChild(root_0, CHAR_LITERAL167_tree);
-            }
-            break;
-         case 7:
-            root_0 = (CommonTree)this.adaptor.nil();
-            BOOL_LITERAL168 = (Token)this.match(this.input, 10, FOLLOW_BOOL_LITERAL_in_termo2723);
-            if (this.state.failed) {
-               return retval;
-            }
+               if (this.state.backtracking == 0) {
+                  INTEIRO_LITERAL169_tree = (CommonTree)this.adaptor.create(INTEIRO_LITERAL169);
+                  this.adaptor.addChild(root_0, INTEIRO_LITERAL169_tree);
+               }
+               break;
+            case 9:
+               root_0 = (CommonTree)this.adaptor.nil();
+               REAL_LITERAL170 = (Token)this.match(this.input, 79, FOLLOW_REAL_LITERAL_in_termo2743);
+               if (this.state.failed) {
+                  return retval;
+               }
 
-            if (this.state.backtracking == 0) {
-               BOOL_LITERAL168_tree = (CommonTree)this.adaptor.create(BOOL_LITERAL168);
-               this.adaptor.addChild(root_0, BOOL_LITERAL168_tree);
-            }
-            break;
-         case 8:
-            root_0 = (CommonTree)this.adaptor.nil();
-            INTEIRO_LITERAL169 = (Token)this.match(this.input, 48, FOLLOW_INTEIRO_LITERAL_in_termo2733);
-            if (this.state.failed) {
-               return retval;
-            }
+               if (this.state.backtracking == 0) {
+                  REAL_LITERAL170_tree = (CommonTree)this.adaptor.create(REAL_LITERAL170);
+                  this.adaptor.addChild(root_0, REAL_LITERAL170_tree);
+               }
+               break;
+            case 10:
+               root_0 = (CommonTree)this.adaptor.nil();
+               this.pushFollow(FOLLOW_funcoesEmbutidas_in_termo2753);
+               funcoesEmbutidas171 = this.funcoesEmbutidas();
+               --this.state._fsp;
+               if (this.state.failed) {
+                  return retval;
+               }
 
-            if (this.state.backtracking == 0) {
-               INTEIRO_LITERAL169_tree = (CommonTree)this.adaptor.create(INTEIRO_LITERAL169);
-               this.adaptor.addChild(root_0, INTEIRO_LITERAL169_tree);
-            }
-            break;
-         case 9:
-            root_0 = (CommonTree)this.adaptor.nil();
-            REAL_LITERAL170 = (Token)this.match(this.input, 79, FOLLOW_REAL_LITERAL_in_termo2743);
-            if (this.state.failed) {
-               return retval;
-            }
-
-            if (this.state.backtracking == 0) {
-               REAL_LITERAL170_tree = (CommonTree)this.adaptor.create(REAL_LITERAL170);
-               this.adaptor.addChild(root_0, REAL_LITERAL170_tree);
-            }
-            break;
-         case 10:
-            root_0 = (CommonTree)this.adaptor.nil();
-            this.pushFollow(FOLLOW_funcoesEmbutidas_in_termo2753);
-            funcoesEmbutidas171 = this.funcoesEmbutidas();
-            --this.state._fsp;
-            if (this.state.failed) {
-               return retval;
-            }
-
-            if (this.state.backtracking == 0) {
-               this.adaptor.addChild(root_0, funcoesEmbutidas171.getTree());
-            }
+               if (this.state.backtracking == 0) {
+                  this.adaptor.addChild(root_0, funcoesEmbutidas171.getTree());
+               }
          }
 
          retval.stop = this.input.LT(-1);
@@ -4797,77 +4797,77 @@ public class CalangoGrammarParser extends Parser {
          }
 
          switch(alt36) {
-         case 1:
-            total = (Token)this.match(this.input, 48, FOLLOW_INTEIRO_LITERAL_in_formataReal2784);
-            if (this.state.failed) {
-               return retval;
-            }
-
-            if (this.state.backtracking == 0) {
-               stream_INTEIRO_LITERAL.add(total);
-            }
-         default:
-            char_literal176 = (Token)this.match(this.input, 103, FOLLOW_103_in_formataReal2787);
-            if (this.state.failed) {
-               return retval;
-            }
-
-            if (this.state.backtracking == 0) {
-               stream_103.add(char_literal176);
-            }
-
-            int alt37 = 2;
-            int LA37_0 = this.input.LA(1);
-            if (LA37_0 == 48) {
-               alt37 = 1;
-            }
-
-            switch(alt37) {
             case 1:
-               decimal = (Token)this.match(this.input, 48, FOLLOW_INTEIRO_LITERAL_in_formataReal2791);
+               total = (Token)this.match(this.input, 48, FOLLOW_INTEIRO_LITERAL_in_formataReal2784);
                if (this.state.failed) {
                   return retval;
                }
 
                if (this.state.backtracking == 0) {
-                  stream_INTEIRO_LITERAL.add(decimal);
+                  stream_INTEIRO_LITERAL.add(total);
                }
             default:
-               if (this.state.backtracking == 0) {
-                  retval.tree = root_0;
-                  RewriteRuleTokenStream stream_total = new RewriteRuleTokenStream(this.adaptor, "token total", total);
-                  RewriteRuleTokenStream stream_decimal = new RewriteRuleTokenStream(this.adaptor, "token decimal", decimal);
-                  new RewriteRuleSubtreeStream(this.adaptor, "rule retval", retval != null ? retval.tree : null);
-                  root_0 = (CommonTree)this.adaptor.nil();
-                  CommonTree root_1 = (CommonTree)this.adaptor.nil();
-                  root_1 = (CommonTree)this.adaptor.becomeRoot((Object)((CommonTree)this.adaptor.create(41, (String)"FORMATA_REAL")), root_1);
-                  this.adaptor.addChild(root_1, stream_expressao.nextTree());
-                  CommonTree root_2 = (CommonTree)this.adaptor.nil();
-                  root_2 = (CommonTree)this.adaptor.becomeRoot((Object)((CommonTree)this.adaptor.create(43, (String)"FORMATA_REAL_TOTAL")), root_2);
-                  if (stream_total.hasNext()) {
-                     this.adaptor.addChild(root_2, stream_total.nextNode());
-                  }
-
-                  stream_total.reset();
-                  this.adaptor.addChild(root_1, root_2);
-                  root_2 = (CommonTree)this.adaptor.nil();
-                  root_2 = (CommonTree)this.adaptor.becomeRoot((Object)((CommonTree)this.adaptor.create(42, (String)"FORMATA_REAL_DECIMAL")), root_2);
-                  if (stream_decimal.hasNext()) {
-                     this.adaptor.addChild(root_2, stream_decimal.nextNode());
-                  }
-
-                  stream_decimal.reset();
-                  this.adaptor.addChild(root_1, root_2);
-                  this.adaptor.addChild(root_0, root_1);
-                  retval.tree = root_0;
+               char_literal176 = (Token)this.match(this.input, 103, FOLLOW_103_in_formataReal2787);
+               if (this.state.failed) {
+                  return retval;
                }
 
-               retval.stop = this.input.LT(-1);
                if (this.state.backtracking == 0) {
-                  retval.tree = (CommonTree)this.adaptor.rulePostProcessing(root_0);
-                  this.adaptor.setTokenBoundaries(retval.tree, retval.start, retval.stop);
+                  stream_103.add(char_literal176);
                }
-            }
+
+               int alt37 = 2;
+               int LA37_0 = this.input.LA(1);
+               if (LA37_0 == 48) {
+                  alt37 = 1;
+               }
+
+               switch(alt37) {
+                  case 1:
+                     decimal = (Token)this.match(this.input, 48, FOLLOW_INTEIRO_LITERAL_in_formataReal2791);
+                     if (this.state.failed) {
+                        return retval;
+                     }
+
+                     if (this.state.backtracking == 0) {
+                        stream_INTEIRO_LITERAL.add(decimal);
+                     }
+                  default:
+                     if (this.state.backtracking == 0) {
+                        retval.tree = root_0;
+                        RewriteRuleTokenStream stream_total = new RewriteRuleTokenStream(this.adaptor, "token total", total);
+                        RewriteRuleTokenStream stream_decimal = new RewriteRuleTokenStream(this.adaptor, "token decimal", decimal);
+                        new RewriteRuleSubtreeStream(this.adaptor, "rule retval", retval != null ? retval.tree : null);
+                        root_0 = (CommonTree)this.adaptor.nil();
+                        CommonTree root_1 = (CommonTree)this.adaptor.nil();
+                        root_1 = (CommonTree)this.adaptor.becomeRoot((CommonTree)this.adaptor.create(41, "FORMATA_REAL"), root_1);
+                        this.adaptor.addChild(root_1, stream_expressao.nextTree());
+                        CommonTree root_2 = (CommonTree)this.adaptor.nil();
+                        root_2 = (CommonTree)this.adaptor.becomeRoot((CommonTree)this.adaptor.create(43, "FORMATA_REAL_TOTAL"), root_2);
+                        if (stream_total.hasNext()) {
+                           this.adaptor.addChild(root_2, stream_total.nextNode());
+                        }
+
+                        stream_total.reset();
+                        this.adaptor.addChild(root_1, root_2);
+                        root_2 = (CommonTree)this.adaptor.nil();
+                        root_2 = (CommonTree)this.adaptor.becomeRoot((CommonTree)this.adaptor.create(42, "FORMATA_REAL_DECIMAL"), root_2);
+                        if (stream_decimal.hasNext()) {
+                           this.adaptor.addChild(root_2, stream_decimal.nextNode());
+                        }
+
+                        stream_decimal.reset();
+                        this.adaptor.addChild(root_1, root_2);
+                        this.adaptor.addChild(root_0, root_1);
+                        retval.tree = root_0;
+                     }
+
+                     retval.stop = this.input.LT(-1);
+                     if (this.state.backtracking == 0) {
+                        retval.tree = (CommonTree)this.adaptor.rulePostProcessing(root_0);
+                        this.adaptor.setTokenBoundaries(retval.tree, retval.start, retval.stop);
+                     }
+               }
          }
       } catch (RecognitionException var30) {
          this.reportError(var30);
@@ -5040,1023 +5040,1023 @@ public class CalangoGrammarParser extends Parser {
       try {
          byte alt38;
          switch(this.input.LA(1)) {
-         case 109:
-            alt38 = 3;
-            break;
-         case 110:
-            alt38 = 7;
-            break;
-         case 111:
-         case 113:
-         case 120:
-         case 121:
-         case 123:
-         case 124:
-         case 125:
-         case 126:
-         case 127:
-         case 132:
-         case 134:
-         case 136:
-         case 137:
-         default:
-            if (this.state.backtracking > 0) {
-               this.state.failed = true;
-               return retval;
-            }
+            case 109:
+               alt38 = 3;
+               break;
+            case 110:
+               alt38 = 7;
+               break;
+            case 111:
+            case 113:
+            case 120:
+            case 121:
+            case 123:
+            case 124:
+            case 125:
+            case 126:
+            case 127:
+            case 132:
+            case 134:
+            case 136:
+            case 137:
+            default:
+               if (this.state.backtracking > 0) {
+                  this.state.failed = true;
+                  return retval;
+               }
 
-            NoViableAltException nvae = new NoViableAltException("", 38, 0, this.input);
-            throw nvae;
-         case 112:
-            alt38 = 13;
-            break;
-         case 114:
-            alt38 = 14;
-            break;
-         case 115:
-            alt38 = 15;
-            break;
-         case 116:
-            alt38 = 1;
-            break;
-         case 117:
-            alt38 = 17;
-            break;
-         case 118:
-            alt38 = 16;
-            break;
-         case 119:
-            alt38 = 10;
-            break;
-         case 122:
-            alt38 = 4;
-            break;
-         case 128:
-            alt38 = 8;
-            break;
-         case 129:
-            alt38 = 11;
-            break;
-         case 130:
-            alt38 = 9;
-            break;
-         case 131:
-            alt38 = 12;
-            break;
-         case 133:
-            alt38 = 5;
-            break;
-         case 135:
-            alt38 = 6;
-            break;
-         case 138:
-            alt38 = 2;
+               NoViableAltException nvae = new NoViableAltException("", 38, 0, this.input);
+               throw nvae;
+            case 112:
+               alt38 = 13;
+               break;
+            case 114:
+               alt38 = 14;
+               break;
+            case 115:
+               alt38 = 15;
+               break;
+            case 116:
+               alt38 = 1;
+               break;
+            case 117:
+               alt38 = 17;
+               break;
+            case 118:
+               alt38 = 16;
+               break;
+            case 119:
+               alt38 = 10;
+               break;
+            case 122:
+               alt38 = 4;
+               break;
+            case 128:
+               alt38 = 8;
+               break;
+            case 129:
+               alt38 = 11;
+               break;
+            case 130:
+               alt38 = 9;
+               break;
+            case 131:
+               alt38 = 12;
+               break;
+            case 133:
+               alt38 = 5;
+               break;
+            case 135:
+               alt38 = 6;
+               break;
+            case 138:
+               alt38 = 2;
          }
 
          CommonTree root_1;
          switch(alt38) {
-         case 1:
-            string_literal177 = (Token)this.match(this.input, 116, FOLLOW_116_in_funcoesEmbutidas2850);
-            if (this.state.failed) {
-               return retval;
-            }
-
-            if (this.state.backtracking == 0) {
-               stream_116.add(string_literal177);
-            }
-
-            char_literal178 = (Token)this.match(this.input, 101, FOLLOW_101_in_funcoesEmbutidas2852);
-            if (this.state.failed) {
-               return retval;
-            }
-
-            if (this.state.backtracking == 0) {
-               stream_101.add(char_literal178);
-            }
-
-            this.pushFollow(FOLLOW_expressao_in_funcoesEmbutidas2854);
-            expressao179 = this.expressao();
-            --this.state._fsp;
-            if (this.state.failed) {
-               return retval;
-            }
-
-            if (this.state.backtracking == 0) {
-               stream_expressao.add(expressao179.getTree());
-            }
-
-            char_literal180 = (Token)this.match(this.input, 20, FOLLOW_CONCATENACAO_in_funcoesEmbutidas2856);
-            if (this.state.failed) {
-               return retval;
-            }
-
-            if (this.state.backtracking == 0) {
-               stream_CONCATENACAO.add(char_literal180);
-            }
-
-            this.pushFollow(FOLLOW_expressao_in_funcoesEmbutidas2858);
-            expressao181 = this.expressao();
-            --this.state._fsp;
-            if (this.state.failed) {
-               return retval;
-            }
-
-            if (this.state.backtracking == 0) {
-               stream_expressao.add(expressao181.getTree());
-            }
-
-            char_literal182 = (Token)this.match(this.input, 102, FOLLOW_102_in_funcoesEmbutidas2860);
-            if (this.state.failed) {
-               return retval;
-            }
-
-            if (this.state.backtracking == 0) {
-               stream_102.add(char_literal182);
-            }
-
-            if (this.state.backtracking == 0) {
-               retval.tree = root_0;
-               new RewriteRuleSubtreeStream(this.adaptor, "rule retval", retval != null ? retval.tree : null);
-               root_0 = (CommonTree)this.adaptor.nil();
-               root_1 = (CommonTree)this.adaptor.nil();
-               root_1 = (CommonTree)this.adaptor.becomeRoot((Object)((CommonTree)this.adaptor.create(19, (String)"COMPARA_TEXTO")), root_1);
-               this.adaptor.addChild(root_1, stream_expressao.nextTree());
-               this.adaptor.addChild(root_1, stream_expressao.nextTree());
-               this.adaptor.addChild(root_0, root_1);
-               retval.tree = root_0;
-            }
-            break;
-         case 2:
-            string_literal183 = (Token)this.match(this.input, 138, FOLLOW_138_in_funcoesEmbutidas2880);
-            if (this.state.failed) {
-               return retval;
-            }
-
-            if (this.state.backtracking == 0) {
-               stream_138.add(string_literal183);
-            }
-
-            char_literal184 = (Token)this.match(this.input, 101, FOLLOW_101_in_funcoesEmbutidas2882);
-            if (this.state.failed) {
-               return retval;
-            }
-
-            if (this.state.backtracking == 0) {
-               stream_101.add(char_literal184);
-            }
-
-            this.pushFollow(FOLLOW_expressao_in_funcoesEmbutidas2884);
-            expressao185 = this.expressao();
-            --this.state._fsp;
-            if (this.state.failed) {
-               return retval;
-            }
-
-            if (this.state.backtracking == 0) {
-               stream_expressao.add(expressao185.getTree());
-            }
-
-            char_literal186 = (Token)this.match(this.input, 102, FOLLOW_102_in_funcoesEmbutidas2886);
-            if (this.state.failed) {
-               return retval;
-            }
-
-            if (this.state.backtracking == 0) {
-               stream_102.add(char_literal186);
-            }
-
-            if (this.state.backtracking == 0) {
-               retval.tree = root_0;
-               new RewriteRuleSubtreeStream(this.adaptor, "rule retval", retval != null ? retval.tree : null);
-               root_0 = (CommonTree)this.adaptor.nil();
-               root_1 = (CommonTree)this.adaptor.nil();
-               root_1 = (CommonTree)this.adaptor.becomeRoot((Object)((CommonTree)this.adaptor.create(90, (String)"TAMANHO_TEXTO")), root_1);
-               this.adaptor.addChild(root_1, stream_expressao.nextTree());
-               this.adaptor.addChild(root_0, root_1);
-               retval.tree = root_0;
-            }
-            break;
-         case 3:
-            string_literal187 = (Token)this.match(this.input, 109, FOLLOW_109_in_funcoesEmbutidas2904);
-            if (this.state.failed) {
-               return retval;
-            }
-
-            if (this.state.backtracking == 0) {
-               stream_109.add(string_literal187);
-            }
-
-            char_literal188 = (Token)this.match(this.input, 101, FOLLOW_101_in_funcoesEmbutidas2906);
-            if (this.state.failed) {
-               return retval;
-            }
-
-            if (this.state.backtracking == 0) {
-               stream_101.add(char_literal188);
-            }
-
-            this.pushFollow(FOLLOW_expressao_in_funcoesEmbutidas2908);
-            expressao189 = this.expressao();
-            --this.state._fsp;
-            if (this.state.failed) {
-               return retval;
-            }
-
-            if (this.state.backtracking == 0) {
-               stream_expressao.add(expressao189.getTree());
-            }
-
-            char_literal190 = (Token)this.match(this.input, 102, FOLLOW_102_in_funcoesEmbutidas2910);
-            if (this.state.failed) {
-               return retval;
-            }
-
-            if (this.state.backtracking == 0) {
-               stream_102.add(char_literal190);
-            }
-
-            if (this.state.backtracking == 0) {
-               retval.tree = root_0;
-               new RewriteRuleSubtreeStream(this.adaptor, "rule retval", retval != null ? retval.tree : null);
-               root_0 = (CommonTree)this.adaptor.nil();
-               root_1 = (CommonTree)this.adaptor.nil();
-               root_1 = (CommonTree)this.adaptor.becomeRoot((Object)((CommonTree)this.adaptor.create(4, (String)"ABS")), root_1);
-               this.adaptor.addChild(root_1, stream_expressao.nextTree());
-               this.adaptor.addChild(root_0, root_1);
-               retval.tree = root_0;
-            }
-            break;
-         case 4:
-            string_literal191 = (Token)this.match(this.input, 122, FOLLOW_122_in_funcoesEmbutidas2928);
-            if (this.state.failed) {
-               return retval;
-            }
-
-            if (this.state.backtracking == 0) {
-               stream_122.add(string_literal191);
-            }
-
-            char_literal192 = (Token)this.match(this.input, 101, FOLLOW_101_in_funcoesEmbutidas2930);
-            if (this.state.failed) {
-               return retval;
-            }
-
-            if (this.state.backtracking == 0) {
-               stream_101.add(char_literal192);
-            }
-
-            this.pushFollow(FOLLOW_expressao_in_funcoesEmbutidas2932);
-            expressao193 = this.expressao();
-            --this.state._fsp;
-            if (this.state.failed) {
-               return retval;
-            }
-
-            if (this.state.backtracking == 0) {
-               stream_expressao.add(expressao193.getTree());
-            }
-
-            char_literal194 = (Token)this.match(this.input, 20, FOLLOW_CONCATENACAO_in_funcoesEmbutidas2934);
-            if (this.state.failed) {
-               return retval;
-            }
-
-            if (this.state.backtracking == 0) {
-               stream_CONCATENACAO.add(char_literal194);
-            }
-
-            this.pushFollow(FOLLOW_expressao_in_funcoesEmbutidas2936);
-            expressao195 = this.expressao();
-            --this.state._fsp;
-            if (this.state.failed) {
-               return retval;
-            }
-
-            if (this.state.backtracking == 0) {
-               stream_expressao.add(expressao195.getTree());
-            }
-
-            char_literal196 = (Token)this.match(this.input, 102, FOLLOW_102_in_funcoesEmbutidas2938);
-            if (this.state.failed) {
-               return retval;
-            }
-
-            if (this.state.backtracking == 0) {
-               stream_102.add(char_literal196);
-            }
-
-            if (this.state.backtracking == 0) {
-               retval.tree = root_0;
-               new RewriteRuleSubtreeStream(this.adaptor, "rule retval", retval != null ? retval.tree : null);
-               root_0 = (CommonTree)this.adaptor.nil();
-               root_1 = (CommonTree)this.adaptor.nil();
-               root_1 = (CommonTree)this.adaptor.becomeRoot((Object)((CommonTree)this.adaptor.create(37, (String)"EXP")), root_1);
-               this.adaptor.addChild(root_1, stream_expressao.nextTree());
-               this.adaptor.addChild(root_1, stream_expressao.nextTree());
-               this.adaptor.addChild(root_0, root_1);
-               retval.tree = root_0;
-            }
-            break;
-         case 5:
-            string_literal197 = (Token)this.match(this.input, 133, FOLLOW_133_in_funcoesEmbutidas2958);
-            if (this.state.failed) {
-               return retval;
-            }
-
-            if (this.state.backtracking == 0) {
-               stream_133.add(string_literal197);
-            }
-
-            char_literal198 = (Token)this.match(this.input, 101, FOLLOW_101_in_funcoesEmbutidas2960);
-            if (this.state.failed) {
-               return retval;
-            }
-
-            if (this.state.backtracking == 0) {
-               stream_101.add(char_literal198);
-            }
-
-            char_literal199 = (Token)this.match(this.input, 102, FOLLOW_102_in_funcoesEmbutidas2962);
-            if (this.state.failed) {
-               return retval;
-            }
-
-            if (this.state.backtracking == 0) {
-               stream_102.add(char_literal199);
-            }
-
-            if (this.state.backtracking == 0) {
-               retval.tree = root_0;
-               new RewriteRuleSubtreeStream(this.adaptor, "rule retval", retval != null ? retval.tree : null);
-               root_0 = (CommonTree)this.adaptor.nil();
-               root_1 = (CommonTree)this.adaptor.nil();
-               root_1 = (CommonTree)this.adaptor.becomeRoot((Object)((CommonTree)this.adaptor.create(76, (String)"PI")), root_1);
-               this.adaptor.addChild(root_0, root_1);
-               retval.tree = root_0;
-            }
-            break;
-         case 6:
-            string_literal200 = (Token)this.match(this.input, 135, FOLLOW_135_in_funcoesEmbutidas2978);
-            if (this.state.failed) {
-               return retval;
-            }
-
-            if (this.state.backtracking == 0) {
-               stream_135.add(string_literal200);
-            }
-
-            char_literal201 = (Token)this.match(this.input, 101, FOLLOW_101_in_funcoesEmbutidas2980);
-            if (this.state.failed) {
-               return retval;
-            }
-
-            if (this.state.backtracking == 0) {
-               stream_101.add(char_literal201);
-            }
-
-            this.pushFollow(FOLLOW_expressao_in_funcoesEmbutidas2982);
-            expressao202 = this.expressao();
-            --this.state._fsp;
-            if (this.state.failed) {
-               return retval;
-            }
-
-            if (this.state.backtracking == 0) {
-               stream_expressao.add(expressao202.getTree());
-            }
-
-            char_literal203 = (Token)this.match(this.input, 102, FOLLOW_102_in_funcoesEmbutidas2984);
-            if (this.state.failed) {
-               return retval;
-            }
-
-            if (this.state.backtracking == 0) {
-               stream_102.add(char_literal203);
-            }
-
-            if (this.state.backtracking == 0) {
-               retval.tree = root_0;
-               new RewriteRuleSubtreeStream(this.adaptor, "rule retval", retval != null ? retval.tree : null);
-               root_0 = (CommonTree)this.adaptor.nil();
-               root_1 = (CommonTree)this.adaptor.nil();
-               root_1 = (CommonTree)this.adaptor.becomeRoot((Object)((CommonTree)this.adaptor.create(82, (String)"RQUAD")), root_1);
-               this.adaptor.addChild(root_1, stream_expressao.nextTree());
-               this.adaptor.addChild(root_0, root_1);
-               retval.tree = root_0;
-            }
-            break;
-         case 7:
-            string_literal204 = (Token)this.match(this.input, 110, FOLLOW_110_in_funcoesEmbutidas3002);
-            if (this.state.failed) {
-               return retval;
-            }
-
-            if (this.state.backtracking == 0) {
-               stream_110.add(string_literal204);
-            }
-
-            char_literal205 = (Token)this.match(this.input, 101, FOLLOW_101_in_funcoesEmbutidas3004);
-            if (this.state.failed) {
-               return retval;
-            }
-
-            if (this.state.backtracking == 0) {
-               stream_101.add(char_literal205);
-            }
-
-            this.pushFollow(FOLLOW_expressao_in_funcoesEmbutidas3006);
-            expressao206 = this.expressao();
-            --this.state._fsp;
-            if (this.state.failed) {
-               return retval;
-            }
-
-            if (this.state.backtracking == 0) {
-               stream_expressao.add(expressao206.getTree());
-            }
-
-            char_literal207 = (Token)this.match(this.input, 102, FOLLOW_102_in_funcoesEmbutidas3008);
-            if (this.state.failed) {
-               return retval;
-            }
-
-            if (this.state.backtracking == 0) {
-               stream_102.add(char_literal207);
-            }
-
-            if (this.state.backtracking == 0) {
-               retval.tree = root_0;
-               new RewriteRuleSubtreeStream(this.adaptor, "rule retval", retval != null ? retval.tree : null);
-               root_0 = (CommonTree)this.adaptor.nil();
-               root_1 = (CommonTree)this.adaptor.nil();
-               root_1 = (CommonTree)this.adaptor.becomeRoot((Object)((CommonTree)this.adaptor.create(6, (String)"ALEAT")), root_1);
-               this.adaptor.addChild(root_1, stream_expressao.nextTree());
-               this.adaptor.addChild(root_0, root_1);
-               retval.tree = root_0;
-            }
-            break;
-         case 8:
-            string_literal208 = (Token)this.match(this.input, 128, FOLLOW_128_in_funcoesEmbutidas3026);
-            if (this.state.failed) {
-               return retval;
-            }
-
-            if (this.state.backtracking == 0) {
-               stream_128.add(string_literal208);
-            }
-
-            char_literal209 = (Token)this.match(this.input, 101, FOLLOW_101_in_funcoesEmbutidas3028);
-            if (this.state.failed) {
-               return retval;
-            }
-
-            if (this.state.backtracking == 0) {
-               stream_101.add(char_literal209);
-            }
-
-            this.pushFollow(FOLLOW_expressao_in_funcoesEmbutidas3030);
-            expressao210 = this.expressao();
-            --this.state._fsp;
-            if (this.state.failed) {
-               return retval;
-            }
-
-            if (this.state.backtracking == 0) {
-               stream_expressao.add(expressao210.getTree());
-            }
-
-            char_literal211 = (Token)this.match(this.input, 102, FOLLOW_102_in_funcoesEmbutidas3032);
-            if (this.state.failed) {
-               return retval;
-            }
-
-            if (this.state.backtracking == 0) {
-               stream_102.add(char_literal211);
-            }
-
-            if (this.state.backtracking == 0) {
-               retval.tree = root_0;
-               new RewriteRuleSubtreeStream(this.adaptor, "rule retval", retval != null ? retval.tree : null);
-               root_0 = (CommonTree)this.adaptor.nil();
-               root_1 = (CommonTree)this.adaptor.nil();
-               root_1 = (CommonTree)this.adaptor.becomeRoot((Object)((CommonTree)this.adaptor.create(56, (String)"MAIUSC")), root_1);
-               this.adaptor.addChild(root_1, stream_expressao.nextTree());
-               this.adaptor.addChild(root_0, root_1);
-               retval.tree = root_0;
-            }
-            break;
-         case 9:
-            string_literal212 = (Token)this.match(this.input, 130, FOLLOW_130_in_funcoesEmbutidas3051);
-            if (this.state.failed) {
-               return retval;
-            }
-
-            if (this.state.backtracking == 0) {
-               stream_130.add(string_literal212);
-            }
-
-            char_literal213 = (Token)this.match(this.input, 101, FOLLOW_101_in_funcoesEmbutidas3053);
-            if (this.state.failed) {
-               return retval;
-            }
-
-            if (this.state.backtracking == 0) {
-               stream_101.add(char_literal213);
-            }
-
-            this.pushFollow(FOLLOW_expressao_in_funcoesEmbutidas3055);
-            expressao214 = this.expressao();
-            --this.state._fsp;
-            if (this.state.failed) {
-               return retval;
-            }
-
-            if (this.state.backtracking == 0) {
-               stream_expressao.add(expressao214.getTree());
-            }
-
-            char_literal215 = (Token)this.match(this.input, 102, FOLLOW_102_in_funcoesEmbutidas3057);
-            if (this.state.failed) {
-               return retval;
-            }
-
-            if (this.state.backtracking == 0) {
-               stream_102.add(char_literal215);
-            }
-
-            if (this.state.backtracking == 0) {
-               retval.tree = root_0;
-               new RewriteRuleSubtreeStream(this.adaptor, "rule retval", retval != null ? retval.tree : null);
-               root_0 = (CommonTree)this.adaptor.nil();
-               root_1 = (CommonTree)this.adaptor.nil();
-               root_1 = (CommonTree)this.adaptor.becomeRoot((Object)((CommonTree)this.adaptor.create(60, (String)"MINUSC")), root_1);
-               this.adaptor.addChild(root_1, stream_expressao.nextTree());
-               this.adaptor.addChild(root_0, root_1);
-               retval.tree = root_0;
-            }
-            break;
-         case 10:
-            string_literal216 = (Token)this.match(this.input, 119, FOLLOW_119_in_funcoesEmbutidas3075);
-            if (this.state.failed) {
-               return retval;
-            }
-
-            if (this.state.backtracking == 0) {
-               stream_119.add(string_literal216);
-            }
-
-            char_literal217 = (Token)this.match(this.input, 101, FOLLOW_101_in_funcoesEmbutidas3077);
-            if (this.state.failed) {
-               return retval;
-            }
-
-            if (this.state.backtracking == 0) {
-               stream_101.add(char_literal217);
-            }
-
-            this.pushFollow(FOLLOW_expressao_in_funcoesEmbutidas3079);
-            expressao218 = this.expressao();
-            --this.state._fsp;
-            if (this.state.failed) {
-               return retval;
-            }
-
-            if (this.state.backtracking == 0) {
-               stream_expressao.add(expressao218.getTree());
-            }
-
-            char_literal219 = (Token)this.match(this.input, 20, FOLLOW_CONCATENACAO_in_funcoesEmbutidas3081);
-            if (this.state.failed) {
-               return retval;
-            }
-
-            if (this.state.backtracking == 0) {
-               stream_CONCATENACAO.add(char_literal219);
-            }
-
-            this.pushFollow(FOLLOW_expressao_in_funcoesEmbutidas3083);
-            expressao220 = this.expressao();
-            --this.state._fsp;
-            if (this.state.failed) {
-               return retval;
-            }
-
-            if (this.state.backtracking == 0) {
-               stream_expressao.add(expressao220.getTree());
-            }
-
-            char_literal221 = (Token)this.match(this.input, 20, FOLLOW_CONCATENACAO_in_funcoesEmbutidas3085);
-            if (this.state.failed) {
-               return retval;
-            }
-
-            if (this.state.backtracking == 0) {
-               stream_CONCATENACAO.add(char_literal221);
-            }
-
-            this.pushFollow(FOLLOW_expressao_in_funcoesEmbutidas3087);
-            expressao222 = this.expressao();
-            --this.state._fsp;
-            if (this.state.failed) {
-               return retval;
-            }
-
-            if (this.state.backtracking == 0) {
-               stream_expressao.add(expressao222.getTree());
-            }
-
-            char_literal223 = (Token)this.match(this.input, 102, FOLLOW_102_in_funcoesEmbutidas3089);
-            if (this.state.failed) {
-               return retval;
-            }
-
-            if (this.state.backtracking == 0) {
-               stream_102.add(char_literal223);
-            }
-
-            if (this.state.backtracking == 0) {
-               retval.tree = root_0;
-               new RewriteRuleSubtreeStream(this.adaptor, "rule retval", retval != null ? retval.tree : null);
-               root_0 = (CommonTree)this.adaptor.nil();
-               root_1 = (CommonTree)this.adaptor.nil();
-               root_1 = (CommonTree)this.adaptor.becomeRoot((Object)((CommonTree)this.adaptor.create(23, (String)"COPIA")), root_1);
-               this.adaptor.addChild(root_1, stream_expressao.nextTree());
-               this.adaptor.addChild(root_1, stream_expressao.nextTree());
-               this.adaptor.addChild(root_1, stream_expressao.nextTree());
-               this.adaptor.addChild(root_0, root_1);
-               retval.tree = root_0;
-            }
-            break;
-         case 11:
-            string_literal224 = (Token)this.match(this.input, 129, FOLLOW_129_in_funcoesEmbutidas3111);
-            if (this.state.failed) {
-               return retval;
-            }
-
-            if (this.state.backtracking == 0) {
-               stream_129.add(string_literal224);
-            }
-
-            char_literal225 = (Token)this.match(this.input, 101, FOLLOW_101_in_funcoesEmbutidas3113);
-            if (this.state.failed) {
-               return retval;
-            }
-
-            if (this.state.backtracking == 0) {
-               stream_101.add(char_literal225);
-            }
-
-            this.pushFollow(FOLLOW_expressao_in_funcoesEmbutidas3115);
-            expressao226 = this.expressao();
-            --this.state._fsp;
-            if (this.state.failed) {
-               return retval;
-            }
-
-            if (this.state.backtracking == 0) {
-               stream_expressao.add(expressao226.getTree());
-            }
-
-            char_literal227 = (Token)this.match(this.input, 102, FOLLOW_102_in_funcoesEmbutidas3117);
-            if (this.state.failed) {
-               return retval;
-            }
-
-            if (this.state.backtracking == 0) {
-               stream_102.add(char_literal227);
-            }
-
-            if (this.state.backtracking == 0) {
-               retval.tree = root_0;
-               new RewriteRuleSubtreeStream(this.adaptor, "rule retval", retval != null ? retval.tree : null);
-               root_0 = (CommonTree)this.adaptor.nil();
-               root_1 = (CommonTree)this.adaptor.nil();
-               root_1 = (CommonTree)this.adaptor.becomeRoot((Object)((CommonTree)this.adaptor.create(57, (String)"MAIUSC_CHAR")), root_1);
-               this.adaptor.addChild(root_1, stream_expressao.nextTree());
-               this.adaptor.addChild(root_0, root_1);
-               retval.tree = root_0;
-            }
-            break;
-         case 12:
-            string_literal228 = (Token)this.match(this.input, 131, FOLLOW_131_in_funcoesEmbutidas3135);
-            if (this.state.failed) {
-               return retval;
-            }
-
-            if (this.state.backtracking == 0) {
-               stream_131.add(string_literal228);
-            }
-
-            char_literal229 = (Token)this.match(this.input, 101, FOLLOW_101_in_funcoesEmbutidas3137);
-            if (this.state.failed) {
-               return retval;
-            }
-
-            if (this.state.backtracking == 0) {
-               stream_101.add(char_literal229);
-            }
-
-            this.pushFollow(FOLLOW_expressao_in_funcoesEmbutidas3139);
-            expressao230 = this.expressao();
-            --this.state._fsp;
-            if (this.state.failed) {
-               return retval;
-            }
-
-            if (this.state.backtracking == 0) {
-               stream_expressao.add(expressao230.getTree());
-            }
-
-            char_literal231 = (Token)this.match(this.input, 102, FOLLOW_102_in_funcoesEmbutidas3141);
-            if (this.state.failed) {
-               return retval;
-            }
-
-            if (this.state.backtracking == 0) {
-               stream_102.add(char_literal231);
-            }
-
-            if (this.state.backtracking == 0) {
-               retval.tree = root_0;
-               new RewriteRuleSubtreeStream(this.adaptor, "rule retval", retval != null ? retval.tree : null);
-               root_0 = (CommonTree)this.adaptor.nil();
-               root_1 = (CommonTree)this.adaptor.nil();
-               root_1 = (CommonTree)this.adaptor.becomeRoot((Object)((CommonTree)this.adaptor.create(61, (String)"MINUSC_CHAR")), root_1);
-               this.adaptor.addChild(root_1, stream_expressao.nextTree());
-               this.adaptor.addChild(root_0, root_1);
-               retval.tree = root_0;
-            }
-            break;
-         case 13:
-            string_literal232 = (Token)this.match(this.input, 112, FOLLOW_112_in_funcoesEmbutidas3159);
-            if (this.state.failed) {
-               return retval;
-            }
-
-            if (this.state.backtracking == 0) {
-               stream_112.add(string_literal232);
-            }
-
-            char_literal233 = (Token)this.match(this.input, 101, FOLLOW_101_in_funcoesEmbutidas3161);
-            if (this.state.failed) {
-               return retval;
-            }
-
-            if (this.state.backtracking == 0) {
-               stream_101.add(char_literal233);
-            }
-
-            this.pushFollow(FOLLOW_expressao_in_funcoesEmbutidas3163);
-            expressao234 = this.expressao();
-            --this.state._fsp;
-            if (this.state.failed) {
-               return retval;
-            }
-
-            if (this.state.backtracking == 0) {
-               stream_expressao.add(expressao234.getTree());
-            }
-
-            char_literal235 = (Token)this.match(this.input, 102, FOLLOW_102_in_funcoesEmbutidas3165);
-            if (this.state.failed) {
-               return retval;
-            }
-
-            if (this.state.backtracking == 0) {
-               stream_102.add(char_literal235);
-            }
-
-            if (this.state.backtracking == 0) {
-               retval.tree = root_0;
-               new RewriteRuleSubtreeStream(this.adaptor, "rule retval", retval != null ? retval.tree : null);
-               root_0 = (CommonTree)this.adaptor.nil();
-               root_1 = (CommonTree)this.adaptor.nil();
-               root_1 = (CommonTree)this.adaptor.becomeRoot((Object)((CommonTree)this.adaptor.create(8, (String)"ASCII_CHAR")), root_1);
-               this.adaptor.addChild(root_1, stream_expressao.nextTree());
-               this.adaptor.addChild(root_0, root_1);
-               retval.tree = root_0;
-            }
-            break;
-         case 14:
-            string_literal236 = (Token)this.match(this.input, 114, FOLLOW_114_in_funcoesEmbutidas3183);
-            if (this.state.failed) {
-               return retval;
-            }
-
-            if (this.state.backtracking == 0) {
-               stream_114.add(string_literal236);
-            }
-
-            char_literal237 = (Token)this.match(this.input, 101, FOLLOW_101_in_funcoesEmbutidas3185);
-            if (this.state.failed) {
-               return retval;
-            }
-
-            if (this.state.backtracking == 0) {
-               stream_101.add(char_literal237);
-            }
-
-            this.pushFollow(FOLLOW_expressao_in_funcoesEmbutidas3187);
-            expressao238 = this.expressao();
-            --this.state._fsp;
-            if (this.state.failed) {
-               return retval;
-            }
-
-            if (this.state.backtracking == 0) {
-               stream_expressao.add(expressao238.getTree());
-            }
-
-            char_literal239 = (Token)this.match(this.input, 102, FOLLOW_102_in_funcoesEmbutidas3189);
-            if (this.state.failed) {
-               return retval;
-            }
-
-            if (this.state.backtracking == 0) {
-               stream_102.add(char_literal239);
-            }
-
-            if (this.state.backtracking == 0) {
-               retval.tree = root_0;
-               new RewriteRuleSubtreeStream(this.adaptor, "rule retval", retval != null ? retval.tree : null);
-               root_0 = (CommonTree)this.adaptor.nil();
-               root_1 = (CommonTree)this.adaptor.nil();
-               root_1 = (CommonTree)this.adaptor.becomeRoot((Object)((CommonTree)this.adaptor.create(14, (String)"CHAR_ASCII")), root_1);
-               this.adaptor.addChild(root_1, stream_expressao.nextTree());
-               this.adaptor.addChild(root_0, root_1);
-               retval.tree = root_0;
-            }
-            break;
-         case 15:
-            string_literal240 = (Token)this.match(this.input, 115, FOLLOW_115_in_funcoesEmbutidas3207);
-            if (this.state.failed) {
-               return retval;
-            }
-
-            if (this.state.backtracking == 0) {
-               stream_115.add(string_literal240);
-            }
-
-            char_literal241 = (Token)this.match(this.input, 101, FOLLOW_101_in_funcoesEmbutidas3209);
-            if (this.state.failed) {
-               return retval;
-            }
-
-            if (this.state.backtracking == 0) {
-               stream_101.add(char_literal241);
-            }
-
-            this.pushFollow(FOLLOW_expressao_in_funcoesEmbutidas3211);
-            expressao242 = this.expressao();
-            --this.state._fsp;
-            if (this.state.failed) {
-               return retval;
-            }
-
-            if (this.state.backtracking == 0) {
-               stream_expressao.add(expressao242.getTree());
-            }
-
-            char_literal243 = (Token)this.match(this.input, 20, FOLLOW_CONCATENACAO_in_funcoesEmbutidas3213);
-            if (this.state.failed) {
-               return retval;
-            }
-
-            if (this.state.backtracking == 0) {
-               stream_CONCATENACAO.add(char_literal243);
-            }
-
-            this.pushFollow(FOLLOW_expressao_in_funcoesEmbutidas3215);
-            expressao244 = this.expressao();
-            --this.state._fsp;
-            if (this.state.failed) {
-               return retval;
-            }
-
-            if (this.state.backtracking == 0) {
-               stream_expressao.add(expressao244.getTree());
-            }
-
-            char_literal245 = (Token)this.match(this.input, 102, FOLLOW_102_in_funcoesEmbutidas3217);
-            if (this.state.failed) {
-               return retval;
-            }
-
-            if (this.state.backtracking == 0) {
-               stream_102.add(char_literal245);
-            }
-
-            if (this.state.backtracking == 0) {
-               retval.tree = root_0;
-               new RewriteRuleSubtreeStream(this.adaptor, "rule retval", retval != null ? retval.tree : null);
-               root_0 = (CommonTree)this.adaptor.nil();
-               root_1 = (CommonTree)this.adaptor.nil();
-               root_1 = (CommonTree)this.adaptor.becomeRoot((Object)((CommonTree)this.adaptor.create(16, (String)"CHAR_TEXTO")), root_1);
-               this.adaptor.addChild(root_1, stream_expressao.nextTree());
-               this.adaptor.addChild(root_1, stream_expressao.nextTree());
-               this.adaptor.addChild(root_0, root_1);
-               retval.tree = root_0;
-            }
-            break;
-         case 16:
-            string_literal246 = (Token)this.match(this.input, 118, FOLLOW_118_in_funcoesEmbutidas3237);
-            if (this.state.failed) {
-               return retval;
-            }
-
-            if (this.state.backtracking == 0) {
-               stream_118.add(string_literal246);
-            }
-
-            char_literal247 = (Token)this.match(this.input, 101, FOLLOW_101_in_funcoesEmbutidas3239);
-            if (this.state.failed) {
-               return retval;
-            }
-
-            if (this.state.backtracking == 0) {
-               stream_101.add(char_literal247);
-            }
-
-            this.pushFollow(FOLLOW_expressao_in_funcoesEmbutidas3241);
-            expressao248 = this.expressao();
-            --this.state._fsp;
-            if (this.state.failed) {
-               return retval;
-            }
-
-            if (this.state.backtracking == 0) {
-               stream_expressao.add(expressao248.getTree());
-            }
-
-            char_literal249 = (Token)this.match(this.input, 102, FOLLOW_102_in_funcoesEmbutidas3243);
-            if (this.state.failed) {
-               return retval;
-            }
-
-            if (this.state.backtracking == 0) {
-               stream_102.add(char_literal249);
-            }
-
-            if (this.state.backtracking == 0) {
-               retval.tree = root_0;
-               new RewriteRuleSubtreeStream(this.adaptor, "rule retval", retval != null ? retval.tree : null);
-               root_0 = (CommonTree)this.adaptor.nil();
-               root_1 = (CommonTree)this.adaptor.nil();
-               root_1 = (CommonTree)this.adaptor.becomeRoot((Object)((CommonTree)this.adaptor.create(22, (String)"CONV_TEXTO_CHAR")), root_1);
-               this.adaptor.addChild(root_1, stream_expressao.nextTree());
-               this.adaptor.addChild(root_0, root_1);
-               retval.tree = root_0;
-            }
-            break;
-         case 17:
-            string_literal250 = (Token)this.match(this.input, 117, FOLLOW_117_in_funcoesEmbutidas3261);
-            if (this.state.failed) {
-               return retval;
-            }
-
-            if (this.state.backtracking == 0) {
-               stream_117.add(string_literal250);
-            }
-
-            char_literal251 = (Token)this.match(this.input, 101, FOLLOW_101_in_funcoesEmbutidas3263);
-            if (this.state.failed) {
-               return retval;
-            }
-
-            if (this.state.backtracking == 0) {
-               stream_101.add(char_literal251);
-            }
-
-            this.pushFollow(FOLLOW_expressao_in_funcoesEmbutidas3265);
-            expressao252 = this.expressao();
-            --this.state._fsp;
-            if (this.state.failed) {
-               return retval;
-            }
-
-            if (this.state.backtracking == 0) {
-               stream_expressao.add(expressao252.getTree());
-            }
-
-            char_literal253 = (Token)this.match(this.input, 102, FOLLOW_102_in_funcoesEmbutidas3267);
-            if (this.state.failed) {
-               return retval;
-            }
-
-            if (this.state.backtracking == 0) {
-               stream_102.add(char_literal253);
-            }
-
-            if (this.state.backtracking == 0) {
-               retval.tree = root_0;
-               new RewriteRuleSubtreeStream(this.adaptor, "rule retval", retval != null ? retval.tree : null);
-               root_0 = (CommonTree)this.adaptor.nil();
-               root_1 = (CommonTree)this.adaptor.nil();
-               root_1 = (CommonTree)this.adaptor.becomeRoot((Object)((CommonTree)this.adaptor.create(21, (String)"CONV_CHAR_TEXTO")), root_1);
-               this.adaptor.addChild(root_1, stream_expressao.nextTree());
-               this.adaptor.addChild(root_0, root_1);
-               retval.tree = root_0;
-            }
+            case 1:
+               string_literal177 = (Token)this.match(this.input, 116, FOLLOW_116_in_funcoesEmbutidas2850);
+               if (this.state.failed) {
+                  return retval;
+               }
+
+               if (this.state.backtracking == 0) {
+                  stream_116.add(string_literal177);
+               }
+
+               char_literal178 = (Token)this.match(this.input, 101, FOLLOW_101_in_funcoesEmbutidas2852);
+               if (this.state.failed) {
+                  return retval;
+               }
+
+               if (this.state.backtracking == 0) {
+                  stream_101.add(char_literal178);
+               }
+
+               this.pushFollow(FOLLOW_expressao_in_funcoesEmbutidas2854);
+               expressao179 = this.expressao();
+               --this.state._fsp;
+               if (this.state.failed) {
+                  return retval;
+               }
+
+               if (this.state.backtracking == 0) {
+                  stream_expressao.add(expressao179.getTree());
+               }
+
+               char_literal180 = (Token)this.match(this.input, 20, FOLLOW_CONCATENACAO_in_funcoesEmbutidas2856);
+               if (this.state.failed) {
+                  return retval;
+               }
+
+               if (this.state.backtracking == 0) {
+                  stream_CONCATENACAO.add(char_literal180);
+               }
+
+               this.pushFollow(FOLLOW_expressao_in_funcoesEmbutidas2858);
+               expressao181 = this.expressao();
+               --this.state._fsp;
+               if (this.state.failed) {
+                  return retval;
+               }
+
+               if (this.state.backtracking == 0) {
+                  stream_expressao.add(expressao181.getTree());
+               }
+
+               char_literal182 = (Token)this.match(this.input, 102, FOLLOW_102_in_funcoesEmbutidas2860);
+               if (this.state.failed) {
+                  return retval;
+               }
+
+               if (this.state.backtracking == 0) {
+                  stream_102.add(char_literal182);
+               }
+
+               if (this.state.backtracking == 0) {
+                  retval.tree = root_0;
+                  new RewriteRuleSubtreeStream(this.adaptor, "rule retval", retval != null ? retval.tree : null);
+                  root_0 = (CommonTree)this.adaptor.nil();
+                  root_1 = (CommonTree)this.adaptor.nil();
+                  root_1 = (CommonTree)this.adaptor.becomeRoot((CommonTree)this.adaptor.create(19, "COMPARA_TEXTO"), root_1);
+                  this.adaptor.addChild(root_1, stream_expressao.nextTree());
+                  this.adaptor.addChild(root_1, stream_expressao.nextTree());
+                  this.adaptor.addChild(root_0, root_1);
+                  retval.tree = root_0;
+               }
+               break;
+            case 2:
+               string_literal183 = (Token)this.match(this.input, 138, FOLLOW_138_in_funcoesEmbutidas2880);
+               if (this.state.failed) {
+                  return retval;
+               }
+
+               if (this.state.backtracking == 0) {
+                  stream_138.add(string_literal183);
+               }
+
+               char_literal184 = (Token)this.match(this.input, 101, FOLLOW_101_in_funcoesEmbutidas2882);
+               if (this.state.failed) {
+                  return retval;
+               }
+
+               if (this.state.backtracking == 0) {
+                  stream_101.add(char_literal184);
+               }
+
+               this.pushFollow(FOLLOW_expressao_in_funcoesEmbutidas2884);
+               expressao185 = this.expressao();
+               --this.state._fsp;
+               if (this.state.failed) {
+                  return retval;
+               }
+
+               if (this.state.backtracking == 0) {
+                  stream_expressao.add(expressao185.getTree());
+               }
+
+               char_literal186 = (Token)this.match(this.input, 102, FOLLOW_102_in_funcoesEmbutidas2886);
+               if (this.state.failed) {
+                  return retval;
+               }
+
+               if (this.state.backtracking == 0) {
+                  stream_102.add(char_literal186);
+               }
+
+               if (this.state.backtracking == 0) {
+                  retval.tree = root_0;
+                  new RewriteRuleSubtreeStream(this.adaptor, "rule retval", retval != null ? retval.tree : null);
+                  root_0 = (CommonTree)this.adaptor.nil();
+                  root_1 = (CommonTree)this.adaptor.nil();
+                  root_1 = (CommonTree)this.adaptor.becomeRoot((CommonTree)this.adaptor.create(90, "TAMANHO_TEXTO"), root_1);
+                  this.adaptor.addChild(root_1, stream_expressao.nextTree());
+                  this.adaptor.addChild(root_0, root_1);
+                  retval.tree = root_0;
+               }
+               break;
+            case 3:
+               string_literal187 = (Token)this.match(this.input, 109, FOLLOW_109_in_funcoesEmbutidas2904);
+               if (this.state.failed) {
+                  return retval;
+               }
+
+               if (this.state.backtracking == 0) {
+                  stream_109.add(string_literal187);
+               }
+
+               char_literal188 = (Token)this.match(this.input, 101, FOLLOW_101_in_funcoesEmbutidas2906);
+               if (this.state.failed) {
+                  return retval;
+               }
+
+               if (this.state.backtracking == 0) {
+                  stream_101.add(char_literal188);
+               }
+
+               this.pushFollow(FOLLOW_expressao_in_funcoesEmbutidas2908);
+               expressao189 = this.expressao();
+               --this.state._fsp;
+               if (this.state.failed) {
+                  return retval;
+               }
+
+               if (this.state.backtracking == 0) {
+                  stream_expressao.add(expressao189.getTree());
+               }
+
+               char_literal190 = (Token)this.match(this.input, 102, FOLLOW_102_in_funcoesEmbutidas2910);
+               if (this.state.failed) {
+                  return retval;
+               }
+
+               if (this.state.backtracking == 0) {
+                  stream_102.add(char_literal190);
+               }
+
+               if (this.state.backtracking == 0) {
+                  retval.tree = root_0;
+                  new RewriteRuleSubtreeStream(this.adaptor, "rule retval", retval != null ? retval.tree : null);
+                  root_0 = (CommonTree)this.adaptor.nil();
+                  root_1 = (CommonTree)this.adaptor.nil();
+                  root_1 = (CommonTree)this.adaptor.becomeRoot((CommonTree)this.adaptor.create(4, "ABS"), root_1);
+                  this.adaptor.addChild(root_1, stream_expressao.nextTree());
+                  this.adaptor.addChild(root_0, root_1);
+                  retval.tree = root_0;
+               }
+               break;
+            case 4:
+               string_literal191 = (Token)this.match(this.input, 122, FOLLOW_122_in_funcoesEmbutidas2928);
+               if (this.state.failed) {
+                  return retval;
+               }
+
+               if (this.state.backtracking == 0) {
+                  stream_122.add(string_literal191);
+               }
+
+               char_literal192 = (Token)this.match(this.input, 101, FOLLOW_101_in_funcoesEmbutidas2930);
+               if (this.state.failed) {
+                  return retval;
+               }
+
+               if (this.state.backtracking == 0) {
+                  stream_101.add(char_literal192);
+               }
+
+               this.pushFollow(FOLLOW_expressao_in_funcoesEmbutidas2932);
+               expressao193 = this.expressao();
+               --this.state._fsp;
+               if (this.state.failed) {
+                  return retval;
+               }
+
+               if (this.state.backtracking == 0) {
+                  stream_expressao.add(expressao193.getTree());
+               }
+
+               char_literal194 = (Token)this.match(this.input, 20, FOLLOW_CONCATENACAO_in_funcoesEmbutidas2934);
+               if (this.state.failed) {
+                  return retval;
+               }
+
+               if (this.state.backtracking == 0) {
+                  stream_CONCATENACAO.add(char_literal194);
+               }
+
+               this.pushFollow(FOLLOW_expressao_in_funcoesEmbutidas2936);
+               expressao195 = this.expressao();
+               --this.state._fsp;
+               if (this.state.failed) {
+                  return retval;
+               }
+
+               if (this.state.backtracking == 0) {
+                  stream_expressao.add(expressao195.getTree());
+               }
+
+               char_literal196 = (Token)this.match(this.input, 102, FOLLOW_102_in_funcoesEmbutidas2938);
+               if (this.state.failed) {
+                  return retval;
+               }
+
+               if (this.state.backtracking == 0) {
+                  stream_102.add(char_literal196);
+               }
+
+               if (this.state.backtracking == 0) {
+                  retval.tree = root_0;
+                  new RewriteRuleSubtreeStream(this.adaptor, "rule retval", retval != null ? retval.tree : null);
+                  root_0 = (CommonTree)this.adaptor.nil();
+                  root_1 = (CommonTree)this.adaptor.nil();
+                  root_1 = (CommonTree)this.adaptor.becomeRoot((CommonTree)this.adaptor.create(37, "EXP"), root_1);
+                  this.adaptor.addChild(root_1, stream_expressao.nextTree());
+                  this.adaptor.addChild(root_1, stream_expressao.nextTree());
+                  this.adaptor.addChild(root_0, root_1);
+                  retval.tree = root_0;
+               }
+               break;
+            case 5:
+               string_literal197 = (Token)this.match(this.input, 133, FOLLOW_133_in_funcoesEmbutidas2958);
+               if (this.state.failed) {
+                  return retval;
+               }
+
+               if (this.state.backtracking == 0) {
+                  stream_133.add(string_literal197);
+               }
+
+               char_literal198 = (Token)this.match(this.input, 101, FOLLOW_101_in_funcoesEmbutidas2960);
+               if (this.state.failed) {
+                  return retval;
+               }
+
+               if (this.state.backtracking == 0) {
+                  stream_101.add(char_literal198);
+               }
+
+               char_literal199 = (Token)this.match(this.input, 102, FOLLOW_102_in_funcoesEmbutidas2962);
+               if (this.state.failed) {
+                  return retval;
+               }
+
+               if (this.state.backtracking == 0) {
+                  stream_102.add(char_literal199);
+               }
+
+               if (this.state.backtracking == 0) {
+                  retval.tree = root_0;
+                  new RewriteRuleSubtreeStream(this.adaptor, "rule retval", retval != null ? retval.tree : null);
+                  root_0 = (CommonTree)this.adaptor.nil();
+                  root_1 = (CommonTree)this.adaptor.nil();
+                  root_1 = (CommonTree)this.adaptor.becomeRoot((CommonTree)this.adaptor.create(76, "PI"), root_1);
+                  this.adaptor.addChild(root_0, root_1);
+                  retval.tree = root_0;
+               }
+               break;
+            case 6:
+               string_literal200 = (Token)this.match(this.input, 135, FOLLOW_135_in_funcoesEmbutidas2978);
+               if (this.state.failed) {
+                  return retval;
+               }
+
+               if (this.state.backtracking == 0) {
+                  stream_135.add(string_literal200);
+               }
+
+               char_literal201 = (Token)this.match(this.input, 101, FOLLOW_101_in_funcoesEmbutidas2980);
+               if (this.state.failed) {
+                  return retval;
+               }
+
+               if (this.state.backtracking == 0) {
+                  stream_101.add(char_literal201);
+               }
+
+               this.pushFollow(FOLLOW_expressao_in_funcoesEmbutidas2982);
+               expressao202 = this.expressao();
+               --this.state._fsp;
+               if (this.state.failed) {
+                  return retval;
+               }
+
+               if (this.state.backtracking == 0) {
+                  stream_expressao.add(expressao202.getTree());
+               }
+
+               char_literal203 = (Token)this.match(this.input, 102, FOLLOW_102_in_funcoesEmbutidas2984);
+               if (this.state.failed) {
+                  return retval;
+               }
+
+               if (this.state.backtracking == 0) {
+                  stream_102.add(char_literal203);
+               }
+
+               if (this.state.backtracking == 0) {
+                  retval.tree = root_0;
+                  new RewriteRuleSubtreeStream(this.adaptor, "rule retval", retval != null ? retval.tree : null);
+                  root_0 = (CommonTree)this.adaptor.nil();
+                  root_1 = (CommonTree)this.adaptor.nil();
+                  root_1 = (CommonTree)this.adaptor.becomeRoot((CommonTree)this.adaptor.create(82, "RQUAD"), root_1);
+                  this.adaptor.addChild(root_1, stream_expressao.nextTree());
+                  this.adaptor.addChild(root_0, root_1);
+                  retval.tree = root_0;
+               }
+               break;
+            case 7:
+               string_literal204 = (Token)this.match(this.input, 110, FOLLOW_110_in_funcoesEmbutidas3002);
+               if (this.state.failed) {
+                  return retval;
+               }
+
+               if (this.state.backtracking == 0) {
+                  stream_110.add(string_literal204);
+               }
+
+               char_literal205 = (Token)this.match(this.input, 101, FOLLOW_101_in_funcoesEmbutidas3004);
+               if (this.state.failed) {
+                  return retval;
+               }
+
+               if (this.state.backtracking == 0) {
+                  stream_101.add(char_literal205);
+               }
+
+               this.pushFollow(FOLLOW_expressao_in_funcoesEmbutidas3006);
+               expressao206 = this.expressao();
+               --this.state._fsp;
+               if (this.state.failed) {
+                  return retval;
+               }
+
+               if (this.state.backtracking == 0) {
+                  stream_expressao.add(expressao206.getTree());
+               }
+
+               char_literal207 = (Token)this.match(this.input, 102, FOLLOW_102_in_funcoesEmbutidas3008);
+               if (this.state.failed) {
+                  return retval;
+               }
+
+               if (this.state.backtracking == 0) {
+                  stream_102.add(char_literal207);
+               }
+
+               if (this.state.backtracking == 0) {
+                  retval.tree = root_0;
+                  new RewriteRuleSubtreeStream(this.adaptor, "rule retval", retval != null ? retval.tree : null);
+                  root_0 = (CommonTree)this.adaptor.nil();
+                  root_1 = (CommonTree)this.adaptor.nil();
+                  root_1 = (CommonTree)this.adaptor.becomeRoot((CommonTree)this.adaptor.create(6, "ALEAT"), root_1);
+                  this.adaptor.addChild(root_1, stream_expressao.nextTree());
+                  this.adaptor.addChild(root_0, root_1);
+                  retval.tree = root_0;
+               }
+               break;
+            case 8:
+               string_literal208 = (Token)this.match(this.input, 128, FOLLOW_128_in_funcoesEmbutidas3026);
+               if (this.state.failed) {
+                  return retval;
+               }
+
+               if (this.state.backtracking == 0) {
+                  stream_128.add(string_literal208);
+               }
+
+               char_literal209 = (Token)this.match(this.input, 101, FOLLOW_101_in_funcoesEmbutidas3028);
+               if (this.state.failed) {
+                  return retval;
+               }
+
+               if (this.state.backtracking == 0) {
+                  stream_101.add(char_literal209);
+               }
+
+               this.pushFollow(FOLLOW_expressao_in_funcoesEmbutidas3030);
+               expressao210 = this.expressao();
+               --this.state._fsp;
+               if (this.state.failed) {
+                  return retval;
+               }
+
+               if (this.state.backtracking == 0) {
+                  stream_expressao.add(expressao210.getTree());
+               }
+
+               char_literal211 = (Token)this.match(this.input, 102, FOLLOW_102_in_funcoesEmbutidas3032);
+               if (this.state.failed) {
+                  return retval;
+               }
+
+               if (this.state.backtracking == 0) {
+                  stream_102.add(char_literal211);
+               }
+
+               if (this.state.backtracking == 0) {
+                  retval.tree = root_0;
+                  new RewriteRuleSubtreeStream(this.adaptor, "rule retval", retval != null ? retval.tree : null);
+                  root_0 = (CommonTree)this.adaptor.nil();
+                  root_1 = (CommonTree)this.adaptor.nil();
+                  root_1 = (CommonTree)this.adaptor.becomeRoot((CommonTree)this.adaptor.create(56, "MAIUSC"), root_1);
+                  this.adaptor.addChild(root_1, stream_expressao.nextTree());
+                  this.adaptor.addChild(root_0, root_1);
+                  retval.tree = root_0;
+               }
+               break;
+            case 9:
+               string_literal212 = (Token)this.match(this.input, 130, FOLLOW_130_in_funcoesEmbutidas3051);
+               if (this.state.failed) {
+                  return retval;
+               }
+
+               if (this.state.backtracking == 0) {
+                  stream_130.add(string_literal212);
+               }
+
+               char_literal213 = (Token)this.match(this.input, 101, FOLLOW_101_in_funcoesEmbutidas3053);
+               if (this.state.failed) {
+                  return retval;
+               }
+
+               if (this.state.backtracking == 0) {
+                  stream_101.add(char_literal213);
+               }
+
+               this.pushFollow(FOLLOW_expressao_in_funcoesEmbutidas3055);
+               expressao214 = this.expressao();
+               --this.state._fsp;
+               if (this.state.failed) {
+                  return retval;
+               }
+
+               if (this.state.backtracking == 0) {
+                  stream_expressao.add(expressao214.getTree());
+               }
+
+               char_literal215 = (Token)this.match(this.input, 102, FOLLOW_102_in_funcoesEmbutidas3057);
+               if (this.state.failed) {
+                  return retval;
+               }
+
+               if (this.state.backtracking == 0) {
+                  stream_102.add(char_literal215);
+               }
+
+               if (this.state.backtracking == 0) {
+                  retval.tree = root_0;
+                  new RewriteRuleSubtreeStream(this.adaptor, "rule retval", retval != null ? retval.tree : null);
+                  root_0 = (CommonTree)this.adaptor.nil();
+                  root_1 = (CommonTree)this.adaptor.nil();
+                  root_1 = (CommonTree)this.adaptor.becomeRoot((CommonTree)this.adaptor.create(60, "MINUSC"), root_1);
+                  this.adaptor.addChild(root_1, stream_expressao.nextTree());
+                  this.adaptor.addChild(root_0, root_1);
+                  retval.tree = root_0;
+               }
+               break;
+            case 10:
+               string_literal216 = (Token)this.match(this.input, 119, FOLLOW_119_in_funcoesEmbutidas3075);
+               if (this.state.failed) {
+                  return retval;
+               }
+
+               if (this.state.backtracking == 0) {
+                  stream_119.add(string_literal216);
+               }
+
+               char_literal217 = (Token)this.match(this.input, 101, FOLLOW_101_in_funcoesEmbutidas3077);
+               if (this.state.failed) {
+                  return retval;
+               }
+
+               if (this.state.backtracking == 0) {
+                  stream_101.add(char_literal217);
+               }
+
+               this.pushFollow(FOLLOW_expressao_in_funcoesEmbutidas3079);
+               expressao218 = this.expressao();
+               --this.state._fsp;
+               if (this.state.failed) {
+                  return retval;
+               }
+
+               if (this.state.backtracking == 0) {
+                  stream_expressao.add(expressao218.getTree());
+               }
+
+               char_literal219 = (Token)this.match(this.input, 20, FOLLOW_CONCATENACAO_in_funcoesEmbutidas3081);
+               if (this.state.failed) {
+                  return retval;
+               }
+
+               if (this.state.backtracking == 0) {
+                  stream_CONCATENACAO.add(char_literal219);
+               }
+
+               this.pushFollow(FOLLOW_expressao_in_funcoesEmbutidas3083);
+               expressao220 = this.expressao();
+               --this.state._fsp;
+               if (this.state.failed) {
+                  return retval;
+               }
+
+               if (this.state.backtracking == 0) {
+                  stream_expressao.add(expressao220.getTree());
+               }
+
+               char_literal221 = (Token)this.match(this.input, 20, FOLLOW_CONCATENACAO_in_funcoesEmbutidas3085);
+               if (this.state.failed) {
+                  return retval;
+               }
+
+               if (this.state.backtracking == 0) {
+                  stream_CONCATENACAO.add(char_literal221);
+               }
+
+               this.pushFollow(FOLLOW_expressao_in_funcoesEmbutidas3087);
+               expressao222 = this.expressao();
+               --this.state._fsp;
+               if (this.state.failed) {
+                  return retval;
+               }
+
+               if (this.state.backtracking == 0) {
+                  stream_expressao.add(expressao222.getTree());
+               }
+
+               char_literal223 = (Token)this.match(this.input, 102, FOLLOW_102_in_funcoesEmbutidas3089);
+               if (this.state.failed) {
+                  return retval;
+               }
+
+               if (this.state.backtracking == 0) {
+                  stream_102.add(char_literal223);
+               }
+
+               if (this.state.backtracking == 0) {
+                  retval.tree = root_0;
+                  new RewriteRuleSubtreeStream(this.adaptor, "rule retval", retval != null ? retval.tree : null);
+                  root_0 = (CommonTree)this.adaptor.nil();
+                  root_1 = (CommonTree)this.adaptor.nil();
+                  root_1 = (CommonTree)this.adaptor.becomeRoot((CommonTree)this.adaptor.create(23, "COPIA"), root_1);
+                  this.adaptor.addChild(root_1, stream_expressao.nextTree());
+                  this.adaptor.addChild(root_1, stream_expressao.nextTree());
+                  this.adaptor.addChild(root_1, stream_expressao.nextTree());
+                  this.adaptor.addChild(root_0, root_1);
+                  retval.tree = root_0;
+               }
+               break;
+            case 11:
+               string_literal224 = (Token)this.match(this.input, 129, FOLLOW_129_in_funcoesEmbutidas3111);
+               if (this.state.failed) {
+                  return retval;
+               }
+
+               if (this.state.backtracking == 0) {
+                  stream_129.add(string_literal224);
+               }
+
+               char_literal225 = (Token)this.match(this.input, 101, FOLLOW_101_in_funcoesEmbutidas3113);
+               if (this.state.failed) {
+                  return retval;
+               }
+
+               if (this.state.backtracking == 0) {
+                  stream_101.add(char_literal225);
+               }
+
+               this.pushFollow(FOLLOW_expressao_in_funcoesEmbutidas3115);
+               expressao226 = this.expressao();
+               --this.state._fsp;
+               if (this.state.failed) {
+                  return retval;
+               }
+
+               if (this.state.backtracking == 0) {
+                  stream_expressao.add(expressao226.getTree());
+               }
+
+               char_literal227 = (Token)this.match(this.input, 102, FOLLOW_102_in_funcoesEmbutidas3117);
+               if (this.state.failed) {
+                  return retval;
+               }
+
+               if (this.state.backtracking == 0) {
+                  stream_102.add(char_literal227);
+               }
+
+               if (this.state.backtracking == 0) {
+                  retval.tree = root_0;
+                  new RewriteRuleSubtreeStream(this.adaptor, "rule retval", retval != null ? retval.tree : null);
+                  root_0 = (CommonTree)this.adaptor.nil();
+                  root_1 = (CommonTree)this.adaptor.nil();
+                  root_1 = (CommonTree)this.adaptor.becomeRoot((CommonTree)this.adaptor.create(57, "MAIUSC_CHAR"), root_1);
+                  this.adaptor.addChild(root_1, stream_expressao.nextTree());
+                  this.adaptor.addChild(root_0, root_1);
+                  retval.tree = root_0;
+               }
+               break;
+            case 12:
+               string_literal228 = (Token)this.match(this.input, 131, FOLLOW_131_in_funcoesEmbutidas3135);
+               if (this.state.failed) {
+                  return retval;
+               }
+
+               if (this.state.backtracking == 0) {
+                  stream_131.add(string_literal228);
+               }
+
+               char_literal229 = (Token)this.match(this.input, 101, FOLLOW_101_in_funcoesEmbutidas3137);
+               if (this.state.failed) {
+                  return retval;
+               }
+
+               if (this.state.backtracking == 0) {
+                  stream_101.add(char_literal229);
+               }
+
+               this.pushFollow(FOLLOW_expressao_in_funcoesEmbutidas3139);
+               expressao230 = this.expressao();
+               --this.state._fsp;
+               if (this.state.failed) {
+                  return retval;
+               }
+
+               if (this.state.backtracking == 0) {
+                  stream_expressao.add(expressao230.getTree());
+               }
+
+               char_literal231 = (Token)this.match(this.input, 102, FOLLOW_102_in_funcoesEmbutidas3141);
+               if (this.state.failed) {
+                  return retval;
+               }
+
+               if (this.state.backtracking == 0) {
+                  stream_102.add(char_literal231);
+               }
+
+               if (this.state.backtracking == 0) {
+                  retval.tree = root_0;
+                  new RewriteRuleSubtreeStream(this.adaptor, "rule retval", retval != null ? retval.tree : null);
+                  root_0 = (CommonTree)this.adaptor.nil();
+                  root_1 = (CommonTree)this.adaptor.nil();
+                  root_1 = (CommonTree)this.adaptor.becomeRoot((CommonTree)this.adaptor.create(61, "MINUSC_CHAR"), root_1);
+                  this.adaptor.addChild(root_1, stream_expressao.nextTree());
+                  this.adaptor.addChild(root_0, root_1);
+                  retval.tree = root_0;
+               }
+               break;
+            case 13:
+               string_literal232 = (Token)this.match(this.input, 112, FOLLOW_112_in_funcoesEmbutidas3159);
+               if (this.state.failed) {
+                  return retval;
+               }
+
+               if (this.state.backtracking == 0) {
+                  stream_112.add(string_literal232);
+               }
+
+               char_literal233 = (Token)this.match(this.input, 101, FOLLOW_101_in_funcoesEmbutidas3161);
+               if (this.state.failed) {
+                  return retval;
+               }
+
+               if (this.state.backtracking == 0) {
+                  stream_101.add(char_literal233);
+               }
+
+               this.pushFollow(FOLLOW_expressao_in_funcoesEmbutidas3163);
+               expressao234 = this.expressao();
+               --this.state._fsp;
+               if (this.state.failed) {
+                  return retval;
+               }
+
+               if (this.state.backtracking == 0) {
+                  stream_expressao.add(expressao234.getTree());
+               }
+
+               char_literal235 = (Token)this.match(this.input, 102, FOLLOW_102_in_funcoesEmbutidas3165);
+               if (this.state.failed) {
+                  return retval;
+               }
+
+               if (this.state.backtracking == 0) {
+                  stream_102.add(char_literal235);
+               }
+
+               if (this.state.backtracking == 0) {
+                  retval.tree = root_0;
+                  new RewriteRuleSubtreeStream(this.adaptor, "rule retval", retval != null ? retval.tree : null);
+                  root_0 = (CommonTree)this.adaptor.nil();
+                  root_1 = (CommonTree)this.adaptor.nil();
+                  root_1 = (CommonTree)this.adaptor.becomeRoot((CommonTree)this.adaptor.create(8, "ASCII_CHAR"), root_1);
+                  this.adaptor.addChild(root_1, stream_expressao.nextTree());
+                  this.adaptor.addChild(root_0, root_1);
+                  retval.tree = root_0;
+               }
+               break;
+            case 14:
+               string_literal236 = (Token)this.match(this.input, 114, FOLLOW_114_in_funcoesEmbutidas3183);
+               if (this.state.failed) {
+                  return retval;
+               }
+
+               if (this.state.backtracking == 0) {
+                  stream_114.add(string_literal236);
+               }
+
+               char_literal237 = (Token)this.match(this.input, 101, FOLLOW_101_in_funcoesEmbutidas3185);
+               if (this.state.failed) {
+                  return retval;
+               }
+
+               if (this.state.backtracking == 0) {
+                  stream_101.add(char_literal237);
+               }
+
+               this.pushFollow(FOLLOW_expressao_in_funcoesEmbutidas3187);
+               expressao238 = this.expressao();
+               --this.state._fsp;
+               if (this.state.failed) {
+                  return retval;
+               }
+
+               if (this.state.backtracking == 0) {
+                  stream_expressao.add(expressao238.getTree());
+               }
+
+               char_literal239 = (Token)this.match(this.input, 102, FOLLOW_102_in_funcoesEmbutidas3189);
+               if (this.state.failed) {
+                  return retval;
+               }
+
+               if (this.state.backtracking == 0) {
+                  stream_102.add(char_literal239);
+               }
+
+               if (this.state.backtracking == 0) {
+                  retval.tree = root_0;
+                  new RewriteRuleSubtreeStream(this.adaptor, "rule retval", retval != null ? retval.tree : null);
+                  root_0 = (CommonTree)this.adaptor.nil();
+                  root_1 = (CommonTree)this.adaptor.nil();
+                  root_1 = (CommonTree)this.adaptor.becomeRoot((CommonTree)this.adaptor.create(14, "CHAR_ASCII"), root_1);
+                  this.adaptor.addChild(root_1, stream_expressao.nextTree());
+                  this.adaptor.addChild(root_0, root_1);
+                  retval.tree = root_0;
+               }
+               break;
+            case 15:
+               string_literal240 = (Token)this.match(this.input, 115, FOLLOW_115_in_funcoesEmbutidas3207);
+               if (this.state.failed) {
+                  return retval;
+               }
+
+               if (this.state.backtracking == 0) {
+                  stream_115.add(string_literal240);
+               }
+
+               char_literal241 = (Token)this.match(this.input, 101, FOLLOW_101_in_funcoesEmbutidas3209);
+               if (this.state.failed) {
+                  return retval;
+               }
+
+               if (this.state.backtracking == 0) {
+                  stream_101.add(char_literal241);
+               }
+
+               this.pushFollow(FOLLOW_expressao_in_funcoesEmbutidas3211);
+               expressao242 = this.expressao();
+               --this.state._fsp;
+               if (this.state.failed) {
+                  return retval;
+               }
+
+               if (this.state.backtracking == 0) {
+                  stream_expressao.add(expressao242.getTree());
+               }
+
+               char_literal243 = (Token)this.match(this.input, 20, FOLLOW_CONCATENACAO_in_funcoesEmbutidas3213);
+               if (this.state.failed) {
+                  return retval;
+               }
+
+               if (this.state.backtracking == 0) {
+                  stream_CONCATENACAO.add(char_literal243);
+               }
+
+               this.pushFollow(FOLLOW_expressao_in_funcoesEmbutidas3215);
+               expressao244 = this.expressao();
+               --this.state._fsp;
+               if (this.state.failed) {
+                  return retval;
+               }
+
+               if (this.state.backtracking == 0) {
+                  stream_expressao.add(expressao244.getTree());
+               }
+
+               char_literal245 = (Token)this.match(this.input, 102, FOLLOW_102_in_funcoesEmbutidas3217);
+               if (this.state.failed) {
+                  return retval;
+               }
+
+               if (this.state.backtracking == 0) {
+                  stream_102.add(char_literal245);
+               }
+
+               if (this.state.backtracking == 0) {
+                  retval.tree = root_0;
+                  new RewriteRuleSubtreeStream(this.adaptor, "rule retval", retval != null ? retval.tree : null);
+                  root_0 = (CommonTree)this.adaptor.nil();
+                  root_1 = (CommonTree)this.adaptor.nil();
+                  root_1 = (CommonTree)this.adaptor.becomeRoot((CommonTree)this.adaptor.create(16, "CHAR_TEXTO"), root_1);
+                  this.adaptor.addChild(root_1, stream_expressao.nextTree());
+                  this.adaptor.addChild(root_1, stream_expressao.nextTree());
+                  this.adaptor.addChild(root_0, root_1);
+                  retval.tree = root_0;
+               }
+               break;
+            case 16:
+               string_literal246 = (Token)this.match(this.input, 118, FOLLOW_118_in_funcoesEmbutidas3237);
+               if (this.state.failed) {
+                  return retval;
+               }
+
+               if (this.state.backtracking == 0) {
+                  stream_118.add(string_literal246);
+               }
+
+               char_literal247 = (Token)this.match(this.input, 101, FOLLOW_101_in_funcoesEmbutidas3239);
+               if (this.state.failed) {
+                  return retval;
+               }
+
+               if (this.state.backtracking == 0) {
+                  stream_101.add(char_literal247);
+               }
+
+               this.pushFollow(FOLLOW_expressao_in_funcoesEmbutidas3241);
+               expressao248 = this.expressao();
+               --this.state._fsp;
+               if (this.state.failed) {
+                  return retval;
+               }
+
+               if (this.state.backtracking == 0) {
+                  stream_expressao.add(expressao248.getTree());
+               }
+
+               char_literal249 = (Token)this.match(this.input, 102, FOLLOW_102_in_funcoesEmbutidas3243);
+               if (this.state.failed) {
+                  return retval;
+               }
+
+               if (this.state.backtracking == 0) {
+                  stream_102.add(char_literal249);
+               }
+
+               if (this.state.backtracking == 0) {
+                  retval.tree = root_0;
+                  new RewriteRuleSubtreeStream(this.adaptor, "rule retval", retval != null ? retval.tree : null);
+                  root_0 = (CommonTree)this.adaptor.nil();
+                  root_1 = (CommonTree)this.adaptor.nil();
+                  root_1 = (CommonTree)this.adaptor.becomeRoot((CommonTree)this.adaptor.create(22, "CONV_TEXTO_CHAR"), root_1);
+                  this.adaptor.addChild(root_1, stream_expressao.nextTree());
+                  this.adaptor.addChild(root_0, root_1);
+                  retval.tree = root_0;
+               }
+               break;
+            case 17:
+               string_literal250 = (Token)this.match(this.input, 117, FOLLOW_117_in_funcoesEmbutidas3261);
+               if (this.state.failed) {
+                  return retval;
+               }
+
+               if (this.state.backtracking == 0) {
+                  stream_117.add(string_literal250);
+               }
+
+               char_literal251 = (Token)this.match(this.input, 101, FOLLOW_101_in_funcoesEmbutidas3263);
+               if (this.state.failed) {
+                  return retval;
+               }
+
+               if (this.state.backtracking == 0) {
+                  stream_101.add(char_literal251);
+               }
+
+               this.pushFollow(FOLLOW_expressao_in_funcoesEmbutidas3265);
+               expressao252 = this.expressao();
+               --this.state._fsp;
+               if (this.state.failed) {
+                  return retval;
+               }
+
+               if (this.state.backtracking == 0) {
+                  stream_expressao.add(expressao252.getTree());
+               }
+
+               char_literal253 = (Token)this.match(this.input, 102, FOLLOW_102_in_funcoesEmbutidas3267);
+               if (this.state.failed) {
+                  return retval;
+               }
+
+               if (this.state.backtracking == 0) {
+                  stream_102.add(char_literal253);
+               }
+
+               if (this.state.backtracking == 0) {
+                  retval.tree = root_0;
+                  new RewriteRuleSubtreeStream(this.adaptor, "rule retval", retval != null ? retval.tree : null);
+                  root_0 = (CommonTree)this.adaptor.nil();
+                  root_1 = (CommonTree)this.adaptor.nil();
+                  root_1 = (CommonTree)this.adaptor.becomeRoot((CommonTree)this.adaptor.create(21, "CONV_CHAR_TEXTO"), root_1);
+                  this.adaptor.addChild(root_1, stream_expressao.nextTree());
+                  this.adaptor.addChild(root_0, root_1);
+                  retval.tree = root_0;
+               }
          }
 
          retval.stop = this.input.LT(-1);
@@ -6096,47 +6096,47 @@ public class CalangoGrammarParser extends Parser {
             }
 
             switch(alt39) {
-            case 1:
-               NEGACAO_LOGICA254 = (Token)this.match(this.input, 65, FOLLOW_NEGACAO_LOGICA_in_negacao3295);
-               if (this.state.failed) {
+               case 1:
+                  NEGACAO_LOGICA254 = (Token)this.match(this.input, 65, FOLLOW_NEGACAO_LOGICA_in_negacao3295);
+                  if (this.state.failed) {
+                     return retval;
+                  }
+
+                  if (this.state.backtracking == 0) {
+                     NEGACAO_LOGICA254_tree = (CommonTree)this.adaptor.create(NEGACAO_LOGICA254);
+                     root_0 = (CommonTree)this.adaptor.becomeRoot(NEGACAO_LOGICA254_tree, root_0);
+                  }
+                  break;
+               case 2:
+                  NEGACAO_LOGICA2255 = (Token)this.match(this.input, 66, FOLLOW_NEGACAO_LOGICA2_in_negacao3300);
+                  if (this.state.failed) {
+                     return retval;
+                  }
+
+                  if (this.state.backtracking == 0) {
+                     NEGACAO_LOGICA2255_tree = (CommonTree)this.adaptor.create(NEGACAO_LOGICA2255);
+                     root_0 = (CommonTree)this.adaptor.becomeRoot(NEGACAO_LOGICA2255_tree, root_0);
+                  }
+                  break;
+               default:
+                  this.pushFollow(FOLLOW_termo_in_negacao3305);
+                  termo256 = this.termo();
+                  --this.state._fsp;
+                  if (this.state.failed) {
+                     return retval;
+                  }
+
+                  if (this.state.backtracking == 0) {
+                     this.adaptor.addChild(root_0, termo256.getTree());
+                  }
+
+                  retval.stop = this.input.LT(-1);
+                  if (this.state.backtracking == 0) {
+                     retval.tree = (CommonTree)this.adaptor.rulePostProcessing(root_0);
+                     this.adaptor.setTokenBoundaries(retval.tree, retval.start, retval.stop);
+                  }
+
                   return retval;
-               }
-
-               if (this.state.backtracking == 0) {
-                  NEGACAO_LOGICA254_tree = (CommonTree)this.adaptor.create(NEGACAO_LOGICA254);
-                  root_0 = (CommonTree)this.adaptor.becomeRoot((Object)NEGACAO_LOGICA254_tree, root_0);
-               }
-               break;
-            case 2:
-               NEGACAO_LOGICA2255 = (Token)this.match(this.input, 66, FOLLOW_NEGACAO_LOGICA2_in_negacao3300);
-               if (this.state.failed) {
-                  return retval;
-               }
-
-               if (this.state.backtracking == 0) {
-                  NEGACAO_LOGICA2255_tree = (CommonTree)this.adaptor.create(NEGACAO_LOGICA2255);
-                  root_0 = (CommonTree)this.adaptor.becomeRoot((Object)NEGACAO_LOGICA2255_tree, root_0);
-               }
-               break;
-            default:
-               this.pushFollow(FOLLOW_termo_in_negacao3305);
-               termo256 = this.termo();
-               --this.state._fsp;
-               if (this.state.failed) {
-                  return retval;
-               }
-
-               if (this.state.backtracking == 0) {
-                  this.adaptor.addChild(root_0, termo256.getTree());
-               }
-
-               retval.stop = this.input.LT(-1);
-               if (this.state.backtracking == 0) {
-                  retval.tree = (CommonTree)this.adaptor.rulePostProcessing(root_0);
-                  this.adaptor.setTokenBoundaries(retval.tree, retval.start, retval.stop);
-               }
-
-               return retval;
             }
          }
       } catch (RecognitionException var10) {
@@ -6167,23 +6167,23 @@ public class CalangoGrammarParser extends Parser {
          }
 
          switch(alt40) {
-         case 1:
-            char_literal257 = (Token)this.match(this.input, 5, FOLLOW_ADICAO_in_unario3329);
-            if (this.state.failed) {
-               return retval;
-            }
-            break;
-         case 2:
-            this.pushFollow(FOLLOW_negacao_matematica_in_unario3334);
-            negacao_matematica258 = this.negacao_matematica();
-            --this.state._fsp;
-            if (this.state.failed) {
-               return retval;
-            }
+            case 1:
+               char_literal257 = (Token)this.match(this.input, 5, FOLLOW_ADICAO_in_unario3329);
+               if (this.state.failed) {
+                  return retval;
+               }
+               break;
+            case 2:
+               this.pushFollow(FOLLOW_negacao_matematica_in_unario3334);
+               negacao_matematica258 = this.negacao_matematica();
+               --this.state._fsp;
+               if (this.state.failed) {
+                  return retval;
+               }
 
-            if (this.state.backtracking == 0) {
-               root_0 = (CommonTree)this.adaptor.becomeRoot((Object)negacao_matematica258.getTree(), root_0);
-            }
+               if (this.state.backtracking == 0) {
+                  root_0 = (CommonTree)this.adaptor.becomeRoot(negacao_matematica258.getTree(), root_0);
+               }
          }
 
          this.pushFollow(FOLLOW_negacao_in_unario3339);
@@ -6233,7 +6233,7 @@ public class CalangoGrammarParser extends Parser {
             retval.tree = root_0;
             new RewriteRuleSubtreeStream(this.adaptor, "rule retval", retval != null ? retval.tree : null);
             root_0 = (CommonTree)this.adaptor.nil();
-            this.adaptor.addChild(root_0, (CommonTree)this.adaptor.create(67, (String)"NEGACAO_MATEMATICA"));
+            this.adaptor.addChild(root_0, (CommonTree)this.adaptor.create(67, "NEGACAO_MATEMATICA"));
             retval.tree = root_0;
          }
 
@@ -6288,110 +6288,110 @@ public class CalangoGrammarParser extends Parser {
                }
 
                switch(alt42) {
-               case 1:
-                  byte alt41;
-                  switch(this.input.LA(1)) {
-                  case 29:
-                     alt41 = 2;
-                     break;
-                  case 30:
-                     alt41 = 3;
-                     break;
-                  case 62:
-                     alt41 = 4;
-                     break;
-                  case 63:
-                     alt41 = 5;
-                     break;
-                  case 64:
-                     alt41 = 1;
+                  case 1:
+                     byte alt41;
+                     switch(this.input.LA(1)) {
+                        case 29:
+                           alt41 = 2;
+                           break;
+                        case 30:
+                           alt41 = 3;
+                           break;
+                        case 62:
+                           alt41 = 4;
+                           break;
+                        case 63:
+                           alt41 = 5;
+                           break;
+                        case 64:
+                           alt41 = 1;
+                           break;
+                        default:
+                           if (this.state.backtracking > 0) {
+                              this.state.failed = true;
+                              return retval;
+                           }
+
+                           NoViableAltException nvae = new NoViableAltException("", 41, 0, this.input);
+                           throw nvae;
+                     }
+
+                     switch(alt41) {
+                        case 1:
+                           MULTIPLICACAO262 = (Token)this.match(this.input, 64, FOLLOW_MULTIPLICACAO_in_mult3390);
+                           if (this.state.failed) {
+                              return retval;
+                           }
+
+                           if (this.state.backtracking == 0) {
+                              MULTIPLICACAO262_tree = (CommonTree)this.adaptor.create(MULTIPLICACAO262);
+                              root_0 = (CommonTree)this.adaptor.becomeRoot(MULTIPLICACAO262_tree, root_0);
+                           }
+                           break;
+                        case 2:
+                           DIVISAO263 = (Token)this.match(this.input, 29, FOLLOW_DIVISAO_in_mult3395);
+                           if (this.state.failed) {
+                              return retval;
+                           }
+
+                           if (this.state.backtracking == 0) {
+                              DIVISAO263_tree = (CommonTree)this.adaptor.create(DIVISAO263);
+                              root_0 = (CommonTree)this.adaptor.becomeRoot(DIVISAO263_tree, root_0);
+                           }
+                           break;
+                        case 3:
+                           DIVISAO_INT264 = (Token)this.match(this.input, 30, FOLLOW_DIVISAO_INT_in_mult3400);
+                           if (this.state.failed) {
+                              return retval;
+                           }
+
+                           if (this.state.backtracking == 0) {
+                              DIVISAO_INT264_tree = (CommonTree)this.adaptor.create(DIVISAO_INT264);
+                              root_0 = (CommonTree)this.adaptor.becomeRoot(DIVISAO_INT264_tree, root_0);
+                           }
+                           break;
+                        case 4:
+                           MOD265 = (Token)this.match(this.input, 62, FOLLOW_MOD_in_mult3405);
+                           if (this.state.failed) {
+                              return retval;
+                           }
+
+                           if (this.state.backtracking == 0) {
+                              MOD265_tree = (CommonTree)this.adaptor.create(MOD265);
+                              root_0 = (CommonTree)this.adaptor.becomeRoot(MOD265_tree, root_0);
+                           }
+                           break;
+                        case 5:
+                           MOD2266 = (Token)this.match(this.input, 63, FOLLOW_MOD2_in_mult3410);
+                           if (this.state.failed) {
+                              return retval;
+                           }
+
+                           if (this.state.backtracking == 0) {
+                              MOD2266_tree = (CommonTree)this.adaptor.create(MOD2266);
+                              root_0 = (CommonTree)this.adaptor.becomeRoot(MOD2266_tree, root_0);
+                           }
+                     }
+
+                     this.pushFollow(FOLLOW_unario_in_mult3414);
+                     unario267 = this.unario();
+                     --this.state._fsp;
+                     if (this.state.failed) {
+                        return retval;
+                     }
+
+                     if (this.state.backtracking == 0) {
+                        this.adaptor.addChild(root_0, unario267.getTree());
+                     }
                      break;
                   default:
-                     if (this.state.backtracking > 0) {
-                        this.state.failed = true;
-                        return retval;
-                     }
-
-                     NoViableAltException nvae = new NoViableAltException("", 41, 0, this.input);
-                     throw nvae;
-                  }
-
-                  switch(alt41) {
-                  case 1:
-                     MULTIPLICACAO262 = (Token)this.match(this.input, 64, FOLLOW_MULTIPLICACAO_in_mult3390);
-                     if (this.state.failed) {
-                        return retval;
-                     }
-
+                     retval.stop = this.input.LT(-1);
                      if (this.state.backtracking == 0) {
-                        MULTIPLICACAO262_tree = (CommonTree)this.adaptor.create(MULTIPLICACAO262);
-                        root_0 = (CommonTree)this.adaptor.becomeRoot((Object)MULTIPLICACAO262_tree, root_0);
-                     }
-                     break;
-                  case 2:
-                     DIVISAO263 = (Token)this.match(this.input, 29, FOLLOW_DIVISAO_in_mult3395);
-                     if (this.state.failed) {
-                        return retval;
+                        retval.tree = (CommonTree)this.adaptor.rulePostProcessing(root_0);
+                        this.adaptor.setTokenBoundaries(retval.tree, retval.start, retval.stop);
                      }
 
-                     if (this.state.backtracking == 0) {
-                        DIVISAO263_tree = (CommonTree)this.adaptor.create(DIVISAO263);
-                        root_0 = (CommonTree)this.adaptor.becomeRoot((Object)DIVISAO263_tree, root_0);
-                     }
-                     break;
-                  case 3:
-                     DIVISAO_INT264 = (Token)this.match(this.input, 30, FOLLOW_DIVISAO_INT_in_mult3400);
-                     if (this.state.failed) {
-                        return retval;
-                     }
-
-                     if (this.state.backtracking == 0) {
-                        DIVISAO_INT264_tree = (CommonTree)this.adaptor.create(DIVISAO_INT264);
-                        root_0 = (CommonTree)this.adaptor.becomeRoot((Object)DIVISAO_INT264_tree, root_0);
-                     }
-                     break;
-                  case 4:
-                     MOD265 = (Token)this.match(this.input, 62, FOLLOW_MOD_in_mult3405);
-                     if (this.state.failed) {
-                        return retval;
-                     }
-
-                     if (this.state.backtracking == 0) {
-                        MOD265_tree = (CommonTree)this.adaptor.create(MOD265);
-                        root_0 = (CommonTree)this.adaptor.becomeRoot((Object)MOD265_tree, root_0);
-                     }
-                     break;
-                  case 5:
-                     MOD2266 = (Token)this.match(this.input, 63, FOLLOW_MOD2_in_mult3410);
-                     if (this.state.failed) {
-                        return retval;
-                     }
-
-                     if (this.state.backtracking == 0) {
-                        MOD2266_tree = (CommonTree)this.adaptor.create(MOD2266);
-                        root_0 = (CommonTree)this.adaptor.becomeRoot((Object)MOD2266_tree, root_0);
-                     }
-                  }
-
-                  this.pushFollow(FOLLOW_unario_in_mult3414);
-                  unario267 = this.unario();
-                  --this.state._fsp;
-                  if (this.state.failed) {
                      return retval;
-                  }
-
-                  if (this.state.backtracking == 0) {
-                     this.adaptor.addChild(root_0, unario267.getTree());
-                  }
-                  break;
-               default:
-                  retval.stop = this.input.LT(-1);
-                  if (this.state.backtracking == 0) {
-                     retval.tree = (CommonTree)this.adaptor.rulePostProcessing(root_0);
-                     this.adaptor.setTokenBoundaries(retval.tree, retval.start, retval.stop);
-                  }
-
-                  return retval;
                }
             }
          }
@@ -6434,68 +6434,68 @@ public class CalangoGrammarParser extends Parser {
                }
 
                switch(alt44) {
-               case 1:
-                  int LA43_0 = this.input.LA(1);
-                  byte alt43;
-                  if (LA43_0 == 5) {
-                     alt43 = 1;
-                  } else {
-                     if (LA43_0 != 89) {
-                        if (this.state.backtracking > 0) {
-                           this.state.failed = true;
-                           return retval;
+                  case 1:
+                     int LA43_0 = this.input.LA(1);
+                     byte alt43;
+                     if (LA43_0 == 5) {
+                        alt43 = 1;
+                     } else {
+                        if (LA43_0 != 89) {
+                           if (this.state.backtracking > 0) {
+                              this.state.failed = true;
+                              return retval;
+                           }
+
+                           NoViableAltException nvae = new NoViableAltException("", 43, 0, this.input);
+                           throw nvae;
                         }
 
-                        NoViableAltException nvae = new NoViableAltException("", 43, 0, this.input);
-                        throw nvae;
+                        alt43 = 2;
                      }
 
-                     alt43 = 2;
-                  }
+                     switch(alt43) {
+                        case 1:
+                           ADICAO269 = (Token)this.match(this.input, 5, FOLLOW_ADICAO_in_soma3443);
+                           if (this.state.failed) {
+                              return retval;
+                           }
 
-                  switch(alt43) {
-                  case 1:
-                     ADICAO269 = (Token)this.match(this.input, 5, FOLLOW_ADICAO_in_soma3443);
+                           if (this.state.backtracking == 0) {
+                              ADICAO269_tree = (CommonTree)this.adaptor.create(ADICAO269);
+                              root_0 = (CommonTree)this.adaptor.becomeRoot(ADICAO269_tree, root_0);
+                           }
+                           break;
+                        case 2:
+                           SUBTRACAO270 = (Token)this.match(this.input, 89, FOLLOW_SUBTRACAO_in_soma3448);
+                           if (this.state.failed) {
+                              return retval;
+                           }
+
+                           if (this.state.backtracking == 0) {
+                              SUBTRACAO270_tree = (CommonTree)this.adaptor.create(SUBTRACAO270);
+                              root_0 = (CommonTree)this.adaptor.becomeRoot(SUBTRACAO270_tree, root_0);
+                           }
+                     }
+
+                     this.pushFollow(FOLLOW_mult_in_soma3452);
+                     mult271 = this.mult();
+                     --this.state._fsp;
                      if (this.state.failed) {
                         return retval;
                      }
 
                      if (this.state.backtracking == 0) {
-                        ADICAO269_tree = (CommonTree)this.adaptor.create(ADICAO269);
-                        root_0 = (CommonTree)this.adaptor.becomeRoot((Object)ADICAO269_tree, root_0);
+                        this.adaptor.addChild(root_0, mult271.getTree());
                      }
                      break;
-                  case 2:
-                     SUBTRACAO270 = (Token)this.match(this.input, 89, FOLLOW_SUBTRACAO_in_soma3448);
-                     if (this.state.failed) {
-                        return retval;
-                     }
-
+                  default:
+                     retval.stop = this.input.LT(-1);
                      if (this.state.backtracking == 0) {
-                        SUBTRACAO270_tree = (CommonTree)this.adaptor.create(SUBTRACAO270);
-                        root_0 = (CommonTree)this.adaptor.becomeRoot((Object)SUBTRACAO270_tree, root_0);
+                        retval.tree = (CommonTree)this.adaptor.rulePostProcessing(root_0);
+                        this.adaptor.setTokenBoundaries(retval.tree, retval.start, retval.stop);
                      }
-                  }
 
-                  this.pushFollow(FOLLOW_mult_in_soma3452);
-                  mult271 = this.mult();
-                  --this.state._fsp;
-                  if (this.state.failed) {
                      return retval;
-                  }
-
-                  if (this.state.backtracking == 0) {
-                     this.adaptor.addChild(root_0, mult271.getTree());
-                  }
-                  break;
-               default:
-                  retval.stop = this.input.LT(-1);
-                  if (this.state.backtracking == 0) {
-                     retval.tree = (CommonTree)this.adaptor.rulePostProcessing(root_0);
-                     this.adaptor.setTokenBoundaries(retval.tree, retval.start, retval.stop);
-                  }
-
-                  return retval;
                }
             }
          }
@@ -6546,124 +6546,124 @@ public class CalangoGrammarParser extends Parser {
                }
 
                switch(alt46) {
-               case 1:
-                  byte alt45;
-                  switch(this.input.LA(1)) {
-                  case 27:
-                     alt45 = 2;
-                     break;
-                  case 47:
-                     alt45 = 1;
-                     break;
-                  case 54:
-                     alt45 = 6;
-                     break;
-                  case 55:
-                     alt45 = 5;
-                     break;
-                  case 58:
-                     alt45 = 3;
-                     break;
-                  case 59:
-                     alt45 = 4;
+                  case 1:
+                     byte alt45;
+                     switch(this.input.LA(1)) {
+                        case 27:
+                           alt45 = 2;
+                           break;
+                        case 47:
+                           alt45 = 1;
+                           break;
+                        case 54:
+                           alt45 = 6;
+                           break;
+                        case 55:
+                           alt45 = 5;
+                           break;
+                        case 58:
+                           alt45 = 3;
+                           break;
+                        case 59:
+                           alt45 = 4;
+                           break;
+                        default:
+                           if (this.state.backtracking > 0) {
+                              this.state.failed = true;
+                              return retval;
+                           }
+
+                           NoViableAltException nvae = new NoViableAltException("", 45, 0, this.input);
+                           throw nvae;
+                     }
+
+                     switch(alt45) {
+                        case 1:
+                           IGUAL273 = (Token)this.match(this.input, 47, FOLLOW_IGUAL_in_comparacao3477);
+                           if (this.state.failed) {
+                              return retval;
+                           }
+
+                           if (this.state.backtracking == 0) {
+                              IGUAL273_tree = (CommonTree)this.adaptor.create(IGUAL273);
+                              root_0 = (CommonTree)this.adaptor.becomeRoot(IGUAL273_tree, root_0);
+                           }
+                           break;
+                        case 2:
+                           DIFERENTE274 = (Token)this.match(this.input, 27, FOLLOW_DIFERENTE_in_comparacao3482);
+                           if (this.state.failed) {
+                              return retval;
+                           }
+
+                           if (this.state.backtracking == 0) {
+                              DIFERENTE274_tree = (CommonTree)this.adaptor.create(DIFERENTE274);
+                              root_0 = (CommonTree)this.adaptor.becomeRoot(DIFERENTE274_tree, root_0);
+                           }
+                           break;
+                        case 3:
+                           MENOR275 = (Token)this.match(this.input, 58, FOLLOW_MENOR_in_comparacao3487);
+                           if (this.state.failed) {
+                              return retval;
+                           }
+
+                           if (this.state.backtracking == 0) {
+                              MENOR275_tree = (CommonTree)this.adaptor.create(MENOR275);
+                              root_0 = (CommonTree)this.adaptor.becomeRoot(MENOR275_tree, root_0);
+                           }
+                           break;
+                        case 4:
+                           MENOR_IGUAL276 = (Token)this.match(this.input, 59, FOLLOW_MENOR_IGUAL_in_comparacao3492);
+                           if (this.state.failed) {
+                              return retval;
+                           }
+
+                           if (this.state.backtracking == 0) {
+                              MENOR_IGUAL276_tree = (CommonTree)this.adaptor.create(MENOR_IGUAL276);
+                              root_0 = (CommonTree)this.adaptor.becomeRoot(MENOR_IGUAL276_tree, root_0);
+                           }
+                           break;
+                        case 5:
+                           MAIOR_IGUAL277 = (Token)this.match(this.input, 55, FOLLOW_MAIOR_IGUAL_in_comparacao3497);
+                           if (this.state.failed) {
+                              return retval;
+                           }
+
+                           if (this.state.backtracking == 0) {
+                              MAIOR_IGUAL277_tree = (CommonTree)this.adaptor.create(MAIOR_IGUAL277);
+                              root_0 = (CommonTree)this.adaptor.becomeRoot(MAIOR_IGUAL277_tree, root_0);
+                           }
+                           break;
+                        case 6:
+                           MAIOR278 = (Token)this.match(this.input, 54, FOLLOW_MAIOR_in_comparacao3502);
+                           if (this.state.failed) {
+                              return retval;
+                           }
+
+                           if (this.state.backtracking == 0) {
+                              MAIOR278_tree = (CommonTree)this.adaptor.create(MAIOR278);
+                              root_0 = (CommonTree)this.adaptor.becomeRoot(MAIOR278_tree, root_0);
+                           }
+                     }
+
+                     this.pushFollow(FOLLOW_soma_in_comparacao3506);
+                     soma279 = this.soma();
+                     --this.state._fsp;
+                     if (this.state.failed) {
+                        return retval;
+                     }
+
+                     if (this.state.backtracking == 0) {
+                        this.adaptor.addChild(root_0, soma279.getTree());
+                     }
                      break;
                   default:
-                     if (this.state.backtracking > 0) {
-                        this.state.failed = true;
-                        return retval;
-                     }
-
-                     NoViableAltException nvae = new NoViableAltException("", 45, 0, this.input);
-                     throw nvae;
-                  }
-
-                  switch(alt45) {
-                  case 1:
-                     IGUAL273 = (Token)this.match(this.input, 47, FOLLOW_IGUAL_in_comparacao3477);
-                     if (this.state.failed) {
-                        return retval;
-                     }
-
+                     retval.stop = this.input.LT(-1);
                      if (this.state.backtracking == 0) {
-                        IGUAL273_tree = (CommonTree)this.adaptor.create(IGUAL273);
-                        root_0 = (CommonTree)this.adaptor.becomeRoot((Object)IGUAL273_tree, root_0);
-                     }
-                     break;
-                  case 2:
-                     DIFERENTE274 = (Token)this.match(this.input, 27, FOLLOW_DIFERENTE_in_comparacao3482);
-                     if (this.state.failed) {
-                        return retval;
+                        retval.tree = (CommonTree)this.adaptor.rulePostProcessing(root_0);
+                        this.adaptor.setTokenBoundaries(retval.tree, retval.start, retval.stop);
                      }
 
-                     if (this.state.backtracking == 0) {
-                        DIFERENTE274_tree = (CommonTree)this.adaptor.create(DIFERENTE274);
-                        root_0 = (CommonTree)this.adaptor.becomeRoot((Object)DIFERENTE274_tree, root_0);
-                     }
-                     break;
-                  case 3:
-                     MENOR275 = (Token)this.match(this.input, 58, FOLLOW_MENOR_in_comparacao3487);
-                     if (this.state.failed) {
-                        return retval;
-                     }
-
-                     if (this.state.backtracking == 0) {
-                        MENOR275_tree = (CommonTree)this.adaptor.create(MENOR275);
-                        root_0 = (CommonTree)this.adaptor.becomeRoot((Object)MENOR275_tree, root_0);
-                     }
-                     break;
-                  case 4:
-                     MENOR_IGUAL276 = (Token)this.match(this.input, 59, FOLLOW_MENOR_IGUAL_in_comparacao3492);
-                     if (this.state.failed) {
-                        return retval;
-                     }
-
-                     if (this.state.backtracking == 0) {
-                        MENOR_IGUAL276_tree = (CommonTree)this.adaptor.create(MENOR_IGUAL276);
-                        root_0 = (CommonTree)this.adaptor.becomeRoot((Object)MENOR_IGUAL276_tree, root_0);
-                     }
-                     break;
-                  case 5:
-                     MAIOR_IGUAL277 = (Token)this.match(this.input, 55, FOLLOW_MAIOR_IGUAL_in_comparacao3497);
-                     if (this.state.failed) {
-                        return retval;
-                     }
-
-                     if (this.state.backtracking == 0) {
-                        MAIOR_IGUAL277_tree = (CommonTree)this.adaptor.create(MAIOR_IGUAL277);
-                        root_0 = (CommonTree)this.adaptor.becomeRoot((Object)MAIOR_IGUAL277_tree, root_0);
-                     }
-                     break;
-                  case 6:
-                     MAIOR278 = (Token)this.match(this.input, 54, FOLLOW_MAIOR_in_comparacao3502);
-                     if (this.state.failed) {
-                        return retval;
-                     }
-
-                     if (this.state.backtracking == 0) {
-                        MAIOR278_tree = (CommonTree)this.adaptor.create(MAIOR278);
-                        root_0 = (CommonTree)this.adaptor.becomeRoot((Object)MAIOR278_tree, root_0);
-                     }
-                  }
-
-                  this.pushFollow(FOLLOW_soma_in_comparacao3506);
-                  soma279 = this.soma();
-                  --this.state._fsp;
-                  if (this.state.failed) {
                      return retval;
-                  }
-
-                  if (this.state.backtracking == 0) {
-                     this.adaptor.addChild(root_0, soma279.getTree());
-                  }
-                  break;
-               default:
-                  retval.stop = this.input.LT(-1);
-                  if (this.state.backtracking == 0) {
-                     retval.tree = (CommonTree)this.adaptor.rulePostProcessing(root_0);
-                     this.adaptor.setTokenBoundaries(retval.tree, retval.start, retval.stop);
-                  }
-
-                  return retval;
                }
             }
          }
@@ -6706,68 +6706,68 @@ public class CalangoGrammarParser extends Parser {
                }
 
                switch(alt48) {
-               case 1:
-                  int LA47_0 = this.input.LA(1);
-                  byte alt47;
-                  if (LA47_0 == 31) {
-                     alt47 = 1;
-                  } else {
-                     if (LA47_0 != 68) {
-                        if (this.state.backtracking > 0) {
-                           this.state.failed = true;
-                           return retval;
+                  case 1:
+                     int LA47_0 = this.input.LA(1);
+                     byte alt47;
+                     if (LA47_0 == 31) {
+                        alt47 = 1;
+                     } else {
+                        if (LA47_0 != 68) {
+                           if (this.state.backtracking > 0) {
+                              this.state.failed = true;
+                              return retval;
+                           }
+
+                           NoViableAltException nvae = new NoViableAltException("", 47, 0, this.input);
+                           throw nvae;
                         }
 
-                        NoViableAltException nvae = new NoViableAltException("", 47, 0, this.input);
-                        throw nvae;
+                        alt47 = 2;
                      }
 
-                     alt47 = 2;
-                  }
+                     switch(alt47) {
+                        case 1:
+                           E281 = (Token)this.match(this.input, 31, FOLLOW_E_in_expressao3538);
+                           if (this.state.failed) {
+                              return retval;
+                           }
 
-                  switch(alt47) {
-                  case 1:
-                     E281 = (Token)this.match(this.input, 31, FOLLOW_E_in_expressao3538);
+                           if (this.state.backtracking == 0) {
+                              E281_tree = (CommonTree)this.adaptor.create(E281);
+                              root_0 = (CommonTree)this.adaptor.becomeRoot(E281_tree, root_0);
+                           }
+                           break;
+                        case 2:
+                           OU282 = (Token)this.match(this.input, 68, FOLLOW_OU_in_expressao3543);
+                           if (this.state.failed) {
+                              return retval;
+                           }
+
+                           if (this.state.backtracking == 0) {
+                              OU282_tree = (CommonTree)this.adaptor.create(OU282);
+                              root_0 = (CommonTree)this.adaptor.becomeRoot(OU282_tree, root_0);
+                           }
+                     }
+
+                     this.pushFollow(FOLLOW_comparacao_in_expressao3547);
+                     comparacao283 = this.comparacao();
+                     --this.state._fsp;
                      if (this.state.failed) {
                         return retval;
                      }
 
                      if (this.state.backtracking == 0) {
-                        E281_tree = (CommonTree)this.adaptor.create(E281);
-                        root_0 = (CommonTree)this.adaptor.becomeRoot((Object)E281_tree, root_0);
+                        this.adaptor.addChild(root_0, comparacao283.getTree());
                      }
                      break;
-                  case 2:
-                     OU282 = (Token)this.match(this.input, 68, FOLLOW_OU_in_expressao3543);
-                     if (this.state.failed) {
-                        return retval;
-                     }
-
+                  default:
+                     retval.stop = this.input.LT(-1);
                      if (this.state.backtracking == 0) {
-                        OU282_tree = (CommonTree)this.adaptor.create(OU282);
-                        root_0 = (CommonTree)this.adaptor.becomeRoot((Object)OU282_tree, root_0);
+                        retval.tree = (CommonTree)this.adaptor.rulePostProcessing(root_0);
+                        this.adaptor.setTokenBoundaries(retval.tree, retval.start, retval.stop);
                      }
-                  }
 
-                  this.pushFollow(FOLLOW_comparacao_in_expressao3547);
-                  comparacao283 = this.comparacao();
-                  --this.state._fsp;
-                  if (this.state.failed) {
                      return retval;
-                  }
-
-                  if (this.state.backtracking == 0) {
-                     this.adaptor.addChild(root_0, comparacao283.getTree());
-                  }
-                  break;
-               default:
-                  retval.stop = this.input.LT(-1);
-                  if (this.state.backtracking == 0) {
-                     retval.tree = (CommonTree)this.adaptor.rulePostProcessing(root_0);
-                     this.adaptor.setTokenBoundaries(retval.tree, retval.start, retval.stop);
-                  }
-
-                  return retval;
                }
             }
          }
@@ -6838,7 +6838,7 @@ public class CalangoGrammarParser extends Parser {
          }
 
          if (this.state.backtracking == 0) {
-            root_0 = (CommonTree)this.adaptor.becomeRoot((Object)decl_variavel285.getTree(), root_0);
+            root_0 = (CommonTree)this.adaptor.becomeRoot(decl_variavel285.getTree(), root_0);
          }
 
          char_literal286 = (Token)this.match(this.input, 104, FOLLOW_104_in_decl_variaveis3623);
@@ -6897,7 +6897,7 @@ public class CalangoGrammarParser extends Parser {
             new RewriteRuleSubtreeStream(this.adaptor, "rule retval", retval != null ? retval.tree : null);
             root_0 = (CommonTree)this.adaptor.nil();
             CommonTree root_1 = (CommonTree)this.adaptor.nil();
-            root_1 = (CommonTree)this.adaptor.becomeRoot((Object)((CommonTree)this.adaptor.create(26, (String)"DECL_VARIAVEL")), root_1);
+            root_1 = (CommonTree)this.adaptor.becomeRoot((CommonTree)this.adaptor.create(26, "DECL_VARIAVEL"), root_1);
             this.adaptor.addChild(root_1, stream_tipo_dado.nextTree());
             this.adaptor.addChild(root_1, stream_identificadores.nextTree());
             this.adaptor.addChild(root_0, root_1);
@@ -6979,88 +6979,88 @@ public class CalangoGrammarParser extends Parser {
          }
 
          switch(alt49) {
-         case 1:
-            char_literal289 = (Token)this.match(this.input, 106, FOLLOW_106_in_identificadores3693);
-            if (this.state.failed) {
-               return retval;
-            }
+            case 1:
+               char_literal289 = (Token)this.match(this.input, 106, FOLLOW_106_in_identificadores3693);
+               if (this.state.failed) {
+                  return retval;
+               }
 
-            if (this.state.backtracking == 0) {
-               stream_106.add(char_literal289);
-            }
+               if (this.state.backtracking == 0) {
+                  stream_106.add(char_literal289);
+               }
 
-            vetor = (Token)this.match(this.input, 48, FOLLOW_INTEIRO_LITERAL_in_identificadores3697);
-            if (this.state.failed) {
-               return retval;
-            }
+               vetor = (Token)this.match(this.input, 48, FOLLOW_INTEIRO_LITERAL_in_identificadores3697);
+               if (this.state.failed) {
+                  return retval;
+               }
 
-            if (this.state.backtracking == 0) {
-               stream_INTEIRO_LITERAL.add(vetor);
-            }
+               if (this.state.backtracking == 0) {
+                  stream_INTEIRO_LITERAL.add(vetor);
+               }
 
-            char_literal290 = (Token)this.match(this.input, 108, FOLLOW_108_in_identificadores3699);
-            if (this.state.failed) {
-               return retval;
-            }
+               char_literal290 = (Token)this.match(this.input, 108, FOLLOW_108_in_identificadores3699);
+               if (this.state.failed) {
+                  return retval;
+               }
 
-            if (this.state.backtracking == 0) {
-               stream_108.add(char_literal290);
-            }
-            break;
-         case 2:
-            char_literal291 = (Token)this.match(this.input, 106, FOLLOW_106_in_identificadores3705);
-            if (this.state.failed) {
-               return retval;
-            }
+               if (this.state.backtracking == 0) {
+                  stream_108.add(char_literal290);
+               }
+               break;
+            case 2:
+               char_literal291 = (Token)this.match(this.input, 106, FOLLOW_106_in_identificadores3705);
+               if (this.state.failed) {
+                  return retval;
+               }
 
-            if (this.state.backtracking == 0) {
-               stream_106.add(char_literal291);
-            }
+               if (this.state.backtracking == 0) {
+                  stream_106.add(char_literal291);
+               }
 
-            vetor = (Token)this.match(this.input, 48, FOLLOW_INTEIRO_LITERAL_in_identificadores3709);
-            if (this.state.failed) {
-               return retval;
-            }
+               vetor = (Token)this.match(this.input, 48, FOLLOW_INTEIRO_LITERAL_in_identificadores3709);
+               if (this.state.failed) {
+                  return retval;
+               }
 
-            if (this.state.backtracking == 0) {
-               stream_INTEIRO_LITERAL.add(vetor);
-            }
+               if (this.state.backtracking == 0) {
+                  stream_INTEIRO_LITERAL.add(vetor);
+               }
 
-            char_literal292 = (Token)this.match(this.input, 108, FOLLOW_108_in_identificadores3711);
-            if (this.state.failed) {
-               return retval;
-            }
+               char_literal292 = (Token)this.match(this.input, 108, FOLLOW_108_in_identificadores3711);
+               if (this.state.failed) {
+                  return retval;
+               }
 
-            if (this.state.backtracking == 0) {
-               stream_108.add(char_literal292);
-            }
+               if (this.state.backtracking == 0) {
+                  stream_108.add(char_literal292);
+               }
 
-            char_literal293 = (Token)this.match(this.input, 106, FOLLOW_106_in_identificadores3713);
-            if (this.state.failed) {
-               return retval;
-            }
+               char_literal293 = (Token)this.match(this.input, 106, FOLLOW_106_in_identificadores3713);
+               if (this.state.failed) {
+                  return retval;
+               }
 
-            if (this.state.backtracking == 0) {
-               stream_106.add(char_literal293);
-            }
+               if (this.state.backtracking == 0) {
+                  stream_106.add(char_literal293);
+               }
 
-            matriz = (Token)this.match(this.input, 48, FOLLOW_INTEIRO_LITERAL_in_identificadores3717);
-            if (this.state.failed) {
-               return retval;
-            }
+               matriz = (Token)this.match(this.input, 48, FOLLOW_INTEIRO_LITERAL_in_identificadores3717);
+               if (this.state.failed) {
+                  return retval;
+               }
 
-            if (this.state.backtracking == 0) {
-               stream_INTEIRO_LITERAL.add(matriz);
-            }
+               if (this.state.backtracking == 0) {
+                  stream_INTEIRO_LITERAL.add(matriz);
+               }
 
-            char_literal294 = (Token)this.match(this.input, 108, FOLLOW_108_in_identificadores3719);
-            if (this.state.failed) {
-               return retval;
-            }
+               char_literal294 = (Token)this.match(this.input, 108, FOLLOW_108_in_identificadores3719);
+               if (this.state.failed) {
+                  return retval;
+               }
 
-            if (this.state.backtracking == 0) {
-               stream_108.add(char_literal294);
-            }
+               if (this.state.backtracking == 0) {
+                  stream_108.add(char_literal294);
+               }
          }
 
          int alt50 = 2;
@@ -7070,60 +7070,60 @@ public class CalangoGrammarParser extends Parser {
          }
 
          switch(alt50) {
-         case 1:
-            char_literal295 = (Token)this.match(this.input, 20, FOLLOW_CONCATENACAO_in_identificadores3725);
-            if (this.state.failed) {
-               return retval;
-            }
-
-            if (this.state.backtracking == 0) {
-               stream_CONCATENACAO.add(char_literal295);
-            }
-
-            this.pushFollow(FOLLOW_identificadores_in_identificadores3727);
-            identificadores296 = this.identificadores();
-            --this.state._fsp;
-            if (this.state.failed) {
-               return retval;
-            }
-
-            if (this.state.backtracking == 0) {
-               stream_identificadores.add(identificadores296.getTree());
-            }
-         default:
-            if (this.state.backtracking == 0) {
-               retval.tree = root_0;
-               RewriteRuleTokenStream stream_vetor = new RewriteRuleTokenStream(this.adaptor, "token vetor", vetor);
-               RewriteRuleTokenStream stream_matriz = new RewriteRuleTokenStream(this.adaptor, "token matriz", matriz);
-               new RewriteRuleSubtreeStream(this.adaptor, "rule retval", retval != null ? retval.tree : null);
-               root_0 = (CommonTree)this.adaptor.nil();
-               CommonTree root_1 = (CommonTree)this.adaptor.nil();
-               root_1 = (CommonTree)this.adaptor.becomeRoot((Object)((CommonTree)this.adaptor.create(45, (String)"IDENT")), root_1);
-               this.adaptor.addChild(root_1, stream_IDENTIFICADOR.nextNode());
-               if (stream_vetor.hasNext()) {
-                  this.adaptor.addChild(root_1, stream_vetor.nextNode());
+            case 1:
+               char_literal295 = (Token)this.match(this.input, 20, FOLLOW_CONCATENACAO_in_identificadores3725);
+               if (this.state.failed) {
+                  return retval;
                }
 
-               stream_vetor.reset();
-               if (stream_matriz.hasNext()) {
-                  this.adaptor.addChild(root_1, stream_matriz.nextNode());
+               if (this.state.backtracking == 0) {
+                  stream_CONCATENACAO.add(char_literal295);
                }
 
-               stream_matriz.reset();
-               this.adaptor.addChild(root_0, root_1);
-               if (stream_identificadores.hasNext()) {
-                  this.adaptor.addChild(root_0, stream_identificadores.nextTree());
+               this.pushFollow(FOLLOW_identificadores_in_identificadores3727);
+               identificadores296 = this.identificadores();
+               --this.state._fsp;
+               if (this.state.failed) {
+                  return retval;
                }
 
-               stream_identificadores.reset();
-               retval.tree = root_0;
-            }
+               if (this.state.backtracking == 0) {
+                  stream_identificadores.add(identificadores296.getTree());
+               }
+            default:
+               if (this.state.backtracking == 0) {
+                  retval.tree = root_0;
+                  RewriteRuleTokenStream stream_vetor = new RewriteRuleTokenStream(this.adaptor, "token vetor", vetor);
+                  RewriteRuleTokenStream stream_matriz = new RewriteRuleTokenStream(this.adaptor, "token matriz", matriz);
+                  new RewriteRuleSubtreeStream(this.adaptor, "rule retval", retval != null ? retval.tree : null);
+                  root_0 = (CommonTree)this.adaptor.nil();
+                  CommonTree root_1 = (CommonTree)this.adaptor.nil();
+                  root_1 = (CommonTree)this.adaptor.becomeRoot((CommonTree)this.adaptor.create(45, "IDENT"), root_1);
+                  this.adaptor.addChild(root_1, stream_IDENTIFICADOR.nextNode());
+                  if (stream_vetor.hasNext()) {
+                     this.adaptor.addChild(root_1, stream_vetor.nextNode());
+                  }
 
-            retval.stop = this.input.LT(-1);
-            if (this.state.backtracking == 0) {
-               retval.tree = (CommonTree)this.adaptor.rulePostProcessing(root_0);
-               this.adaptor.setTokenBoundaries(retval.tree, retval.start, retval.stop);
-            }
+                  stream_vetor.reset();
+                  if (stream_matriz.hasNext()) {
+                     this.adaptor.addChild(root_1, stream_matriz.nextNode());
+                  }
+
+                  stream_matriz.reset();
+                  this.adaptor.addChild(root_0, root_1);
+                  if (stream_identificadores.hasNext()) {
+                     this.adaptor.addChild(root_0, stream_identificadores.nextTree());
+                  }
+
+                  stream_identificadores.reset();
+                  retval.tree = root_0;
+               }
+
+               retval.stop = this.input.LT(-1);
+               if (this.state.backtracking == 0) {
+                  retval.tree = (CommonTree)this.adaptor.rulePostProcessing(root_0);
+                  this.adaptor.setTokenBoundaries(retval.tree, retval.start, retval.stop);
+               }
          }
       } catch (RecognitionException var38) {
          this.reportError(var38);
@@ -7170,7 +7170,7 @@ public class CalangoGrammarParser extends Parser {
             new RewriteRuleSubtreeStream(this.adaptor, "rule retval", retval != null ? retval.tree : null);
             root_0 = (CommonTree)this.adaptor.nil();
             CommonTree root_1 = (CommonTree)this.adaptor.nil();
-            root_1 = (CommonTree)this.adaptor.becomeRoot((Object)((CommonTree)this.adaptor.create(94, (String)"TIPO_IDENTIFICADOR")), root_1);
+            root_1 = (CommonTree)this.adaptor.becomeRoot((CommonTree)this.adaptor.create(94, "TIPO_IDENTIFICADOR"), root_1);
             this.adaptor.addChild(root_1, stream_tipo_dado.nextTree());
             this.adaptor.addChild(root_1, stream_IDENTIFICADOR.nextNode());
             this.adaptor.addChild(root_0, root_1);
@@ -7221,51 +7221,51 @@ public class CalangoGrammarParser extends Parser {
                }
 
                switch(alt51) {
-               case 1:
-                  char_literal300 = (Token)this.match(this.input, 20, FOLLOW_CONCATENACAO_in_decl_parametros3824);
-                  if (this.state.failed) {
-                     return retval;
-                  }
-
-                  if (this.state.backtracking == 0) {
-                     stream_CONCATENACAO.add(char_literal300);
-                  }
-
-                  this.pushFollow(FOLLOW_decl_parametro_in_decl_parametros3826);
-                  decl_parametro301 = this.decl_parametro();
-                  --this.state._fsp;
-                  if (this.state.failed) {
-                     return retval;
-                  }
-
-                  if (this.state.backtracking == 0) {
-                     stream_decl_parametro.add(decl_parametro301.getTree());
-                  }
-                  break;
-               default:
-                  if (this.state.backtracking == 0) {
-                     retval.tree = root_0;
-                     new RewriteRuleSubtreeStream(this.adaptor, "rule retval", retval != null ? retval.tree : null);
-                     root_0 = (CommonTree)this.adaptor.nil();
-                     CommonTree root_1 = (CommonTree)this.adaptor.nil();
-                     root_1 = (CommonTree)this.adaptor.becomeRoot((Object)((CommonTree)this.adaptor.create(72, (String)"PARAMETROS")), root_1);
-
-                     while(stream_decl_parametro.hasNext()) {
-                        this.adaptor.addChild(root_1, stream_decl_parametro.nextTree());
+                  case 1:
+                     char_literal300 = (Token)this.match(this.input, 20, FOLLOW_CONCATENACAO_in_decl_parametros3824);
+                     if (this.state.failed) {
+                        return retval;
                      }
 
-                     stream_decl_parametro.reset();
-                     this.adaptor.addChild(root_0, root_1);
-                     retval.tree = root_0;
-                  }
+                     if (this.state.backtracking == 0) {
+                        stream_CONCATENACAO.add(char_literal300);
+                     }
 
-                  retval.stop = this.input.LT(-1);
-                  if (this.state.backtracking == 0) {
-                     retval.tree = (CommonTree)this.adaptor.rulePostProcessing(root_0);
-                     this.adaptor.setTokenBoundaries(retval.tree, retval.start, retval.stop);
-                  }
+                     this.pushFollow(FOLLOW_decl_parametro_in_decl_parametros3826);
+                     decl_parametro301 = this.decl_parametro();
+                     --this.state._fsp;
+                     if (this.state.failed) {
+                        return retval;
+                     }
 
-                  return retval;
+                     if (this.state.backtracking == 0) {
+                        stream_decl_parametro.add(decl_parametro301.getTree());
+                     }
+                     break;
+                  default:
+                     if (this.state.backtracking == 0) {
+                        retval.tree = root_0;
+                        new RewriteRuleSubtreeStream(this.adaptor, "rule retval", retval != null ? retval.tree : null);
+                        root_0 = (CommonTree)this.adaptor.nil();
+                        CommonTree root_1 = (CommonTree)this.adaptor.nil();
+                        root_1 = (CommonTree)this.adaptor.becomeRoot((CommonTree)this.adaptor.create(72, "PARAMETROS"), root_1);
+
+                        while(stream_decl_parametro.hasNext()) {
+                           this.adaptor.addChild(root_1, stream_decl_parametro.nextTree());
+                        }
+
+                        stream_decl_parametro.reset();
+                        this.adaptor.addChild(root_0, root_1);
+                        retval.tree = root_0;
+                     }
+
+                     retval.stop = this.input.LT(-1);
+                     if (this.state.backtracking == 0) {
+                        retval.tree = (CommonTree)this.adaptor.rulePostProcessing(root_0);
+                        this.adaptor.setTokenBoundaries(retval.tree, retval.start, retval.stop);
+                     }
+
+                     return retval;
                }
             }
          }
@@ -7331,169 +7331,169 @@ public class CalangoGrammarParser extends Parser {
             }
 
             switch(this.input.LA(3)) {
-            case 20:
-            case 102:
-               alt52 = 1;
-               break;
-            case 75:
-               alt52 = 4;
-               break;
-            case 107:
-               alt52 = 3;
-               break;
-            default:
-               if (this.state.backtracking > 0) {
-                  this.state.failed = true;
-                  return retval;
-               }
+               case 20:
+               case 102:
+                  alt52 = 1;
+                  break;
+               case 75:
+                  alt52 = 4;
+                  break;
+               case 107:
+                  alt52 = 3;
+                  break;
+               default:
+                  if (this.state.backtracking > 0) {
+                     this.state.failed = true;
+                     return retval;
+                  }
 
-               nvae = new NoViableAltException("", 52, 3, this.input);
-               throw nvae;
+                  nvae = new NoViableAltException("", 52, 3, this.input);
+                  throw nvae;
             }
          }
 
          CommonTree root_1;
          switch(alt52) {
-         case 1:
-            this.pushFollow(FOLLOW_tipo_identificador_in_decl_parametro3867);
-            tipo_identificador302 = this.tipo_identificador();
-            --this.state._fsp;
-            if (this.state.failed) {
-               return retval;
-            }
+            case 1:
+               this.pushFollow(FOLLOW_tipo_identificador_in_decl_parametro3867);
+               tipo_identificador302 = this.tipo_identificador();
+               --this.state._fsp;
+               if (this.state.failed) {
+                  return retval;
+               }
 
-            if (this.state.backtracking == 0) {
-               stream_tipo_identificador.add(tipo_identificador302.getTree());
-            }
+               if (this.state.backtracking == 0) {
+                  stream_tipo_identificador.add(tipo_identificador302.getTree());
+               }
 
-            if (this.state.backtracking == 0) {
-               retval.tree = root_0;
-               new RewriteRuleSubtreeStream(this.adaptor, "rule retval", retval != null ? retval.tree : null);
-               root_0 = (CommonTree)this.adaptor.nil();
-               root_1 = (CommonTree)this.adaptor.nil();
-               root_1 = (CommonTree)this.adaptor.becomeRoot((Object)((CommonTree)this.adaptor.create(71, (String)"PARAMETRO")), root_1);
-               this.adaptor.addChild(root_1, stream_tipo_identificador.nextTree());
-               this.adaptor.addChild(root_0, root_1);
-               retval.tree = root_0;
-            }
-            break;
-         case 2:
-            REFERENCIA303 = (Token)this.match(this.input, 80, FOLLOW_REFERENCIA_in_decl_parametro3883);
-            if (this.state.failed) {
-               return retval;
-            }
+               if (this.state.backtracking == 0) {
+                  retval.tree = root_0;
+                  new RewriteRuleSubtreeStream(this.adaptor, "rule retval", retval != null ? retval.tree : null);
+                  root_0 = (CommonTree)this.adaptor.nil();
+                  root_1 = (CommonTree)this.adaptor.nil();
+                  root_1 = (CommonTree)this.adaptor.becomeRoot((CommonTree)this.adaptor.create(71, "PARAMETRO"), root_1);
+                  this.adaptor.addChild(root_1, stream_tipo_identificador.nextTree());
+                  this.adaptor.addChild(root_0, root_1);
+                  retval.tree = root_0;
+               }
+               break;
+            case 2:
+               REFERENCIA303 = (Token)this.match(this.input, 80, FOLLOW_REFERENCIA_in_decl_parametro3883);
+               if (this.state.failed) {
+                  return retval;
+               }
 
-            if (this.state.backtracking == 0) {
-               stream_REFERENCIA.add(REFERENCIA303);
-            }
+               if (this.state.backtracking == 0) {
+                  stream_REFERENCIA.add(REFERENCIA303);
+               }
 
-            this.pushFollow(FOLLOW_tipo_identificador_in_decl_parametro3885);
-            tipo_identificador304 = this.tipo_identificador();
-            --this.state._fsp;
-            if (this.state.failed) {
-               return retval;
-            }
+               this.pushFollow(FOLLOW_tipo_identificador_in_decl_parametro3885);
+               tipo_identificador304 = this.tipo_identificador();
+               --this.state._fsp;
+               if (this.state.failed) {
+                  return retval;
+               }
 
-            if (this.state.backtracking == 0) {
-               stream_tipo_identificador.add(tipo_identificador304.getTree());
-            }
+               if (this.state.backtracking == 0) {
+                  stream_tipo_identificador.add(tipo_identificador304.getTree());
+               }
 
-            if (this.state.backtracking == 0) {
-               retval.tree = root_0;
-               new RewriteRuleSubtreeStream(this.adaptor, "rule retval", retval != null ? retval.tree : null);
-               root_0 = (CommonTree)this.adaptor.nil();
-               root_1 = (CommonTree)this.adaptor.nil();
-               root_1 = (CommonTree)this.adaptor.becomeRoot((Object)((CommonTree)this.adaptor.create(71, (String)"PARAMETRO")), root_1);
-               this.adaptor.addChild(root_1, stream_tipo_identificador.nextTree());
-               this.adaptor.addChild(root_1, stream_REFERENCIA.nextNode());
-               this.adaptor.addChild(root_0, root_1);
-               retval.tree = root_0;
-            }
-            break;
-         case 3:
-            this.pushFollow(FOLLOW_tipo_identificador_in_decl_parametro3903);
-            tipo_identificador305 = this.tipo_identificador();
-            --this.state._fsp;
-            if (this.state.failed) {
-               return retval;
-            }
+               if (this.state.backtracking == 0) {
+                  retval.tree = root_0;
+                  new RewriteRuleSubtreeStream(this.adaptor, "rule retval", retval != null ? retval.tree : null);
+                  root_0 = (CommonTree)this.adaptor.nil();
+                  root_1 = (CommonTree)this.adaptor.nil();
+                  root_1 = (CommonTree)this.adaptor.becomeRoot((CommonTree)this.adaptor.create(71, "PARAMETRO"), root_1);
+                  this.adaptor.addChild(root_1, stream_tipo_identificador.nextTree());
+                  this.adaptor.addChild(root_1, stream_REFERENCIA.nextNode());
+                  this.adaptor.addChild(root_0, root_1);
+                  retval.tree = root_0;
+               }
+               break;
+            case 3:
+               this.pushFollow(FOLLOW_tipo_identificador_in_decl_parametro3903);
+               tipo_identificador305 = this.tipo_identificador();
+               --this.state._fsp;
+               if (this.state.failed) {
+                  return retval;
+               }
 
-            if (this.state.backtracking == 0) {
-               stream_tipo_identificador.add(tipo_identificador305.getTree());
-            }
+               if (this.state.backtracking == 0) {
+                  stream_tipo_identificador.add(tipo_identificador305.getTree());
+               }
 
-            string_literal306 = (Token)this.match(this.input, 107, FOLLOW_107_in_decl_parametro3905);
-            if (this.state.failed) {
-               return retval;
-            }
+               string_literal306 = (Token)this.match(this.input, 107, FOLLOW_107_in_decl_parametro3905);
+               if (this.state.failed) {
+                  return retval;
+               }
 
-            if (this.state.backtracking == 0) {
-               stream_107.add(string_literal306);
-            }
+               if (this.state.backtracking == 0) {
+                  stream_107.add(string_literal306);
+               }
 
-            INTEIRO_LITERAL307 = (Token)this.match(this.input, 48, FOLLOW_INTEIRO_LITERAL_in_decl_parametro3907);
-            if (this.state.failed) {
-               return retval;
-            }
+               INTEIRO_LITERAL307 = (Token)this.match(this.input, 48, FOLLOW_INTEIRO_LITERAL_in_decl_parametro3907);
+               if (this.state.failed) {
+                  return retval;
+               }
 
-            if (this.state.backtracking == 0) {
-               stream_INTEIRO_LITERAL.add(INTEIRO_LITERAL307);
-            }
+               if (this.state.backtracking == 0) {
+                  stream_INTEIRO_LITERAL.add(INTEIRO_LITERAL307);
+               }
 
-            char_literal308 = (Token)this.match(this.input, 108, FOLLOW_108_in_decl_parametro3909);
-            if (this.state.failed) {
-               return retval;
-            }
+               char_literal308 = (Token)this.match(this.input, 108, FOLLOW_108_in_decl_parametro3909);
+               if (this.state.failed) {
+                  return retval;
+               }
 
-            if (this.state.backtracking == 0) {
-               stream_108.add(char_literal308);
-            }
+               if (this.state.backtracking == 0) {
+                  stream_108.add(char_literal308);
+               }
 
-            if (this.state.backtracking == 0) {
-               retval.tree = root_0;
-               new RewriteRuleSubtreeStream(this.adaptor, "rule retval", retval != null ? retval.tree : null);
-               root_0 = (CommonTree)this.adaptor.nil();
-               root_1 = (CommonTree)this.adaptor.nil();
-               root_1 = (CommonTree)this.adaptor.becomeRoot((Object)((CommonTree)this.adaptor.create(71, (String)"PARAMETRO")), root_1);
-               this.adaptor.addChild(root_1, stream_tipo_identificador.nextTree());
-               this.adaptor.addChild(root_1, (CommonTree)this.adaptor.create(74, (String)"PARAM_MATRIZ"));
-               this.adaptor.addChild(root_1, stream_INTEIRO_LITERAL.nextNode());
-               this.adaptor.addChild(root_0, root_1);
-               retval.tree = root_0;
-            }
-            break;
-         case 4:
-            this.pushFollow(FOLLOW_tipo_identificador_in_decl_parametro3929);
-            tipo_identificador309 = this.tipo_identificador();
-            --this.state._fsp;
-            if (this.state.failed) {
-               return retval;
-            }
+               if (this.state.backtracking == 0) {
+                  retval.tree = root_0;
+                  new RewriteRuleSubtreeStream(this.adaptor, "rule retval", retval != null ? retval.tree : null);
+                  root_0 = (CommonTree)this.adaptor.nil();
+                  root_1 = (CommonTree)this.adaptor.nil();
+                  root_1 = (CommonTree)this.adaptor.becomeRoot((CommonTree)this.adaptor.create(71, "PARAMETRO"), root_1);
+                  this.adaptor.addChild(root_1, stream_tipo_identificador.nextTree());
+                  this.adaptor.addChild(root_1, (CommonTree)this.adaptor.create(74, "PARAM_MATRIZ"));
+                  this.adaptor.addChild(root_1, stream_INTEIRO_LITERAL.nextNode());
+                  this.adaptor.addChild(root_0, root_1);
+                  retval.tree = root_0;
+               }
+               break;
+            case 4:
+               this.pushFollow(FOLLOW_tipo_identificador_in_decl_parametro3929);
+               tipo_identificador309 = this.tipo_identificador();
+               --this.state._fsp;
+               if (this.state.failed) {
+                  return retval;
+               }
 
-            if (this.state.backtracking == 0) {
-               stream_tipo_identificador.add(tipo_identificador309.getTree());
-            }
+               if (this.state.backtracking == 0) {
+                  stream_tipo_identificador.add(tipo_identificador309.getTree());
+               }
 
-            string_literal310 = (Token)this.match(this.input, 75, FOLLOW_PARAM_VETOR_in_decl_parametro3931);
-            if (this.state.failed) {
-               return retval;
-            }
+               string_literal310 = (Token)this.match(this.input, 75, FOLLOW_PARAM_VETOR_in_decl_parametro3931);
+               if (this.state.failed) {
+                  return retval;
+               }
 
-            if (this.state.backtracking == 0) {
-               stream_PARAM_VETOR.add(string_literal310);
-            }
+               if (this.state.backtracking == 0) {
+                  stream_PARAM_VETOR.add(string_literal310);
+               }
 
-            if (this.state.backtracking == 0) {
-               retval.tree = root_0;
-               new RewriteRuleSubtreeStream(this.adaptor, "rule retval", retval != null ? retval.tree : null);
-               root_0 = (CommonTree)this.adaptor.nil();
-               root_1 = (CommonTree)this.adaptor.nil();
-               root_1 = (CommonTree)this.adaptor.becomeRoot((Object)((CommonTree)this.adaptor.create(71, (String)"PARAMETRO")), root_1);
-               this.adaptor.addChild(root_1, stream_tipo_identificador.nextTree());
-               this.adaptor.addChild(root_1, (CommonTree)this.adaptor.create(75, (String)"PARAM_VETOR"));
-               this.adaptor.addChild(root_0, root_1);
-               retval.tree = root_0;
-            }
+               if (this.state.backtracking == 0) {
+                  retval.tree = root_0;
+                  new RewriteRuleSubtreeStream(this.adaptor, "rule retval", retval != null ? retval.tree : null);
+                  root_0 = (CommonTree)this.adaptor.nil();
+                  root_1 = (CommonTree)this.adaptor.nil();
+                  root_1 = (CommonTree)this.adaptor.becomeRoot((CommonTree)this.adaptor.create(71, "PARAMETRO"), root_1);
+                  this.adaptor.addChild(root_1, stream_tipo_identificador.nextTree());
+                  this.adaptor.addChild(root_1, (CommonTree)this.adaptor.create(75, "PARAM_VETOR"));
+                  this.adaptor.addChild(root_0, root_1);
+                  retval.tree = root_0;
+               }
          }
 
          retval.stop = this.input.LT(-1);
@@ -7540,51 +7540,51 @@ public class CalangoGrammarParser extends Parser {
                }
 
                switch(alt53) {
-               case 1:
-                  char_literal312 = (Token)this.match(this.input, 20, FOLLOW_CONCATENACAO_in_parametros_chamada3968);
-                  if (this.state.failed) {
-                     return retval;
-                  }
-
-                  if (this.state.backtracking == 0) {
-                     stream_CONCATENACAO.add(char_literal312);
-                  }
-
-                  this.pushFollow(FOLLOW_expressao_in_parametros_chamada3970);
-                  expressao313 = this.expressao();
-                  --this.state._fsp;
-                  if (this.state.failed) {
-                     return retval;
-                  }
-
-                  if (this.state.backtracking == 0) {
-                     stream_expressao.add(expressao313.getTree());
-                  }
-                  break;
-               default:
-                  if (this.state.backtracking == 0) {
-                     retval.tree = root_0;
-                     new RewriteRuleSubtreeStream(this.adaptor, "rule retval", retval != null ? retval.tree : null);
-                     root_0 = (CommonTree)this.adaptor.nil();
-                     CommonTree root_1 = (CommonTree)this.adaptor.nil();
-                     root_1 = (CommonTree)this.adaptor.becomeRoot((Object)((CommonTree)this.adaptor.create(73, (String)"PARAMETROS_CHAMADA")), root_1);
-
-                     while(stream_expressao.hasNext()) {
-                        this.adaptor.addChild(root_1, stream_expressao.nextTree());
+                  case 1:
+                     char_literal312 = (Token)this.match(this.input, 20, FOLLOW_CONCATENACAO_in_parametros_chamada3968);
+                     if (this.state.failed) {
+                        return retval;
                      }
 
-                     stream_expressao.reset();
-                     this.adaptor.addChild(root_0, root_1);
-                     retval.tree = root_0;
-                  }
+                     if (this.state.backtracking == 0) {
+                        stream_CONCATENACAO.add(char_literal312);
+                     }
 
-                  retval.stop = this.input.LT(-1);
-                  if (this.state.backtracking == 0) {
-                     retval.tree = (CommonTree)this.adaptor.rulePostProcessing(root_0);
-                     this.adaptor.setTokenBoundaries(retval.tree, retval.start, retval.stop);
-                  }
+                     this.pushFollow(FOLLOW_expressao_in_parametros_chamada3970);
+                     expressao313 = this.expressao();
+                     --this.state._fsp;
+                     if (this.state.failed) {
+                        return retval;
+                     }
 
-                  return retval;
+                     if (this.state.backtracking == 0) {
+                        stream_expressao.add(expressao313.getTree());
+                     }
+                     break;
+                  default:
+                     if (this.state.backtracking == 0) {
+                        retval.tree = root_0;
+                        new RewriteRuleSubtreeStream(this.adaptor, "rule retval", retval != null ? retval.tree : null);
+                        root_0 = (CommonTree)this.adaptor.nil();
+                        CommonTree root_1 = (CommonTree)this.adaptor.nil();
+                        root_1 = (CommonTree)this.adaptor.becomeRoot((CommonTree)this.adaptor.create(73, "PARAMETROS_CHAMADA"), root_1);
+
+                        while(stream_expressao.hasNext()) {
+                           this.adaptor.addChild(root_1, stream_expressao.nextTree());
+                        }
+
+                        stream_expressao.reset();
+                        this.adaptor.addChild(root_0, root_1);
+                        retval.tree = root_0;
+                     }
+
+                     retval.stop = this.input.LT(-1);
+                     if (this.state.backtracking == 0) {
+                        retval.tree = (CommonTree)this.adaptor.rulePostProcessing(root_0);
+                        this.adaptor.setTokenBoundaries(retval.tree, retval.start, retval.stop);
+                     }
+
+                     return retval;
                }
             }
          }
@@ -7616,30 +7616,30 @@ public class CalangoGrammarParser extends Parser {
                      }
 
                      switch(alt54) {
-                     case 1:
-                        this.pushFollow(FOLLOW_mult_statements_in_synpred1_CalangoGrammar1328);
-                        this.mult_statements();
-                        --this.state._fsp;
-                        if (this.state.failed) {
-                           return;
-                        }
-                     default:
-                        int alt55 = 2;
-                        int LA55_0 = this.input.LA(1);
-                        if (LA55_0 >= 136 && LA55_0 <= 137) {
-                           alt55 = 1;
-                        }
-
-                        switch(alt55) {
                         case 1:
-                           this.pushFollow(FOLLOW_senaoStm_in_synpred1_CalangoGrammar1331);
-                           this.senaoStm();
+                           this.pushFollow(FOLLOW_mult_statements_in_synpred1_CalangoGrammar1328);
+                           this.mult_statements();
                            --this.state._fsp;
                            if (this.state.failed) {
                               return;
                            }
                         default:
-                        }
+                           int alt55 = 2;
+                           int LA55_0 = this.input.LA(1);
+                           if (LA55_0 >= 136 && LA55_0 <= 137) {
+                              alt55 = 1;
+                           }
+
+                           switch(alt55) {
+                              case 1:
+                                 this.pushFollow(FOLLOW_senaoStm_in_synpred1_CalangoGrammar1331);
+                                 this.senaoStm();
+                                 --this.state._fsp;
+                                 if (this.state.failed) {
+                                    return;
+                                 }
+                              default:
+                           }
                      }
                   }
                }
@@ -8140,3 +8140,4 @@ public class CalangoGrammarParser extends Parser {
       }
    }
 }
+

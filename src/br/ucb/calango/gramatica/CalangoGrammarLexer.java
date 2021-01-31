@@ -161,7 +161,7 @@ public class CalangoGrammarLexer extends Lexer {
    static final String DFA10_maxS = "\u0001}\u0001\uffff\u0001o\u0001\uffff\u0001=\u0001/\u0001\uffff\u0001z\u0001u\u0001=\u0001n\u0001o\u0002=\u0001o\u0002\uffff\u0001a\u0001u\u0001r\u0001]\u0002e\u0001\uffff\u0001e\u0005\uffff\u0001t\u0001e\u0004\uffff\u0001e\u00019\u0002\uffff\u0001s\u0001p\u0005\uffff\u0001t\u0001c\u0001p\u0001\uffff\u0001l\u0001m\u0001n\u0002\uffff\u0001t\u0001i\u0001m\u0001g\u0004\uffff\u0001d\u0001i\u0001n\u0001o\u0001z\u0001s\u0001o\u0001z\u0001[\u0001\uffff\u0001t\u0001i\u0001z\u0001x\u0001m\u0001s\u0001g\u0001c\u0001e\u0001z\u0001r\u0002\uffff\u0001o\u0001a\u0001p\u0001v\u0001i\u0001u\u0001a\u0001r\u0001z\u0001a\u0001s\u0001S\u0001c\u0001e\u0001a\u0001p\u0001i\u0001z\u0002u\u0001z\u0001r\u0001\uffff\u0001a\u0001s\u0001c\u0001n\u0001\uffff\u0001]\u0001\uffff\u0001z\u0001o\u0001l\u0001z\u0001a\u0001\uffff\u0001t\u0001a\u0001z\u0001a\u0001o\u0001i\u0001z\u0001\uffff\u0001d\u0001z\u0001c\u0001a\u0001T\u0002a\u0001o\u0001l\u0001e\u0001\uffff\u0001z\u0001o\u0001u\u0001r\u0001s\u0001e\u0001a\u0001r\u0001z\u0001a\u0001c\u0001\uffff\u0002s\u0001\uffff\u0001o\u0001z\u0001o\u0001e\u0001c\u0003\uffff\u0001r\u0001z\u0001Q\u0002o\u0001n\u0001\uffff\u0001t\u0001r\u0001i\u0001\uffff\u0001a\u0001\uffff\u0001t\u0001r\u0001a\u0001e\u0001z\u0001n\u0001z\u0001h\u0001v\u0001\uffff\u0001z\u0001n\u0001o\u0001r\u0001q\u0001c\u0001z\u0001o\u0002r\u0001a\u0001\uffff\u0001T\u0001o\u0002c\u0001C\u0001\uffff\u0001z\u0001d\u0001i\u0001n\u0001\uffff\u0001u\u0002z\u0001h\u0001o\u0001i\u0001C\u0001d\u0001e\u0001a\u0001r\u0001x\u0001\uffff\u0001t\u0001\uffff\u0002a\u0001\uffff\u0002c\u0001n\u0001a\u0001u\u0001o\u0001\uffff\u0001z\u0002o\u0001r\u0001e\u0001z\u0002u\u0001a\u0001\uffff\u0001i\u0001p\u0002a\u0001e\u0002\uffff\u0001o\u0001r\u0001t\u0001a\u0001e\u0001r\u0001T\u0001a\u0001t\u0001o\u0002z\u0001a\u0001e\u0001c\u0001z\u0001a\u0001l\u0001\uffff\u0001m\u0001z\u0001a\u0001l\u0001\uffff\u0002l\u0001s\u0001m\u0001a\u0001z\u0001d\u0001z\u0001T\u0001i\u0001m\u0001r\u0001i\u0001z\u0001e\u0001c\u0001o\u0001z\u0001\uffff\u0001z\u0001\uffff\u0001o\u0001d\u0001i\u0001\uffff\u0001n\u0001h\u0001p\u0001\uffff\u0001c\u0001a\u0003o\u0001e\u0001l\u0001\uffff\u0001r\u0001\uffff\u0001e\u0002o\u0001a\u0001r\u0001s\u0001e\u0001\uffff\u0001x\u0001t\u0001C\u0002\uffff\u0001z\u0001i\u0001p\u0001t\u0002a\u0001t\u0004z\u0001n\u0001z\u0001a\u0001x\u0002z\u0001c\u0001o\u0001c\u0001x\u0001t\u0001T\u0001a\u0001\uffff\u0001m\u0001a\u0001o\u0002z\u0001e\u0001\uffff\u0001a\u0001\uffff\u0001a\u0002\uffff\u0001t\u0001\uffff\u0001d\u0001t\u0002\uffff\u0001t\u0001z\u0001i\u0001t\u0001o\u0001e\u0001r\u0001e\u0001l\u0001z\u0002\uffff\u0003r\u0001o\u0001a\u0001o\u0001e\u0001i\u0001o\u0001z\u0001x\u0001a\u0001n\u0001z\u0001\uffff\u0001z\u0002a\u0003z\u0001r\u0002z\u0001\uffff\u0001t\u0001c\u0001t\u0002\uffff\u0002c\u0003\uffff\u0001z\u0002\uffff\u0001o\u0001t\u0001o\u0002t\u0001\uffff\u0003z\u0002e\u0003\uffff\u0002r\u0002z\u0002\uffff";
    static final String DFA10_acceptS = "\u0001\uffff\u0001\u0001\u0001\uffff\u0001\u0003\u0002\uffff\u0001\u0006\b\uffff\u0001\u001a\u0001\u001b\u0006\uffff\u0001'\u0001\uffff\u0001-\u0001.\u0001/\u00010\u00014\u0002\uffff\u0001S\u0001T\u0001U\u0001V\u0002\uffff\u0001Z\u0001[\u0002\uffff\u0001\u0004\u0001\u001d\u0001\\\u0001]\u0001\u0005\u0003\uffff\u0001\u0007\u0003\uffff\u0001\u0010\u00011\u0004\uffff\u0001\u0016\u0001\u0015\u0001\u0018\u0001\u0017\t\uffff\u00012\u000b\uffff\u0001X\u0001Y\u0016\uffff\u0001\u001e\u0004\uffff\u0001M\u0001\uffff\u0001\"\u0005\uffff\u0001&\u0007\uffff\u0001@\n\uffff\u0001B\u000b\uffff\u0001\u0019\u0002\uffff\u0001\u001c\u0005\uffff\u0001!\u00013\u0001$\u0006\uffff\u00015\u0003\uffff\u00019\u0001\uffff\u0001\u0002\t\uffff\u0001\f\u000b\uffff\u0001\u0012\u0005\uffff\u0001 \u0004\uffff\u0001+\f\uffff\u0001?\u0001\uffff\u0001A\u0002\uffff\u0001W\u0006\uffff\u0001G\t\uffff\u0001L\u0005\uffff\u0001P\u0001,\u0012\uffff\u0001\u000f\u0004\uffff\u0001*\u0012\uffff\u0001\t\u0001\uffff\u0001\n\u0003\uffff\u0001E\u0003\uffff\u0001)\u0007\uffff\u0001%\u0001\uffff\u0001Q\u0007\uffff\u0001(\u0003\uffff\u0001\b\u0001\u000b\u0018\uffff\u0001\r\u0006\uffff\u0001\u0014\u0001\uffff\u0001H\u0001\uffff\u0001J\u0001\u001f\u0001\uffff\u0001N\u0002\uffff\u00016\u00017\n\uffff\u0001D\u0001\u0011\u000e\uffff\u0001C\t\uffff\u0001<\u0003\uffff\u0001F\u0001\u0013\u0002\uffff\u0001#\u0001O\u0001R\u0001\uffff\u0001:\u0001;\u0005\uffff\u00018\u0005\uffff\u0001=\u0001>\u0001\u000e\u0004\uffff\u0001I\u0001K";
    static final String DFA10_specialS = "ƺ\uffff}>";
-   static final String[] DFA10_transitionS = new String[]{"\u0002'\u0001\uffff\u0002'\u0012\uffff\u0001'\u0001\u0004\u0001\"\u0002\uffff\u0001\u000f\u0001\uffff\u0001#\u0001\u0019\u0001\u001a\u0001\u0010\u0001\u0001\u0001\u0003\u0001\u0017\u0001\uffff\u0001\u0005\n%\u0001\u001b\u0001\u001c\u0001\r\u0001\t\u0001\f\u0002\uffff\u001a&\u0001\u0014\u0001\u0006\u0001\u001d\u0003\uffff\u0001\u001e\u0001&\u0001\u0002\u0001\u001f\u0001\u0007\u0001\b\u0002&\u0001\n\u0002&\u0001\u000b\u0001\u000e\u0001\u0011\u0001\u0012\u0001\u0013\u0001&\u0001\u0015\u0001\u0016\u0001\u0018\u0001&\u0001$\u0004&\u0001 \u0001\uffff\u0001!", "", "\u0001(\r\uffff\u0001)", "", "\u0001*", "\u0001-\u0004\uffff\u0001,", "", "\n&\u0007\uffff\u001a&\u0004\uffff\u0001&\u0001\uffff\r&\u0001/\u0004&\u00010\u0004&\u00011\u0002&", "\u00013\u0007\uffff\u00014\u000b\uffff\u00015", "\u00016", "\u00018", "\u00019\u0003\uffff\u0001:\u0005\uffff\u0001;", "\u0001<", "\u0001>", "\u0001A\u0007\uffff\u0001B\u0005\uffff\u0001@", "", "", "\u0001C", "\u0001D", "\u0001E\u0007\uffff\u0001G\b\uffff\u0001F", "\u0001H", "\u0001K\u0003\uffff\u0001J", "\u0001L", "", "\u0001N\u0003\uffff\u0001M", "", "", "", "", "", "\u0001O\t\uffff\u0001P\u0006\uffff\u0001Q\u0001R", "\u0001S", "", "", "", "", "\u0001T", "\u0001V\u0001\uffff\n%", "", "", "\u0001X\u0001W", "\u0001Y\u0001Z\u0001\uffff\u0001[", "", "", "", "", "", "\u0001\\\u0002\uffff\u0001]", "\u0001^", "\u0001_", "", "\u0001`\b\uffff\u0001a", "\u0001b", "\u0001c", "", "", "\u0001d", "\u0001e", "\u0001f", "\u0001g", "", "", "", "", "\u0001h", "\u0001i", "\u0001j", "\u0001k", "\n&\u0007\uffff\u001a&\u0004\uffff\u0001&\u0001\uffff\u0013&\u0001l\u0006&", "\u0001n\u0001o", "\u0001q\u0005\uffff\u0001p", "\n&\u0007\uffff\u001a&\u0004\uffff\u0001&\u0001\uffff\u001a&", "\u0001s", "", "\u0001w\u0004\uffff\u0001u\r\uffff\u0001v", "\u0001x", "\n&\u0007\uffff\u001a&\u0004\uffff\u0001&\u0001\uffff\r&\u0001y\f&", "\u0001{", "\u0001|", "\u0001}", "\u0001~\u0001\uffff\u0001\u007f", "\u0001\u0080", "\u0001\u0081", "\n&\u0007\uffff\u001a&\u0004\uffff\u0001&\u0001\uffff\u001a&", "\u0001\u0083", "", "", "\u0001\u0084", "\u0001\u0085", "\u0001\u0086", "\u0001\u0087", "\u0001\u0088", "\u0001\u0089", "\u0001\u008a", "\u0001\u008b\u0002\uffff\u0001\u008c", "\n&\u0007\uffff\u001a&\u0004\uffff\u0001&\u0001\uffff\u001a&", "\u0001\u008e", "\u0001\u008f", "\u0001\u0092\u0001\u0090\t\uffff\u0001\u0091\u0002\uffff\u0001\u0093", "\u0001\u0094", "\u0001\u0095", "\u0001\u0096", "\u0001\u0097", "\u0001\u0098", "\n&\u0007\uffff\u001a&\u0004\uffff\u0001&\u0001\uffff\u001a&", "\u0001\u009a", "\u0001\u009b", "\n&\u0007\uffff\u001a&\u0004\uffff\u0001&\u0001\uffff\u001a&", "\u0001\u009d", "", "\u0001\u009e", "\u0001\u009f", "\u0001 ", "\u0001¡", "", "\u0001¢", "", "\n&\u0007\uffff\u001a&\u0004\uffff\u0001&\u0001\uffff\u001a&", "\u0001¥", "\u0001¦", "\u0001§", "\u0001¨", "", "\u0001©", "\u0001ª", "\n&\u0007\uffff\u001a&\u0004\uffff\u0001&\u0001\uffff\u001a&", "\u0001¬", "\u0001\u00ad", "\u0001®", "\n&\u0007\uffff\u001a&\u0004\uffff\u0001&\u0001\uffff\u001a&", "", "\u0001°", "\n&\u0007\uffff\u001a&\u0004\uffff\u0001&\u0001\uffff\u001a&", "\u0001²", "\u0001³", "\u0001´\u0010\uffff\u0001µ", "\u0001¶", "\u0001·", "\u0001¸", "\u0001¹", "\u0001º", "", "\n&\u0007\uffff\u001a&\u0004\uffff\u0001&\u0001\uffff\u001a&", "\u0001¼", "\u0001½", "\u0001¿\u0010\uffff\u0001¾", "\u0001À\u0004\uffff\u0001Á", "\u0001Â", "\u0001Ã", "\u0001Å\b\uffff\u0001Ä", "\n&\u0007\uffff\u0002&\u0001Æ\u0017&\u0004\uffff\u0001&\u0001\uffff\u001a&", "\u0001È", "\u0001É", "", "\u0001Ê", "\u0001Ë", "", "\u0001Ì", "\n&\u0007\uffff\u001a&\u0004\uffff\u0001&\u0001\uffff\u001a&", "\u0001Î", "\u0001Ï", "\u0001Ð", "", "", "", "\u0001Ñ", "\n&\u0007\uffff\u001a&\u0004\uffff\u0001&\u0001\uffff\u001a&", "\u0001Ó", "\u0001Ô", "\u0001Õ", "\u0001Ö", "", "\u0001×", "\u0001Ø", "\u0001Ù", "", "\u0001Ú", "", "\u0001Û", "\u0001Ü", "\u0001Ý", "\u0001Þ", "\n&\u0007\uffff\u001a&\u0004\uffff\u0001&\u0001\uffff\u001a&", "\u0001à", "\n&\u0007\uffff\u001a&\u0004\uffff\u0001&\u0001\uffff\u001a&", "\u0001â", "\u0001ã", "", "\n&\u0007\uffff\u001a&\u0004\uffff\u0001&\u0001\uffff\u001a&", "\u0001å", "\u0001ç\u0005\uffff\u0001æ", "\u0001è", "\u0001é", "\u0001ê", "\n&\u0007\uffff\u001a&\u0004\uffff\u0001&\u0001\uffff\u001a&", "\u0001ì", "\u0001í", "\u0001î", "\u0001ï", "", "\u0001ð", "\u0001ñ", "\u0001ò", "\u0001ó", "\u0001ô", "", "\n&\u0007\uffff\u001a&\u0004\uffff\u0001&\u0001\uffff\u001a&", "\u0001ö", "\u0001÷", "\u0001ø", "", "\u0001ù", "\n&\u0007\uffff\u0012&\u0001ú\u0007&\u0004\uffff\u0001&\u0001\uffff\u001a&", "\n&\u0007\uffff\u001a&\u0004\uffff\u0001&\u0001\uffff\u001a&", "\u0001ý", "\u0001þ", "\u0001ÿ", "\u0001Ā", "\u0001ā", "\u0001Ă", "\u0001ă", "\u0001Ą", "\u0001ą", "", "\u0001Ć", "", "\u0001ć", "\u0001Ĉ", "", "\u0001ĉ", "\u0001Ċ", "\u0001ċ", "\u0001Č", "\u0001č", "\u0001Ď", "", "\n&\u0007\uffff\u001a&\u0004\uffff\u0001&\u0001\uffff\u001a&", "\u0001Đ", "\u0001đ", "\u0001Ē", "\u0001ē", "\n&\u0007\uffff\u001a&\u0004\uffff\u0001&\u0001\uffff\u001a&", "\u0001ĕ", "\u0001Ė", "\u0001ė", "", "\u0001Ę", "\u0001ę", "\u0001Ě", "\u0001ě", "\u0001Ĝ", "", "", "\u0001ĝ", "\u0001Ğ", "\u0001ğ", "\u0001Ġ", "\u0001ġ", "\u0001Ģ", "\u0001ģ", "\u0001Ĥ", "\u0001ĥ", "\u0001Ħ", "\n&\u0007\uffff\u001a&\u0004\uffff\u0001&\u0001\uffff\u001a&", "\n&\u0007\uffff\u001a&\u0004\uffff\u0001&\u0001\uffff\u000b&\u0001Ĩ\u000e&", "\u0001Ī", "\u0001ī", "\u0001Ĭ", "\n&\u0007\uffff\u001a&\u0004\uffff\u0001&\u0001\uffff\u001a&", "\u0001Į", "\u0001į", "", "\u0001İ", "\n&\u0007\uffff\u001a&\u0004\uffff\u0001&\u0001\uffff\u001a&", "\u0001Ĳ", "\u0001ĳ", "", "\u0001Ĵ", "\u0001ĵ", "\u0001Ķ", "\u0001ķ", "\u0001ĸ", "\n&\u0007\uffff\u001a&\u0004\uffff\u0001&\u0001\uffff\u001a&", "\u0001ĺ", "\n&\u0007\uffff\u001a&\u0004\uffff\u0001&\u0001\uffff\u001a&", "\u0001ļ", "\u0001Ľ", "\u0001ľ", "\u0001Ŀ", "\u0001ŀ", "\n&\u0007\uffff\u0001Ł\u0012&\u0001ł\u0006&\u0004\uffff\u0001&\u0001\uffff\u001a&", "\u0001ń", "\u0001Ņ", "\u0001ņ", "\n&\u0007\uffff\u001a&\u0004\uffff\u0001&\u0001\uffff\u001a&", "", "\n&\u0007\uffff\u001a&\u0004\uffff\u0001&\u0001\uffff\u001a&", "", "\u0001ŉ", "\u0001Ŋ", "\u0001ŋ", "", "\u0001Ō", "\u0001ō", "\u0001Ŏ", "", "\u0001ŏ", "\u0001Ő", "\u0001ő", "\u0001Œ", "\u0001œ", "\u0001Ŕ", "\u0001ŕ", "", "\u0001Ŗ", "", "\u0001ŗ", "\u0001Ř", "\u0001ř", "\u0001Ś", "\u0001ś", "\u0001Ŝ", "\u0001ŝ", "", "\u0001Ş", "\u0001ş", "\u0001Š", "", "", "\n&\u0007\uffff\u001a&\u0004\uffff\u0001&\u0001\uffff\u001a&", "\u0001Ţ", "\u0001ţ", "\u0001Ť", "\u0001ť", "\u0001Ŧ", "\u0001ŧ", "\n&\u0007\uffff\u001a&\u0004\uffff\u0001&\u0001\uffff\u001a&", "\n&\u0007\uffff\u0002&\u0001ũ\u0017&\u0004\uffff\u0001&\u0001\uffff\u001a&", "\n&\u0007\uffff\u0002&\u0001ū\u0017&\u0004\uffff\u0001&\u0001\uffff\u001a&", "\n&\u0007\uffff\u001a&\u0004\uffff\u0001&\u0001\uffff\u001a&", "\u0001Ů", "\n&\u0007\uffff\u001a&\u0004\uffff\u0001&\u0001\uffff\u001a&", "\u0001Ű", "\u0001ű", "\n&\u0007\uffff\u001a&\u0004\uffff\u0001&\u0001\uffff\u001a&", "\n&\u0007\uffff\u001a&\u0004\uffff\u0001&\u0001\uffff\u001a&", "\u0001Ŵ", "\u0001ŵ", "\u0001Ŷ", "\u0001ŷ", "\u0001Ÿ", "\u0001Ź", "\u0001ź", "", "\u0001Ż", "\u0001ż", "\u0001Ž", "\n&\u0007\uffff\u001a&\u0004\uffff\u0001&\u0001\uffff\u001a&", "\n&\u0007\uffff\u001a&\u0004\uffff\u0001&\u0001\uffff\u001a&", "\u0001ƀ", "", "\u0001Ɓ", "", "\u0001Ƃ", "", "", "\u0001ƃ", "", "\u0001Ƅ", "\u0001ƅ", "", "", "\u0001Ɔ", "\n&\u0007\uffff\u001a&\u0004\uffff\u0001&\u0001\uffff\u001a&", "\u0001Ƈ", "\u0001ƈ", "\u0001Ɖ", "\u0001Ɗ", "\u0001Ƌ", "\u0001ƌ", "\u0001ƍ", "\n&\u0007\uffff\u001a&\u0004\uffff\u0001&\u0001\uffff\u001a&", "", "", "\u0001Ə", "\u0001Ɛ", "\u0001Ƒ", "\u0001ƒ", "\u0001Ɠ", "\u0001Ɣ", "\u0001ƕ", "\u0001Ɩ", "\u0001Ɨ", "\n&\u0007\uffff\u001a&\u0004\uffff\u0001&\u0001\uffff\u001a&", "\u0001ƙ", "\u0001ƚ", "\u0001ƛ", "\n&\u0007\uffff\u001a&\u0004\uffff\u0001&\u0001\uffff\u001a&", "", "\n&\u0007\uffff\u001a&\u0004\uffff\u0001&\u0001\uffff\u001a&", "\u0001ƞ", "\u0001Ɵ", "\n&\u0007\uffff\u001a&\u0004\uffff\u0001&\u0001\uffff\u001a&", "\n&\u0007\uffff\u001a&\u0004\uffff\u0001&\u0001\uffff\u001a&", "\n&\u0007\uffff\u001a&\u0004\uffff\u0001&\u0001\uffff\u001a&", "\u0001ƣ", "\n&\u0007\uffff\u001a&\u0004\uffff\u0001&\u0001\uffff\u001a&", "\n&\u0007\uffff\u001a&\u0004\uffff\u0001&\u0001\uffff\u001a&", "", "\u0001Ʀ", "\u0001Ƨ", "\u0001ƨ", "", "", "\u0001Ʃ", "\u0001ƪ", "", "", "", "\n&\u0007\uffff\u001a&\u0004\uffff\u0001&\u0001\uffff\u001a&", "", "", "\u0001Ƭ", "\u0001ƭ", "\u0001Ʈ", "\u0001Ư", "\u0001ư", "", "\n&\u0007\uffff\u001a&\u0004\uffff\u0001&\u0001\uffff\u001a&", "\n&\u0007\uffff\u001a&\u0004\uffff\u0001&\u0001\uffff\u001a&", "\n&\u0007\uffff\u001a&\u0004\uffff\u0001&\u0001\uffff\u001a&", "\u0001ƴ", "\u0001Ƶ", "", "", "", "\u0001ƶ", "\u0001Ʒ", "\n&\u0007\uffff\u001a&\u0004\uffff\u0001&\u0001\uffff\u001a&", "\n&\u0007\uffff\u001a&\u0004\uffff\u0001&\u0001\uffff\u001a&", "", ""};
+   static final String[] DFA10_transitionS = new String[]{"\u0002'\u0001\uffff\u0002'\u0012\uffff\u0001'\u0001\u0004\u0001\"\u0002\uffff\u0001\u000f\u0001\uffff\u0001#\u0001\u0019\u0001\u001a\u0001\u0010\u0001\u0001\u0001\u0003\u0001\u0017\u0001\uffff\u0001\u0005\n%\u0001\u001b\u0001\u001c\u0001\r\u0001\t\u0001\f\u0002\uffff\u001a&\u0001\u0014\u0001\u0006\u0001\u001d\u0003\uffff\u0001\u001e\u0001&\u0001\u0002\u0001\u001f\u0001\u0007\u0001\b\u0002&\u0001\n\u0002&\u0001\u000b\u0001\u000e\u0001\u0011\u0001\u0012\u0001\u0013\u0001&\u0001\u0015\u0001\u0016\u0001\u0018\u0001&\u0001$\u0004&\u0001 \u0001\uffff\u0001!", "", "\u0001(\r\uffff\u0001)", "", "\u0001*", "\u0001-\u0004\uffff\u0001,", "", "\n&\u0007\uffff\u001a&\u0004\uffff\u0001&\u0001\uffff\r&\u0001/\u0004&\u00010\u0004&\u00011\u0002&", "\u00013\u0007\uffff\u00014\u000b\uffff\u00015", "\u00016", "\u00018", "\u00019\u0003\uffff\u0001:\u0005\uffff\u0001;", "\u0001<", "\u0001>", "\u0001A\u0007\uffff\u0001B\u0005\uffff\u0001@", "", "", "\u0001C", "\u0001D", "\u0001E\u0007\uffff\u0001G\b\uffff\u0001F", "\u0001H", "\u0001K\u0003\uffff\u0001J", "\u0001L", "", "\u0001N\u0003\uffff\u0001M", "", "", "", "", "", "\u0001O\t\uffff\u0001P\u0006\uffff\u0001Q\u0001R", "\u0001S", "", "", "", "", "\u0001T", "\u0001V\u0001\uffff\n%", "", "", "\u0001X\u0001W", "\u0001Y\u0001Z\u0001\uffff\u0001[", "", "", "", "", "", "\u0001\\\u0002\uffff\u0001]", "\u0001^", "\u0001_", "", "\u0001`\b\uffff\u0001a", "\u0001b", "\u0001c", "", "", "\u0001d", "\u0001e", "\u0001f", "\u0001g", "", "", "", "", "\u0001h", "\u0001i", "\u0001j", "\u0001k", "\n&\u0007\uffff\u001a&\u0004\uffff\u0001&\u0001\uffff\u0013&\u0001l\u0006&", "\u0001n\u0001o", "\u0001q\u0005\uffff\u0001p", "\n&\u0007\uffff\u001a&\u0004\uffff\u0001&\u0001\uffff\u001a&", "\u0001s", "", "\u0001w\u0004\uffff\u0001u\r\uffff\u0001v", "\u0001x", "\n&\u0007\uffff\u001a&\u0004\uffff\u0001&\u0001\uffff\r&\u0001y\f&", "\u0001{", "\u0001|", "\u0001}", "\u0001~\u0001\uffff\u0001\u007f", "\u0001\u0080", "\u0001\u0081", "\n&\u0007\uffff\u001a&\u0004\uffff\u0001&\u0001\uffff\u001a&", "\u0001\u0083", "", "", "\u0001\u0084", "\u0001\u0085", "\u0001\u0086", "\u0001\u0087", "\u0001\u0088", "\u0001\u0089", "\u0001\u008a", "\u0001\u008b\u0002\uffff\u0001\u008c", "\n&\u0007\uffff\u001a&\u0004\uffff\u0001&\u0001\uffff\u001a&", "\u0001\u008e", "\u0001\u008f", "\u0001\u0092\u0001\u0090\t\uffff\u0001\u0091\u0002\uffff\u0001\u0093", "\u0001\u0094", "\u0001\u0095", "\u0001\u0096", "\u0001\u0097", "\u0001\u0098", "\n&\u0007\uffff\u001a&\u0004\uffff\u0001&\u0001\uffff\u001a&", "\u0001\u009a", "\u0001\u009b", "\n&\u0007\uffff\u001a&\u0004\uffff\u0001&\u0001\uffff\u001a&", "\u0001\u009d", "", "\u0001\u009e", "\u0001\u009f", "\u0001 ", "\u0001¡", "", "\u0001¢", "", "\n&\u0007\uffff\u001a&\u0004\uffff\u0001&\u0001\uffff\u001a&", "\u0001¥", "\u0001¦", "\u0001§", "\u0001¨", "", "\u0001©", "\u0001ª", "\n&\u0007\uffff\u001a&\u0004\uffff\u0001&\u0001\uffff\u001a&", "\u0001¬", "\u0001\u00ad", "\u0001®", "\n&\u0007\uffff\u001a&\u0004\uffff\u0001&\u0001\uffff\u001a&", "", "\u0001°", "\n&\u0007\uffff\u001a&\u0004\uffff\u0001&\u0001\uffff\u001a&", "\u0001²", "\u0001³", "\u0001´\u0010\uffff\u0001µ", "\u0001¶", "\u0001·", "\u0001¸", "\u0001¹", "\u0001º", "", "\n&\u0007\uffff\u001a&\u0004\uffff\u0001&\u0001\uffff\u001a&", "\u0001¼", "\u0001½", "\u0001¿\u0010\uffff\u0001¾", "\u0001À\u0004\uffff\u0001Á", "\u0001Â", "\u0001Ã", "\u0001Å\b\uffff\u0001Ä", "\n&\u0007\uffff\u0002&\u0001Æ\u0017&\u0004\uffff\u0001&\u0001\uffff\u001a&", "\u0001È", "\u0001É", "", "\u0001Ê", "\u0001Ë", "", "\u0001Ì", "\n&\u0007\uffff\u001a&\u0004\uffff\u0001&\u0001\uffff\u001a&", "\u0001Î", "\u0001Ï", "\u0001Ð", "", "", "", "\u0001Ñ", "\n&\u0007\uffff\u001a&\u0004\uffff\u0001&\u0001\uffff\u001a&", "\u0001Ó", "\u0001Ô", "\u0001Õ", "\u0001Ö", "", "\u0001×", "\u0001Ø", "\u0001Ù", "", "\u0001Ú", "", "\u0001Û", "\u0001Ü", "\u0001Ý", "\u0001Þ", "\n&\u0007\uffff\u001a&\u0004\uffff\u0001&\u0001\uffff\u001a&", "\u0001à", "\n&\u0007\uffff\u001a&\u0004\uffff\u0001&\u0001\uffff\u001a&", "\u0001â", "\u0001ã", "", "\n&\u0007\uffff\u001a&\u0004\uffff\u0001&\u0001\uffff\u001a&", "\u0001å", "\u0001ç\u0005\uffff\u0001æ", "\u0001è", "\u0001é", "\u0001ê", "\n&\u0007\uffff\u001a&\u0004\uffff\u0001&\u0001\uffff\u001a&", "\u0001ì", "\u0001í", "\u0001î", "\u0001ï", "", "\u0001ð", "\u0001ñ", "\u0001ò", "\u0001ó", "\u0001ô", "", "\n&\u0007\uffff\u001a&\u0004\uffff\u0001&\u0001\uffff\u001a&", "\u0001ö", "\u0001÷", "\u0001ø", "", "\u0001ù", "\n&\u0007\uffff\u0012&\u0001ú\u0007&\u0004\uffff\u0001&\u0001\uffff\u001a&", "\n&\u0007\uffff\u001a&\u0004\uffff\u0001&\u0001\uffff\u001a&", "\u0001ý", "\u0001þ", "\u0001ÿ", "\u0001Ā", "\u0001ā", "\u0001Ă", "\u0001ă", "\u0001Ą", "\u0001ą", "", "\u0001Ć", "", "\u0001ć", "\u0001Ĉ", "", "\u0001ĉ", "\u0001Ċ", "\u0001ċ", "\u0001Č", "\u0001č", "\u0001Ď", "", "\n&\u0007\uffff\u001a&\u0004\uffff\u0001&\u0001\uffff\u001a&", "\u0001Đ", "\u0001đ", "\u0001Ē", "\u0001ē", "\n&\u0007\uffff\u001a&\u0004\uffff\u0001&\u0001\uffff\u001a&", "\u0001ĕ", "\u0001Ė", "\u0001ė", "", "\u0001Ę", "\u0001ę", "\u0001Ě", "\u0001ě", "\u0001Ĝ", "", "", "\u0001ĝ", "\u0001Ğ", "\u0001ğ", "\u0001Ġ", "\u0001ġ", "\u0001Ģ", "\u0001ģ", "\u0001Ĥ", "\u0001ĥ", "\u0001Ħ", "\n&\u0007\uffff\u001a&\u0004\uffff\u0001&\u0001\uffff\u001a&", "\n&\u0007\uffff\u001a&\u0004\uffff\u0001&\u0001\uffff\u000b&\u0001Ĩ\u000e&", "\u0001Ī", "\u0001ī", "\u0001Ĭ", "\n&\u0007\uffff\u001a&\u0004\uffff\u0001&\u0001\uffff\u001a&", "\u0001Į", "\u0001į", "", "\u0001İ", "\n&\u0007\uffff\u001a&\u0004\uffff\u0001&\u0001\uffff\u001a&", "\u0001Ĳ", "\u0001ĳ", "", "\u0001Ĵ", "\u0001ĵ", "\u0001Ķ", "\u0001ķ", "\u0001ĸ", "\n&\u0007\uffff\u001a&\u0004\uffff\u0001&\u0001\uffff\u001a&", "\u0001ĺ", "\n&\u0007\uffff\u001a&\u0004\uffff\u0001&\u0001\uffff\u001a&", "\u0001ļ", "\u0001Ľ", "\u0001ľ", "\u0001Ŀ", "\u0001ŀ", "\n&\u0007\uffff\u0001Ł\u0012&\u0001ł\u0006&\u0004\uffff\u0001&\u0001\uffff\u001a&", "\u0001ń", "\u0001Ņ", "\u0001ņ", "\n&\u0007\uffff\u001a&\u0004\uffff\u0001&\u0001\uffff\u001a&", "", "\n&\u0007\uffff\u001a&\u0004\uffff\u0001&\u0001\uffff\u001a&", "", "\u0001ŉ", "\u0001Ŋ", "\u0001ŋ", "", "\u0001Ō", "\u0001ō", "\u0001Ŏ", "", "\u0001ŏ", "\u0001Ő", "\u0001ő", "\u0001Œ", "\u0001œ", "\u0001Ŕ", "\u0001ŕ", "", "\u0001Ŗ", "", "\u0001ŗ", "\u0001Ř", "\u0001ř", "\u0001Ś", "\u0001ś", "\u0001Ŝ", "\u0001ŝ", "", "\u0001Ş", "\u0001ş", "\u0001Š", "", "", "\n&\u0007\uffff\u001a&\u0004\uffff\u0001&\u0001\uffff\u001a&", "\u0001Ţ", "\u0001ţ", "\u0001Ť", "\u0001ť", "\u0001Ŧ", "\u0001ŧ", "\n&\u0007\uffff\u001a&\u0004\uffff\u0001&\u0001\uffff\u001a&", "\n&\u0007\uffff\u0002&\u0001ũ\u0017&\u0004\uffff\u0001&\u0001\uffff\u001a&", "\n&\u0007\uffff\u0002&\u0001ū\u0017&\u0004\uffff\u0001&\u0001\uffff\u001a&", "\n&\u0007\uffff\u001a&\u0004\uffff\u0001&\u0001\uffff\u001a&", "\u0001Ů", "\n&\u0007\uffff\u001a&\u0004\uffff\u0001&\u0001\uffff\u001a&", "\u0001Ű", "\u0001ű", "\n&\u0007\uffff\u001a&\u0004\uffff\u0001&\u0001\uffff\u001a&", "\n&\u0007\uffff\u001a&\u0004\uffff\u0001&\u0001\uffff\u001a&", "\u0001Ŵ", "\u0001ŵ", "\u0001Ŷ", "\u0001ŷ", "\u0001Ÿ", "\u0001Ź", "\u0001ź", "", "\u0001Ż", "\u0001ż", "\u0001Ž", "\n&\u0007\uffff\u001a&\u0004\uffff\u0001&\u0001\uffff\u001a&", "\n&\u0007\uffff\u001a&\u0004\uffff\u0001&\u0001\uffff\u001a&", "\u0001ƀ", "", "\u0001Ɓ", "", "\u0001Ƃ", "", "", "\u0001ƃ", "", "\u0001Ƅ", "\u0001ƅ", "", "", "\u0001Ɔ", "\n&\u0007\uffff\u001a&\u0004\uffff\u0001&\u0001\uffff\u001a&", "\u0001Ƈ", "\u0001ƈ", "\u0001Ɖ", "\u0001Ɗ", "\u0001Ƌ", "\u0001ƌ", "\u0001ƍ", "\n&\u0007\uffff\u001a&\u0004\uffff\u0001&\u0001\uffff\u001a&", "", "", "\u0001Ə", "\u0001Ɛ", "\u0001Ƒ", "\u0001ƒ", "\u0001Ɠ", "\u0001Ɣ", "\u0001ƕ", "\u0001Ɩ", "\u0001Ɨ", "\n&\u0007\uffff\u001a&\u0004\uffff\u0001&\u0001\uffff\u001a&", "\u0001ƙ", "\u0001ƚ", "\u0001ƛ", "\n&\u0007\uffff\u001a&\u0004\uffff\u0001&\u0001\uffff\u001a&", "", "\n&\u0007\uffff\u001a&\u0004\uffff\u0001&\u0001\uffff\u001a&", "\u0001ƞ", "\u0001Ɵ", "\n&\u0007\uffff\u001a&\u0004\uffff\u0001&\u0001\uffff\u001a&", "\n&\u0007\uffff\u001a&\u0004\uffff\u0001&\u0001\uffff\u001a&", "\n&\u0007\uffff\u001a&\u0004\uffff\u0001&\u0001\uffff\u001a&", "\u0001ƣ", "\n&\u0007\uffff\u001a&\u0004\uffff\u0001&\u0001\uffff\u001a&", "\n&\u0007\uffff\u001a&\u0004\uffff\u0001&\u0001\uffff\u001a&", "", "\u0001Ʀ", "\u0001Ƨ", "\u0001ƨ", "", "", "\u0001Ʃ", "\u0001ƪ", "", "", "", "\n&\u0007\uffff\u001a&\u0004\uffff\u0001&\u0001\uffff\u001a&", "", "", "\u0001Ƭ", "\u0001ƭ", "\u0001Ʈ", "\u0001Ư", "\u0001ư", "", "\n&\u0007\uffff\u001a&\u0004\uffff\u0001&\u0001\uffff\u001a&", "\n&\u0007\uffff\u001a&\u0004\uffff\u0001&\u0001\uffff\u001a&", "\n&\u0007\uffff\u001a&\u0004\uffff\u0001&\u0001\uffff\u001a&", "\u0001ƴ", "\u0001Ƶ", "", "", "", "\u0001ƶ", "\u0001Ʒ", "\n&\u0007\uffff\u001a&\u0004\uffff\u0001&\u0001\uffff\u001a&", "\n&\u0007\uffff\u001a&\u0004\uffff\u0001&\u0001\uffff\u001a&", "", ""};
    static final short[] DFA10_eot = DFA.unpackEncodedString("\u0002\uffff\u0001&\u0001\uffff\u0001+\u0001.\u0001\uffff\u00012\u0001&\u00017\u0002&\u0001=\u0001?\u0001&\u0002\uffff\u0003&\u0001I\u0002&\u0001\uffff\u0001&\u0005\uffff\u0002&\u0004\uffff\u0001&\u0001U\u0002\uffff\u0002&\u0005\uffff\u0003&\u0001\uffff\u0003&\u0002\uffff\u0004&\u0004\uffff\u0004&\u0001m\u0002&\u0001r\u0001t\u0001\uffff\u0002&\u0001z\u0006&\u0001\u0082\u0001&\u0002\uffff\b&\u0001\u008d\b&\u0001\u0099\u0002&\u0001\u009c\u0001&\u0001\uffff\u0004&\u0001\uffff\u0001£\u0001\uffff\u0001¤\u0004&\u0001\uffff\u0002&\u0001«\u0003&\u0001¯\u0001\uffff\u0001&\u0001±\b&\u0001\uffff\u0001»\u0007&\u0001Ç\u0002&\u0001\uffff\u0002&\u0001\uffff\u0001&\u0001Í\u0003&\u0003\uffff\u0001&\u0001Ò\u0004&\u0001\uffff\u0003&\u0001\uffff\u0001&\u0001\uffff\u0004&\u0001ß\u0001&\u0001á\u0002&\u0001\uffff\u0001ä\u0005&\u0001ë\u0004&\u0001\uffff\u0005&\u0001\uffff\u0001õ\u0003&\u0001\uffff\u0001&\u0001û\u0001ü\t&\u0001\uffff\u0001&\u0001\uffff\u0002&\u0001\uffff\u0006&\u0001\uffff\u0001ď\u0004&\u0001Ĕ\u0003&\u0001\uffff\u0005&\u0002\uffff\n&\u0001ħ\u0001ĩ\u0003&\u0001ĭ\u0002&\u0001\uffff\u0001&\u0001ı\u0002&\u0001\uffff\u0005&\u0001Ĺ\u0001&\u0001Ļ\u0005&\u0001Ń\u0003&\u0001Ň\u0001\uffff\u0001ň\u0001\uffff\u0003&\u0001\uffff\u0003&\u0001\uffff\u0007&\u0001\uffff\u0001&\u0001\uffff\u0007&\u0001\uffff\u0003&\u0002\uffff\u0001š\u0006&\u0001Ũ\u0001Ū\u0001Ŭ\u0001ŭ\u0001&\u0001ů\u0002&\u0001Ų\u0001ų\u0007&\u0001\uffff\u0003&\u0001ž\u0001ſ\u0001&\u0001\uffff\u0001&\u0001\uffff\u0001&\u0002\uffff\u0001&\u0001\uffff\u0002&\u0002\uffff\u0001&\u0001ä\u0007&\u0001Ǝ\u0002\uffff\t&\u0001Ƙ\u0003&\u0001Ɯ\u0001\uffff\u0001Ɲ\u0002&\u0001Ơ\u0001ơ\u0001Ƣ\u0001&\u0001Ƥ\u0001ƥ\u0001\uffff\u0003&\u0002\uffff\u0002&\u0003\uffff\u0001ƫ\u0002\uffff\u0005&\u0001\uffff\u0001Ʊ\u0001Ʋ\u0001Ƴ\u0002&\u0003\uffff\u0002&\u0001Ƹ\u0001ƹ\u0002\uffff");
    static final short[] DFA10_eof = DFA.unpackEncodedString("ƺ\uffff");
    static final char[] DFA10_min = DFA.unpackEncodedStringToUnsignedChars("\u0001\t\u0001\uffff\u0001a\u0001\uffff\u0001=\u0001*\u0001\uffff\u00010\u0001a\u0001=\u0001n\u0001e\u0002=\u0001a\u0002\uffff\u0001a\u0001u\u0001a\u0001]\u0001a\u0001e\u0001\uffff\u0001a\u0005\uffff\u0001b\u0001e\u0004\uffff\u0001e\u0001.\u0002\uffff\u0001r\u0001m\u0005\uffff\u0001q\u0001c\u0001p\u0001\uffff\u0001c\u0001m\u0001n\u0002\uffff\u0001t\u0001i\u0001m\u0001g\u0004\uffff\u0001d\u0001i\u0001n\u0001o\u00010\u0001r\u0001i\u00010\u0001[\u0001\uffff\u0001a\u0001i\u00010\u0001x\u0001m\u0001s\u0001e\u0001c\u0001e\u00010\u0001r\u0002\uffff\u0001o\u0001a\u0001p\u0001v\u0001i\u0001u\u0001a\u0001o\u00010\u0001a\u0001s\u0001E\u0001c\u0001e\u0001a\u0001p\u0001i\u00010\u0002u\u00010\u0001r\u0001\uffff\u0001a\u0001s\u0001c\u0001n\u0001\uffff\u0001]\u0001\uffff\u00010\u0001o\u0001l\u0001z\u0001a\u0001\uffff\u0001t\u0001a\u00010\u0001a\u0001o\u0001i\u00010\u0001\uffff\u0001d\u00010\u0001c\u0001a\u0001C\u0002a\u0001o\u0001l\u0001e\u0001\uffff\u00010\u0001o\u0001u\u0001a\u0001n\u0001e\u0001a\u0001i\u00010\u0001a\u0001c\u0001\uffff\u0002s\u0001\uffff\u0001o\u00010\u0001o\u0001e\u0001c\u0003\uffff\u0001r\u00010\u0001Q\u0002o\u0001n\u0001\uffff\u0001t\u0001r\u0001i\u0001\uffff\u0001a\u0001\uffff\u0001t\u0001r\u0001a\u0001e\u00010\u0001n\u00010\u0001h\u0001v\u0001\uffff\u00010\u0001n\u0001i\u0001r\u0001q\u0001c\u00010\u0001o\u0002r\u0001a\u0001\uffff\u0001T\u0001o\u0002c\u0001C\u0001\uffff\u00010\u0001d\u0001i\u0001n\u0001\uffff\u0001u\u00020\u0001h\u0001o\u0001i\u0001C\u0001d\u0001e\u0001a\u0001r\u0001x\u0001\uffff\u0001t\u0001\uffff\u0002a\u0001\uffff\u0002c\u0001n\u0001a\u0001u\u0001o\u0001\uffff\u00010\u0002o\u0001r\u0001e\u00010\u0002u\u0001a\u0001\uffff\u0001i\u0001p\u0002a\u0001e\u0002\uffff\u0001o\u0001r\u0001t\u0001a\u0001e\u0001r\u0001T\u0001a\u0001t\u0001o\u00020\u0001a\u0001e\u0001c\u00010\u0001a\u0001l\u0001\uffff\u0001m\u00010\u0001a\u0001l\u0001\uffff\u0002l\u0001s\u0001m\u0001a\u00010\u0001d\u00010\u0001T\u0001i\u0001m\u0001r\u0001i\u00010\u0001e\u0001c\u0001o\u00010\u0001\uffff\u00010\u0001\uffff\u0001o\u0001d\u0001i\u0001\uffff\u0001n\u0001h\u0001p\u0001\uffff\u0001c\u0001a\u0003o\u0001e\u0001l\u0001\uffff\u0001r\u0001\uffff\u0001e\u0002o\u0001a\u0001r\u0001s\u0001e\u0001\uffff\u0001x\u0001t\u0001C\u0002\uffff\u00010\u0001i\u0001p\u0001t\u0002a\u0001t\u00040\u0001n\u00010\u0001a\u0001x\u00020\u0001c\u0001o\u0001c\u0001x\u0001t\u0001T\u0001a\u0001\uffff\u0001m\u0001a\u0001o\u00020\u0001e\u0001\uffff\u0001a\u0001\uffff\u0001a\u0002\uffff\u0001t\u0001\uffff\u0001d\u0001t\u0002\uffff\u0001t\u00010\u0001i\u0001t\u0001o\u0001e\u0001r\u0001e\u0001l\u00010\u0002\uffff\u0003r\u0001o\u0001a\u0001o\u0001e\u0001i\u0001o\u00010\u0001x\u0001a\u0001n\u00010\u0001\uffff\u00010\u0002a\u00030\u0001r\u00020\u0001\uffff\u0001t\u0001c\u0001t\u0002\uffff\u0002c\u0003\uffff\u00010\u0002\uffff\u0001o\u0001t\u0001o\u0002t\u0001\uffff\u00030\u0002e\u0003\uffff\u0002r\u00020\u0002\uffff");
@@ -907,28 +907,28 @@ public class CalangoGrammarLexer extends Lexer {
          }
 
          switch(alt1) {
-         case 1:
-            this.match(34);
-            this.match(34);
-            string.appendCodePoint(34);
-            break;
-         case 2:
-            int c = this.input.LA(1);
-            if ((this.input.LA(1) < 0 || this.input.LA(1) > 9) && (this.input.LA(1) < 11 || this.input.LA(1) > 12) && (this.input.LA(1) < 14 || this.input.LA(1) > 33) && (this.input.LA(1) < 35 || this.input.LA(1) > 65535)) {
-               MismatchedSetException mse = new MismatchedSetException((BitSet)null, this.input);
-               this.recover(mse);
-               throw mse;
-            }
+            case 1:
+               this.match(34);
+               this.match(34);
+               string.appendCodePoint(34);
+               break;
+            case 2:
+               int c = this.input.LA(1);
+               if ((this.input.LA(1) < 0 || this.input.LA(1) > 9) && (this.input.LA(1) < 11 || this.input.LA(1) > 12) && (this.input.LA(1) < 14 || this.input.LA(1) > 33) && (this.input.LA(1) < 35 || this.input.LA(1) > 65535)) {
+                  MismatchedSetException mse = new MismatchedSetException((BitSet)null, this.input);
+                  this.recover(mse);
+                  throw mse;
+               }
 
-            this.input.consume();
-            string.appendCodePoint(c);
-            break;
-         default:
-            this.match(34);
-            this.setText(string.toString());
-            this.state.type = _type;
-            this.state.channel = _channel;
-            return;
+               this.input.consume();
+               string.appendCodePoint(c);
+               break;
+            default:
+               this.match(34);
+               this.setText(string.toString());
+               this.state.type = _type;
+               this.state.channel = _channel;
+               return;
          }
       }
    }
@@ -961,11 +961,11 @@ public class CalangoGrammarLexer extends Lexer {
       }
 
       switch(alt2) {
-      case 1:
-         this.match("verdadeiro");
-         break;
-      case 2:
-         this.match("falso");
+         case 1:
+            this.match("verdadeiro");
+            break;
+         case 2:
+            this.match("falso");
       }
 
       this.state.type = _type;
@@ -1005,25 +1005,25 @@ public class CalangoGrammarLexer extends Lexer {
          }
 
          switch(alt3) {
-         case 1:
-            if (this.input.LA(1) < 48 || this.input.LA(1) > 57) {
-               MismatchedSetException mse = new MismatchedSetException((BitSet)null, this.input);
-               this.recover(mse);
-               throw mse;
-            }
+            case 1:
+               if (this.input.LA(1) < 48 || this.input.LA(1) > 57) {
+                  MismatchedSetException mse = new MismatchedSetException((BitSet)null, this.input);
+                  this.recover(mse);
+                  throw mse;
+               }
 
-            this.input.consume();
-            ++cnt3;
-            break;
-         default:
-            if (cnt3 >= 1) {
-               this.state.type = _type;
-               this.state.channel = _channel;
-               return;
-            }
+               this.input.consume();
+               ++cnt3;
+               break;
+            default:
+               if (cnt3 >= 1) {
+                  this.state.type = _type;
+                  this.state.channel = _channel;
+                  return;
+               }
 
-            EarlyExitException eee = new EarlyExitException(3, this.input);
-            throw eee;
+               EarlyExitException eee = new EarlyExitException(3, this.input);
+               throw eee;
          }
       }
    }
@@ -1042,47 +1042,47 @@ public class CalangoGrammarLexer extends Lexer {
 
          MismatchedSetException mse;
          switch(alt5) {
-         case 1:
-            if (this.input.LA(1) < 48 || this.input.LA(1) > 57) {
-               mse = new MismatchedSetException((BitSet)null, this.input);
-               this.recover(mse);
-               throw mse;
-            }
-
-            this.input.consume();
-            ++cnt4;
-            break;
-         default:
-            if (cnt4 < 1) {
-               EarlyExitException eee = new EarlyExitException(4, this.input);
-               throw eee;
-            }
-
-            this.match(46);
-
-            while(true) {
-               alt5 = 2;
-               LA5_0 = this.input.LA(1);
-               if (LA5_0 >= 48 && LA5_0 <= 57) {
-                  alt5 = 1;
+            case 1:
+               if (this.input.LA(1) < 48 || this.input.LA(1) > 57) {
+                  mse = new MismatchedSetException((BitSet)null, this.input);
+                  this.recover(mse);
+                  throw mse;
                }
 
-               switch(alt5) {
-               case 1:
-                  if (this.input.LA(1) < 48 || this.input.LA(1) > 57) {
-                     mse = new MismatchedSetException((BitSet)null, this.input);
-                     this.recover(mse);
-                     throw mse;
+               this.input.consume();
+               ++cnt4;
+               break;
+            default:
+               if (cnt4 < 1) {
+                  EarlyExitException eee = new EarlyExitException(4, this.input);
+                  throw eee;
+               }
+
+               this.match(46);
+
+               while(true) {
+                  alt5 = 2;
+                  LA5_0 = this.input.LA(1);
+                  if (LA5_0 >= 48 && LA5_0 <= 57) {
+                     alt5 = 1;
                   }
 
-                  this.input.consume();
-                  break;
-               default:
-                  this.state.type = _type;
-                  this.state.channel = _channel;
-                  return;
+                  switch(alt5) {
+                     case 1:
+                        if (this.input.LA(1) < 48 || this.input.LA(1) > 57) {
+                           mse = new MismatchedSetException((BitSet)null, this.input);
+                           this.recover(mse);
+                           throw mse;
+                        }
+
+                        this.input.consume();
+                        break;
+                     default:
+                        this.state.type = _type;
+                        this.state.channel = _channel;
+                        return;
+                  }
                }
-            }
          }
       }
    }
@@ -1100,26 +1100,25 @@ public class CalangoGrammarLexer extends Lexer {
          }
 
          switch(alt6) {
-         case 1:
-            if ((this.input.LA(1) < 48 || this.input.LA(1) > 57) && (this.input.LA(1) < 65 || this.input.LA(1) > 90) && this.input.LA(1) != 95 && (this.input.LA(1) < 97 || this.input.LA(1) > 122)) {
-               MismatchedSetException mse = new MismatchedSetException((BitSet)null, this.input);
-               this.recover(mse);
-               throw mse;
-            }
+            case 1:
+               if ((this.input.LA(1) < 48 || this.input.LA(1) > 57) && (this.input.LA(1) < 65 || this.input.LA(1) > 90) && this.input.LA(1) != 95 && (this.input.LA(1) < 97 || this.input.LA(1) > 122)) {
+                  MismatchedSetException mse = new MismatchedSetException((BitSet)null, this.input);
+                  this.recover(mse);
+                  throw mse;
+               }
 
-            this.input.consume();
-            break;
-         default:
-            this.state.type = _type;
-            this.state.channel = _channel;
-            return;
+               this.input.consume();
+               break;
+            default:
+               this.state.type = _type;
+               this.state.channel = _channel;
+               return;
          }
       }
    }
 
    public final void mWHITESPACE() throws RecognitionException {
       int _type = 100;
-      int _channel = 0;
       int cnt7 = 0;
 
       while(true) {
@@ -1130,33 +1129,32 @@ public class CalangoGrammarLexer extends Lexer {
          }
 
          switch(alt7) {
-         case 1:
-            if ((this.input.LA(1) < 9 || this.input.LA(1) > 10) && (this.input.LA(1) < 12 || this.input.LA(1) > 13) && this.input.LA(1) != 32) {
-               MismatchedSetException mse = new MismatchedSetException((BitSet)null, this.input);
-               this.recover(mse);
-               throw mse;
-            }
+            case 1:
+               if ((this.input.LA(1) < 9 || this.input.LA(1) > 10) && (this.input.LA(1) < 12 || this.input.LA(1) > 13) && this.input.LA(1) != 32) {
+                  MismatchedSetException mse = new MismatchedSetException((BitSet)null, this.input);
+                  this.recover(mse);
+                  throw mse;
+               }
 
-            this.input.consume();
-            ++cnt7;
-            break;
-         default:
-            if (cnt7 >= 1) {
-               _channel = 99;
-               this.state.type = _type;
-               this.state.channel = _channel;
-               return;
-            }
+               this.input.consume();
+               ++cnt7;
+               break;
+            default:
+               if (cnt7 >= 1) {
+                  int _channel = 99;
+                  this.state.type = _type;
+                  this.state.channel = _channel;
+                  return;
+               }
 
-            EarlyExitException eee = new EarlyExitException(7, this.input);
-            throw eee;
+               EarlyExitException eee = new EarlyExitException(7, this.input);
+               throw eee;
          }
       }
    }
 
    public final void mCOMENTARIO() throws RecognitionException {
       int _type = 17;
-      int _channel = 0;
       this.match("//");
 
       while(true) {
@@ -1167,27 +1165,26 @@ public class CalangoGrammarLexer extends Lexer {
          }
 
          switch(alt8) {
-         case 1:
-            if ((this.input.LA(1) < 0 || this.input.LA(1) > 9) && (this.input.LA(1) < 11 || this.input.LA(1) > 12) && (this.input.LA(1) < 14 || this.input.LA(1) > 65535)) {
-               MismatchedSetException mse = new MismatchedSetException((BitSet)null, this.input);
-               this.recover(mse);
-               throw mse;
-            }
+            case 1:
+               if ((this.input.LA(1) < 0 || this.input.LA(1) > 9) && (this.input.LA(1) < 11 || this.input.LA(1) > 12) && (this.input.LA(1) < 14 || this.input.LA(1) > 65535)) {
+                  MismatchedSetException mse = new MismatchedSetException((BitSet)null, this.input);
+                  this.recover(mse);
+                  throw mse;
+               }
 
-            this.input.consume();
-            break;
-         default:
-            _channel = 99;
-            this.state.type = _type;
-            this.state.channel = _channel;
-            return;
+               this.input.consume();
+               break;
+            default:
+               int _channel = 99;
+               this.state.type = _type;
+               this.state.channel = _channel;
+               return;
          }
       }
    }
 
    public final void mCOMENTARIO_MULTILINHA() throws RecognitionException {
       int _type = 18;
-      int _channel = 0;
       this.match("/*");
 
       while(true) {
@@ -1205,15 +1202,15 @@ public class CalangoGrammarLexer extends Lexer {
          }
 
          switch(alt9) {
-         case 1:
-            this.matchAny();
-            break;
-         default:
-            this.match("*/");
-            _channel = 99;
-            this.state.type = _type;
-            this.state.channel = _channel;
-            return;
+            case 1:
+               this.matchAny();
+               break;
+            default:
+               this.match("*/");
+               int _channel = 99;
+               this.state.type = _type;
+               this.state.channel = _channel;
+               return;
          }
       }
    }
@@ -1221,284 +1218,284 @@ public class CalangoGrammarLexer extends Lexer {
    public void mTokens() throws RecognitionException {
       int alt10 = this.dfa10.predict(this.input);
       switch(alt10) {
-      case 1:
-         this.mADICAO();
-         break;
-      case 2:
-         this.mCASO();
-         break;
-      case 3:
-         this.mCONCATENACAO();
-         break;
-      case 4:
-         this.mDIFERENTE();
-         break;
-      case 5:
-         this.mDIVISAO();
-         break;
-      case 6:
-         this.mDIVISAO_INT();
-         break;
-      case 7:
-         this.mE();
-         break;
-      case 8:
-         this.mENQUANTO();
-         break;
-      case 9:
-         this.mESCOLHA();
-         break;
-      case 10:
-         this.mESCREVA();
-         break;
-      case 11:
-         this.mESCREVAL();
-         break;
-      case 12:
-         this.mFACA();
-         break;
-      case 13:
-         this.mFIM_FUNCAO();
-         break;
-      case 14:
-         this.mFIM_PROCEDIMENTO();
-         break;
-      case 15:
-         this.mFUNCAO();
-         break;
-      case 16:
-         this.mIGUAL();
-         break;
-      case 17:
-         this.mINTERROMPA();
-         break;
-      case 18:
-         this.mLEIA();
-         break;
-      case 19:
-         this.mLEIA_CARACTER();
-         break;
-      case 20:
-         this.mLIMPA_TELA();
-         break;
-      case 21:
-         this.mMAIOR();
-         break;
-      case 22:
-         this.mMAIOR_IGUAL();
-         break;
-      case 23:
-         this.mMENOR();
-         break;
-      case 24:
-         this.mMENOR_IGUAL();
-         break;
-      case 25:
-         this.mMOD();
-         break;
-      case 26:
-         this.mMOD2();
-         break;
-      case 27:
-         this.mMULTIPLICACAO();
-         break;
-      case 28:
-         this.mNEGACAO_LOGICA();
-         break;
-      case 29:
-         this.mNEGACAO_LOGICA2();
-         break;
-      case 30:
-         this.mOU();
-         break;
-      case 31:
-         this.mOUTROCASO();
-         break;
-      case 32:
-         this.mPARA();
-         break;
-      case 33:
-         this.mPARAM_MATRIZ();
-         break;
-      case 34:
-         this.mPARAM_VETOR();
-         break;
-      case 35:
-         this.mPROCEDIMENTO();
-         break;
-      case 36:
-         this.mREFERENCIA();
-         break;
-      case 37:
-         this.mRETORNA();
-         break;
-      case 38:
-         this.mSE();
-         break;
-      case 39:
-         this.mSUBTRACAO();
-         break;
-      case 40:
-         this.mTIPO_CARACTER();
-         break;
-      case 41:
-         this.mTIPO_INTEIRO();
-         break;
-      case 42:
-         this.mTIPO_LOGICO();
-         break;
-      case 43:
-         this.mTIPO_REAL();
-         break;
-      case 44:
-         this.mTIPO_TEXTO();
-         break;
-      case 45:
-         this.mT__101();
-         break;
-      case 46:
-         this.mT__102();
-         break;
-      case 47:
-         this.mT__103();
-         break;
-      case 48:
-         this.mT__104();
-         break;
-      case 49:
-         this.mT__105();
-         break;
-      case 50:
-         this.mT__106();
-         break;
-      case 51:
-         this.mT__107();
-         break;
-      case 52:
-         this.mT__108();
-         break;
-      case 53:
-         this.mT__109();
-         break;
-      case 54:
-         this.mT__110();
-         break;
-      case 55:
-         this.mT__111();
-         break;
-      case 56:
-         this.mT__112();
-         break;
-      case 57:
-         this.mT__113();
-         break;
-      case 58:
-         this.mT__114();
-         break;
-      case 59:
-         this.mT__115();
-         break;
-      case 60:
-         this.mT__116();
-         break;
-      case 61:
-         this.mT__117();
-         break;
-      case 62:
-         this.mT__118();
-         break;
-      case 63:
-         this.mT__119();
-         break;
-      case 64:
-         this.mT__120();
-         break;
-      case 65:
-         this.mT__121();
-         break;
-      case 66:
-         this.mT__122();
-         break;
-      case 67:
-         this.mT__123();
-         break;
-      case 68:
-         this.mT__124();
-         break;
-      case 69:
-         this.mT__125();
-         break;
-      case 70:
-         this.mT__126();
-         break;
-      case 71:
-         this.mT__127();
-         break;
-      case 72:
-         this.mT__128();
-         break;
-      case 73:
-         this.mT__129();
-         break;
-      case 74:
-         this.mT__130();
-         break;
-      case 75:
-         this.mT__131();
-         break;
-      case 76:
-         this.mT__132();
-         break;
-      case 77:
-         this.mT__133();
-         break;
-      case 78:
-         this.mT__134();
-         break;
-      case 79:
-         this.mT__135();
-         break;
-      case 80:
-         this.mT__136();
-         break;
-      case 81:
-         this.mT__137();
-         break;
-      case 82:
-         this.mT__138();
-         break;
-      case 83:
-         this.mT__139();
-         break;
-      case 84:
-         this.mT__140();
-         break;
-      case 85:
-         this.mTEXTO_LITERAL();
-         break;
-      case 86:
-         this.mCHAR_LITERAL();
-         break;
-      case 87:
-         this.mBOOL_LITERAL();
-         break;
-      case 88:
-         this.mINTEIRO_LITERAL();
-         break;
-      case 89:
-         this.mREAL_LITERAL();
-         break;
-      case 90:
-         this.mIDENTIFICADOR();
-         break;
-      case 91:
-         this.mWHITESPACE();
-         break;
-      case 92:
-         this.mCOMENTARIO();
-         break;
-      case 93:
-         this.mCOMENTARIO_MULTILINHA();
+         case 1:
+            this.mADICAO();
+            break;
+         case 2:
+            this.mCASO();
+            break;
+         case 3:
+            this.mCONCATENACAO();
+            break;
+         case 4:
+            this.mDIFERENTE();
+            break;
+         case 5:
+            this.mDIVISAO();
+            break;
+         case 6:
+            this.mDIVISAO_INT();
+            break;
+         case 7:
+            this.mE();
+            break;
+         case 8:
+            this.mENQUANTO();
+            break;
+         case 9:
+            this.mESCOLHA();
+            break;
+         case 10:
+            this.mESCREVA();
+            break;
+         case 11:
+            this.mESCREVAL();
+            break;
+         case 12:
+            this.mFACA();
+            break;
+         case 13:
+            this.mFIM_FUNCAO();
+            break;
+         case 14:
+            this.mFIM_PROCEDIMENTO();
+            break;
+         case 15:
+            this.mFUNCAO();
+            break;
+         case 16:
+            this.mIGUAL();
+            break;
+         case 17:
+            this.mINTERROMPA();
+            break;
+         case 18:
+            this.mLEIA();
+            break;
+         case 19:
+            this.mLEIA_CARACTER();
+            break;
+         case 20:
+            this.mLIMPA_TELA();
+            break;
+         case 21:
+            this.mMAIOR();
+            break;
+         case 22:
+            this.mMAIOR_IGUAL();
+            break;
+         case 23:
+            this.mMENOR();
+            break;
+         case 24:
+            this.mMENOR_IGUAL();
+            break;
+         case 25:
+            this.mMOD();
+            break;
+         case 26:
+            this.mMOD2();
+            break;
+         case 27:
+            this.mMULTIPLICACAO();
+            break;
+         case 28:
+            this.mNEGACAO_LOGICA();
+            break;
+         case 29:
+            this.mNEGACAO_LOGICA2();
+            break;
+         case 30:
+            this.mOU();
+            break;
+         case 31:
+            this.mOUTROCASO();
+            break;
+         case 32:
+            this.mPARA();
+            break;
+         case 33:
+            this.mPARAM_MATRIZ();
+            break;
+         case 34:
+            this.mPARAM_VETOR();
+            break;
+         case 35:
+            this.mPROCEDIMENTO();
+            break;
+         case 36:
+            this.mREFERENCIA();
+            break;
+         case 37:
+            this.mRETORNA();
+            break;
+         case 38:
+            this.mSE();
+            break;
+         case 39:
+            this.mSUBTRACAO();
+            break;
+         case 40:
+            this.mTIPO_CARACTER();
+            break;
+         case 41:
+            this.mTIPO_INTEIRO();
+            break;
+         case 42:
+            this.mTIPO_LOGICO();
+            break;
+         case 43:
+            this.mTIPO_REAL();
+            break;
+         case 44:
+            this.mTIPO_TEXTO();
+            break;
+         case 45:
+            this.mT__101();
+            break;
+         case 46:
+            this.mT__102();
+            break;
+         case 47:
+            this.mT__103();
+            break;
+         case 48:
+            this.mT__104();
+            break;
+         case 49:
+            this.mT__105();
+            break;
+         case 50:
+            this.mT__106();
+            break;
+         case 51:
+            this.mT__107();
+            break;
+         case 52:
+            this.mT__108();
+            break;
+         case 53:
+            this.mT__109();
+            break;
+         case 54:
+            this.mT__110();
+            break;
+         case 55:
+            this.mT__111();
+            break;
+         case 56:
+            this.mT__112();
+            break;
+         case 57:
+            this.mT__113();
+            break;
+         case 58:
+            this.mT__114();
+            break;
+         case 59:
+            this.mT__115();
+            break;
+         case 60:
+            this.mT__116();
+            break;
+         case 61:
+            this.mT__117();
+            break;
+         case 62:
+            this.mT__118();
+            break;
+         case 63:
+            this.mT__119();
+            break;
+         case 64:
+            this.mT__120();
+            break;
+         case 65:
+            this.mT__121();
+            break;
+         case 66:
+            this.mT__122();
+            break;
+         case 67:
+            this.mT__123();
+            break;
+         case 68:
+            this.mT__124();
+            break;
+         case 69:
+            this.mT__125();
+            break;
+         case 70:
+            this.mT__126();
+            break;
+         case 71:
+            this.mT__127();
+            break;
+         case 72:
+            this.mT__128();
+            break;
+         case 73:
+            this.mT__129();
+            break;
+         case 74:
+            this.mT__130();
+            break;
+         case 75:
+            this.mT__131();
+            break;
+         case 76:
+            this.mT__132();
+            break;
+         case 77:
+            this.mT__133();
+            break;
+         case 78:
+            this.mT__134();
+            break;
+         case 79:
+            this.mT__135();
+            break;
+         case 80:
+            this.mT__136();
+            break;
+         case 81:
+            this.mT__137();
+            break;
+         case 82:
+            this.mT__138();
+            break;
+         case 83:
+            this.mT__139();
+            break;
+         case 84:
+            this.mT__140();
+            break;
+         case 85:
+            this.mTEXTO_LITERAL();
+            break;
+         case 86:
+            this.mCHAR_LITERAL();
+            break;
+         case 87:
+            this.mBOOL_LITERAL();
+            break;
+         case 88:
+            this.mINTEIRO_LITERAL();
+            break;
+         case 89:
+            this.mREAL_LITERAL();
+            break;
+         case 90:
+            this.mIDENTIFICADOR();
+            break;
+         case 91:
+            this.mWHITESPACE();
+            break;
+         case 92:
+            this.mCOMENTARIO();
+            break;
+         case 93:
+            this.mCOMENTARIO_MULTILINHA();
       }
 
    }
@@ -1521,3 +1518,4 @@ public class CalangoGrammarLexer extends Lexer {
       }
    }
 }
+
