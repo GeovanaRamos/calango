@@ -222,7 +222,7 @@ public class AcoesStatements {
       } else {
          Character input = CalangoAPI.readChar();
          if (firstChild.getType() == 91) {
-            var.setValor((Object)input);
+            var.setValor(input);
             SimboloVariavel vetor = (SimboloVariavel)Interpretador.exec((CalangoTree)firstChild.getChild(0));
             Integer posicao = (Integer)Interpretador.exec((CalangoTree)firstChild.getChild(1)).getValor(Integer.class);
             Integer posicaoMatriz = null;
@@ -350,6 +350,9 @@ public class AcoesStatements {
                   if (metodo.isProcedimento()) {
                      throw new ProcedimentoRetornandoException();
                   }
+                  if (var19.getValue() == null) {
+                     break label151;
+                  }
                }
 
                try {
@@ -364,6 +367,7 @@ public class AcoesStatements {
                   if (!var9.hasNext()) {
                      CalangoAPI.passo("FIM SUBPROGRAMA", metodo.getLineEnd());
                      Algoritmo.popEscopo();
+                     break;
                   } else {
                      String id = (String)var9.next();
                      if (id.contains("-")) {
@@ -385,8 +389,14 @@ public class AcoesStatements {
                }
             }
 
+            return var7;
          }
 
+         if (metodo.isFuncao()) {
+            throw new FuncaoNaoRetornouException(metodo.getIdentificador());
+         } else {
+            return new SimboloLiteral(AcoesStatements.RetornoProcedimento.class, new AcoesStatements.RetornoProcedimento());
+         }
       }
    }
 
@@ -532,3 +542,4 @@ public class AcoesStatements {
    static class RetornoProcedimento {
    }
 }
+
