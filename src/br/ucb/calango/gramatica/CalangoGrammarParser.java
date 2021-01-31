@@ -23,6 +23,9 @@ import org.antlr.runtime.tree.RewriteRuleSubtreeStream;
 import org.antlr.runtime.tree.RewriteRuleTokenStream;
 import org.antlr.runtime.tree.TreeAdaptor;
 
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 public class CalangoGrammarParser extends Parser {
    public static final String[] tokenNames = new String[]{"<invalid>", "<EOR>", "<DOWN>", "<UP>", "ABS", "ADICAO", "ALEAT", "ALGORITMO", "ASCII_CHAR", "ATRIBUICAO", "BOOL_LITERAL", "CASO", "CASOS", "CHAMADA", "CHAR_ASCII", "CHAR_LITERAL", "CHAR_TEXTO", "COMENTARIO", "COMENTARIO_MULTILINHA", "COMPARA_TEXTO", "CONCATENACAO", "CONV_CHAR_TEXTO", "CONV_TEXTO_CHAR", "COPIA", "CORPO", "DECL_ATRIBUICAO", "DECL_VARIAVEL", "DIFERENTE", "DIGITO", "DIVISAO", "DIVISAO_INT", "E", "ENQUANTO", "ENQUANTO_STM", "ESCOLHA", "ESCREVA", "ESCREVAL", "EXP", "FACA", "FIM_FUNCAO", "FIM_PROCEDIMENTO", "FORMATA_REAL", "FORMATA_REAL_DECIMAL", "FORMATA_REAL_TOTAL", "FUNCAO", "IDENT", "IDENTIFICADOR", "IGUAL", "INTEIRO_LITERAL", "INTERROMPA", "LEIA", "LEIA_CARACTER", "LETRA", "LIMPA_TELA", "MAIOR", "MAIOR_IGUAL", "MAIUSC", "MAIUSC_CHAR", "MENOR", "MENOR_IGUAL", "MINUSC", "MINUSC_CHAR", "MOD", "MOD2", "MULTIPLICACAO", "NEGACAO_LOGICA", "NEGACAO_LOGICA2", "NEGACAO_MATEMATICA", "OU", "OUTROCASO", "PARA", "PARAMETRO", "PARAMETROS", "PARAMETROS_CHAMADA", "PARAM_MATRIZ", "PARAM_VETOR", "PI", "PRINCIPAL", "PROCEDIMENTO", "REAL_LITERAL", "REFERENCIA", "RETORNA", "RQUAD", "SE", "SENAO", "SENAO_SE", "SENAO_STMS", "SE_STMS", "STATEMENTS", "SUBTRACAO", "TAMANHO_TEXTO", "TERMO_VETOR", "TEXTO_LITERAL", "TIPO_CARACTER", "TIPO_IDENTIFICADOR", "TIPO_INTEIRO", "TIPO_LOGICO", "TIPO_REAL", "TIPO_TEXTO", "VETOR", "WHITESPACE", "'('", "')'", "':'", "';'", "'='", "'['", "'[]['", "']'", "'abs'", "'aleatorio'", "'algoritmo'", "'asciiCaracter'", "'ate'", "'caracterAscii'", "'caracterTexto'", "'comparaTexto'", "'convCaractTexto'", "'convTextoCaract'", "'copia'", "'de'", "'entao'", "'exp'", "'fimEnquanto'", "'fimEscolha'", "'fimPara'", "'fimPrincipal'", "'fimSe'", "'maiusculo'", "'maiusculoCaracter'", "'minusculo'", "'minusculoCaracter'", "'passo'", "'pi'", "'principal'", "'raizQuadrada'", "'senao'", "'senaoSe'", "'tamanhoTexto'", "'{'", "'}'"};
    public static final int EOF = -1;
@@ -540,7 +543,13 @@ public class CalangoGrammarParser extends Parser {
 
    public void emitErrorMessage(String msg) {
       this.errors = true;
-      CalangoAPI.printErro(-1, msg);
+      Pattern p = Pattern.compile("\\d+(?=\\:)");
+      Matcher m = p.matcher(msg);
+      if (m.find()){
+         CalangoAPI.printErro(Integer.parseInt(m.group(0)), msg.replaceAll("line\\s\\d+:\\d+",""));
+      } else {
+         CalangoAPI.printErro(-1, msg);
+      }
    }
 
    public String getErrorMessage(RecognitionException e, String[] tokenNames) {

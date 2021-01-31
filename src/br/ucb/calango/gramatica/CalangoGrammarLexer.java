@@ -14,6 +14,9 @@ import org.antlr.runtime.NoViableAltException;
 import org.antlr.runtime.RecognitionException;
 import org.antlr.runtime.RecognizerSharedState;
 
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 public class CalangoGrammarLexer extends Lexer {
    public static final int EOF = -1;
    public static final int T__101 = 101;
@@ -182,7 +185,13 @@ public class CalangoGrammarLexer extends Lexer {
 
    public void emitErrorMessage(String msg) {
       this.errors = true;
-      CalangoAPI.printErro(-1, msg);
+      Pattern p = Pattern.compile("\\d+(?=\\:)");
+      Matcher m = p.matcher(msg);
+      if (m.find()){
+         CalangoAPI.printErro(Integer.parseInt(m.group(0)), msg.replaceAll("line\\s\\d+:\\d+",""));
+      } else {
+         CalangoAPI.printErro(-1, msg);
+      }
    }
 
    public String getErrorMessage(RecognitionException e, String[] tokenNames) {
