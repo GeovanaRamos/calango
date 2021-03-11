@@ -183,22 +183,22 @@ public class DefaultVariavel extends JPanel implements Variavel {
       BufferedImage refImg = null;
 
       try {
-         refImg = ImageIO.read(DefaultVariavel.class.getResource("icons/accept.png"));
-         icons.put(TipoDado.CARACTER, ImageIO.read(DefaultVariavel.class.getResource("icons/caracter-icon.png")));
-         icons.put(TipoDado.INTEIRO, ImageIO.read(DefaultVariavel.class.getResource("icons/inteiro-icon.png")));
-         icons.put(TipoDado.LOGICO, ImageIO.read(DefaultVariavel.class.getResource("icons/logico-icon.png")));
-         icons.put(TipoDado.MATRIZ_CARACTER, ImageIO.read(DefaultVariavel.class.getResource("icons/caracter-icon.png")));
-         icons.put(TipoDado.MATRIZ_INTEIRO, ImageIO.read(DefaultVariavel.class.getResource("icons/inteiro-icon.png")));
-         icons.put(TipoDado.MATRIZ_LOGICO, ImageIO.read(DefaultVariavel.class.getResource("icons/logico-icon.png")));
-         icons.put(TipoDado.MATRIZ_REAL, ImageIO.read(DefaultVariavel.class.getResource("icons/real-icon.png")));
-         icons.put(TipoDado.MATRIZ_TEXTO, ImageIO.read(DefaultVariavel.class.getResource("icons/texto-icon.png")));
-         icons.put(TipoDado.REAL, ImageIO.read(DefaultVariavel.class.getResource("icons/real-icon.png")));
-         icons.put(TipoDado.TEXTO, ImageIO.read(DefaultVariavel.class.getResource("icons/texto-icon.png")));
-         icons.put(TipoDado.VETOR_CARACTER, ImageIO.read(DefaultVariavel.class.getResource("icons/caracter-icon.png")));
-         icons.put(TipoDado.VETOR_INTEIRO, ImageIO.read(DefaultVariavel.class.getResource("icons/inteiro-icon.png")));
-         icons.put(TipoDado.VETOR_LOGICO, ImageIO.read(DefaultVariavel.class.getResource("icons/logico-icon.png")));
-         icons.put(TipoDado.VETOR_REAL, ImageIO.read(DefaultVariavel.class.getResource("icons/real-icon.png")));
-         icons.put(TipoDado.VETOR_TEXTO, ImageIO.read(DefaultVariavel.class.getResource("icons/texto-icon.png")));
+         refImg = ImageIO.read(DefaultVariavel.class.getClassLoader().getResourceAsStream("icons/accept.png"));
+         icons.put(TipoDado.CARACTER, ImageIO.read(DefaultVariavel.class.getClassLoader().getResourceAsStream("icons/caracter-icon.png")));
+         icons.put(TipoDado.INTEIRO, ImageIO.read(DefaultVariavel.class.getClassLoader().getResourceAsStream("icons/inteiro-icon.png")));
+         icons.put(TipoDado.LOGICO, ImageIO.read(DefaultVariavel.class.getClassLoader().getResourceAsStream("icons/logico-icon.png")));
+         icons.put(TipoDado.MATRIZ_CARACTER, ImageIO.read(DefaultVariavel.class.getClassLoader().getResourceAsStream("icons/caracter-icon.png")));
+         icons.put(TipoDado.MATRIZ_INTEIRO, ImageIO.read(DefaultVariavel.class.getClassLoader().getResourceAsStream("icons/inteiro-icon.png")));
+         icons.put(TipoDado.MATRIZ_LOGICO, ImageIO.read(DefaultVariavel.class.getClassLoader().getResourceAsStream("icons/logico-icon.png")));
+         icons.put(TipoDado.MATRIZ_REAL, ImageIO.read(DefaultVariavel.class.getClassLoader().getResourceAsStream("icons/real-icon.png")));
+         icons.put(TipoDado.MATRIZ_TEXTO, ImageIO.read(DefaultVariavel.class.getClassLoader().getResourceAsStream("icons/texto-icon.png")));
+         icons.put(TipoDado.REAL, ImageIO.read(DefaultVariavel.class.getClassLoader().getResourceAsStream("icons/real-icon.png")));
+         icons.put(TipoDado.TEXTO, ImageIO.read(DefaultVariavel.class.getClassLoader().getResourceAsStream("icons/texto-icon.png")));
+         icons.put(TipoDado.VETOR_CARACTER, ImageIO.read(DefaultVariavel.class.getClassLoader().getResourceAsStream("icons/caracter-icon.png")));
+         icons.put(TipoDado.VETOR_INTEIRO, ImageIO.read(DefaultVariavel.class.getClassLoader().getResourceAsStream("icons/inteiro-icon.png")));
+         icons.put(TipoDado.VETOR_LOGICO, ImageIO.read(DefaultVariavel.class.getClassLoader().getResourceAsStream("icons/logico-icon.png")));
+         icons.put(TipoDado.VETOR_REAL, ImageIO.read(DefaultVariavel.class.getClassLoader().getResourceAsStream("icons/real-icon.png")));
+         icons.put(TipoDado.VETOR_TEXTO, ImageIO.read(DefaultVariavel.class.getClassLoader().getResourceAsStream("icons/texto-icon.png")));
       } catch (Exception var2) {
          Logger.getLogger(DefaultVariavel.class.getName()).log(Level.SEVERE, (String)null, var2);
       }

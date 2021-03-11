@@ -81,7 +81,7 @@ public class CalangoMonitorFrame extends JDialog implements IMonitorFrame {
       BufferedImage i = null;
 
       try {
-         i = ImageIO.read(CalangoMonitorFrame.class.getResourceAsStream("monitor.png"));
+         i = ImageIO.read(CalangoMonitorFrame.class.getResourceAsStream("/monitor.png"));
       } catch (IOException var2) {
          var2.printStackTrace();
       }

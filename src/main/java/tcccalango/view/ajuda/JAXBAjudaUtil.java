@@ -14,7 +14,7 @@ public class JAXBAjudaUtil {
 
    public static <T> T load(String path) {
       try {
-         return (T) context.createUnmarshaller().unmarshal(JAXBAjudaUtil.class.getResource("attach/" + path));
+         return (T) context.createUnmarshaller().unmarshal(JAXBAjudaUtil.class.getClassLoader().getResourceAsStream("attach/" + path));
       } catch (Exception var2) {
          System.out.println("attach/" + path);
          Logger.getLogger(JAXBAjudaUtil.class.getName()).log(Level.SEVERE, (String)null, var2);

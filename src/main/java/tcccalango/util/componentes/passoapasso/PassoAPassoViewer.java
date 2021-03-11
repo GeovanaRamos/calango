@@ -152,7 +152,7 @@ public class PassoAPassoViewer extends JScrollPane implements AdjustmentListener
       BufferedImage img = null;
 
       try {
-         img = ImageIO.read(HeaderEscopo.class.getResourceAsStream("bg-escopos.png"));
+         img = ImageIO.read(HeaderEscopo.class.getResourceAsStream("/bg-escopos.png"));
       } catch (IOException var2) {
          Logger.getLogger(HeaderEscopo.class.getName()).log(Level.SEVERE, (String)null, var2);
       }

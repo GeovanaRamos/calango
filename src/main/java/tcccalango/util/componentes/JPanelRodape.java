@@ -41,7 +41,7 @@ public class JPanelRodape extends JPanel {
       BufferedImage img = null;
 
       try {
-         img = ImageIO.read(JPanelRodape.class.getResourceAsStream("bg-rodape.png"));
+         img = ImageIO.read(JPanelRodape.class.getResourceAsStream("/bg-rodape.png"));
       } catch (IOException var2) {
          Logger.getLogger(JPanelRodape.class.getName()).log(Level.SEVERE, (String)null, var2);
       }

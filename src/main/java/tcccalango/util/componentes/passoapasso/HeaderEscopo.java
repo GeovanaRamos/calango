@@ -46,7 +46,7 @@ public class HeaderEscopo extends JPanel {
       BufferedImage img = null;
 
       try {
-         img = ImageIO.read(HeaderEscopo.class.getResourceAsStream("bg-header-escopo.png"));
+         img = ImageIO.read(HeaderEscopo.class.getResourceAsStream("/bg-header-escopo.png"));
       } catch (IOException var2) {
          Logger.getLogger(HeaderEscopo.class.getName()).log(Level.SEVERE, (String)null, var2);
       }
