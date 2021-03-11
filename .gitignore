@@ -1,2 +1,4 @@
 /out/production/
 /out/artifacts/calango_jar/calango.conf
+/target/classes/
+/calango.conf
