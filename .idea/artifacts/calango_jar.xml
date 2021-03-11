@@ -12,6 +12,7 @@
       <element id="extracted-dir" path="$PROJECT_DIR$/src/meta-inf/lib/activation-1.1.1.jar" path-in-jar="/" />
       <element id="extracted-dir" path="$PROJECT_DIR$/src/meta-inf/lib/autocomplete.jar" path-in-jar="/" />
       <element id="extracted-dir" path="$PROJECT_DIR$/src/meta-inf/lib/antlr-4.9.1-complete.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/src/meta-inf/lib/calango-interpreter-1.0-20210308.202700-1.jar" path-in-jar="/" />
     </root>
   </artifact>
 </component>
