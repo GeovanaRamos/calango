@@ -9,14 +9,13 @@ import javax.xml.bind.Marshaller;
 import org.w3c.dom.Node;
 
 public class JAXBAjudaUtil {
-   private static final String AJUDAR_SUB_DIR = "attach/";
    private static JAXBContext context;
 
    public static <T> T load(String path) {
       try {
-         return (T) context.createUnmarshaller().unmarshal(JAXBAjudaUtil.class.getClassLoader().getResourceAsStream("attach/" + path));
+         return (T) context.createUnmarshaller().unmarshal(JAXBAjudaUtil.class.getClassLoader().getResourceAsStream("ajuda/" + path));
       } catch (Exception var2) {
-         System.out.println("attach/" + path);
+         System.out.println("ajuda/" + path);
          Logger.getLogger(JAXBAjudaUtil.class.getName()).log(Level.SEVERE, (String)null, var2);
          return null;
       }
