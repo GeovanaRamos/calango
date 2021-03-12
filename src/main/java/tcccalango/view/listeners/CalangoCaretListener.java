@@ -1,5 +1,6 @@
 package tcccalango.view.listeners;
 
+import java.awt.*;
 import java.text.MessageFormat;
 import javax.swing.JLabel;
 import javax.swing.event.CaretEvent;
@@ -13,6 +14,7 @@ public class CalangoCaretListener implements CaretListener {
    public CalangoCaretListener(RSyntaxTextArea textArea, JLabel label) {
       this.textArea = textArea;
       this.label = label;
+      this.label.setForeground(Color.GRAY);
    }
 
    public void caretUpdate(CaretEvent ce) {
