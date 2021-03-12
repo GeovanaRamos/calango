@@ -43,17 +43,21 @@ public class DefaultVariavel extends JPanel implements Variavel {
       header.setBackground(Color.WHITE);
       JLabel hnome = new JLabel("Nome");
       hnome.setFont(hnome.getFont().deriveFont(1));
+      hnome.setForeground(Color.BLACK);
       header.add("35", hnome);
       JLabel htipo = new JLabel("Tipo");
       htipo.setHorizontalAlignment(0);
       htipo.setFont(htipo.getFont().deriveFont(1));
+      htipo.setForeground(Color.BLACK);
       header.add("20", htipo);
       JLabel hvalor = new JLabel("Valor");
       hvalor.setFont(hvalor.getFont().deriveFont(1));
+      hvalor.setForeground(Color.BLACK);
       header.add("35", hvalor);
       JLabel hreferencia = new JLabel("ref");
       hreferencia.setHorizontalAlignment(0);
       hreferencia.setFont(hreferencia.getFont().deriveFont(1));
+      hreferencia.setForeground(Color.BLACK);
       header.add("10", hreferencia);
       return header;
    }
@@ -89,6 +93,7 @@ public class DefaultVariavel extends JPanel implements Variavel {
       this.setLayout(new ColumnsLayoutManager());
       this.setName(nome);
       this.lnome = new JLabel(nome);
+      this.lnome.setForeground(Color.BLACK);
       this.prepare(this.lnome, "35");
       this.tipo = tipo;
       this.ltipo = new JLabel(new ImageIcon((Image)icons.get(tipo)));
@@ -97,6 +102,7 @@ public class DefaultVariavel extends JPanel implements Variavel {
       this.prepare(this.ltipo, "20");
       this.valor = new JLabel();
       this.setValor(valor);
+      this.valor.setForeground(Color.BLACK);
       this.prepare(this.valor, "35");
       JLabel lreferencia = new JLabel();
       lreferencia.setHorizontalAlignment(0);

@@ -25,6 +25,7 @@ public class HeaderEscopo extends JPanel {
       JLabel ltitle;
       this.add(ltitle = new JLabel(title));
       ltitle.setFont(ltitle.getFont().deriveFont(1));
+      ltitle.setForeground(Color.BLACK);
    }
 
    public void paint(Graphics g) {

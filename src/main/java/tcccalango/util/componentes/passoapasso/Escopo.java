@@ -75,6 +75,7 @@ public class Escopo extends JPanel implements Parent {
       }
 
       Variavel variavel = VariavelFactory.create(this, nome, tipo, valor, referencia);
+      //variavel.setFore
       if (this.container.getComponentCount() % 2 == 0) {
          variavel.setBackground(new Color(230, 230, 230));
       } else {
