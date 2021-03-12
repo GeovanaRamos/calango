@@ -8,6 +8,14 @@
     <artifactId>calango</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <name>Calango IDE</name>
+            <url>https://maven.pkg.github.com/GeovanaRamos/calango</url>
+        </repository>
+    </distributionManagement>
+
     <build>
         <resources>
             <resource>
