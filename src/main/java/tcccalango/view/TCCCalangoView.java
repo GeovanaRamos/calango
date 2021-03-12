@@ -16,12 +16,8 @@ import java.awt.event.FocusAdapter;
 import java.awt.event.FocusEvent;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
-import java.io.InvalidClassException;
+import java.io.*;
+import java.nio.charset.StandardCharsets;
 import java.util.EventObject;
 import java.util.Iterator;
 import java.util.logging.Level;
@@ -53,6 +49,7 @@ import javax.swing.border.Border;
 import javax.swing.border.MatteBorder;
 import javax.swing.text.StyleConstants;
 import org.fife.ui.autocomplete.AutoCompletion;
+import org.fife.ui.autocomplete.BasicCompletion;
 import org.fife.ui.autocomplete.DefaultCompletionProvider;
 import org.fife.ui.autocomplete.ShorthandCompletion;
 import org.fife.ui.rsyntaxtextarea.AbstractTokenMakerFactory;
@@ -64,6 +61,7 @@ import org.jdesktop.application.Application;
 import org.jdesktop.application.FrameView;
 import org.jdesktop.application.ResourceMap;
 import org.jdesktop.application.SingleFrameApplication;
+import sun.misc.ClassLoaderUtil;
 import tcccalango.TCCCalangoApp;
 import tcccalango.util.arquivo.IOUtil;
 import tcccalango.util.componentes.CalangoConsole;
@@ -591,6 +589,7 @@ public class TCCCalangoView extends FrameView implements ITCCCalangoViewObserver
       AbstractTokenMakerFactory atmf = (AbstractTokenMakerFactory) TokenMakerFactory.getDefaultInstance();
       atmf.putMapping("text/calango", "tcccalango.util.rsyntaxarea.CalangoTokenMaker");
       this.jtAlgoritmo = new RSyntaxTextArea();
+      autoComplete();
       this.jtAlgoritmo.setSyntaxEditingStyle("text/calango");
       this.jtAlgoritmo.setTabSize(4);
       this.jtAlgoritmo.setPaintTabLines(true);
@@ -684,16 +683,15 @@ public class TCCCalangoView extends FrameView implements ITCCCalangoViewObserver
       DefaultCompletionProvider provider = new DefaultCompletionProvider();
 
       try {
-         FileReader arq = new FileReader("autocomplete.txt");
-         BufferedReader lerArq = new BufferedReader(arq);
+         InputStream inputStream = getClass().getClassLoader().getResourceAsStream("tcccalango/view/autocomplete.txt");
+         InputStreamReader streamReader = new InputStreamReader(inputStream, StandardCharsets.UTF_8);
+         BufferedReader reader = new BufferedReader(streamReader);
 
-         for(String linha = lerArq.readLine(); linha != null; linha = lerArq.readLine()) {
-            String[] parametros = linha.split("#");
-            String codigo = parametros[1].replaceAll("&", "\n").replaceAll("%", "\t");
-            provider.addCompletion(new ShorthandCompletion(provider, parametros[0], codigo, parametros[2]));
+         for(String linha = reader.readLine(); linha != null; linha = reader.readLine()) {
+            provider.addCompletion(new BasicCompletion(provider, linha));
          }
 
-         arq.close();
+         reader.close();
          AutoCompletion ac = new AutoCompletion(provider);
          ac.install(this.jtAlgoritmo);
       } catch (IOException var7) {
