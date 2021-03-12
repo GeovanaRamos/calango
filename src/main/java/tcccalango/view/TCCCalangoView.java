@@ -55,7 +55,9 @@ import javax.swing.text.StyleConstants;
 import org.fife.ui.autocomplete.AutoCompletion;
 import org.fife.ui.autocomplete.DefaultCompletionProvider;
 import org.fife.ui.autocomplete.ShorthandCompletion;
+import org.fife.ui.rsyntaxtextarea.AbstractTokenMakerFactory;
 import org.fife.ui.rsyntaxtextarea.RSyntaxTextArea;
+import org.fife.ui.rsyntaxtextarea.TokenMakerFactory;
 import org.fife.ui.rtextarea.RTextScrollPane;
 import org.jdesktop.application.Action;
 import org.jdesktop.application.Application;
@@ -586,6 +588,8 @@ public class TCCCalangoView extends FrameView implements ITCCCalangoViewObserver
       this.jpAlgoritmo.setName("jpAlgoritmo");
       this.jpAlgoritmo.setMinimumSize(new Dimension(500, 400));
       this.jpAlgoritmo.setLayout(new BorderLayout());
+      AbstractTokenMakerFactory atmf = (AbstractTokenMakerFactory) TokenMakerFactory.getDefaultInstance();
+      atmf.putMapping("text/calango", "tcccalango.util.rsyntaxarea.CalangoTokenMaker");
       this.jtAlgoritmo = new RSyntaxTextArea();
       this.jtAlgoritmo.setSyntaxEditingStyle("text/calango");
       this.jtAlgoritmo.setTabSize(4);
