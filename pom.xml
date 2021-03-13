@@ -30,6 +30,12 @@
             <groupId>org.jdesktop.bsaf</groupId>
             <artifactId>bsaf</artifactId>
             <version>1.9.2</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>javax.jnlp</groupId>
+                    <artifactId>jnlp</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
         <dependency>
             <groupId>br.ucb</groupId>
@@ -46,6 +52,7 @@
             <artifactId>autocomplete</artifactId>
             <version>1.5.2</version>
         </dependency>
+
     </dependencies>
 
 
