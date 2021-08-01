@@ -1,11 +1,7 @@
 algoritmo
-ate
 caso
-de
-enquanto
-entao
-escolha
-faca
+enquanto (i<=x) faca
+escolha()
 fimEnquanto
 fimEscolha
 fimFuncao
@@ -13,32 +9,35 @@ fimPara
 fimPrincipal
 fimProcedimento
 fimSe
-funcao
+funcao inteiro nome()
 interrompa
 outroCaso
-para
-passo
+para (i de 1 ate x passo 1 ) faca
 principal
-procedimento
+procedimento nome()
 retorna
-se
+se () entao
 senao
 caracter
 inteiro
 logico
 real
 texto
-comparaTexto();
-tamantoTexto();
-abs();
-exp();
+comparaTexto(a, b);
+tamanhoTexto(a, b);
+abs(x);
+exp(b, e);
 pi();
-raizQuadrada();
-aleatorio();
-maiusculo();
-minusculo();
-copia();
-maiusculoCaracter();
-minusculoCaracter();
-asciiCaracter();
-caracterAscii();
+raizQuadrada(x);
+aleatorio(x);
+maiusculo(texto);
+minusculo(texto);
+copia(a, b);
+maiusculoCaracter(c);
+minusculoCaracter(C);
+asciiCaracter(x);
+caracterAscii(c);
+escreva();
+escreval();
+leia();
+leiaCaracter();
