@@ -2,29 +2,23 @@
 <funcionalidade>
     <nome>Funções</nome>
     <index>2</index>
-    <descricao>&lt;html&gt;
-  &lt;head&gt;
-    
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;p class=&quot;MsoNormal&quot; style=&quot;text-align:justify;text-indent:36.0pt;border:none;
-mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:yes&quot;&gt;&lt;span style=&quot;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;mso-fareast-font-family:&amp;quot;Trebuchet MS&amp;quot;;
-mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt;As funções são semelhantes aos
-procedimentos, mas com uma diferença básica que elas devem sempre retornar um
-valor. Além disto, na declaração da função, deve-se substituir à palavra “&lt;b style=&quot;mso-bidi-font-weight:normal&quot;&gt;&lt;i style=&quot;mso-bidi-font-style:normal&quot;&gt;procedimento&lt;/i&gt;&lt;/b&gt;”
-por “&lt;span class=&quot;SpellE&quot;&gt;&lt;b style=&quot;mso-bidi-font-weight:normal&quot;&gt;&lt;i style=&quot;mso-bidi-font-style:normal&quot;&gt;funcao&lt;/i&gt;&lt;/b&gt;&lt;/span&gt;” seguido imediatamente
-pelo tipo de retorno da função.&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p class=&quot;MsoNormal&quot; style=&quot;text-align:justify;text-indent:36.0pt;border:none;
-mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:yes&quot;&gt;&lt;span style=&quot;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;mso-fareast-font-family:&amp;quot;Trebuchet MS&amp;quot;;
-mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt;Toda função deve ter pelo menos um comando
-retorna, que possibilita retornar um valor (expressão ou conteúdo de variáveis)
-ao chamador. No código a seguir, por exemplo, a função retorna o valor &lt;span class=&quot;GramE&quot;&gt;2&lt;/span&gt; que será atribuído à variável “numero”, e apresentado a
-seguir.&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+    <descricao><![CDATA[
+    <html>
+    <body>
+    <p>As funções são semelhantes aos procedimentos, mas elas devem sempre retornar um valor,
+    diferentemente dos procedimentos. Além disso, na declaração da função, deve-se substituir à
+    palavra <i>procedimento</i> por <i><b>funcao</b></i> seguido imediatamente pelo tipo de retorno
+    da função.  </p>
 
-    &lt;div align=&quot;center&quot;&gt;
-        &lt;img src=&quot;attach/img/exemplo-funcao.png&quot; /&gt;
-    &lt;/div&gt;
-  &lt;/body&gt;
-&lt;/html&gt;
-</descricao>
+    <p>Toda função deve ter pelo menos um comando  <i>retorna </i>, que possibilita retornar um valor
+    ao chamador. No código a seguir, por exemplo, a função retorna o valor 2, que será atribuído à
+    variável “numero”. </p>
+
+    <br>
+    <div align="center">
+        <img src="attach/img/exemplo-funcao.png" />
+    </div>
+    </body>
+    </html>
+    ]]></descricao>
 </funcionalidade>

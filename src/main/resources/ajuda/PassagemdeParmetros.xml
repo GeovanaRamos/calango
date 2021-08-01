@@ -2,35 +2,26 @@
 <funcionalidade>
     <nome>Passagem de Parâmetros</nome>
     <index>3</index>
-    <descricao>&lt;html&gt;
-  &lt;head&gt;
-    
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;p class=&quot;MsoNormal&quot; style=&quot;text-align:justify;text-indent:36.0pt;border:none;
-mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:yes&quot;&gt;&lt;span style=&quot;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;mso-fareast-font-family:&amp;quot;Trebuchet MS&amp;quot;;
-mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt;Valores podem ser passados para as funções
-e procedimentos, meio de parâmetros. Os parâmetros são declarados na primeira
-linha de uma função ou procedimento e são separados por uma vírgula, como mostrado
-a seguir.&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p class=&quot;MsoNormal&quot; style=&quot;text-align:justify;text-indent:36.0pt;border:none;
-mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:yes&quot;&gt;&lt;span style=&quot;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;mso-fareast-font-family:&amp;quot;Trebuchet MS&amp;quot;;
-mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt;&lt;o:p&gt;&amp;nbsp;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+    <descricao><![CDATA[
+    <html>
+    <body>
+    <p>Valores podem ser passados para as funções e procedimentos por meio de parâmetros.
+    Os parâmetros são declarados na primeira linha de uma função ou procedimento e são
+    separados por uma vírgula, como mostrado a seguir:</p>
 
-&lt;div align=&quot;center&quot;&gt;
-        &lt;img src=&quot;attach/img/exemplo-passagem-parametro.png&quot; /&gt;
-    &lt;/div&gt;
+    <br>
+    <div align="center">
+      <img src="attach/img/exemplo-passagem-parametro.png"/>
+    </div>
+    <br>
 
- &lt;p class=&quot;MsoNormal&quot; style=&quot;text-align:justify;text-indent:36.0pt;border:none;
-mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:yes&quot;&gt;&lt;span style=&quot;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;mso-fareast-font-family:&amp;quot;Trebuchet MS&amp;quot;;
-mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt;Vale notar que a passagem padrão dos
-parâmetros é por valor (o valor da variável é copiado e passado pra função),
-então qualquer alteração feita nelas dentro do &lt;span class=&quot;SpellE&quot;&gt;&lt;span class=&quot;GramE&quot;&gt;sub-algoritmo&lt;/span&gt;&lt;/span&gt; não irá se refletir no chamador. No
-entanto, isso não vale para os casos em que a variável é passada por referência
-(explicitamente) ou quando um vetor é passado (implicitamente). Esses casos
-serão analisados a seguir.&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;
-&lt;/p&gt;
-  &lt;/body&gt;
-&lt;/html&gt;
-</descricao>
+     <p>Vale notar que a passagem padrão dos parâmetros é por valor (o valor da variável é
+     copiado e passado para a função). Então, qualquer alteração feita nelas dentro do
+     sub-algoritmo não irá se refletir no chamador. No entanto, isso não vale para os casos
+     em que a variável é passada por referência (explicitamente) ou quando um vetor é passado
+     (implicitamente).</p>
+
+    </body>
+    </html>
+    ]]></descricao>
 </funcionalidade>

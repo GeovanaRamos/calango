@@ -2,369 +2,122 @@
 <funcionalidade>
     <nome>Operadores e Comparadores</nome>
     <index>5</index>
-    <descricao>&lt;html&gt;
+ <descricao><![CDATA[
+    <html>
+    <body>
 
-     &lt;body&gt;
-&lt;p class=&quot;MsoNormal&quot; style=&quot;text-align:justify;text-indent:53.0pt;border:none;
-mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:yes&quot;&gt;&lt;span style=&quot;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;mso-fareast-font-family:&amp;quot;Trebuchet MS&amp;quot;;
-mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt;Para somar, subtrair, concatenar,
-comparar, relacionar logicamente, existem diversos operadores e comparadores na
-linguagem Calango. Abaixo, estão as tabelas com os diversos operadores,
-separados por tipo.&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+    <p>Para somar, subtrair, concatenar, comparar, relacionar logicamente, existem diversos operadores
+    e comparadores
+    na linguagem Calango. Abaixo, estão as tabelas com os diversos operadores, separados por tipo.</p>
 
-&lt;p class=&quot;MsoNormal&quot; align=&quot;center&quot; style=&quot;text-align:center;text-indent:53.0pt;
-border:none;mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:yes&quot;&gt;&lt;o:p&gt;&amp;nbsp;&lt;/o:p&gt;&lt;/p&gt;
+    <br>
+    <table style="border-collapse:collapse;width: 100%;">
+      <tr style="text-align:center;background-color: black;color:white;">
+        <th><b>Operador Aritmético</b></th>
+        <th><b>Descrição</b></th>
+      </tr>
+      <tr style="text-align:center;background-color: #cccccc;color:black">
+        <td>+</td>
+        <td>Operador de soma</td>
+      </tr>
+      <tr style="text-align:center;background-color: #dddddd;color:black">
+        <td>-</td>
+        <td>Operador de subtração</td>
+      </tr>
+      <tr style="text-align:center;background-color: #cccccc;color:black">
+        <td>*</td>
+        <td>Operador de multiplicação</td>
+      </tr>
+      <tr style="text-align:center;background-color: #dddddd;color:black">
+        <td>/</td>
+        <td>Operador de divisão</td>
+      </tr>
+      <tr style="text-align:center;background-color: #cccccc;color:black">
+        <td>\</td>
+        <td>Operador de divisão inteira</td>
+      </tr>
+      <tr style="text-align:center;background-color: #dddddd;color:black">
+        <td>%</td>
+        <td>Operador de resto</td>
+      </tr>
+      <tr style="text-align:center;background-color: #cccccc;color:black">
+        <td>mod</td>
+        <td>Operador alternativo de resto</td>
+      </tr>
+    </table>
+    <br>
 
-&lt;table class=&quot;MsoNormalTable&quot; border=&quot;1&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot; width=&quot;100%&quot; style=&quot;width:100.0%;margin-left:5.0pt;border-collapse:collapse;border:none;
- mso-border-alt:solid windowtext .5pt;mso-yfti-tbllook:1184;mso-padding-alt:
- 0cm 5.4pt 0cm 5.4pt;mso-border-insideh:.5pt solid windowtext;mso-border-insidev:
- .5pt solid windowtext&quot;&gt;
- &lt;tbody&gt;&lt;tr style=&quot;mso-yfti-irow:0;mso-yfti-firstrow:yes&quot;&gt;
-  &lt;td valign=&quot;top&quot; style=&quot;border:solid black 1.0pt;background:#B0B3B2;mso-shading:
-  #B0B3B2;mso-pattern:solid #B0B3B2;padding:5.0pt 5.0pt 5.0pt 5.0pt&quot;&gt;
-  &lt;p class=&quot;MsoNormal&quot; align=&quot;center&quot; style=&quot;text-align:center;text-indent:-1.5pt;
-  border:none;mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:
-  yes&quot;&gt;&lt;span style=&quot;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;mso-fareast-font-family:
-  &amp;quot;Trebuchet MS&amp;quot;;mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;;background:#B0B3B2;
-  mso-shading:#B0B3B2;mso-pattern:solid #B0B3B2&quot;&gt;Operador aritmético&lt;/span&gt;&lt;/p&gt;
-  &lt;/td&gt;
-  &lt;td valign=&quot;top&quot; style=&quot;border:solid black 1.0pt;border-left:none;mso-border-left-alt:
-  solid black 1.0pt;background:#B0B3B2;mso-shading:#B0B3B2;mso-pattern:solid #B0B3B2;
-  padding:5.0pt 5.0pt 5.0pt 5.0pt&quot;&gt;
-  &lt;p class=&quot;MsoNormal&quot; align=&quot;center&quot; style=&quot;text-align:center;text-indent:-1.5pt;
-  border:none;mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:
-  yes&quot;&gt;&lt;span style=&quot;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;mso-fareast-font-family:
-  &amp;quot;Trebuchet MS&amp;quot;;mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;;background:#B0B3B2;
-  mso-shading:#B0B3B2;mso-pattern:solid #B0B3B2&quot;&gt;Descrição&lt;/span&gt;&lt;/p&gt;
-  &lt;/td&gt;
- &lt;/tr&gt;
- &lt;tr style=&quot;mso-yfti-irow:1&quot;&gt;
-  &lt;td valign=&quot;top&quot; style=&quot;border:solid black 1.0pt;border-top:none;mso-border-top-alt:
-  solid black 1.0pt;padding:5.0pt 5.0pt 5.0pt 5.0pt&quot;&gt;
-  &lt;p class=&quot;MsoNormal&quot; align=&quot;center&quot; style=&quot;text-align:center;text-indent:-1.5pt;
-  border:none;mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:
-  yes&quot;&gt;&lt;span style=&quot;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;mso-fareast-font-family:
-  &amp;quot;Trebuchet MS&amp;quot;;mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt;+&lt;/span&gt;&lt;/p&gt;
-  &lt;/td&gt;
-  &lt;td valign=&quot;top&quot; style=&quot;border-top:none;border-left:none;border-bottom:solid black 1.0pt;
-  border-right:solid black 1.0pt;mso-border-top-alt:solid black 1.0pt;
-  mso-border-left-alt:solid black 1.0pt;padding:5.0pt 5.0pt 5.0pt 5.0pt&quot;&gt;
-  &lt;p class=&quot;MsoNormal&quot; align=&quot;center&quot; style=&quot;text-align:center;text-indent:-1.5pt;
-  border:none;mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:
-  yes&quot;&gt;&lt;span style=&quot;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;mso-fareast-font-family:
-  &amp;quot;Trebuchet MS&amp;quot;;mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt;Operador de soma&lt;/span&gt;&lt;/p&gt;
-  &lt;/td&gt;
- &lt;/tr&gt;
- &lt;tr style=&quot;mso-yfti-irow:2&quot;&gt;
-  &lt;td valign=&quot;top&quot; style=&quot;border:solid black 1.0pt;border-top:none;mso-border-top-alt:
-  solid black 1.0pt;padding:5.0pt 5.0pt 5.0pt 5.0pt&quot;&gt;
-  &lt;p class=&quot;MsoNormal&quot; align=&quot;center&quot; style=&quot;text-align:center;text-indent:-1.5pt;
-  border:none;mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:
-  yes&quot;&gt;&lt;span style=&quot;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;mso-fareast-font-family:
-  &amp;quot;Trebuchet MS&amp;quot;;mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt;-&lt;/span&gt;&lt;/p&gt;
-  &lt;/td&gt;
-  &lt;td valign=&quot;top&quot; style=&quot;border-top:none;border-left:none;border-bottom:solid black 1.0pt;
-  border-right:solid black 1.0pt;mso-border-top-alt:solid black 1.0pt;
-  mso-border-left-alt:solid black 1.0pt;padding:5.0pt 5.0pt 5.0pt 5.0pt&quot;&gt;
-  &lt;p class=&quot;MsoNormal&quot; align=&quot;center&quot; style=&quot;text-align:center;text-indent:-1.5pt;
-  border:none;mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:
-  yes&quot;&gt;&lt;span style=&quot;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;mso-fareast-font-family:
-  &amp;quot;Trebuchet MS&amp;quot;;mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt;Operador de subtração&lt;/span&gt;&lt;/p&gt;
-  &lt;/td&gt;
- &lt;/tr&gt;
- &lt;tr style=&quot;mso-yfti-irow:3&quot;&gt;
-  &lt;td valign=&quot;top&quot; style=&quot;border:solid black 1.0pt;border-top:none;mso-border-top-alt:
-  solid black 1.0pt;padding:5.0pt 5.0pt 5.0pt 5.0pt&quot;&gt;
-  &lt;p class=&quot;MsoNormal&quot; align=&quot;center&quot; style=&quot;text-align:center;text-indent:-1.5pt;
-  border:none;mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:
-  yes&quot;&gt;&lt;span style=&quot;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;mso-fareast-font-family:
-  &amp;quot;Trebuchet MS&amp;quot;;mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt;*&lt;/span&gt;&lt;/p&gt;
-  &lt;/td&gt;
-  &lt;td valign=&quot;top&quot; style=&quot;border-top:none;border-left:none;border-bottom:solid black 1.0pt;
-  border-right:solid black 1.0pt;mso-border-top-alt:solid black 1.0pt;
-  mso-border-left-alt:solid black 1.0pt;padding:5.0pt 5.0pt 5.0pt 5.0pt&quot;&gt;
-  &lt;p class=&quot;MsoNormal&quot; align=&quot;center&quot; style=&quot;text-align:center;text-indent:-1.5pt;
-  border:none;mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:
-  yes&quot;&gt;&lt;span style=&quot;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;mso-fareast-font-family:
-  &amp;quot;Trebuchet MS&amp;quot;;mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt;Operador de multiplicação&lt;/span&gt;&lt;/p&gt;
-  &lt;/td&gt;
- &lt;/tr&gt;
- &lt;tr style=&quot;mso-yfti-irow:4&quot;&gt;
-  &lt;td valign=&quot;top&quot; style=&quot;border:solid black 1.0pt;border-top:none;mso-border-top-alt:
-  solid black 1.0pt;padding:5.0pt 5.0pt 5.0pt 5.0pt&quot;&gt;
-  &lt;p class=&quot;MsoNormal&quot; align=&quot;center&quot; style=&quot;text-align:center;text-indent:-1.5pt;
-  border:none;mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:
-  yes&quot;&gt;&lt;span style=&quot;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;mso-fareast-font-family:
-  &amp;quot;Trebuchet MS&amp;quot;;mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt;/&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;\&lt;/span&gt;&lt;/p&gt;
-  &lt;/td&gt;
-  &lt;td valign=&quot;top&quot; style=&quot;border-top:none;border-left:none;border-bottom:solid black 1.0pt;
-  border-right:solid black 1.0pt;mso-border-top-alt:solid black 1.0pt;
-  mso-border-left-alt:solid black 1.0pt;padding:5.0pt 5.0pt 5.0pt 5.0pt&quot;&gt;
-  &lt;p class=&quot;MsoNormal&quot; align=&quot;center&quot; style=&quot;text-align:center;text-indent:-1.5pt;
-  border:none;mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:
-  yes&quot;&gt;&lt;span style=&quot;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;mso-fareast-font-family:
-  &amp;quot;Trebuchet MS&amp;quot;;mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt;Operador de divisão&lt;/span&gt;&lt;/p&gt;
-  &lt;/td&gt;
- &lt;/tr&gt;
- &lt;tr style=&quot;mso-yfti-irow:5;mso-yfti-lastrow:yes&quot;&gt;
-  &lt;td valign=&quot;top&quot; style=&quot;border:solid black 1.0pt;border-top:none;mso-border-top-alt:
-  solid black 1.0pt;padding:5.0pt 5.0pt 5.0pt 5.0pt&quot;&gt;
-  &lt;p class=&quot;MsoNormal&quot; align=&quot;center&quot; style=&quot;text-align:center;text-indent:-1.5pt;
-  border:none;mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:
-  yes&quot;&gt;&lt;span class=&quot;SpellE&quot;&gt;&lt;span style=&quot;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;
-  mso-fareast-font-family:&amp;quot;Trebuchet MS&amp;quot;;mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt;mod %&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-  &lt;/td&gt;
-  &lt;td valign=&quot;top&quot; style=&quot;border-top:none;border-left:none;border-bottom:solid black 1.0pt;
-  border-right:solid black 1.0pt;mso-border-top-alt:solid black 1.0pt;
-  mso-border-left-alt:solid black 1.0pt;padding:5.0pt 5.0pt 5.0pt 5.0pt&quot;&gt;
-  &lt;p class=&quot;MsoNormal&quot; align=&quot;center&quot; style=&quot;text-align:center;text-indent:-1.5pt;
-  border:none;mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:
-  yes&quot;&gt;&lt;span style=&quot;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;mso-fareast-font-family:
-  &amp;quot;Trebuchet MS&amp;quot;;mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt;Operador de resto&lt;/span&gt;&lt;/p&gt;
-  &lt;/td&gt;
- &lt;/tr&gt;
-&lt;/tbody&gt;&lt;/table&gt;
+    <br>
+    <table style="border-collapse:collapse;width: 100%;">
+      <tr style="text-align:center;background-color: black;color:white;">
+        <th><b>Operador de Texto</b></th>
+        <th><b>Descrição</b></th>
+      </tr>
+      <tr style="text-align:center;background-color: #cccccc;color:black">
+        <td>+</td>
+        <td>Concatena textos</td>
+      </tr>
+    </table>
+    <br>
 
-&lt;p class=&quot;MsoNormal&quot; style=&quot;text-indent:-1.5pt;border:none;mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;
-mso-border-shadow:yes&quot;&gt;&lt;o:p&gt;&amp;nbsp;&lt;/o:p&gt;&lt;/p&gt;
+    <br>
+    <table style="border-collapse:collapse;width: 100%;">
+      <tr style="text-align:center;background-color: black;color:white;">
+        <th><b>Operador Lógico</b></th>
+        <th><b>Descrição</b></th>
+      </tr>
+      <tr style="text-align:center;background-color: #cccccc;color:black">
+        <td>e</td>
+        <td>Operador lógico de conjunção</td>
+      </tr>
+      <tr style="text-align:center;background-color: #dddddd;color:black">
+        <td>ou</td>
+        <td>Operador lógico de disjunção</td>
+      </tr>
+      <tr style="text-align:center;background-color: #cccccc;color:black">
+        <td>nao</td>
+        <td>Operador lógico de negação</td>
+      </tr>
+    </table>
+    <br>
 
-&lt;table class=&quot;MsoNormalTable&quot; border=&quot;1&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot; width=&quot;100%&quot; style=&quot;width:100.0%;margin-left:5.0pt;border-collapse:collapse;border:none;
- mso-border-alt:solid windowtext .5pt;mso-yfti-tbllook:1184;mso-padding-alt:
- 0cm 5.4pt 0cm 5.4pt;mso-border-insideh:.5pt solid windowtext;mso-border-insidev:
- .5pt solid windowtext&quot;&gt;
- &lt;tbody&gt;&lt;tr style=&quot;mso-yfti-irow:0;mso-yfti-firstrow:yes&quot;&gt;
-  &lt;td valign=&quot;top&quot; style=&quot;border:solid black 1.0pt;background:#B0B3B2;mso-shading:
-  #B0B3B2;mso-pattern:solid #B0B3B2;padding:5.0pt 5.0pt 5.0pt 5.0pt&quot;&gt;
-  &lt;p class=&quot;MsoNormal&quot; align=&quot;center&quot; style=&quot;text-align:center;text-indent:-1.5pt;
-  border:none;mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:
-  yes&quot;&gt;&lt;span style=&quot;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;mso-fareast-font-family:
-  &amp;quot;Trebuchet MS&amp;quot;;mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;;background:#B0B3B2;
-  mso-shading:#B0B3B2;mso-pattern:solid #B0B3B2&quot;&gt;Operador de texto&lt;/span&gt;&lt;/p&gt;
-  &lt;/td&gt;
-  &lt;td valign=&quot;top&quot; style=&quot;border:solid black 1.0pt;border-left:none;mso-border-left-alt:
-  solid black 1.0pt;background:#B0B3B2;mso-shading:#B0B3B2;mso-pattern:solid #B0B3B2;
-  padding:5.0pt 5.0pt 5.0pt 5.0pt&quot;&gt;
-  &lt;p class=&quot;MsoNormal&quot; align=&quot;center&quot; style=&quot;text-align:center;text-indent:-1.5pt;
-  border:none;mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:
-  yes&quot;&gt;&lt;span style=&quot;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;mso-fareast-font-family:
-  &amp;quot;Trebuchet MS&amp;quot;;mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;;background:#B0B3B2;
-  mso-shading:#B0B3B2;mso-pattern:solid #B0B3B2&quot;&gt;Descrição&lt;/span&gt;&lt;/p&gt;
-  &lt;/td&gt;
- &lt;/tr&gt;
- &lt;tr style=&quot;mso-yfti-irow:1;mso-yfti-lastrow:yes&quot;&gt;
-  &lt;td valign=&quot;top&quot; style=&quot;border:solid black 1.0pt;border-top:none;mso-border-top-alt:
-  solid black 1.0pt;padding:5.0pt 5.0pt 5.0pt 5.0pt&quot;&gt;
-  &lt;p class=&quot;MsoNormal&quot; align=&quot;center&quot; style=&quot;text-align:center;text-indent:-1.5pt;
-  border:none;mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:
-  yes&quot;&gt;&lt;span style=&quot;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;mso-fareast-font-family:
-  &amp;quot;Trebuchet MS&amp;quot;;mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt;+&lt;/span&gt;&lt;/p&gt;
-  &lt;/td&gt;
-  &lt;td valign=&quot;top&quot; style=&quot;border-top:none;border-left:none;border-bottom:solid black 1.0pt;
-  border-right:solid black 1.0pt;mso-border-top-alt:solid black 1.0pt;
-  mso-border-left-alt:solid black 1.0pt;padding:5.0pt 5.0pt 5.0pt 5.0pt&quot;&gt;
-  &lt;p class=&quot;MsoNormal&quot; align=&quot;center&quot; style=&quot;text-align:center;text-indent:-1.5pt;
-  border:none;mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:
-  yes&quot;&gt;&lt;span style=&quot;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;mso-fareast-font-family:
-  &amp;quot;Trebuchet MS&amp;quot;;mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt;Concatenar textos&lt;/span&gt;&lt;/p&gt;
-  &lt;/td&gt;
- &lt;/tr&gt;
-&lt;/tbody&gt;&lt;/table&gt;
+    <br>
+    <table style="border-collapse:collapse;width: 100%;">
+      <tr style="text-align:center;background-color: black;color:white;">
+        <th><b>Operador de Comparação</b></th>
+        <th><b>Descrição</b></th>
+      </tr>
+      <tr style="text-align:center;background-color: #cccccc;color:black">
+        <td>==</td>
+        <td>Comparação de igualdade</td>
+      </tr>
+      <tr style="text-align:center;background-color: #dddddd;color:black">
+        <td>!=</td>
+        <td>Comparação de diferença</td>
+      </tr>
+      <tr style="text-align:center;background-color: #cccccc;color:black">
+        <td>&gt;</td>
+        <td>Comparação de maior</td>
+      </tr>
+      <tr style="text-align:center;background-color: #dddddd;color:black">
+        <td>&lt;</td>
+        <td>Comparação de menor</td>
+      </tr>
+      <tr style="text-align:center;background-color: #cccccc;color:black">
+        <td>&lt;=</td>
+        <td>Comparação de menor ou igual</td>
+      </tr>
+      <tr style="text-align:center;background-color: #dddddd;color:black">
+        <td>&gt;=</td>
+        <td>Comparação de maior ou igual</td>
+      </tr>
+    </table>
+    <br>
 
-&lt;p class=&quot;MsoNormal&quot; style=&quot;border:none;mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;
-mso-border-shadow:yes&quot;&gt;&lt;o:p&gt;&amp;nbsp;&lt;/o:p&gt;&lt;/p&gt;
+    <p>É importante notar que a comparação de símbolos do tipo texto não são feitas através dos
+    comparadores acima, e sim através da função embutida <i>comparaTexto</i>, que será vista mais adiante.</p>
 
-&lt;table class=&quot;MsoNormalTable&quot; border=&quot;1&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot; width=&quot;100%&quot; style=&quot;width:100.0%;margin-left:5.0pt;border-collapse:collapse;border:none;
- mso-border-alt:solid windowtext .5pt;mso-yfti-tbllook:1184;mso-padding-alt:
- 0cm 5.4pt 0cm 5.4pt;mso-border-insideh:.5pt solid windowtext;mso-border-insidev:
- .5pt solid windowtext&quot;&gt;
- &lt;tbody&gt;&lt;tr style=&quot;mso-yfti-irow:0;mso-yfti-firstrow:yes&quot;&gt;
-  &lt;td valign=&quot;top&quot; style=&quot;border:solid black 1.0pt;background:#B0B3B2;mso-shading:
-  #B0B3B2;mso-pattern:solid #B0B3B2;padding:5.0pt 5.0pt 5.0pt 5.0pt&quot;&gt;
-  &lt;p class=&quot;MsoNormal&quot; align=&quot;center&quot; style=&quot;text-align:center;text-indent:-1.5pt;
-  border:none;mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:
-  yes&quot;&gt;&lt;span style=&quot;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;mso-fareast-font-family:
-  &amp;quot;Trebuchet MS&amp;quot;;mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;;background:#B0B3B2;
-  mso-shading:#B0B3B2;mso-pattern:solid #B0B3B2&quot;&gt;Operadores lógicos&lt;/span&gt;&lt;/p&gt;
-  &lt;/td&gt;
-  &lt;td valign=&quot;top&quot; style=&quot;border:solid black 1.0pt;border-left:none;mso-border-left-alt:
-  solid black 1.0pt;background:#B0B3B2;mso-shading:#B0B3B2;mso-pattern:solid #B0B3B2;
-  padding:5.0pt 5.0pt 5.0pt 5.0pt&quot;&gt;
-  &lt;p class=&quot;MsoNormal&quot; align=&quot;center&quot; style=&quot;text-align:center;text-indent:-1.5pt;
-  border:none;mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:
-  yes&quot;&gt;&lt;span style=&quot;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;mso-fareast-font-family:
-  &amp;quot;Trebuchet MS&amp;quot;;mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;;background:#B0B3B2;
-  mso-shading:#B0B3B2;mso-pattern:solid #B0B3B2&quot;&gt;Descrição&lt;/span&gt;&lt;/p&gt;
-  &lt;/td&gt;
- &lt;/tr&gt;
- &lt;tr style=&quot;mso-yfti-irow:1&quot;&gt;
-  &lt;td valign=&quot;top&quot; style=&quot;border:solid black 1.0pt;border-top:none;mso-border-top-alt:
-  solid black 1.0pt;padding:5.0pt 5.0pt 5.0pt 5.0pt&quot;&gt;
-  &lt;p class=&quot;MsoNormal&quot; align=&quot;center&quot; style=&quot;text-align:center;text-indent:-1.5pt;
-  border:none;mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:
-  yes&quot;&gt;&lt;span style=&quot;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;mso-fareast-font-family:
-  &amp;quot;Trebuchet MS&amp;quot;;mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt;e&lt;/span&gt;&lt;/p&gt;
-  &lt;/td&gt;
-  &lt;td valign=&quot;top&quot; style=&quot;border-top:none;border-left:none;border-bottom:solid black 1.0pt;
-  border-right:solid black 1.0pt;mso-border-top-alt:solid black 1.0pt;
-  mso-border-left-alt:solid black 1.0pt;padding:5.0pt 5.0pt 5.0pt 5.0pt&quot;&gt;
-  &lt;p class=&quot;MsoNormal&quot; align=&quot;center&quot; style=&quot;text-align:center;text-indent:-1.5pt;
-  border:none;mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:
-  yes&quot;&gt;&lt;span style=&quot;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;mso-fareast-font-family:
-  &amp;quot;Trebuchet MS&amp;quot;;mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt;Realiza a operação lógica
-  &lt;i&gt;e&lt;/i&gt;&lt;/span&gt;&lt;/p&gt;
-  &lt;/td&gt;
- &lt;/tr&gt;
- &lt;tr style=&quot;mso-yfti-irow:2&quot;&gt;
-  &lt;td valign=&quot;top&quot; style=&quot;border:solid black 1.0pt;border-top:none;mso-border-top-alt:
-  solid black 1.0pt;padding:5.0pt 5.0pt 5.0pt 5.0pt&quot;&gt;
-  &lt;p class=&quot;MsoNormal&quot; align=&quot;center&quot; style=&quot;text-align:center;text-indent:-1.5pt;
-  border:none;mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:
-  yes&quot;&gt;&lt;span style=&quot;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;mso-fareast-font-family:
-  &amp;quot;Trebuchet MS&amp;quot;;mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt;ou&lt;/span&gt;&lt;/p&gt;
-  &lt;/td&gt;
-  &lt;td valign=&quot;top&quot; style=&quot;border-top:none;border-left:none;border-bottom:solid black 1.0pt;
-  border-right:solid black 1.0pt;mso-border-top-alt:solid black 1.0pt;
-  mso-border-left-alt:solid black 1.0pt;padding:5.0pt 5.0pt 5.0pt 5.0pt&quot;&gt;
-  &lt;p class=&quot;MsoNormal&quot; align=&quot;center&quot; style=&quot;text-align:center;text-indent:-1.5pt;
-  border:none;mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:
-  yes&quot;&gt;&lt;span style=&quot;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;mso-fareast-font-family:
-  &amp;quot;Trebuchet MS&amp;quot;;mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt;Realiza a operação lógica
-  &lt;i&gt;ou&lt;/i&gt;&lt;/span&gt;&lt;/p&gt;
-  &lt;/td&gt;
- &lt;/tr&gt;
- &lt;tr style=&quot;mso-yfti-irow:3;mso-yfti-lastrow:yes&quot;&gt;
-  &lt;td valign=&quot;top&quot; style=&quot;border:solid black 1.0pt;border-top:none;mso-border-top-alt:
-  solid black 1.0pt;padding:5.0pt 5.0pt 5.0pt 5.0pt&quot;&gt;
-  &lt;p class=&quot;MsoNormal&quot; align=&quot;center&quot; style=&quot;text-align:center;text-indent:-1.5pt;
-  border:none;mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:
-  yes&quot;&gt;&lt;span class=&quot;SpellE&quot;&gt;&lt;span class=&quot;GramE&quot;&gt;&lt;span style=&quot;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;
-  mso-fareast-font-family:&amp;quot;Trebuchet MS&amp;quot;;mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt;nao&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;mso-fareast-font-family:&amp;quot;Trebuchet MS&amp;quot;;
-  mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt;&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
-  &lt;/td&gt;
-  &lt;td valign=&quot;top&quot; style=&quot;border-top:none;border-left:none;border-bottom:solid black 1.0pt;
-  border-right:solid black 1.0pt;mso-border-top-alt:solid black 1.0pt;
-  mso-border-left-alt:solid black 1.0pt;padding:5.0pt 5.0pt 5.0pt 5.0pt&quot;&gt;
-  &lt;p class=&quot;MsoNormal&quot; align=&quot;center&quot; style=&quot;text-align:center;text-indent:-1.5pt;
-  border:none;mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:
-  yes&quot;&gt;&lt;span style=&quot;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;mso-fareast-font-family:
-  &amp;quot;Trebuchet MS&amp;quot;;mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt;Realiza a negação da
-  operação&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
-  &lt;/td&gt;
- &lt;/tr&gt;
-&lt;/tbody&gt;&lt;/table&gt;
-
-&lt;p class=&quot;MsoNormal&quot; style=&quot;border:none;mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;
-mso-border-shadow:yes&quot;&gt;&lt;o:p&gt;&amp;nbsp;&lt;/o:p&gt;&lt;/p&gt;
-
-&lt;table class=&quot;MsoNormalTable&quot; border=&quot;1&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot; width=&quot;100%&quot; style=&quot;width:100.0%;margin-left:5.0pt;border-collapse:collapse;border:none;
- mso-border-alt:solid windowtext .5pt;mso-yfti-tbllook:1184;mso-padding-alt:
- 0cm 5.4pt 0cm 5.4pt;mso-border-insideh:.5pt solid windowtext;mso-border-insidev:
- .5pt solid windowtext&quot;&gt;
- &lt;tbody&gt;&lt;tr style=&quot;mso-yfti-irow:0;mso-yfti-firstrow:yes&quot;&gt;
-  &lt;td valign=&quot;top&quot; style=&quot;border:solid black 1.0pt;background:#B0B3B2;mso-shading:
-  #B0B3B2;mso-pattern:solid #B0B3B2;padding:5.0pt 5.0pt 5.0pt 5.0pt&quot;&gt;
-  &lt;p class=&quot;MsoNormal&quot; align=&quot;center&quot; style=&quot;text-align:center;text-indent:-1.5pt&quot;&gt;&lt;span style=&quot;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;mso-fareast-font-family:&amp;quot;Trebuchet MS&amp;quot;;
-  mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;;background:#B0B3B2;mso-shading:#B0B3B2;
-  mso-pattern:solid #B0B3B2&quot;&gt;Comparadores&lt;/span&gt;&lt;/p&gt;
-  &lt;/td&gt;
-  &lt;td valign=&quot;top&quot; style=&quot;border:solid black 1.0pt;border-left:none;mso-border-left-alt:
-  solid black 1.0pt;background:#B0B3B2;mso-shading:#B0B3B2;mso-pattern:solid #B0B3B2;
-  padding:5.0pt 5.0pt 5.0pt 5.0pt&quot;&gt;
-  &lt;p class=&quot;MsoNormal&quot; align=&quot;center&quot; style=&quot;text-align:center;text-indent:-1.5pt&quot;&gt;&lt;span style=&quot;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;mso-fareast-font-family:&amp;quot;Trebuchet MS&amp;quot;;
-  mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;;background:#B0B3B2;mso-shading:#B0B3B2;
-  mso-pattern:solid #B0B3B2&quot;&gt;Descrição&lt;/span&gt;&lt;/p&gt;
-  &lt;/td&gt;
- &lt;/tr&gt;
- &lt;tr style=&quot;mso-yfti-irow:1&quot;&gt;
-  &lt;td valign=&quot;top&quot; style=&quot;border:solid black 1.0pt;border-top:none;mso-border-top-alt:
-  solid black 1.0pt;padding:5.0pt 5.0pt 5.0pt 5.0pt&quot;&gt;
-  &lt;p class=&quot;MsoNormal&quot; align=&quot;center&quot; style=&quot;text-align:center;text-indent:-1.5pt&quot;&gt;&lt;span style=&quot;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;mso-fareast-font-family:&amp;quot;Trebuchet MS&amp;quot;;
-  mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt;&lt;span style=&quot;mso-spacerun:yes&quot;&gt;&amp;nbsp;&lt;/span&gt;==&lt;/span&gt;&lt;/p&gt;
-  &lt;/td&gt;
-  &lt;td valign=&quot;top&quot; style=&quot;border-top:none;border-left:none;border-bottom:solid black 1.0pt;
-  border-right:solid black 1.0pt;mso-border-top-alt:solid black 1.0pt;
-  mso-border-left-alt:solid black 1.0pt;padding:5.0pt 5.0pt 5.0pt 5.0pt&quot;&gt;
-  &lt;p class=&quot;MsoNormal&quot; align=&quot;center&quot; style=&quot;text-align:center;text-indent:-1.5pt&quot;&gt;&lt;span style=&quot;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;mso-fareast-font-family:&amp;quot;Trebuchet MS&amp;quot;;
-  mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt;Comparação de igualdade&lt;/span&gt;&lt;/p&gt;
-  &lt;/td&gt;
- &lt;/tr&gt;
- &lt;tr style=&quot;mso-yfti-irow:2&quot;&gt;
-  &lt;td valign=&quot;top&quot; style=&quot;border:solid black 1.0pt;border-top:none;mso-border-top-alt:
-  solid black 1.0pt;padding:5.0pt 5.0pt 5.0pt 5.0pt&quot;&gt;
-  &lt;p class=&quot;MsoNormal&quot; align=&quot;center&quot; style=&quot;text-align:center;text-indent:-1.5pt&quot;&gt;&lt;span style=&quot;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;mso-fareast-font-family:&amp;quot;Trebuchet MS&amp;quot;;
-  mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt;!=&lt;/span&gt;&lt;/p&gt;
-  &lt;/td&gt;
-  &lt;td valign=&quot;top&quot; style=&quot;border-top:none;border-left:none;border-bottom:solid black 1.0pt;
-  border-right:solid black 1.0pt;mso-border-top-alt:solid black 1.0pt;
-  mso-border-left-alt:solid black 1.0pt;padding:5.0pt 5.0pt 5.0pt 5.0pt&quot;&gt;
-  &lt;p class=&quot;MsoNormal&quot; align=&quot;center&quot; style=&quot;text-align:center;text-indent:-1.5pt&quot;&gt;&lt;span style=&quot;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;mso-fareast-font-family:&amp;quot;Trebuchet MS&amp;quot;;
-  mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt;Comparação de diferença&lt;/span&gt;&lt;/p&gt;
-  &lt;/td&gt;
- &lt;/tr&gt;
- &lt;tr style=&quot;mso-yfti-irow:3&quot;&gt;
-  &lt;td valign=&quot;top&quot; style=&quot;border:solid black 1.0pt;border-top:none;mso-border-top-alt:
-  solid black 1.0pt;padding:5.0pt 5.0pt 5.0pt 5.0pt&quot;&gt;
-  &lt;p class=&quot;MsoNormal&quot; align=&quot;center&quot; style=&quot;text-align:center;text-indent:-1.5pt&quot;&gt;&lt;span style=&quot;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;mso-fareast-font-family:&amp;quot;Trebuchet MS&amp;quot;;
-  mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt;&amp;gt;&lt;o:p&gt;&amp;nbsp;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
-  &lt;/td&gt;
-  &lt;td valign=&quot;top&quot; style=&quot;border-top:none;border-left:none;border-bottom:solid black 1.0pt;
-  border-right:solid black 1.0pt;mso-border-top-alt:solid black 1.0pt;
-  mso-border-left-alt:solid black 1.0pt;padding:5.0pt 5.0pt 5.0pt 5.0pt&quot;&gt;
-  &lt;p class=&quot;MsoNormal&quot; align=&quot;center&quot; style=&quot;text-align:center;text-indent:-1.5pt&quot;&gt;&lt;span style=&quot;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;mso-fareast-font-family:&amp;quot;Trebuchet MS&amp;quot;;
-  mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt;Comparação de maior&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
-  &lt;/td&gt;
- &lt;/tr&gt;
- &lt;tr style=&quot;mso-yfti-irow:4&quot;&gt;
-  &lt;td valign=&quot;top&quot; style=&quot;border:solid black 1.0pt;border-top:none;mso-border-top-alt:
-  solid black 1.0pt;padding:5.0pt 5.0pt 5.0pt 5.0pt&quot;&gt;
-  &lt;p class=&quot;MsoNormal&quot; align=&quot;center&quot; style=&quot;text-align:center;text-indent:-1.5pt&quot;&gt;&lt;span style=&quot;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;mso-fareast-font-family:&amp;quot;Trebuchet MS&amp;quot;;
-  mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt;&amp;lt;&lt;o:p&gt;&amp;nbsp;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
-  &lt;/td&gt;
-  &lt;td valign=&quot;top&quot; style=&quot;border-top:none;border-left:none;border-bottom:solid black 1.0pt;
-  border-right:solid black 1.0pt;mso-border-top-alt:solid black 1.0pt;
-  mso-border-left-alt:solid black 1.0pt;padding:5.0pt 5.0pt 5.0pt 5.0pt&quot;&gt;
-  &lt;p class=&quot;MsoNormal&quot; align=&quot;center&quot; style=&quot;text-align:center;text-indent:-1.5pt&quot;&gt;&lt;span style=&quot;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;mso-fareast-font-family:&amp;quot;Trebuchet MS&amp;quot;;
-  mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt;Comparação de menor&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
-  &lt;/td&gt;
- &lt;/tr&gt;
- &lt;tr style=&quot;mso-yfti-irow:5&quot;&gt;
-  &lt;td valign=&quot;top&quot; style=&quot;border:solid black 1.0pt;border-top:none;mso-border-top-alt:
-  solid black 1.0pt;padding:5.0pt 5.0pt 5.0pt 5.0pt&quot;&gt;
-  &lt;p class=&quot;MsoNormal&quot; align=&quot;center&quot; style=&quot;text-align:center;text-indent:-1.5pt&quot;&gt;&lt;span style=&quot;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;mso-fareast-font-family:&amp;quot;Trebuchet MS&amp;quot;;
-  mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt;&amp;lt;=&lt;/span&gt;&lt;/p&gt;
-  &lt;/td&gt;
-  &lt;td valign=&quot;top&quot; style=&quot;border-top:none;border-left:none;border-bottom:solid black 1.0pt;
-  border-right:solid black 1.0pt;mso-border-top-alt:solid black 1.0pt;
-  mso-border-left-alt:solid black 1.0pt;padding:5.0pt 5.0pt 5.0pt 5.0pt&quot;&gt;
-  &lt;p class=&quot;MsoNormal&quot; align=&quot;center&quot; style=&quot;text-align:center;text-indent:-1.5pt&quot;&gt;&lt;span style=&quot;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;mso-fareast-font-family:&amp;quot;Trebuchet MS&amp;quot;;
-  mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt;Comparação de menor ou igual&lt;/span&gt;&lt;/p&gt;
-  &lt;/td&gt;
- &lt;/tr&gt;
- &lt;tr style=&quot;mso-yfti-irow:6;mso-yfti-lastrow:yes&quot;&gt;
-  &lt;td valign=&quot;top&quot; style=&quot;border:solid black 1.0pt;border-top:none;mso-border-top-alt:
-  solid black 1.0pt;padding:5.0pt 5.0pt 5.0pt 5.0pt&quot;&gt;
-  &lt;p class=&quot;MsoNormal&quot; align=&quot;center&quot; style=&quot;text-align:center;text-indent:-1.5pt&quot;&gt;&lt;span style=&quot;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;mso-fareast-font-family:&amp;quot;Trebuchet MS&amp;quot;;
-  mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt;&amp;gt;=&lt;/span&gt;&lt;/p&gt;
-  &lt;/td&gt;
-  &lt;td valign=&quot;top&quot; style=&quot;border-top:none;border-left:none;border-bottom:solid black 1.0pt;
-  border-right:solid black 1.0pt;mso-border-top-alt:solid black 1.0pt;
-  mso-border-left-alt:solid black 1.0pt;padding:5.0pt 5.0pt 5.0pt 5.0pt&quot;&gt;
-  &lt;p class=&quot;MsoNormal&quot; align=&quot;center&quot; style=&quot;text-align:center;text-indent:-1.5pt&quot;&gt;&lt;span style=&quot;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;mso-fareast-font-family:&amp;quot;Trebuchet MS&amp;quot;;
-  mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt;Comparação de maior ou igual&lt;/span&gt;&lt;/p&gt;
-  &lt;/td&gt;
- &lt;/tr&gt;
-&lt;/tbody&gt;&lt;/table&gt;
-
-&lt;p class=&quot;MsoNormal&quot; style=&quot;border:none;mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;
-mso-border-shadow:yes&quot;&gt;&lt;o:p&gt;&amp;nbsp;&lt;/o:p&gt;&lt;/p&gt;
-
-&lt;p class=&quot;MsoNormal&quot; style=&quot;text-align:justify;text-indent:36.0pt;border:none;
-mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:yes&quot;&gt;&lt;span style=&quot;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;mso-fareast-font-family:&amp;quot;Trebuchet MS&amp;quot;;
-mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt;É importante notar que a comparação de
-símbolos do tipo texto não são feitas através dos comparadores acima, e sim
-através da função embutida &lt;/span&gt;&lt;span class=&quot;SpellE&quot;&gt;&lt;span class=&quot;GramE&quot;&gt;&lt;b style=&quot;mso-bidi-font-weight:normal&quot;&gt;&lt;i style=&quot;mso-bidi-font-style:normal&quot;&gt;&lt;span style=&quot;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;mso-fareast-font-family:&amp;quot;Trebuchet MS&amp;quot;;
-mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;;color:#1F497D;mso-themecolor:text2&quot;&gt;comparaTexto&lt;/span&gt;&lt;/i&gt;&lt;/b&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;mso-fareast-font-family:&amp;quot;Trebuchet MS&amp;quot;;
-mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt;, que será vista mais adiante.&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
-     &lt;/body&gt;
-&lt;/html&gt;</descricao>
+    </body>
+    </html>
+    ]]></descricao>
 </funcionalidade>

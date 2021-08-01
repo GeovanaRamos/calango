@@ -2,39 +2,31 @@
 <funcaoEmbutida>
     <nome>raizQuadrada</nome>
     <index>6</index>
-    <descricao>&lt;html&gt;
-  &lt;head&gt;
-    
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;p class=&quot;MsoNormal&quot; style=&quot;text-indent:1.0cm&quot;&gt;&lt;span style=&quot;mso-fareast-font-family:
-&amp;quot;Times New Roman&amp;quot;&quot;&gt;A função &lt;span class=&quot;SpellE&quot;&gt;&lt;span class=&quot;GramE&quot;&gt;&lt;b&gt;raizQuadrada&lt;/b&gt;&lt;/span&gt;&lt;/span&gt;&lt;b&gt;
-&lt;/b&gt; possui como objetivo é retornar o valor da raiz quadrada de um numero. A
-declaração da função segue a seguinte sintaxe: &lt;b&gt;inteiro/real &lt;span class=&quot;SpellE&quot;&gt;&lt;span class=&quot;GramE&quot;&gt;raizQuadrada&lt;/span&gt;&lt;/span&gt; (inteiro/real n)&lt;/b&gt;.
-A função recebe como parâmetro um valor do tipo inteiro ou real e seu retorno
-poderá ser um valor do tipo real ou inteiro.&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+    <descricao><![CDATA[
+    <html>
+    <body>
+    <p>A função <b><i>raizQuadrada</i></b> possui como objetivo é retornar o valor da raiz quadrada
+    de um numero. A função recebe como parâmetro um valor do tipo inteiro ou real e seu retorno
+    poderá ser um valor do tipo real ou inteiro.
+    </p>
 
-     &lt;br/&gt;
-     &lt;br/&gt;
-     &lt;div align=&quot;center&quot;&gt;
-        &lt;img src=&quot;attach/img/exemplo-raiz-quadrada.png&quot; /&gt;
-    &lt;/div&gt;
 
-     &lt;br/&gt;
+    <br>
+    <div align="center">
+      <img src="attach/img/exemplo-raiz-quadrada.png" />
+    </div>
+    <br>
 
-&lt;p class=&quot;MsoNormal&quot; style=&quot;text-indent:1.0cm&quot;&gt;&lt;span style=&quot;mso-fareast-font-family:
-&amp;quot;Times New Roman&amp;quot;&quot;&gt;Caso o usuário
-digite 4 para a primeira variável e 5.2 para a segunda, a saída será a raiz
-quadrada de 4 e de 5.2:&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+    <p>No exemplo acima, caso o usuário digitasse 4 para a primeira variável e 5.2 para a segunda,
+    a saída seria a raiz quadrada de 4 e de 5.2</p>
 
-     &lt;br/&gt;
-     &lt;br/&gt;
-     &lt;div align=&quot;center&quot;&gt;
-        &lt;img src=&quot;attach/img/exemplo-console-raiz-quadrada.png&quot; /&gt;
-    &lt;/div&gt;
-  &lt;/body&gt;
-&lt;/html&gt;
-</descricao>
+    <br>
+    <div align="center">
+      <img src="attach/img/exemplo-console-raiz-quadrada.png" />
+    </div>
+    </body>
+    </html>
+    ]]></descricao>
     <tipoRetorno>inteiro/real</tipoRetorno>
     <descricaoRetorno>raiz quadrada de n</descricaoRetorno>
     <parametros>

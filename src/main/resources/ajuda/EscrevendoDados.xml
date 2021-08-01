@@ -2,55 +2,26 @@
 <funcionalidade>
     <nome>Escrevendo Dados</nome>
     <index>1</index>
-    <descricao>&lt;html&gt;
-  &lt;head&gt;
-    
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;p class=&quot;MsoNormal&quot; style=&quot;text-align:justify;text-indent:36.0pt;border:none;
-mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:yes&quot;&gt;&lt;span style=&quot;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;mso-fareast-font-family:&amp;quot;Trebuchet MS&amp;quot;;
-mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt;Para escrever dados na saída utilizada
-pelo Calango, basta utilizar a função &lt;b style=&quot;mso-bidi-font-weight:normal&quot;&gt;&lt;i style=&quot;mso-bidi-font-style:normal&quot;&gt;escreva&lt;/i&gt;&lt;/b&gt; ou &lt;span class=&quot;SpellE&quot;&gt;&lt;b style=&quot;mso-bidi-font-weight:normal&quot;&gt;&lt;i style=&quot;mso-bidi-font-style:normal&quot;&gt;escreval&lt;/i&gt;&lt;/b&gt;&lt;/span&gt;,
-ambas recebendo como parâmetro o que será impresso. Este valor pode ser um
-inteiro, texto, lógico, etc. A diferença entre as duas funções é que a primeira
-apenas apresenta o valor e segue na mesma linha, enquanto que a segunda apresenta
-e pula para a próxima linha.&lt;/span&gt;&lt;span style=&quot;font-size:12.0pt;line-height:
-115%;font-family:&amp;quot;TimesNewRomanPSMT&amp;quot;,&amp;quot;serif&amp;quot;;mso-fareast-font-family:&amp;quot;Times New Roman&amp;quot;;
-mso-bidi-font-family:TimesNewRomanPSMT&quot;&gt; &lt;/span&gt;&lt;span class=&quot;GramE&quot;&gt;&lt;span style=&quot;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;mso-fareast-font-family:&amp;quot;Trebuchet MS&amp;quot;;
-mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt;O uso do operador “&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;mso-fareast-font-family:&amp;quot;Trebuchet MS&amp;quot;;
-mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt;,” dentro da função &lt;b style=&quot;mso-bidi-font-weight:
-normal&quot;&gt;&lt;i style=&quot;mso-bidi-font-style:normal&quot;&gt;escreva&lt;/i&gt;&lt;/b&gt; ou &lt;span class=&quot;SpellE&quot;&gt;&lt;b style=&quot;mso-bidi-font-weight:normal&quot;&gt;&lt;i style=&quot;mso-bidi-font-style:
-normal&quot;&gt;escreval&lt;/i&gt;&lt;/b&gt;&lt;/span&gt;, realiza a concatenação dos textos. O código
-abaixo exemplifica algumas escritas.&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+    <descricao><![CDATA[
+    <html>
+    <body>
+    <p>Para escrever dados na saída do Calango, basta utilizar a função <b><i>escreva</i></b>
+    ou <b><i>escreval</i></b>, ambas recebendo como parâmetro o que será impresso. Este valor
+    pode ser de qualquer tipo (inteiro, texto, lógico, etc). A diferença entre as duas funções
+    é que a primeira apenas apresenta o valor e segue na mesma linha, enquanto que a segunda
+    apresenta e pula para a próxima linha. O uso do operador “,”, dentro da função escreva ou
+    escreval, realiza a concatenação dos textos. O código abaixo exemplifica algumas escritas. </p>
 
-&lt;p class=&quot;MsoNormal&quot; style=&quot;text-indent:36.0pt&quot;&gt;&lt;span style=&quot;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;
-mso-fareast-font-family:&amp;quot;Trebuchet MS&amp;quot;;mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt;&lt;o:p&gt;&amp;nbsp;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
-
-    &lt;div align=&quot;center&quot;&gt;
-        &lt;img src=&quot;attach/img/exemplo-escrevendo-dados.png&quot; /&gt;
-    &lt;/div&gt;
-
-&lt;p  class=&quot;MsoNormal&quot; style=&quot;text-align:justify;text-indent:36.0pt;border:none;
-mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:yes&quot;&gt;
-&lt;span style=&quot;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;
-mso-fareast-font-family:&amp;quot;Trebuchet MS&amp;quot;;mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt;A
-saída será:&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;
-&lt;/p&gt;
-
-&lt;p class=&quot;MsoNormal&quot; style=&quot;text-indent:36.0pt;border:none;mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;
-mso-border-shadow:yes&quot;&gt;&lt;span style=&quot;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;
-mso-fareast-font-family:&amp;quot;Trebuchet MS&amp;quot;;mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt;&lt;o:p&gt;&amp;nbsp;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
-
-&lt;p class=&quot;MsoNormal&quot; style=&quot;text-indent:63.0pt;border:none;mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;
-mso-border-shadow:yes&quot;&gt;&lt;span style=&quot;font-family:&amp;quot;Courier New&amp;quot;;mso-fareast-font-family:
-&amp;quot;Courier New&amp;quot;&quot;&gt;Nome: Estevão&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p class=&quot;MsoNormal&quot; style=&quot;text-indent:63.0pt;border:none;mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;
-mso-border-shadow:yes&quot;&gt;&lt;span style=&quot;font-family:&amp;quot;Courier New&amp;quot;;mso-fareast-font-family:
-&amp;quot;Courier New&amp;quot;&quot;&gt;Idade: 56&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+    <br>
+    <div align="center">
+      <img src="attach/img/exemplo-escrevendo-dados.png" />
+    </div>
 
 
+    <p>A saída do exemplo acima seria:</p>
 
-  &lt;/body&gt;
-&lt;/html&gt;
-</descricao>
+    <p style="background-color:gray;color:white;">Nome: Estevão<br>Idade: 26</p>
+    </body>
+    </html>
+    ]]></descricao>
 </funcionalidade>

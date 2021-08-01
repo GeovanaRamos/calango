@@ -1,38 +1,22 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <funcionalidade>
-    <nome>Faca .. Enquanto</nome>
+    <nome>Faca ... Enquanto</nome>
     <index>4</index>
-    <descricao>&lt;html&gt;
-  &lt;head&gt;
-    
-  &lt;/head&gt;
-  &lt;body&gt;
-&lt;p class=&quot;MsoNormal&quot; style=&quot;text-align:justify;text-indent:36.0pt;border:none;
-mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:yes&quot;&gt;&lt;span style=&quot;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;mso-fareast-font-family:&amp;quot;Trebuchet MS&amp;quot;;
-mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt;A segunda repetição é semelhante &lt;span class=&quot;GramE&quot;&gt;a&lt;/span&gt; repetição &lt;b style=&quot;mso-bidi-font-weight:normal&quot;&gt;&lt;i style=&quot;mso-bidi-font-style:normal&quot;&gt;enquanto&lt;/i&gt;&lt;/b&gt;, com uma diferença: a
-condição é avaliada sempre após a execução do código. Isso significa que
-independente do resultado da expressão, o corpo da repetição irá executar pelo
-menos uma vez. Esta expressão é equivalente ao &lt;/span&gt;&lt;b style=&quot;mso-bidi-font-weight:
-normal&quot;&gt;&lt;i style=&quot;mso-bidi-font-style:normal&quot;&gt;&lt;span style=&quot;font-family:&amp;quot;Courier New&amp;quot;;
-mso-fareast-font-family:&amp;quot;Courier New&amp;quot;&quot;&gt;do&lt;span class=&quot;GramE&quot;&gt;..&lt;/span&gt;&lt;span class=&quot;SpellE&quot;&gt;while&lt;/span&gt;&lt;/span&gt;&lt;/i&gt;&lt;/b&gt;&lt;span style=&quot;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;
-mso-fareast-font-family:&amp;quot;Trebuchet MS&amp;quot;;mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt; na
-linguagem C. Exemplo:&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+    <descricao><![CDATA[
+    <html>
+    <body>
+    <p>A segunda estrutura de repetição é semelhante à repetição <b><i>enquanto</i></b>, com uma diferença: a
+    condição é avaliada sempre após a execução do código. Isso significa que, independente do resultado da expressão, o corpo da repetição irá executar pelo menos uma vez. Essa expressão é equivalente ao <i>do...while</i>na linguagem C. Exemplo:</p>
 
-&lt;p class=&quot;MsoNormal&quot;&gt;&lt;o:p&gt;&amp;nbsp;&lt;/o:p&gt;&lt;/p&gt;
+    <br>
+    <div align="center">
+      <img src="attach/img/condicionalFacaEnquanto1.png"/>
+    </div>
+    <br>
 
-&lt;br/&gt;
-&lt;div align=&quot;center&quot;&gt;
-        &lt;img src=&quot;attach/img/condicionalFacaEnquanto1.png&quot; /&gt;
-&lt;/div&gt;
-&lt;p class=&quot;MsoNormal&quot; style=&quot;text-align:justify;text-indent:36.0pt;border:none;
-mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:yes&quot;&gt;&lt;span style=&quot;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;mso-fareast-font-family:&amp;quot;Trebuchet MS&amp;quot;;
-mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt;Assim como na repetição &lt;b style=&quot;mso-bidi-font-weight:normal&quot;&gt;&lt;i style=&quot;mso-bidi-font-style:normal&quot;&gt;enquanto&lt;/i&gt;&lt;/b&gt;,
-a repetição será executada 10 vezes, de &lt;span class=&quot;GramE&quot;&gt;1&lt;/span&gt; até 10,com
-valores da variável i variando de 1 até 11, sendo que logo após incrementar o
-contador &lt;i&gt;i&lt;/i&gt; para 11, a condição i&amp;lt;=10 (&lt;i&gt;11 &amp;lt;= 10) &lt;/i&gt;é falso e a
-repetição é encerrada&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
-
-  &lt;/body&gt;
-&lt;/html&gt;
-</descricao>
+    <p>Nesse exemplo, a repetição será executada 10 vezes, de 1 até 10,com valores da variável i variando de 1 até 11, sendo que logo após incrementar o contador <i>i</i> para 11, a condição <i>i&amp;lt;=10 (11 &amp;lt;= 10) </i> é falsa e a
+    repetição é encerrada</p>
+    </body>
+    </html>
+    ]]></descricao>
 </funcionalidade>

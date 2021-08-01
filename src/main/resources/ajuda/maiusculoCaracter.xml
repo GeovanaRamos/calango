@@ -2,39 +2,30 @@
 <funcaoEmbutida>
     <nome>maiusculoCaracter</nome>
     <index>11</index>
-    <descricao>&lt;html&gt;
-  &lt;head&gt;
-    
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;p class=&quot;MsoNormal&quot; style=&quot;text-indent:1.0cm&quot;&gt;&lt;span style=&quot;mso-fareast-font-family:
-&amp;quot;Times New Roman&amp;quot;&quot;&gt;A função &lt;span class=&quot;SpellE&quot;&gt;&lt;span class=&quot;GramE&quot;&gt;&lt;b&gt;maiusculoCaracter&lt;/b&gt;&lt;/span&gt;&lt;/span&gt;&lt;b&gt;
-&lt;/b&gt; possui como objetivo transformar o &lt;span class=&quot;SpellE&quot;&gt;caracter&lt;/span&gt;
-passado por parâmetro para caixa alta, ou seja, transformar o &lt;span class=&quot;SpellE&quot;&gt;caracter&lt;/span&gt; em um &lt;span class=&quot;SpellE&quot;&gt;caracter&lt;/span&gt;
-maiúsculo. A declaração da função segue a seguinte sintaxe: &lt;span class=&quot;SpellE&quot;&gt;&lt;b&gt;caracter&lt;/b&gt;&lt;/span&gt;&lt;b&gt;
-&lt;span class=&quot;SpellE&quot;&gt;&lt;span class=&quot;GramE&quot;&gt;maiusculoCaracter&lt;/span&gt;&lt;/span&gt;(&lt;span class=&quot;SpellE&quot;&gt;caracter&lt;/span&gt; c)&lt;/b&gt;. A função recebe como parâmetro um valor do
-tipo &lt;span class=&quot;SpellE&quot;&gt;caracter&lt;/span&gt; e seu retorno é do tipo &lt;span class=&quot;SpellE&quot;&gt;caracter&lt;/span&gt;.&lt;/span&gt;&lt;span style=&quot;color:black;mso-themecolor:
-text1&quot;&gt; O caractere &lt;b style=&quot;mso-bidi-font-weight:normal&quot;&gt;&lt;i style=&quot;mso-bidi-font-style:
-normal&quot;&gt;c&lt;/i&gt;&lt;/b&gt; não é alterado.&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+    <descricao><![CDATA[
+    <html>
+    <body>
+    <p>A função <i><b>maiusculoCaracter</b></i> possui como objetivo transformar o caractere passado
+    por parâmetro para caixa alta, ou seja, transformar o caracter em um caractere maiúsculo.
+    Apesar da função retornar o caractere maiúsculo, a variável passada como parâmetro permanece
+    inalterada. Veja um exemplo abaixo: </p>
 
-     &lt;br/&gt;
-     &lt;br/&gt;
-     &lt;div align=&quot;center&quot;&gt;
-        &lt;img src=&quot;attach/img/exemplo-caracter-maiusculo.png&quot; /&gt;
-    &lt;/div&gt;
-     &lt;br/&gt;
-&lt;p class=&quot;MsoNormal&quot; style=&quot;text-indent:1.0cm&quot;&gt;&lt;span style=&quot;mso-fareast-font-family:
-&amp;quot;Times New Roman&amp;quot;&quot;&gt;Caso
-o usuário digite o caractere “a“ o algoritmo irá passá-lo para maiúsculo,
-gerando a seguinte saída:&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
-     &lt;br/&gt;
-     &lt;br/&gt;
-     &lt;div align=&quot;center&quot;&gt;
-        &lt;img src=&quot;attach/img/exemplo-console-maiusculo-caracter.png&quot; /&gt;
-    &lt;/div&gt;
-  &lt;/body&gt;
-&lt;/html&gt;
-</descricao>
+    <br>
+    <div align="center">
+      <img src="attach/img/exemplo-caracter-maiusculo.png" />
+    </div>
+    <br>
+
+    <p>Caso o usuário digitasse o caractere “a“ o algoritmo iria passá-lo para maiúsculo, gerando a
+    seguinte saída:</p>
+
+    <br>
+    <div align="center">
+      <img src="attach/img/exemplo-console-maiusculo-caracter.png"/>
+    </div>
+    </body>
+    </html>
+    ]]></descricao>
     <tipoRetorno>caracter</tipoRetorno>
     <descricaoRetorno>caracter passado para maiúsculo</descricaoRetorno>
     <parametros>

@@ -2,42 +2,27 @@
 <funcionalidade>
     <nome>Procedimentos</nome>
     <index>1</index>
-    <descricao>&lt;html&gt;
-  &lt;head&gt;
-    
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;p class=&quot;MsoNormal&quot; style=&quot;text-align:justify;text-indent:36.0pt;border:none;
-mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:yes&quot;&gt;&lt;span style=&quot;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;mso-fareast-font-family:&amp;quot;Trebuchet MS&amp;quot;;
-mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt;O primeiro tipo de &lt;span class=&quot;SpellE&quot;&gt;&lt;span class=&quot;GramE&quot;&gt;sub-algoritmo&lt;/span&gt;&lt;/span&gt; a ser apresentado são os procedimentos.
-Os procedimentos executam suas instruções, mas não retornam nenhum valor ao
-chamador (algoritmo principal ou outro &lt;span class=&quot;SpellE&quot;&gt;&lt;span class=&quot;GramE&quot;&gt;sub-algoritmo&lt;/span&gt;&lt;/span&gt;).
-Os procedimentos não podem ser colocados do lado direito de uma atribuição,
-justamente por não retornarem valores.&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+    <descricao><![CDATA[
+    <html>
+    <body>
+    <p>O primeiro tipo de sub-algoritmo a ser apresentado são os procedimentos.
+    Os procedimentos executam suas instruções, mas não retornam nenhum valor ao chamador
+    (algoritmo principal ou outro sub-algoritmo). Os procedimentos não podem ser colocados
+    do lado direito de uma atribuição, justamente por não retornarem valores.
+    </p>
+    <p>A declaração de um sub-algoritmo é dada pela palavra <b><i>procedimento</i></b> seguida
+    do nome do procedimento, parêntesis e lista de parâmetros (se houver). Como qualquer bloco
+    na linguagem, ela é finalizada com a palavra fim seguida do nome do bloco, ou seja,
+    <b><i>fimProcedimento</b></i>. Dentro de um procedimento, podem ser usados os mesmos comandos
+    e declarações do bloco principal:
+    começa com as declarações, e então os comandos. </p>
 
-&lt;p class=&quot;MsoNormal&quot; style=&quot;text-align:justify;text-indent:36.0pt;border:none;
-mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:yes&quot;&gt;&lt;span style=&quot;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;mso-fareast-font-family:&amp;quot;Trebuchet MS&amp;quot;;
-mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt;A declaração de um &lt;span class=&quot;SpellE&quot;&gt;&lt;span class=&quot;GramE&quot;&gt;sub-algoritmo&lt;/span&gt;&lt;/span&gt; é dada pela palavra &lt;b style=&quot;mso-bidi-font-weight:normal&quot;&gt;&lt;i style=&quot;mso-bidi-font-style:normal&quot;&gt;procedimento&lt;/i&gt;&lt;/b&gt;
-seguida do nome do procedimento, parêntesis, lista de parâmetros (se houver).
-Como qualquer bloco na linguagem, ela é finalizada com a palavra fim seguida do
-nome do bloco, ou seja, &lt;span class=&quot;SpellE&quot;&gt;&lt;span class=&quot;GramE&quot;&gt;&lt;b style=&quot;mso-bidi-font-weight:normal&quot;&gt;&lt;i style=&quot;mso-bidi-font-style:normal&quot;&gt;fimProcedimento&lt;/i&gt;&lt;/b&gt;&lt;/span&gt;&lt;/span&gt;.&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
-
-&lt;p class=&quot;MsoNormal&quot; style=&quot;text-align:justify;text-indent:36.0pt;border:none;
-mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:yes&quot;&gt;&lt;span style=&quot;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;mso-fareast-font-family:&amp;quot;Trebuchet MS&amp;quot;;
-mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt;Dentro de um procedimento, podem ser
-usados os mesmos comandos e declarações do bloco principal: começa com as
-declarações, e então os comandos.&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
-
-&lt;p class=&quot;MsoNormal&quot; style=&quot;text-align:justify;text-indent:36.0pt;border:none;
-mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:yes&quot;&gt;&lt;o:p&gt;&amp;nbsp;&lt;/o:p&gt;&lt;/p&gt;
-
-&lt;div align=&quot;center&quot;&gt;
-        &lt;img src=&quot;attach/img/exemplo-procedimento.png&quot; /&gt;
-    &lt;/div&gt;
-
-
-
-  &lt;/body&gt;
-&lt;/html&gt;
-</descricao>
+    <br>
+    <div align="center">
+      <img src="attach/img/exemplo-procedimento.png"/>
+    </div>
+    <br>
+    </body>
+    </html>
+    ]]></descricao>
 </funcionalidade>

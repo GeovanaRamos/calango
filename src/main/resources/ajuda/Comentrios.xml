@@ -2,24 +2,28 @@
 <funcionalidade>
     <nome>Comentários</nome>
     <index>2</index>
-    <descricao>&lt;html&gt;
-  &lt;head&gt;
-    
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;p class=&quot;MsoNormal&quot; style=&quot;text-align:justify;text-indent:36.0pt&quot;&gt;&lt;span style=&quot;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;mso-fareast-font-family:&amp;quot;Trebuchet MS&amp;quot;;
-mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt;Na linguagem Calango, existem dois tipos
-de comentários: comentário de linhas e comentário de várias linhas. Tudo que
-estiver contido dentro de um comentário será prontamente descartado pelo
-interpretador Calango. Eles seguem a mesma sintaxe da linguagem C, Java e
-afins, como é visto no código abaixo.&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+    <descricao><![CDATA[
+    <html>
+    <body>
+    <p>Na linguagem Calango, existem dois tipos de comentários:</p>
 
-    &lt;div align=&quot;center&quot;&gt;
-        &lt;img src=&quot;attach/img/exemplo-comentario.png&quot; /&gt;
-    &lt;/div&gt;
+    <ul>
+      <li><b>Comentário em linha:</b> comentário de apenas uma linha. Começa com o símbolo
+      "//" no início da linha a ser comentada.</li>
+      <li><b>Comentário multilinha:</b> comentário que se estende por várias linhas.
+      Começa com o símbolo "/*" e termina com o símbolo "*/".</li>
+    </ul>
 
+    <p>Tudo que estiver contido dentro de um comentário será prontamente descartado pelo
+    interpretador Calango. Eles seguem a mesma sintaxe da linguagem C, Java e afins, como é
+    visto no código abaixo:</p>
 
-  &lt;/body&gt;
-&lt;/html&gt;
-</descricao>
+    <br>
+    <div align="center">
+      <img src="attach/img/exemplo-comentario.png" />
+    </div>
+
+    </body>
+    </html>
+    ]]></descricao>
 </funcionalidade>

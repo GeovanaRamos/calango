@@ -2,78 +2,49 @@
 <funcionalidade>
     <nome>Passagem por Referência: Variáveis e Vetores</nome>
     <index>4</index>
-    <descricao>&lt;html&gt;
-  &lt;head&gt;
-    
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;p class=&quot;MsoNormal&quot; style=&quot;text-align:justify;text-indent:36.0pt;border:none;
-mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:yes&quot;&gt;&lt;span style=&quot;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;mso-fareast-font-family:&amp;quot;Trebuchet MS&amp;quot;;
-mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt;A passagem de variáveis por parâmetros são
-feitas normalmente por valor, no entanto, existem dois casos em que as
-variáveis são passadas por referência.&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p class=&quot;MsoNormal&quot; style=&quot;text-align:justify;border:none;mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;
-mso-border-shadow:yes&quot;&gt;&lt;span style=&quot;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;
-mso-fareast-font-family:&amp;quot;Trebuchet MS&amp;quot;;mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt;&lt;span style=&quot;mso-tab-count:1&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;/span&gt;O primeiro é quando, na declaração de
-um parâmetro, a palavra “&lt;span class=&quot;SpellE&quot;&gt;ref&lt;/span&gt;” é usada antes do tipo
-de dado, como é visto no código a seguir.&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p class=&quot;MsoNormal&quot; style=&quot;border:none;mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;
-mso-border-shadow:yes&quot;&gt;&lt;span style=&quot;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;
-mso-fareast-font-family:&amp;quot;Trebuchet MS&amp;quot;;mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt;&lt;o:p&gt;&amp;nbsp;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;div align=&quot;center&quot;&gt;
-        &lt;img src=&quot;attach/img/exemplo-passagem-referencia-1.png&quot; /&gt;
-    &lt;/div&gt;
-&lt;p  class=&quot;MsoNormal&quot; style=&quot;text-align:justify;text-indent:36.0pt;border:none;
-mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:yes&quot;&gt;
-&lt;span style=&quot;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;mso-fareast-font-family:&amp;quot;Trebuchet MS&amp;quot;;
-mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt;Apesar da variável “&lt;span class=&quot;SpellE&quot;&gt;&lt;span class=&quot;GramE&quot;&gt;totalRef&lt;/span&gt;&lt;/span&gt;” ser alterada apenas dentro do &lt;b style=&quot;mso-bidi-font-weight:normal&quot;&gt;&lt;i style=&quot;mso-bidi-font-style:normal&quot;&gt;procedimento&lt;/i&gt;&lt;/b&gt;
-soma, quando a variável total, for apresentada no bloco principal terá o valor
-4, pois ela foi passada por referência. É importante lembrar que não existe relação
-entre o nome da variável usada para&lt;span class=&quot;GramE&quot;&gt;&lt;span style=&quot;mso-spacerun:yes&quot;&gt;&amp;nbsp; &lt;/span&gt;&lt;/span&gt;chamar o &lt;b style=&quot;mso-bidi-font-weight:
-normal&quot;&gt;&lt;i style=&quot;mso-bidi-font-style:normal&quot;&gt;procedimento&lt;/i&gt;&lt;/b&gt; passado por
-referência e a declarada no &lt;b style=&quot;mso-bidi-font-weight:normal&quot;&gt;&lt;i style=&quot;mso-bidi-font-style:normal&quot;&gt;procedimento&lt;/i&gt;&lt;/b&gt; &lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;
-&lt;/p&gt;
-&lt;p class=&quot;MsoNormal&quot; style=&quot;text-align:justify;text-indent:36.0pt;border:none;
-mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:yes&quot;&gt;&lt;span style=&quot;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;mso-fareast-font-family:&amp;quot;Trebuchet MS&amp;quot;;
-mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt;&lt;o:p&gt;&amp;nbsp;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p class=&quot;MsoNormal&quot; style=&quot;text-align:justify;border:none;mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;
-mso-border-shadow:yes&quot;&gt;&lt;span style=&quot;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;
-mso-fareast-font-family:&amp;quot;Trebuchet MS&amp;quot;;mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt;&lt;span style=&quot;mso-tab-count:1&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;/span&gt;O segundo caso é quando se passa um
-vetor por parâmetro. Um exemplo é mostrado no exemplo a seguir. Este exemplo,
-no bloco principal, atribui o valor 31 à posição &lt;span class=&quot;GramE&quot;&gt;0&lt;/span&gt; do
-vetor, que é modificado para 91 dentro do &lt;b style=&quot;mso-bidi-font-weight:normal&quot;&gt;&lt;i style=&quot;mso-bidi-font-style:normal&quot;&gt;procedimento&lt;/i&gt;&lt;/b&gt;. Como o comportamento
-padrão dos vetores é ser &lt;span class=&quot;GramE&quot;&gt;passado&lt;/span&gt; por referência, essa
-modificação será refletida no bloco principal, que irá apresentar o novo valor,
-91. &lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p class=&quot;MsoNormal&quot; style=&quot;border:none;mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;
-mso-border-shadow:yes&quot;&gt;&lt;span style=&quot;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;
-mso-fareast-font-family:&amp;quot;Trebuchet MS&amp;quot;;mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt;&lt;o:p&gt;&amp;nbsp;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+    <descricao><![CDATA[
+    <html>
+    <body>
+    <p>A passagem de variáveis por parâmetros são feitas normalmente por valor, no entanto,
+    existem dois casos em que as variáveis são passadas por referência. O primeiro é quando,
+    na declaração de um parâmetro, a palavra “ref” é usada antes do tipo de dado, como é visto
+    no código a seguir. </p>
 
-&lt;div align=&quot;center&quot;&gt;
-        &lt;img src=&quot;attach/img/exemplo-passagem-referencia-2.png&quot; /&gt;
-    &lt;/div&gt;
-&lt;p  class=&quot;MsoNormal&quot; style=&quot;text-align:justify;text-indent:36.0pt;border:none;
-mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:yes&quot;&gt;
-&lt;span style=&quot;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;mso-fareast-font-family:&amp;quot;Trebuchet MS&amp;quot;;
-mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt;Observe que na declaração do &lt;b style=&quot;mso-bidi-font-weight:normal&quot;&gt;&lt;i style=&quot;mso-bidi-font-style:normal&quot;&gt;procedimento&lt;/i&gt;&lt;/b&gt;,
-o parâmetro é definido exatamente como um parâmetro com os colchetes vazios
-após o nome do parâmetro indicando que será recebido um parâmetro do tipo vetor.
-É importante notar que não é definido um tamanho do vetor, então se o
-procedimento for iterar pelos itens do vetor, é necessário que seja passado o
-tamanho do mesmo.&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;
-&lt;/p&gt;
-&lt;p class=&quot;MsoNormal&quot; style=&quot;text-align:justify;border:none;mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;
-mso-border-shadow:yes&quot;&gt;&lt;span style=&quot;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;
-mso-fareast-font-family:&amp;quot;Trebuchet MS&amp;quot;;mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt;&lt;span style=&quot;mso-tab-count:1&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;/span&gt;Na chamada do &lt;b style=&quot;mso-bidi-font-weight:
-normal&quot;&gt;&lt;i style=&quot;mso-bidi-font-style:normal&quot;&gt;procedimento&lt;/i&gt;&lt;/b&gt; o vetor é
-passado apenas por seu nome (sem colchete algum). Ou seja, na hora de chamar um
-&lt;span class=&quot;SpellE&quot;&gt;&lt;span class=&quot;GramE&quot;&gt;sub-algoritmo&lt;/span&gt;&lt;/span&gt;, não existe
-uma diferença entre um vetor e uma variável “comum”. Outro fato importante, é
-que não existe relação entre o nome da variável usada para&lt;span class=&quot;GramE&quot;&gt;&lt;span style=&quot;mso-spacerun:yes&quot;&gt;&amp;nbsp; &lt;/span&gt;&lt;/span&gt;chamar o &lt;b style=&quot;mso-bidi-font-weight:
-normal&quot;&gt;&lt;i style=&quot;mso-bidi-font-style:normal&quot;&gt;procedimento&lt;/i&gt;&lt;/b&gt; e a
-declarada no &lt;b style=&quot;mso-bidi-font-weight:normal&quot;&gt;&lt;i style=&quot;mso-bidi-font-style:
-normal&quot;&gt;procedimento&lt;/i&gt;&lt;/b&gt;&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
-  &lt;/body&gt;
-&lt;/html&gt;
-</descricao>
+    <br>
+    <div align="center">
+      <img src="attach/img/exemplo-passagem-referencia-1.png"/>
+    </div>
+    <br>
+
+    <p>
+      Apesar da variável “totalRef” ser alterada apenas dentro do procedimento soma, quando a
+      variável total for apresentada no bloco principal ela terá o valor 4, pois foi passada por
+      referência. É importante lembrar que não existe relação entre o nome da variável passado por
+      referência e a declarada no procedimento .
+    </p>
+
+    <p>O segundo caso é quando se passa um vetor por parâmetro. Um exemplo é mostrado abaixo.
+    Esse exemplo, no bloco principal, atribui o valor 31 à posição 0 do vetor, que é modificado
+    para 91 dentro do procedimento. Como o comportamento padrão dos vetores é ser passado por
+    referência, essa modificação será refletida no bloco principal, que irá apresentar o novo valor, 91.
+      <p/>
+
+    <br>
+    <div align="center">
+      <img src="attach/img/exemplo-passagem-referencia-2.png"/>
+    </div>
+    <br>
+
+    <p>Observe que na declaração do procedimento, o parâmetro é definido com os colchetes vazios
+    após seu nome, indicando que será recebido um parâmetro do tipo vetor. É importante notar que
+    não é definido o tamanho do vetor. Então, se o procedimento for iterar pelos itens do vetor,
+    é necessário que seja passado o tamanho do mesmo.
+    </p>
+
+    <p>Na chamada do procedimento, o vetor é passado apenas por seu nome (sem colchete algum).
+      Ou seja, na hora de chamar um sub-algoritmo, não existe uma diferença entre um vetor e uma
+      variável “comum”.</p>
+    </body>
+    </html>
+    ]]></descricao>
 </funcionalidade>

@@ -2,33 +2,27 @@
 <funcionalidade>
     <nome>Funções Embutidas</nome>
     <index>5</index>
-    <descricao>&lt;html&gt;
-  &lt;head&gt;
-    
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;p style=&quot;white-space: normal; margin-bottom: 0px; line-height: normal; text-indent: 0px; margin-right: 0px; margin-left: 0px; text-transform: none; word-spacing: 0px; letter-spacing: normal; font-variant: normal; margin-top: 0px&quot; align=&quot;start&quot; http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=utf-8&quot; class=&quot;c15&quot;&gt;
-      &lt;span class=&quot;c2&quot;&gt;&lt;font face=&quot;Trebuchet MS&quot;&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;O calango possui 
-      algumas fun&amp;#231;&amp;#245;es prontas para uso. Estas fun&amp;#231;&amp;#245;es podem ser usadas como se 
-      fossem fun&amp;#231;&amp;#245;es (n&amp;#227;o procedimentos) comuns. As fun&amp;#231;&amp;#245;es dispon&amp;#237;veis s&amp;#227;o 
-      descritas a seguir.&lt;/font&gt;&lt;/span&gt;
-    &lt;/p&gt;
-  &lt;/body&gt;
-&lt;/html&gt;
-</descricao>
-    <include src="comparaTexto.xml"/>
-    <include src="tamanhoTexto.xml"/>
+    <descricao><![CDATA[
+    <html>
+    <body>
+    <p>O Calango possui algumas funções prontas para uso. Estas funções podem ser usadas
+    como se fossem funções comuns, feitas manualmente. As funções disponíveis estão descritas a seguir.</p>
+    </body>
+    </html>
+    ]]></descricao>
     <include src="abs.xml"/>
-    <include src="exp.xml"/>
-    <include src="pi.xml"/>
-    <include src="raizQuadrada.xml"/>
     <include src="aleatorio.xml"/>
-    <include src="maiusculo.xml"/>
-    <include src="minusculo.xml"/>
-    <include src="copia.xml"/>
-    <include src="maiusculoCaracter.xml"/>
-    <include src="minusculoCaracter.xml"/>
     <include src="asciiCaracter.xml"/>
     <include src="caracterAscii.xml"/>
     <include src="caracterTexto.xml"/>
+    <include src="comparaTexto.xml"/>
+    <include src="copia.xml"/>
+    <include src="exp.xml"/>
+    <include src="maiusculo.xml"/>
+    <include src="maiusculoCaracter.xml"/>
+    <include src="minusculo.xml"/>
+    <include src="minusculoCaracter.xml"/>
+    <include src="pi.xml"/>
+    <include src="raizQuadrada.xml"/>
+    <include src="tamanhoTexto.xml"/>
 </funcionalidade>

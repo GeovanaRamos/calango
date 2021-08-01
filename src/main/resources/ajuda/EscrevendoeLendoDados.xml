@@ -2,21 +2,14 @@
 <funcionalidade>
     <nome>Escrevendo e Lendo Dados </nome>
     <index>2</index>
-    <descricao>&lt;html&gt;
-  &lt;head&gt;
-    
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;p style=&quot;white-space: normal; margin-bottom: 0px; line-height: normal; text-indent: 36pt; margin-right: 0px; margin-left: 0px; text-transform: none; word-spacing: 0px; letter-spacing: normal; font-variant: normal; margin-top: 0px&quot; align=&quot;justify&quot; http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=utf-8&quot; class=&quot;c3&quot;&gt;
-      &lt;span class=&quot;c2&quot;&gt;&lt;font face=&quot;Trebuchet MS&quot;&gt;Para que o algoritmo seja de 
-      fato &amp;#250;til ao usu&amp;#225;rio, recebendo e imprimindo dados para o usu&amp;#225;rio. Para 
-      que isso seja feito, faz-se uso de algumas fun&amp;#231;&amp;#245;es embutidas.&lt;/font&gt;&lt;/span&gt;
-    &lt;/p&gt;
-    &lt;br class=&quot;Apple-interchange-newline&quot;&gt;
-    &amp;#0;
-  &lt;/body&gt;
-&lt;/html&gt;
-</descricao>
+    <descricao><![CDATA[
+    <html>
+    <body>
+        <p>Para que o algoritmo seja de fato útil ao usuário, recebendo e imprimindo dados, é necessário que
+        se faça uso de algumas funções embutidas.</p>
+    </body>
+    </html>
+    ]]></descricao>
     <include src="EscrevendoDados.xml"/>
     <include src="LendoDados.xml"/>
 </funcionalidade>

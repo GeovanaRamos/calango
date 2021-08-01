@@ -2,18 +2,20 @@
 <funcionalidade>
     <nome>Estrutura Básica</nome>
     <index>1</index>
-    <descricao>&lt;html&gt;
-   O algoritmo possui uma estrutura b&amp;#225;sica composta da declara&amp;#231;&amp;#227;o do nome do algoritmo, e do bloco principal do algoritmo, conforme visto no c&amp;#243;digo abaixo.
+    <descricao><![CDATA[
+    <html>
+    <body>
+    <p>O algoritmo possui uma estrutura básica composta da declaração do nome do algoritmo,
+    e do bloco principal do algoritmo, conforme visto no código abaixo:</p>
 
-    
-    &lt;div align=&quot;center&quot;&gt;
-        &lt;img src=&quot;attach/img/exemplo-estrutura-basica.png&quot; /&gt;
-    &lt;/div&gt;
+    <br>
+    <div align="center">
+      <img src="attach/img/exemplo-estrutura-basica.png" />
+    </div>
 
-    O identificador do algoritmo, por conven&amp;#231;&amp;#227;o, deve come&amp;#231;ar com uma letra mai&amp;#250;scula, semelhante a uma classe Java.
-  &lt;/body&gt;
-&lt;/html&gt;
-</descricao>
+    </body>
+    </html>
+    ]]></descricao>
     <include src="BlocoPrincipal.xml"/>
     <include src="Comentrios.xml"/>
     <include src="Declaraodevariveis.xml"/>

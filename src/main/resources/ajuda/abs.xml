@@ -2,43 +2,34 @@
 <funcaoEmbutida>
     <nome>abs</nome>
     <index>3</index>
-    <descricao>&lt;html&gt;
-  &lt;head&gt;
-    
-  &lt;/head&gt;
-  &lt;body&gt;
-&lt;p class=&quot;MsoNormal&quot; style=&quot;text-indent:1.0cm&quot;&gt;&lt;span style=&quot;mso-fareast-font-family:
-&amp;quot;Times New Roman&amp;quot;&quot;&gt;A função &lt;span class=&quot;SpellE&quot;&gt;&lt;span class=&quot;GramE&quot;&gt;&lt;b&gt;abs&lt;/b&gt;&lt;/span&gt;&lt;/span&gt;&lt;b&gt;
-&lt;/b&gt; recebe como &lt;span class=&quot;GramE&quot;&gt;parâmetro
-um valor do tipo inteiro ou real e seu retorno dependerá&lt;/span&gt; do tipo do
-parâmetro recebido pela função, ou seja, caso a variável passada por parâmetro
-seja do &lt;span class=&quot;SpellE&quot;&gt;tipointeiro&lt;/span&gt; o retorno da função será um valor
-inteiro, caso contrario, se passada uma variável como parâmetro do tipo real o
-retorno da função será um valor do tipo real.&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;
-&lt;/p&gt;
-
-     &lt;br/&gt;
-     &lt;br/&gt;
-     &lt;div align=&quot;center&quot;&gt;
-        &lt;img src=&quot;attach/img/exemplo-abs.png&quot; /&gt;
-    &lt;/div&gt;
-
-   &lt;br/&gt;
-   &lt;br/&gt;
-&lt;p class=&quot;MsoNormal&quot; style=&quot;text-indent:1.0cm&quot;&gt;&lt;span style=&quot;mso-fareast-font-family:
-&amp;quot;Times New Roman&amp;quot;&quot;&gt;Caso o usuário
-digite -2 para a primeira variável e -2.1 para a segunda, a saída será o valor
-absoluto dos dois números:&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
-
-   &lt;br/&gt;
-   &lt;div align=&quot;center&quot;&gt;
-        &lt;img src=&quot;attach/img/exemplo-console-abs.png&quot; /&gt;
-    &lt;/div&gt;
-  &lt;/body&gt;
-&lt;/html&gt;
-</descricao>
     <tipoRetorno>inteiro/real</tipoRetorno>
     <descricaoRetorno>valor absoluto de n</descricaoRetorno>
+    <descricao><![CDATA[
+        <html>
+        <body>
+        <p>A função <b><i>abs</i></b> retorna o valor absoluto do parâmetro recebido. Em termos matemáticos,
+        o valor absoluto é uma operação que permite qualquer número tornar-se positivo. </p>
+
+        <p> Caso a variável passada por parâmetro seja do tipo inteiro, o retorno da função será um valor
+        inteiro, e, se passada uma variável do tipo real, o retorno da função será um valor do tipo real.
+        </p>
+
+        <br>
+        <div align="center">
+          <img src="attach/img/exemplo-abs.png" />
+        </div>
+        <br>
+
+        <p>Caso o usuário digite -2 para a primeira variável e -2.1 para a segunda, a saída será o valor
+        absoluto dos dois números</p>
+
+        <br>
+        <div align="center">
+          <img src="attach/img/exemplo-console-abs.png" />
+        </div>
+        </body>
+        </html>
+    ]]></descricao>
     <parametros>
         <parametros>
             <tipo>inteiro/real</tipo>

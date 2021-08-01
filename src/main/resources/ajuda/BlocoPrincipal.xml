@@ -2,24 +2,14 @@
 <funcionalidade>
     <nome>Bloco Principal</nome>
     <index>1</index>
-    <descricao>&lt;html&gt;
-
-  &lt;body&gt;
-    &lt;p class=&quot;MsoNormal&quot; style=&quot;text-align:justify;text-indent:36.0pt&quot;&gt;
-          &lt;span style=&quot;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;mso-fareast-font-family:&amp;quot;Trebuchet MS&amp;quot;;
-mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt;O bloco principal é delimitado pelas
-palavras &lt;b style=&quot;mso-bidi-font-weight:normal&quot;&gt;&lt;i style=&quot;mso-bidi-font-style:
-normal&quot;&gt;principal&lt;/i&gt;&lt;/b&gt;&lt;/span&gt;&lt;span style=&quot;font-size:12.0pt;line-height:115%;
-font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;mso-fareast-font-family:&amp;quot;Trebuchet MS&amp;quot;;
-mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;
-mso-fareast-font-family:&amp;quot;Trebuchet MS&amp;quot;;mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt;e &lt;span class=&quot;SpellE&quot;&gt;&lt;span class=&quot;GramE&quot;&gt;&lt;b style=&quot;mso-bidi-font-weight:normal&quot;&gt;&lt;i style=&quot;mso-bidi-font-style:normal&quot;&gt;fimPrincipal&lt;/i&gt;&lt;/b&gt;&lt;/span&gt;&lt;/span&gt;. Este
-bloco é o que será executado primeiro quando o algoritmo for interpretado. É
-análogo à função &lt;span class=&quot;SpellE&quot;&gt;&lt;span class=&quot;GramE&quot;&gt;&lt;b style=&quot;mso-bidi-font-weight:
-normal&quot;&gt;&lt;i style=&quot;mso-bidi-font-style:normal&quot;&gt;main&lt;/i&gt;&lt;/b&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;GramE&quot;&gt;&lt;b style=&quot;mso-bidi-font-weight:normal&quot;&gt;&lt;i style=&quot;mso-bidi-font-style:
-normal&quot;&gt;(&lt;/i&gt;&lt;/b&gt;&lt;/span&gt;&lt;b style=&quot;mso-bidi-font-weight:normal&quot;&gt;&lt;i style=&quot;mso-bidi-font-style:normal&quot;&gt;)&lt;/i&gt;&lt;/b&gt; na linguagem C. Os comandos que
-estiverem dentro deste bloco serão executados sequencialmente.&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;
-    &lt;/p&gt;
-  &lt;/body&gt;
-&lt;/html&gt;
-</descricao>
+    <descricao><![CDATA[
+    <html>
+    <body>
+        <p>O bloco principal é delimitado pelas palavras <b><i>principal</i></b> e
+        <b><i>fimPrincipal</i></b>. Este bloco é o que será executado primeiro quando o algoritmo
+        for interpretado. É análogo à função <b><i>main()</i></b> na linguagem C. Os comandos que
+        estiverem dentro deste bloco serão executados sequencialmente.</p>
+    </body>
+    </html>
+    ]]></descricao>
 </funcionalidade>

@@ -2,25 +2,21 @@
 <funcionalidade>
     <nome>Sub-algoritmos</nome>
     <index>4</index>
-    <descricao>&lt;html&gt;
-  &lt;head&gt;
-    
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;p class=&quot;MsoNormal&quot; style=&quot;text-align:justify;text-indent:36.0pt&quot;&gt;&lt;span style=&quot;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;mso-fareast-font-family:&amp;quot;Trebuchet MS&amp;quot;;
-mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt;A linguagem Calango permite que sejam
-criados &lt;span class=&quot;SpellE&quot;&gt;&lt;span class=&quot;GramE&quot;&gt;sub-algoritmos&lt;/span&gt;&lt;/span&gt;, na
-forma de funções e procedimentos. A declaração de um &lt;span class=&quot;SpellE&quot;&gt;&lt;span class=&quot;GramE&quot;&gt;sub-algoritmo&lt;/span&gt;&lt;/span&gt; é feita sempre após o bloco principal,
-como pode ser visto no código abaixo.&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p class=&quot;MsoNormal&quot; style=&quot;text-align:justify;text-indent:36.0pt&quot;&gt;&lt;span style=&quot;font-family:&amp;quot;Trebuchet MS&amp;quot;,&amp;quot;sans-serif&amp;quot;;mso-fareast-font-family:&amp;quot;Trebuchet MS&amp;quot;;
-mso-bidi-font-family:&amp;quot;Trebuchet MS&amp;quot;&quot;&gt;&lt;o:p&gt;&amp;nbsp;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+    <descricao><![CDATA[
+    <html>
+    <body>
+    <p>A linguagem Calango permite que sejam criados sub-algoritmos, na forma de funções e procedimentos.
+    A declaração de um sub-algoritmo é feita sempre após o bloco principal, como pode ser visto no código
+    abaixo:</p>
 
-&lt;div align=&quot;center&quot;&gt;
-        &lt;img src=&quot;attach/img/exemplo-sub-algoritmo.jpg&quot; /&gt;
-    &lt;/div&gt;
-  &lt;/body&gt;
-&lt;/html&gt;
-</descricao>
+    <br>
+    <div align="center">
+      <img src="attach/img/exemplo-sub-algoritmo.jpg" />
+    </div>
+
+    </body>
+    </html>
+    ]]></descricao>
     <include src="Procedimentos.xml"/>
     <include src="Funes.xml"/>
     <include src="PassagemdeParmetros.xml"/>

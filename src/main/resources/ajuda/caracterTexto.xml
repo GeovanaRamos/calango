@@ -2,36 +2,28 @@
 <funcaoEmbutida>
     <nome>caracterTexto</nome>
     <index>15</index>
-    <descricao>&lt;html&gt;
-  &lt;head&gt;
-    
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;p class=&quot;MsoNormal&quot; style=&quot;text-indent:1.0cm&quot;&gt;&lt;span style=&quot;mso-fareast-font-family:
-&amp;quot;Times New Roman&amp;quot;&quot;&gt;A função &lt;b&gt;caracterTexto &lt;/b&gt;possui como objetivo retornar um caracter
-do texto, ou seja, a partir de um texto passado por parâmetro e uma posição, é retornado o caracter da posição informada.
-A declaração da função segue a seguinte sintaxe: &lt;b&gt;caracter &lt;span class=&quot;GramE&quot;&gt;caracterTexto(&lt;/span&gt;texto
-t, inteiro p)&lt;/b&gt;. A função recebe dois parâmetros: um texto que
-será utilizado para ser recortado e um valor inteiro que representa a posição do caracter a ser retornado.
+    <descricao><![CDATA[
+    <html>
+    <body>
+    <p>A função <i><b>caracterTexto </b></i>possui como objetivo retornar um caracter do texto,
+    ou seja, a partir de um texto passado por parâmetro e uma posição, é retornado o caracter da posição
+    informada.</p>
 
-     &lt;br/&gt;
-     &lt;br/&gt;
-     &lt;div align=&quot;center&quot;&gt;
-        &lt;img src=&quot;attach/img/exemplo-caracter-texto.png&quot; /&gt;
-    &lt;/div&gt;
+    <br>
+    <div align="center">
+      <img src="attach/img/exemplo-caracter-texto.png" />
+    </div>
+    <br>
 
-     &lt;br/&gt;
-&lt;p class=&quot;MsoNormal&quot; style=&quot;text-indent:1.0cm&quot;&gt;&lt;span style=&quot;mso-fareast-font-family:
-&amp;quot;Times New Roman&amp;quot;&quot;&gt;Esse exemplo irá gerar a seguinte saída:&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+    <p>O exemplo acima irá gerar a seguinte saída:</p>
 
-     &lt;br/&gt;
-     &lt;br/&gt;
-     &lt;div align=&quot;center&quot;&gt;
-        &lt;img src=&quot;attach/img/exemplo-console-caracter-texto.png&quot; /&gt;
-    &lt;/div&gt;
-  &lt;/body&gt;
-&lt;/html&gt;
-</descricao>
+    <br>
+    <div align="center">
+      <img src="attach/img/exemplo-console-caracter-texto.png"/>
+    </div>
+    </body>
+    </html>
+    ]]></descricao>
     <tipoRetorno>caracter</tipoRetorno>
     <descricaoRetorno>caracter da posição p do texto t</descricaoRetorno>
     <parametros>

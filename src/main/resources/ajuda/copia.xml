@@ -2,40 +2,31 @@
 <funcaoEmbutida>
     <nome>copia</nome>
     <index>10</index>
-    <descricao>&lt;html&gt;
-  &lt;head&gt;
-    
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;p class=&quot;MsoNormal&quot; style=&quot;text-indent:1.0cm&quot;&gt;&lt;span style=&quot;mso-fareast-font-family:
-&amp;quot;Times New Roman&amp;quot;&quot;&gt;A função &lt;b&gt;copia &lt;/b&gt;possui como objetivo retornar um
-subtexto, ou seja, a partir de um texto passado por parâmetro e um intervalo é
-retornado o subtexto da posição inicial e final informada. A declaração da
-função segue a seguinte sintaxe: &lt;b&gt;texto &lt;span class=&quot;GramE&quot;&gt;copia(&lt;/span&gt;texto
-t, inteiro a, inteiro b)&lt;/b&gt;. A função recebe três parâmetros: um texto que
-será utilizado para ser recortado e dois valores inteiros que representam o
-intervalo a ser utilizado no recorte do texto, sendo o intervalo começando em &lt;span class=&quot;GramE&quot;&gt;0&lt;/span&gt;.&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+    <descricao><![CDATA[
+    <html>
+    <body>
+    <p>A função <i><b>copia</b></i> possui como objetivo retornar um subtexto, ou seja, a partir de
+    um texto passado por parâmetro e um intervalo é retornado o subtexto da posição inicial e final
+    informada. A função recebe três parâmetros: um texto que será utilizado para ser recortado e
+    dois valores inteiros que representam o intervalo a ser utilizado no recorte do texto,
+    sendo que o intervalo começa em 0. Veja um exemplo abaixo:</p>
 
-     &lt;br/&gt;
-     &lt;br/&gt;
-     &lt;div align=&quot;center&quot;&gt;
-        &lt;img src=&quot;attach/img/exemplo-copia.png&quot; /&gt;
-    &lt;/div&gt;
+    <br/>
+    <div align="center">
+      <img src="attach/img/exemplo-copia.png"/>
+    </div>
+    <br/>
 
-     &lt;br/&gt;
-&lt;p class=&quot;MsoNormal&quot; style=&quot;text-indent:1.0cm&quot;&gt;&lt;span style=&quot;mso-fareast-font-family:
-&amp;quot;Times New Roman&amp;quot;&quot;&gt;Caso
-o usuário digite o texto “patricia“ o algoritmo irá retornar o subtexto a
-partir da posição 0 até a 5, gerando a seguinte saída:&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+    <p>Caso o usuário digite o texto “patricia“ o algoritmo irá retornar o subtexto a partir da
+    posição 0 até a 5, gerando a seguinte saída:</p>
 
-     &lt;br/&gt;
-     &lt;br/&gt;
-     &lt;div align=&quot;center&quot;&gt;
-        &lt;img src=&quot;attach/img/exemplo-console-copia.png&quot; /&gt;
-    &lt;/div&gt;
-  &lt;/body&gt;
-&lt;/html&gt;
-</descricao>
+    <br>
+    <div align="center">
+      <img src="attach/img/exemplo-console-copia.png"/>
+    </div>
+    </body>
+    </html>
+    ]]></descricao>
     <tipoRetorno>texto</tipoRetorno>
     <descricaoRetorno>subtexto do texto t da posição a até b</descricaoRetorno>
     <parametros>
