@@ -250,87 +250,106 @@ URL						= (((https?|f(tp|ile))"://"|"www.")({URLCharacters}{URLEndCharacter})?)
 
 <YYINITIAL> {
 
-	/* Keywords */
-	"algoritmo" |
-"ate" |
-"caso" |
-"de" |
-"enquanto" |
-"entao" |
-"escolha" |
-"faca" |
-"fimEnquanto" |
-"fimEscolha" |
-"fimFuncao" |
-"fimPara" |
-"fimPrincipal" |
-"fimProcedimento" |
-"fimSe" |
-"funcao" |
-"interrompa" |
-"outroCaso" |
-"para" |
-"passo" |
-"principal" |
-"procedimento" |
-"retorna" |
-"se" |
-"senao"		{ addToken(Token.RESERVED_WORD); }
+    /* Keywords */
+    "algoritmo" |
+    "ate" |
+    "caso" |
+    "de" |
+    "enquanto" |
+    "entao" |
+    "escolha" |
+    "faca" |
+    "fimEnquanto" |
+    "fimEscolha" |
+    "fimFuncao" |
+    "fimPara" |
+    "fimPrincipal" |
+    "fimProcedimento" |
+    "fimSe" |
+    "funcao" |
+    "interrompa" |
+    "outroCaso" |
+    "para" |
+    "passo" |
+    "principal" |
+    "procedimento" |
+    "retorna" |
+    "se" |
+    "senao"		{ addToken(Token.RESERVED_WORD); }
 
-	/* Data types */
-	"caracter" |
-"inteiro" |
-"logico" |
-"real" |
-"texto"		{ addToken(Token.DATA_TYPE); }
+    /* Data types */
+    "caracter" |
+    "inteiro" |
+    "logico" |
+    "real" |
+    "texto"		{ addToken(Token.DATA_TYPE); }
 
-	/* Functions */
-	/* No functions */
+    /* Functions */
+    "leia" |
+    "leiaCaracter" |
+    "escreva" |
+    "escreval" |
+    "comparaTexto" |
+    "tamanhoTexto" |
+    "abs" |
+    "exp" |
+    "pi" |
+    "raizQuadrada" |
+    "aleatorio" |
+    "maiusculo" |
+    "minusculo" |
+    "copia" |
+    "maiusculoCaracter" |
+    "minusculoCaracter" |
+    "asciiCaracter" |
+    "caracterAscii"  { addToken(Token.FUNCTION); }
 
-	{LineTerminator}				{ addNullToken(); return firstToken; }
+    {LineTerminator}				{ addNullToken(); return firstToken; }
 
-	{Identifier}					{ addToken(Token.IDENTIFIER); }
+    {Identifier}					{ addToken(Token.IDENTIFIER); }
 
-	{WhiteSpace}					{ addToken(Token.WHITESPACE); }
+    {WhiteSpace}					{ addToken(Token.WHITESPACE); }
 
-	/* String/Character literals. */
-	{CharLiteral}				{ addToken(Token.LITERAL_CHAR); }
-{UnclosedCharLiteral}		{ addToken(Token.ERROR_CHAR); addNullToken(); return firstToken; }
-{ErrorCharLiteral}			{ addToken(Token.ERROR_CHAR); }
-	{StringLiteral}				{ addToken(Token.LITERAL_STRING_DOUBLE_QUOTE); }
-{UnclosedStringLiteral}		{ addToken(Token.ERROR_STRING_DOUBLE); addNullToken(); return firstToken; }
-{ErrorStringLiteral}			{ addToken(Token.ERROR_STRING_DOUBLE); }
+    /* String/Character literals. */
+    {CharLiteral}				{ addToken(Token.LITERAL_CHAR); }
+    {UnclosedCharLiteral}		{ addToken(Token.ERROR_CHAR); addNullToken(); return firstToken; }
+    {ErrorCharLiteral}			{ addToken(Token.ERROR_CHAR); }
+    {StringLiteral}				{ addToken(Token.LITERAL_STRING_DOUBLE_QUOTE); }
+    {UnclosedStringLiteral}		{ addToken(Token.ERROR_STRING_DOUBLE); addNullToken(); return firstToken; }
+    {ErrorStringLiteral}			{ addToken(Token.ERROR_STRING_DOUBLE); }
 
-	/* Comment literals. */
-	{MLCBegin}	{ start = zzMarkedPos-2; yybegin(MLC); }
-	/* No documentation comments */
-	{LineCommentBegin}			{ start = zzMarkedPos-2; yybegin(EOL_COMMENT); }
+    /* Comment literals. */
+    {MLCBegin}	{ start = zzMarkedPos-2; yybegin(MLC); }
+    /* No documentation comments */
+    {LineCommentBegin}			{ start = zzMarkedPos-2; yybegin(EOL_COMMENT); }
 
-	/* Separators. */
-	{Separator}					{ addToken(Token.SEPARATOR); }
-	{Separator2}					{ addToken(Token.IDENTIFIER); }
+    /* Separators. */
+    {Separator}					{ addToken(Token.SEPARATOR); }
+    {Separator2}					{ addToken(Token.IDENTIFIER); }
 
-	/* Operators. */
-	"*" |
-"+" |
-"-" |
-"/" |
-"e" |
-"mod" |
-"nao" |
-"ou"		{ addToken(Token.OPERATOR); }
+    /* Operators. */
+    "*" |
+    "+" |
+    "-" |
+    "/" |
+    "e" |
+    "mod" |
+    "nao" |
+    "%" |
+    "\\" |
+    "ou"		{ addToken(Token.OPERATOR); }
 
-	/* Numbers */
-	{IntegerLiteral}				{ addToken(Token.LITERAL_NUMBER_DECIMAL_INT); }
-	{HexLiteral}					{ addToken(Token.LITERAL_NUMBER_HEXADECIMAL); }
-	{FloatLiteral}					{ addToken(Token.LITERAL_NUMBER_FLOAT); }
-	{ErrorNumberFormat}				{ addToken(Token.ERROR_NUMBER_FORMAT); }
+    /* Numbers */
+    {IntegerLiteral}				{ addToken(Token.LITERAL_NUMBER_DECIMAL_INT); }
+    {HexLiteral}					{ addToken(Token.LITERAL_NUMBER_HEXADECIMAL); }
+    {FloatLiteral}					{ addToken(Token.LITERAL_NUMBER_FLOAT); }
+    {ErrorNumberFormat}				{ addToken(Token.ERROR_NUMBER_FORMAT); }
 
-	/* Ended with a line not in a string or comment. */
-	<<EOF>>						{ addNullToken(); return firstToken; }
+    /* Ended with a line not in a string or comment. */
+    <<EOF>>						{ addNullToken(); return firstToken; }
 
-	/* Catch any other (unhandled) characters. */
-	.							{ addToken(Token.IDENTIFIER); }
+    /* Catch any other (unhandled) characters. */
+    .							{ addToken(Token.IDENTIFIER); }
 
 }
 
