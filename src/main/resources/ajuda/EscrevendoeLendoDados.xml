@@ -12,4 +12,5 @@
     ]]></descricao>
     <include src="EscrevendoDados.xml"/>
     <include src="LendoDados.xml"/>
+    <include src="Formatacao.xml"/>
 </funcionalidade>

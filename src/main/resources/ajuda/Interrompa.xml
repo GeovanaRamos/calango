@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<funcionalidade>
+    <nome>Interrompa</nome>
+    <index>6</index>
+    <descricao><![CDATA[
+    <html>
+    <body>
+    <p>Além de ser utilizado obrigatoriamente dentro da estrutura do <i>escolha</>, o interrompa
+    também pode ser utilizado dentro de estruturas de repetição para encerrar um loop antes do seu
+    término programado. Veja o exemplo abaixo:
+    </p>
+
+    <br>
+    <div align="center">
+      <img src="attach/img/exemplo-interrompa.png"/>
+    </div>
+    <br>
+
+    <p>No exemplo acima, a estrutura <i>enquanto</i> está programada para nunca encerrar, pois sua condição
+    é sempre verdadeira. Entretanto, a condicional inserida dentro da repetição verifica é verdadeira se
+    <i>i</i> for igual à 10. Como na linha 16 a variável está sendo incrementada a cada iteração, em um dado
+    momento o algoritmo irá adentrar a condicional e o interrompa será acionado. Assim, a repetição será
+    interrompida e o algoritmo irá escrever na tela "Valor de i: 10".
+    </p>
+
+    </body>
+    </html>
+    ]]></descricao>
+</funcionalidade>

@@ -16,4 +16,5 @@
     <include src="Enquanto.xml"/>
     <include src="FacaEnquanto.xml"/>
     <include src="Para.xml"/>
+    <include src="Interrompa.xml"/>
 </funcionalidade>

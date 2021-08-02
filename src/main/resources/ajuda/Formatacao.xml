@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<funcionalidade>
+    <nome>Formatação</nome>
+    <index>3</index>
+    <descricao><![CDATA[
+    <html>
+    <body>
+    <p>Em algumas situações, operações com números reais geram resultados com várias casas decimais.
+    Entretanto, nem sempre é necessário mostrar todas as casas decimais. Para isso, é possível limitar
+    a quantidade de casas decimais no comando <i>escreva</i> ou <i>escreval</i> usando a notação
+    <i><b>valor:x:y</b></i> onde:
+    </p>
+
+    <ul>
+      <li><b>x:</b> representa o número de espaços na parte inteira. Se o valor for maior que a quantidade
+       de algarismos na parte inteira, os valores faltantes serão preenchidos com espaços em branco
+       a esquerda. Se o valor for menor, não haverá mudança visual na apresentação do resultado;</li>
+      <li><b>y:</b> representa o número de espaços na parte decimal. Se o valor for maior que a quantidade
+      de algarismos decimais, os valores faltantes serão preenchidos com zeros. Se o valor for menor que a
+       quantidade de algarismos decimais, o valor decimal será arrendondado;</li>
+    </ul>
+
+    <br>
+    <div align="center">
+      <img src="attach/img/exemplo-formatacao.png"/>
+    </div>
+    <br>
+
+    <p>Veja o resultado mostrado no console após a execução do código acima:
+    </p>
+
+    <br>
+    <div align="center">
+      <img src="attach/img/exemplo-console-formatacao.png"/>
+    </div>
+    <br>
+
+    </body>
+    </html>
+    ]]></descricao>
+</funcionalidade>
