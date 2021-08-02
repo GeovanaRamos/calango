@@ -12,10 +12,12 @@
     </p>
 
     <ul>
-      <li><b>x:</b> representa o número de espaços na parte inteira. Se o valor for maior que a quantidade
-       de algarismos na parte inteira, os valores faltantes serão preenchidos com espaços em branco
+      <li><b>x:</b> representa o número mínimo de algarismos a serem mostrados.
+      Se o valor for maior que a quantidade
+       total de algarismos (inteiros e decimais), os valores faltantes serão preenchidos com espaços em branco
        a esquerda. Se o valor for menor, não haverá mudança visual na apresentação do resultado;</li>
-      <li><b>y:</b> representa o número de espaços na parte decimal. Se o valor for maior que a quantidade
+      <li><b>y:</b> representa o número máximo de algarismos a serem mostrados
+       na parte decimal. Se o valor for maior que a quantidade
       de algarismos decimais, os valores faltantes serão preenchidos com zeros. Se o valor for menor que a
        quantidade de algarismos decimais, o valor decimal será arrendondado;</li>
     </ul>
