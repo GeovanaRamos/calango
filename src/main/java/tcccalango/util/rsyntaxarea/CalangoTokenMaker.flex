@@ -290,6 +290,7 @@ URL						= (((https?|f(tp|ile))"://"|"www.")({URLCharacters}{URLEndCharacter})?)
     "escreva" |
     "escreval" |
     "comparaTexto" |
+    "caracterTexto"|
     "tamanhoTexto" |
     "abs" |
     "exp" |
