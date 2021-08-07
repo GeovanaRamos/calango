@@ -62,7 +62,7 @@
     Na linha 16, está o comando <i>outroCaso</i>, que será executado se nenhum caso for executado.
     Não é necessário usar o comando <i>interrompa</i> , pois não existe mais nenhum caso entre o
     <i>outroCaso</i> e o <i>fimEscolha</i> . O bloco <i>outroCaso</i> é opcional e deve ser
-    obrigatoriamente o último bloco do comando escolha. <\p>
+    obrigatoriamente o último bloco do comando escolha. </p>
 
     </body>
     </html>

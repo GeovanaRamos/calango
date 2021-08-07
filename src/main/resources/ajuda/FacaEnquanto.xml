@@ -14,7 +14,7 @@
     </div>
     <br>
 
-    <p>Nesse exemplo, a repetição será executada 10 vezes, de 1 até 10,com valores da variável i variando de 1 até 11, sendo que logo após incrementar o contador <i>i</i> para 11, a condição <i>i&amp;lt;=10 (11 &amp;lt;= 10) </i> é falsa e a
+    <p>Nesse exemplo, a repetição será executada 10 vezes, de 1 até 10,com valores da variável i variando de 1 até 11, sendo que logo após incrementar o contador <i>i</i> para 11, a condição <i>i&lt;=10 (11 &lt;= 10) </i> é falsa e a
     repetição é encerrada</p>
     </body>
     </html>

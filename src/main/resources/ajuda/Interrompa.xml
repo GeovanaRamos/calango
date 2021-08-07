@@ -17,7 +17,7 @@
     <br>
 
     <p>No exemplo acima, a estrutura <i>enquanto</i> está programada para nunca encerrar, pois sua condição
-    é sempre verdadeira. Entretanto, a condicional inserida dentro da repetição verifica é verdadeira se
+    é sempre verdadeira. Entretanto, a condicional inserida dentro da repetição é verdadeira se
     <i>i</i> for igual à 10. Como na linha 16 a variável está sendo incrementada a cada iteração, em um dado
     momento o algoritmo irá adentrar a condicional e o interrompa será acionado. Assim, a repetição será
     interrompida e o algoritmo irá escrever na tela "Valor de i: 10".
