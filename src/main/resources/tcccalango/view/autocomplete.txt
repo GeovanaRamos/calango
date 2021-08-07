@@ -12,7 +12,7 @@ fimSe
 funcao inteiro nome()
 interrompa
 outroCaso
-para (i de 1 ate x passo 1 ) faca
+para (i de x ate y passo 1 ) faca
 principal
 procedimento nome()
 retorna
@@ -23,21 +23,22 @@ inteiro
 logico
 real
 texto
-comparaTexto(a, b);
-tamanhoTexto(a, b);
+comparaTexto(t1, t2);
+tamanhoTexto(t);
 abs(x);
 exp(b, e);
 pi();
 raizQuadrada(x);
 aleatorio(x);
-maiusculo(texto);
-minusculo(texto);
+maiusculo(t);
+minusculo(t);
 copia(a, b);
 maiusculoCaracter(c);
 minusculoCaracter(C);
 asciiCaracter(x);
 caracterAscii(c);
-escreva();
-escreval();
-leia();
-leiaCaracter();
+escreva("");
+escreval("");
+leia(valor);
+leiaCaracter(c);
+caracterTexto(t, i);
