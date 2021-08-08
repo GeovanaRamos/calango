@@ -82,6 +82,8 @@ public class PassoAPassoViewer extends JScrollPane implements AdjustmentListener
          throw new RuntimeException("Nenhum escopo para adicionar variável");
       } else {
          this.top().adicionaVariavel(nome, tipo, valor, nomeVariavelReferencia);
+         this.top().revalidate();
+         this.top().repaint();
       }
    }
 
@@ -90,20 +92,26 @@ public class PassoAPassoViewer extends JScrollPane implements AdjustmentListener
          throw new RuntimeException("Nenhum escopo para atualizar variável.");
       } else {
          this.top().atualizaVariavel(nome, valor);
-         this.revalidate();
+         this.top().revalidate();
+         this.top().repaint();
       }
    }
 
    private void push(Escopo escopo) {
       if (this.top() != null) {
          this.top().getBorder().setShadowOn(false);
-         this.top().updateUI();
+
+         this.top().revalidate();
+         this.top().repaint();
       }
 
       this.pilhaEscopos.add(escopo);
       this.container.add(escopo);
       this.top().getBorder().setShadowOn(true);
-      this.updateUI();
+
+      this.revalidate();
+      this.repaint();
+
    }
 
    public JPanel getContainer() {
@@ -117,10 +125,15 @@ public class PassoAPassoViewer extends JScrollPane implements AdjustmentListener
          this.container.remove(escopo);
          if (this.top() != null) {
             this.top().setShadowOn(true);
+
+            this.top().revalidate();
+            this.top().repaint();
          }
       }
 
-      this.updateUI();
+      this.revalidate();
+      this.repaint();
+
       return escopo;
    }
 

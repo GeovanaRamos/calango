@@ -105,7 +105,9 @@ public class Escopo extends JPanel implements Parent {
    public void setShadowOn(boolean last) {
       this.getBorder().setShadowOn(last);
       super.setBorder(this.getBorder());
-      this.updateUI();
+
+      this.revalidate();
+      this.repaint();
    }
 
    /** @deprecated */
