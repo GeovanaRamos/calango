@@ -302,7 +302,7 @@ public class CalangoConsole extends JTextPane implements KeyListener, Adjustment
       }
 
       public boolean finish(char ch) {
-         return true;
+         return ch == '\n';
       }
 
       public Character getCharacter() {

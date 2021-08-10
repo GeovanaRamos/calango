@@ -32,7 +32,6 @@ public class CalangoIDEIn implements CalangoIn {
       this.tpConsole.requestFocusInWindow();
       this.tpConsole.requestFocus();
       Character character = this.tpConsole.nextCharacter();
-      this.tpConsole.append("\n");
       return character;
    }
 }
